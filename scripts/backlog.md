@@ -33,11 +33,21 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] file-system — File system
 - [ ] ... (learn guides ကျန်)
 
-## Express (expressjs.com) — ~30 pages — 9 done
+## Express (expressjs.com) — ~30 pages — 16 done
 - [x] getting-started, routing, middleware
 - [x] error-handling, writing-middleware, static-files
 - [x] advanced-routing, debugging, best-practices
+- [x] installing — Install Express
+- [x] generator — Express application generator
+- [x] faq — FAQ
+- [x] behind-proxies — Trust proxy & behind proxies
+- [x] template-engines — Template engines သုံးနည်း
+- [x] overriding-express-api — Express API ကို override လုပ်ခြင်း
+- [x] developing-template-engines — Template engine ရေးနည်း
 - [ ] security — Security
+- [ ] api-reference — API reference (4.x/5.x)
+- [ ] resources — Community resources
+- [ ] contribution-guide — Contribution guide
 - [ ] ... (ကျန် guide အနည်းငယ်)
 
 ## PostgreSQL (postgresql.org/docs) — core ~500 pages — 6 done
@@ -71,21 +81,47 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] generics — Generics
 - [ ] ... (handbook ကျန်)
 
-## useSWR (swr.vercel.app) — ~25 pages — 9 done (core အကုန်)
+## useSWR (swr.vercel.app) — ~25 pages — 17 done (core အကုန် + guides)
 - [x] getting-started, data-fetching, error-handling
 - [x] arguments, conditional-fetching, global-config
 - [x] pagination, infinite-loading, prefetching
-- [ ] ... (API reference ကျန်)
+- [x] mutation — Mutate & useSWRMutation
+- [x] revalidation — Revalidation
+- [x] middleware — Middleware
+- [x] suspense — Suspense
+- [x] typescript — TypeScript
+- [x] with-nextjs — Next.js နဲ့ တွဲသုံးခြင်း
+- [x] subscription — Subscription
+- [x] performance — Advanced: Performance
+- [ ] api — API reference
+- [ ] advanced: cache, understanding, devtools, react-native
+- [ ] examples — Examples
 
-## TanStack Query (tanstack.com/query) — ~100 pages — 6 done
+## TanStack Query (tanstack.com/query) — ~100 pages — 14 done
 - [x] getting-started, queries, query-keys
 - [x] mutations, cache, infinite-queries
-- [ ] ... (guides ကျန် + API reference)
+- [x] dependent-queries — Dependent Queries
+- [x] query-functions — Query Functions
+- [x] parallel-queries — Parallel Queries
+- [x] paginated-queries — Paginated Queries
+- [x] optimistic-updates — Optimistic Updates
+- [x] query-invalidation — Query Invalidation
+- [x] network-mode — Network Mode
+- [x] important-defaults — Important Defaults
+- [ ] guides ကျန် (filters, polling, retries, ssr, suspense, testing, ...)
+- [ ] ... (API reference)
 
-## Zustand (zustand.docs.pmnd.rs) — ~15 pages — 9 done (core အကုန်)
+## Zustand (zustand.docs.pmnd.rs) — ~20 pages — 17 done (core အကုန် + reference အများစု)
 - [x] getting-started, update-state, selectors, typescript
 - [x] middleware, persist, immer, testing, recipes
-- [ ] ... (reference ကျန်)
+- [x] reference/apis: create-store, create, shallow
+- [x] reference/hooks: use-store, use-shallow
+- [x] reference/middlewares: devtools, combine
+- [x] reference/integrations: third-party-libraries
+- [ ] reference/apis: create-with-equality-fn
+- [ ] reference/middlewares: redux, subscribe-with-selector
+- [ ] reference/integrations: immer-middleware, persisting-store-data
+- [ ] reference/migrations: v3 migration + previous-versions
 
 ## အလုပ်လုပ်နည်း (workflow)
 1. Backlog ထဲက `[ ]` အများဆုံး 4 worker × 5 pages batch နဲ့ ဘာသာပြန်
