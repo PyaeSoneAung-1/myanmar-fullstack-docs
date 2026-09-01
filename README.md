@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Myanmar Fullstack Docs 🇲🇲
 
-## Getting Started
+Fullstack JavaScript documentation တွေကို မြန်မာလို ဘာသာပြန်တင်ဆက်တဲ့ docs site တစ်ခုပါ။
+All content is translated from the **official documentation** of each project.
 
-First, run the development server:
+## ပါဝင်တဲ့ နည်းပညာများ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Category | Techs |
+|---|---|
+| Frontend | React, Next.js, TypeScript |
+| Backend | Node.js, Express, PostgreSQL, Prisma ORM |
+| Data & State | useSWR, TanStack Query, Zustand |
+| Tooling | Postman |
+
+## Tech Stack
+
+- **Next.js 16 (App Router) + React 19 + TypeScript**
+- **Tailwind CSS v4** — dark mode, Burmese-friendly typography
+- **react-markdown** — content rendering (remark-gfm, rehype-slug)
+- **minisearch** — client-side full-text search (Ctrl+K)
+- Content: plain Markdown + frontmatter in `content/<tech>/`
+
+## Project Structure
+
+```
+content/<tech>/_meta.json    # tech metadata (name, color, official URL, slug)
+content/<tech>/<slug>.md     # Burmese pages (frontmatter: title/order/source/status)
+scripts/sources.json         # official-doc source registry (GitHub repos)
+scripts/translate.mjs        # translation pipeline (fetch → chunk → LLM → write)
+scripts/build-search-index.mjs  # generates public/search-index.json
+src/lib/content.ts           # content loading (fs + gray-matter)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build (regenerates search index)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ဘာသာပြန် ဘယ်လို ထပ်ဖြည့်မလဲ
 
-## Learn More
+### ကိုယ်တိုင် ရေးတာ
+`content/<tech>/` ထဲမှာ markdown file အသစ်တစ်ခု ဖန်တီးပြီး frontmatter
+(`title`, `order`, `source`, `status: translated`, `updated`) ထည့်ပါ။
+စည်းမျဉ်းတွေကို `../content-drafts/STYLE.md` မှာ ဖတ်ပါ။
 
-To learn more about Next.js, take a look at the following resources:
+### Pipeline နဲ့ အလိုအလျောက်
+```bash
+export LLM_API_KEY=sk-...          # required
+node scripts/translate.mjs --tech zustand          # one tech
+node scripts/translate.mjs --limit 10              # first 10 pages of each tech
+node scripts/translate.mjs --dry-run               # inspect without translating
+node scripts/translate.mjs --stub                  # mechanics test, no key needed
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြတ်ပြီး LLM နဲ့ မြန်မာလို
+ပြန်ဆိုပါတယ်။ `scripts/progress.json` မှာ progress ခြေရာခံပြီး — ပြီးပြီးသားဟာတွေ
+ပြန်မလုပ်ပါဘူး။
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Status
 
-## Deploy on Vercel
+- ✅ 20 pages ဘာသာပြန်ပြီး (getting-started တစ်ခုစီ + Zustand/SWR core)
+- 🔄 ကျန် ~1,700 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `npm run build` ပြီးရင်
+  `/roadmap` page မှာ progress ကြည့်ပါ
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License Note
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ဘာသာပြန်ထားတဲ့ content တွေက open-source projects တွေရဲ့ official docs ကို
+အခြေခံပါတယ် (React: CC-BY-4.0, Express: CC-BY-SA-3.0, အခြားဟာတွေ MIT/Apache-2.0) —
+သက်ဆိုင်ရာ license တွေကို လေးစားပါ။

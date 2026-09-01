@@ -27,7 +27,7 @@ const CACHE = path.join(ROOT, ".cache");
 const CONTENT = path.join(ROOT, "content");
 const SOURCES = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts", "sources.json"), "utf8"));
 const PROGRESS_FILE = path.join(ROOT, "scripts", "progress.json");
-const STYLE = fs.readFileSync(path.join(ROOT, "..", "content-drafts", "STYLE.md"), "utf-8");
+const STYLE = fs.readFileSync(path.join(ROOT, "STYLE.md"), "utf-8");
 
 const args = process.argv.slice(2);
 const flag = (name, def) => {
