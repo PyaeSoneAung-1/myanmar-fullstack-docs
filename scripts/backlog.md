@@ -24,13 +24,13 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] rendering — Rendering (SSR/SSG/CSR deep)
 - [ ] ... (guides ကျန် + API reference)
 
-## Node.js (nodejs.org/en/learn) — ~180 pages — 1 done
+## Node.js (nodejs.org/en/learn) — ~180 pages — 6 done
 - [x] getting-started — Node.js မိတ်ဆက်
-- [ ] modules — Modules အခြေခံ
-- [ ] event-loop — Event Loop
-- [ ] async — Async programming (callbacks/promises/async-await)
-- [ ] npm-basics — npm အခြေခံ
-- [ ] file-system — File system
+- [x] modules — Modules အခြေခံ
+- [x] event-loop — Event Loop
+- [x] async — Async programming (callbacks/promises/async-await)
+- [x] npm-basics — npm အခြေခံ
+- [x] file-system — File system
 - [ ] ... (learn guides ကျန်)
 
 ## Express (expressjs.com) — ~30 pages — 9 done
@@ -40,12 +40,12 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] security — Security
 - [ ] ... (ကျန် guide အနည်းငယ်)
 
-## PostgreSQL (postgresql.org/docs) — core ~500 pages — 2 done
+## PostgreSQL (postgresql.org/docs) — core ~500 pages — 6 done
 - [x] getting-started — PostgreSQL မိတ်ဆက်
 - [x] sql-basics — SQL အခြေခံ
-- [ ] advanced-sql — Advanced SQL (JOIN, aggregate, transactions)
-- [ ] indexes — Indexes
-- [ ] transactions — Transactions
+- [x] advanced-sql — Advanced SQL (JOIN, aggregate, transactions)
+- [x] indexes — Indexes
+- [x] transactions — Transactions
 - [ ] ... (tutorial + core chapters)
 
 ## Postman (learning.postman.com) — ~150 pages — 1 done
@@ -55,20 +55,20 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] testing — Automated testing
 - [ ] ... (learning center ကျန်)
 
-## Prisma (prisma.io/docs) — ~200 pages — 2 done
+## Prisma (prisma.io/docs) — ~200 pages — 6 done
 - [x] getting-started — Prisma စတင်ခြင်း
 - [x] schema — Schema ရေးနည်း
-- [ ] relations — Relations
-- [ ] queries — Query အသေးစိတ် (CRUD)
-- [ ] migrations — Migrations
+- [x] relations — Relations
+- [x] queries — Query အသေးစိတ် (CRUD)
+- [x] migrations — Migrations
 - [ ] ... (guides ကျန်)
 
-## TypeScript (typescriptlang.org) — ~100 pages — 1 done
+## TypeScript (typescriptlang.org) — ~100 pages — 6 done
 - [x] getting-started — TypeScript မိတ်ဆက်
-- [ ] everyday-types — Everyday types
-- [ ] narrowing — Type narrowing
-- [ ] functions — Functions
-- [ ] generics — Generics
+- [x] everyday-types — Everyday types
+- [x] narrowing — Type narrowing
+- [x] functions — Functions
+- [x] generics — Generics
 - [ ] ... (handbook ကျန်)
 
 ## useSWR (swr.vercel.app) — ~25 pages — 9 done (core အကုန်)
