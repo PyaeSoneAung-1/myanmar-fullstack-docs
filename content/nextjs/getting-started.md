@@ -123,4 +123,8 @@ render လုပ်ပေးပါတယ်။
 ## နောက်တစ်ဆင့်တွေ
 
 - [React မိတ်ဆက်](/docs/react/getting-started) — React အခြေခံ မရသေးရင် အရင်ဖတ်ပါ
-- API routes, data fetching, middleware — official docs ကနေ ဆက်လေ့လာပါ
+- [Pages & Layouts](/docs/nextjs/pages-layouts) — page နဲ့ layout တွေ ဘယ်လို အလုပ်လုပ်သလဲ
+- [Dynamic Routes](/docs/nextjs/dynamic-routes) — `[slug]` လို dynamic route တွေ
+- [Linking & Navigation](/docs/nextjs/linking) — page တွေကြား navigation
+- [Data Fetching](/docs/nextjs/data-fetching) — data ယူနည်းတွေ
+- [Route Handlers (API)](/docs/nextjs/route-handlers) — API endpoint တွေ ဆောက်နည်း
