@@ -1,0 +1,10 @@
+{
+  "name": "Express",
+  "nameMy": "Express",
+  "tagline": "Node.js အတွက် နာမည်အကြီးဆုံး web framework — API နဲ့ web server တွေ ဆောက်ဖို့",
+  "officialUrl": "https://expressjs.com",
+  "color": "#444444",
+  "order": 5,
+  "category": "backend",
+  "slug": "express"
+}

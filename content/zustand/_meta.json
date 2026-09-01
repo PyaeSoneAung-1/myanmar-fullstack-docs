@@ -1,0 +1,10 @@
+{
+  "name": "Zustand",
+  "nameMy": "Zustand",
+  "tagline": "React အတွက် ပေါ့ပါးပြီး လွယ်ကူတဲ့ client state management library",
+  "officialUrl": "https://zustand.docs.pmnd.rs",
+  "color": "#B45309",
+  "order": 10,
+  "category": "data",
+  "slug": "zustand"
+}

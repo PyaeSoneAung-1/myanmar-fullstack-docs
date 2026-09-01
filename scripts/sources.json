@@ -1,0 +1,82 @@
+{
+  "react": {
+    "repo": "reactjs/react.dev",
+    "branch": "main",
+    "include": ["src/content/learn/**/*.md"],
+    "officialUrl": "https://react.dev/learn",
+    "license": "CC-BY-4.0",
+    "note": "Learn section (core docs)"
+  },
+  "nextjs": {
+    "repo": "vercel/next.js",
+    "branch": "canary",
+    "include": ["docs/01-app/**/*.mdx"],
+    "officialUrl": "https://nextjs.org/docs",
+    "license": "MIT",
+    "note": "App Router docs"
+  },
+  "typescript": {
+    "repo": "microsoft/TypeScript-Website",
+    "branch": "main",
+    "include": ["packages/documentation/copy/en/handbook-v2/*.md"],
+    "officialUrl": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "license": "Apache-2.0",
+    "note": "Handbook v2 (core)"
+  },
+  "nodejs": {
+    "repo": "nodejs/nodejs.org",
+    "branch": "main",
+    "include": ["apps/site/pages/en/learn/**/*.md"],
+    "officialUrl": "https://nodejs.org/en/learn",
+    "license": "MIT",
+    "note": "Learn guides"
+  },
+  "express": {
+    "repo": "expressjs/expressjs.com",
+    "branch": "main",
+    "include": ["en/**/*.md"],
+    "officialUrl": "https://expressjs.com",
+    "license": "CC-BY-SA-3.0",
+    "note": "Full docs (excluding API reference)"
+  },
+  "prisma": {
+    "repo": "prisma/docs",
+    "branch": "main",
+    "include": ["content/**/*.mdx"],
+    "officialUrl": "https://www.prisma.io/docs",
+    "license": "Apache-2.0",
+    "note": "ORM + guides"
+  },
+  "swr": {
+    "repo": "vercel/swr-site",
+    "branch": "main",
+    "include": ["content/**/*.mdx"],
+    "officialUrl": "https://swr.vercel.app/docs",
+    "license": "MIT",
+    "note": "Full docs site content"
+  },
+  "tanstack-query": {
+    "repo": "TanStack/query",
+    "branch": "main",
+    "include": ["docs/framework/react/**/*.mdx"],
+    "officialUrl": "https://tanstack.com/query/latest/docs/framework/react/overview",
+    "license": "MIT",
+    "note": "React framework docs"
+  },
+  "zustand": {
+    "repo": "pmndrs/zustand",
+    "branch": "main",
+    "include": ["docs/**/*.md"],
+    "officialUrl": "https://zustand.docs.pmnd.rs",
+    "license": "MIT",
+    "note": "Full docs"
+  },
+  "postgresql": {
+    "repo": null,
+    "note": "PostgreSQL official docs are DocBook/SGML — no clean markdown source. Translate from https://www.postgresql.org/docs/current/tutorial.html manually or via scrape."
+  },
+  "postman": {
+    "repo": null,
+    "note": "Postman Learning Center has no public markdown repo — translate from https://learning.postman.com/docs/getting-started/introduction/ manually or via scrape."
+  }
+}

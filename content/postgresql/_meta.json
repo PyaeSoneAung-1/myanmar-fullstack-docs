@@ -1,0 +1,10 @@
+{
+  "name": "PostgreSQL",
+  "nameMy": "PostgreSQL",
+  "tagline": "အစွမ်းထက်ဆုံး open-source relational database တွေထဲက တစ်ခု",
+  "officialUrl": "https://www.postgresql.org",
+  "color": "#336791",
+  "order": 6,
+  "category": "backend",
+  "slug": "postgresql"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Postman",
+  "nameMy": "Postman",
+  "tagline": "API တွေကို စမ်းသပ်ဖို့နဲ့ documentation လုပ်ဖို့ အသုံးများတဲ့ platform",
+  "officialUrl": "https://learning.postman.com",
+  "color": "#FF6C37",
+  "order": 11,
+  "category": "tooling",
+  "slug": "postman"
+}

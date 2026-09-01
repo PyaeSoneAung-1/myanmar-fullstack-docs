@@ -1,0 +1,10 @@
+{
+  "name": "TypeScript",
+  "nameMy": "TypeScript",
+  "tagline": "JavaScript ပေါ်မှာ type (အမျိုးအစား) စနစ် တပ်ပေးတဲ့ superset ဘာသာစကား",
+  "officialUrl": "https://www.typescriptlang.org",
+  "color": "#3178C6",
+  "order": 3,
+  "category": "frontend",
+  "slug": "typescript"
+}

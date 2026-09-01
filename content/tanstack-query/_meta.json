@@ -1,0 +1,10 @@
+{
+  "name": "TanStack Query",
+  "nameMy": "TanStack Query",
+  "tagline": "Server state (ဆာဗာဘက်ဒေတာ) ကို React/other framework တွေမှာ manage လုပ်တဲ့ library",
+  "officialUrl": "https://tanstack.com/query",
+  "color": "#FF4154",
+  "order": 9,
+  "category": "data",
+  "slug": "tanstack-query"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Next.js",
+  "nameMy": "Next.js",
+  "tagline": "Production-ready React framework — fullstack web application အတွက်",
+  "officialUrl": "https://nextjs.org",
+  "color": "#111111",
+  "order": 2,
+  "category": "frontend",
+  "slug": "nextjs"
+}

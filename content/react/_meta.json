@@ -1,0 +1,10 @@
+{
+  "name": "React",
+  "nameMy": "React",
+  "tagline": "User interface တွေကို component တွေနဲ့ တည်ဆောက်ဖို့ JavaScript library",
+  "officialUrl": "https://react.dev",
+  "color": "#61DAFB",
+  "order": 1,
+  "category": "frontend",
+  "slug": "react"
+}

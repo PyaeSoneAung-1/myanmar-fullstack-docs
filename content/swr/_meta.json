@@ -1,0 +1,10 @@
+{
+  "name": "useSWR",
+  "nameMy": "useSWR (SWR)",
+  "tagline": "React အတွက် data fetching library — cache, revalidation, pagination စတာတွေကို အလွယ်တကူ",
+  "officialUrl": "https://swr.vercel.app",
+  "color": "#7C3AED",
+  "order": 8,
+  "category": "data",
+  "slug": "swr"
+}

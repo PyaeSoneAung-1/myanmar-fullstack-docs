@@ -1,0 +1,10 @@
+{
+  "name": "Prisma ORM",
+  "nameMy": "Prisma ORM",
+  "tagline": "Node.js/TypeScript အတွက် type-safe database ORM — schema တစ်ခုနဲ့ database ကို manage လုပ်ဖို့",
+  "officialUrl": "https://www.prisma.io",
+  "color": "#5A67D8",
+  "order": 7,
+  "category": "backend",
+  "slug": "prisma"
+}

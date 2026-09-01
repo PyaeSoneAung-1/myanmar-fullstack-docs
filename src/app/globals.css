@@ -1,0 +1,183 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Noto Sans Myanmar";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/myanmar.woff2") format("woff2");
+  unicode-range: U+1000-109F, U+200C-200D, U+25CC, U+A92E, U+A9E0-A9FE, U+AA60-AA7F,
+    U+116D0-116E3;
+}
+@font-face {
+  font-family: "Noto Sans Myanmar";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Noto Sans Myanmar";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/latinext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@theme {
+  --font-sans: "Noto Sans Myanmar", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --color-ink-50: #f7f7f8;
+  --color-ink-100: #ededf0;
+  --color-ink-200: #d9d9df;
+  --color-ink-300: #b6b6c2;
+  --color-ink-400: #8d8d9e;
+  --color-ink-500: #6f6f82;
+  --color-ink-600: #5a5a6c;
+  --color-ink-700: #4c4c5a;
+  --color-ink-800: #42424d;
+  --color-ink-900: #23232b;
+  --color-ink-950: #16161c;
+
+  --color-brand-50: #eef7ff;
+  --color-brand-100: #d9edff;
+  --color-brand-200: #bce0ff;
+  --color-brand-300: #8ecdff;
+  --color-brand-400: #59b0ff;
+  --color-brand-500: #338efc;
+  --color-brand-600: #1d6ef1;
+  --color-brand-700: #1557de;
+  --color-brand-800: #1847b4;
+  --color-brand-900: #1a3f8d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #16161c;
+}
+
+.dark {
+  --background: #0e0e13;
+  --foreground: #ededf0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.85;
+  letter-spacing: 0.005em;
+}
+
+/* Burmese script needs a touch more room between lines */
+.lang-my {
+  line-height: 2;
+}
+
+/* Article typography */
+.prose {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-links: var(--color-brand-600);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-counters: var(--color-ink-500);
+  --tw-prose-bullets: var(--color-ink-400);
+  --tw-prose-hr: var(--color-ink-200);
+  --tw-prose-quotes: var(--color-ink-600);
+  --tw-prose-quote-borders: var(--color-ink-200);
+  --tw-prose-captions: var(--color-ink-500);
+  --tw-prose-code: #c026d3;
+  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-bg: #1a1b23;
+  --tw-prose-th-borders: var(--color-ink-300);
+  --tw-prose-td-borders: var(--color-ink-200);
+  line-height: 1.9;
+}
+.dark .prose {
+  --tw-prose-links: var(--color-brand-400);
+  --tw-prose-quotes: var(--color-ink-300);
+  --tw-prose-hr: var(--color-ink-800);
+  --tw-prose-quote-borders: var(--color-ink-700);
+  --tw-prose-th-borders: var(--color-ink-700);
+  --tw-prose-td-borders: var(--color-ink-800);
+  --tw-prose-code: #e879f9;
+}
+
+.prose pre {
+  border-radius: 0.75rem;
+  border: 1px solid #2a2c38;
+  background: #1a1b23;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.prose :not(pre) > code {
+  background: var(--color-ink-100);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  color: #be185d;
+}
+.dark .prose :not(pre) > code {
+  background: #23232b;
+  color: #f472b6;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.prose h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-ink-100);
+}
+.dark .prose h2 {
+  border-bottom-color: var(--color-ink-800);
+}
+.prose img {
+  border-radius: 0.75rem;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-200);
+  border-radius: 8px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-ink-800);
+}
+
+::selection {
+  background: var(--color-brand-200);
+}
+.dark ::selection {
+  background: var(--color-brand-800);
+}

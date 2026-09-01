@@ -1,0 +1,10 @@
+{
+  "name": "Node.js",
+  "nameMy": "Node.js",
+  "tagline": "JavaScript ကို server (ဆာဗာ) ဘက်မှာ run လို့ရအောင် လုပ်ပေးတဲ့ runtime",
+  "officialUrl": "https://nodejs.org",
+  "color": "#5FA04E",
+  "order": 4,
+  "category": "backend",
+  "slug": "nodejs"
+}
