@@ -4,7 +4,21 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-## React (react.dev/learn) — ~120 pages — 18 done
+## React (react.dev/learn) — ~120 pages — 32 done- [x] conditional-rendering — Conditional rendering
+- [x] rendering-lists — Lists rendering
+- [x] keeping-components-pure — Component pure ဖြစ်ခြင်း
+- [x] state-a-components-memory — State = component ရဲ့ memory
+- [x] render-and-commit — Render & commit
+- [x] queueing-a-series-of-state-updates — State update queue
+- [x] importing-and-exporting-components — Component import/export
+- [x] javascript-in-jsx-with-curly-braces — JSX ထဲ JavaScript (curly braces)
+- [x] describing-the-ui — Chapter: Describing the UI
+- [x] adding-interactivity — Chapter: Adding Interactivity
+- [x] managing-state — Chapter: Managing State
+- [x] escape-hatches — Chapter: Escape Hatches
+- [x] reusing-logic-with-custom-hooks — Custom hooks
+- [x] creating-a-react-app — React app ဖန်တီးခြင်း
+
 - [x] getting-started — React မိတ်ဆက်
 - [x] describing-ui — UI ဖော်ပြခြင်း (components, JSX)
 - [x] props — Props ပေးပို့ခြင်း
@@ -25,7 +39,13 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] separating-events-from-effects — Event နဲ့ Effect ခွဲခြားခြင်း
 - [ ] learn section ကျန် (conditional-rendering, rendering-lists, queueing-updates, custom-hooks, ...) + reference
 
-## Next.js (nextjs.org/docs) — ~300 pages — 12 done
+## Next.js (nextjs.org/docs) — ~300 pages — 18 done- [x] environment-variables — Environment variables
+- [x] redirecting — Redirecting
+- [x] streaming — Streaming
+- [x] internationalization — Internationalization
+- [x] lazy-loading — Lazy loading
+- [x] static-exports — Static exports
+
 - [x] getting-started — Next.js စတင်ခြင်း
 - [x] pages-layouts — Pages & Layouts
 - [x] dynamic-routes — Dynamic Routes
@@ -40,7 +60,19 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] deploying — Deploying
 - [ ] ... (guides ကျန် + API reference)
 
-## Node.js (nodejs.org/en/learn) — ~180 pages — 12 done
+## Node.js (nodejs.org/en/learn) — ~180 pages — 24 done- [x] nodejs-file-paths — File paths
+- [x] nodejs-file-descriptors — File descriptors
+- [x] working-with-folders — Folders နဲ့ အလုပ်လုပ်ခြင်း
+- [x] output-to-command-line — Command line output
+- [x] accept-input-from-command-line — Command line input
+- [x] discover-javascript-timers — JavaScript timers
+- [x] overview-of-blocking-vs-non-blocking — Blocking vs non-blocking
+- [x] the-nodejs-event-emitter — Event emitter
+- [x] understanding-processnexttick — process.nextTick()
+- [x] understanding-setimmediate — setImmediate()
+- [x] discover-promises-in-nodejs — Promises
+- [x] asynchronous-flow-control — Async flow control
+
 - [x] getting-started — Node.js မိတ်ဆက်
 - [x] modules — Modules အခြေခံ
 - [x] event-loop — Event Loop
@@ -73,7 +105,13 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] resources — Community resources
 - [ ] contribution-guide — Contribution guide
 
-## PostgreSQL (postgresql.org/docs) — core ~500 pages — 12 done
+## PostgreSQL (postgresql.org/docs) — core ~500 pages — 18 done- [x] advanced-features — Advanced features (chapter hub)
+- [x] foreign-keys — Foreign keys
+- [x] views — Views
+- [x] window-functions — Window functions
+- [x] inheritance — Inheritance
+- [x] conclusion — Tutorial အကျဉ်းချုပ်
+
 - [x] getting-started — PostgreSQL မိတ်ဆက်
 - [x] sql-basics — SQL အခြေခံ
 - [x] advanced-sql — Advanced SQL (JOIN, aggregate, transactions)
@@ -87,7 +125,11 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] deleting-data — Data ဖျက်ခြင်း
 - [ ] ... (tutorial ကျန် + core chapters)
 
-## Postman (learning.postman.com) — ~150 pages — 5 done
+## Postman (learning.postman.com) — ~150 pages — 9 done- [x] authorization — Authorization
+- [x] manage-collections — Collections စီမံခြင်း
+- [x] intro-to-scripts — Scripts မိတ်ဆက်
+- [x] mock-servers — Mock servers
+
 - [x] getting-started — Postman မိတ်ဆက်
 - [x] create-requests — Request ဖန်တီးခြင်း
 - [x] managing-environments — Environments & Variables
@@ -96,7 +138,13 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] testing — Automated testing
 - [ ] ... (learning center ကျန်)
 
-## Prisma (prisma.io/docs) — ~200 pages — 12 done
+## Prisma (prisma.io/docs) — ~200 pages — 18 done- [x] core-concepts — Core concepts
+- [x] data-modeling — Data modeling
+- [x] how-migrations-work — Migrations ဘယ်လိုအလုပ်လုပ်လဲ
+- [x] generating-a-migration — Migration generate လုပ်ခြင်း
+- [x] applying-a-migration — Migration apply လုပ်ခြင်း
+- [x] how-middleware-works — Middleware ဘယ်လိုအလုပ်လုပ်လဲ
+
 - [x] getting-started — Prisma စတင်ခြင်း
 - [x] schema — Schema ရေးနည်း
 - [x] relations — Relations
@@ -110,7 +158,11 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] relational-databases — Relational databases (data modeling)
 - [ ] ... (guides ကျန် — note: new pages are Prisma 8 API, existing pages are v7)
 
-## TypeScript (typescriptlang.org) — ~100 pages — 15 done
+## TypeScript (typescriptlang.org) — ~100 pages — 19 done (handbook + tutorials core)- [x] dom-manipulation — DOM Manipulation (tutorial)
+- [x] migrating-from-javascript — JavaScript ကနေ ပြောင်းခြင်း
+- [x] react — React & Webpack (tutorial)
+- [x] typescript-tooling-in-5-minutes — Tooling in 5 minutes
+
 - [x] getting-started — TypeScript မိတ်ဆက်
 - [x] everyday-types — Everyday types
 - [x] narrowing — Type narrowing
@@ -128,7 +180,10 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [x] understanding-errors — Errors နားလည်ခြင်း
 - [ ] ... (handbook ကျန် + tutorials)
 
-## useSWR (swr.vercel.app) — ~25 pages — 21 done (core + guides + API reference)
+## useSWR (swr.vercel.app) — ~25 pages — 24 done (core + guides + API reference + examples)- [x] react-native — React Native
+- [x] auth — Example: Auth
+- [x] optimistic-ui — Example: Optimistic UI
+
 - [x] getting-started, data-fetching, error-handling
 - [x] arguments, conditional-fetching, global-config
 - [x] pagination, infinite-loading, prefetching
@@ -139,7 +194,12 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] examples — Examples
 - [ ] advanced: react-native
 
-## TanStack Query (tanstack.com/query) — ~100 pages — 20 done
+## TanStack Query (tanstack.com/query) — ~100 pages — 36 done- [x] prefetching, initial-query-data, placeholder-query-data
+- [x] updates-from-mutation-responses, query-cancellation
+- [x] window-focus-refetching, background-fetching-indicators, query-options
+- [x] default-query-function, render-optimizations, request-waterfalls
+- [x] scroll-restoration, advanced-ssr, testing, typescript, devtools
+
 - [x] getting-started, queries, query-keys
 - [x] mutations, cache, infinite-queries
 - [x] dependent-queries, query-functions, parallel-queries
@@ -149,7 +209,10 @@ Status: `[x]` done / `[~]` in-progress / `[ ]` todo
 - [ ] guides ကျန် (background-fetching, query-cancellation, default-query-function, window-focus-refetching, ...)
 - [ ] ... (API reference)
 
-## Zustand (zustand.docs.pmnd.rs) — ~25 pages — 22 done (core + reference အကုန်နီးပါး)
+## Zustand (zustand.docs.pmnd.rs) — ~25 pages — 25 done 🎉 COMPLETE- [x] migrating-to-v4 — v4 migration
+- [x] migrating-to-v5 — v5 migration
+- [x] v3-create-context — v3 createContext (previous versions)
+
 - [x] getting-started, update-state, selectors, typescript
 - [x] middleware, persist, immer, testing, recipes
 - [x] reference/apis: create-store, create, shallow, create-with-equality-fn
