@@ -4,14 +4,15 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 331 pages translated** (wave 8, 2026-09-02: +42 pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331
+**Total: 393 pages translated** (wave 9, 2026-09-02: +62 pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393
 
-## React (react.dev/learn + core reference) — est ~120 — 49 done
+## React (react.dev/learn + core reference) — est ~120 — 73 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
 - [x] API reference (condensed): useState, use, useEffect, useEffectEvent, useImperativeHandle, useRef, built-in-components
 - [x] API reference batch 2 (wave 8): useReducer, useMemo, useCallback, useContext, useLayoutEffect, forwardRef, createContext, Suspense, lazy, startTransition (orders 50–59)
-- [ ] API reference ကျန် (useTransition, useDeferredValue, useId, useDebugValue, useSyncExternalStore, useInsertionEffect, useOptimistic, useActionState, useFormStatus, createElement, createPortal, flushSync, Component/PureComponent/memo, Fragment, StrictMode, ...)
+- [x] API reference wave 9 (orders 60–73): useId, useTransition, useDeferredValue, useDebugValue, useSyncExternalStore, useInsertionEffect, useOptimistic, useActionState, useFormStatus, createElement, createPortal, flushSync, Component, memo (StrictMode/Fragment already covered in strict-mode.md + built-in-components.md)
+- [ ] API reference ကျန် (optional): cloneElement/isValidElement/Children, createRoot/hydrateRoot, react-dom component pages (form/input/select/...), Component lifecycle deep-dive variants
 - [ ] Learn extras (installation page variants, react-compiler, using-typescript) — optional
 
 ## Next.js (nextjs.org/docs app) — est ~300 — 32 done
@@ -21,14 +22,16 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] File conventions reference (wave 8, orders 26–33): page, layout, loading, error, not-found (merged into existing not-found.md — same source; duplicate file removed), default, template, forbidden
 - [ ] Guides ကျန် + functions reference (route.js, link component, cacheLife/cacheTag/use cache directives, useRouter, cookies, headers, redirect/notFound functions, instrumentation, metadata files, route-segment-config, generateMetadata/generateStaticParams...) — existing prose links point to official nextjs.org API pages pending translation
 
-## Node.js (nodejs.org/en/learn) — est ~180 — 44 done
+## Node.js (nodejs.org/en/learn) — est ~180 — 71 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
 - [x] Asynchronous work: event loop, timers, promises, async-programming, async flow control, blocking vs non-blocking, event emitter, process.nextTick, setImmediate, dont-block-the-event-loop
 - [x] Files: file paths, descriptors, file stats, file-system, reading-files, writing-files, working-with-folders, output/input command line
 - [x] Modules/TS: modules, how-to-use-streams, backpressuring-in-streams, TypeScript native/transpile/runner/publishing (orders 35–38)
 - [x] HTTP: anatomy-of-an-http-transaction
 - [x] Wave 8 (orders 39–44): ecmascript-2015-es6-and-beyond, debugging, profiling, websocket, enterprise-network-configuration, working-with-different-filesystems
-- [ ] ကျန် (learn): concurrency models, TypeScript intro hub, modules (publishing-a-package, node-api modules, abi-stability), diagnostics (memory profiler, inspector, perf, flame graphs), test runner guides, Node-API, userland migrations — optional deep areas
+- [x] Wave 9 (orders 45–71): nodejs-with-webassembly, comparing-nodejs-concurrency-models, diagnostics section complete (live-debugging, using-inspector, flame-graphs, poor-performance, using-linux-perf, memory, understanding-and-tuning-memory, using-gc-traces, using-heap-profiler, using-heap-snapshot, user-journey), modules (publishing-a-package, abi-stability, publishing-node-api-modules), test-runner complete (introduction, using-test-runner, mocking, collecting-code-coverage), typescript/introduction, userland-migrations complete (hub + axios-to-whatwg-fetch, chalk-to-util-styletext, correct-ts-specifiers, kleur-to-util-styletext, mocha-to-node-test-runner)
+  - Note: nodejs.org/learn/modules/publishing-a-package now hosts 'Publishing ECMAScript modules' (module formats/dual-package) content — translated as-is
+- [ ] ကျန် (learn): node-api section (getting-started, build-tools, special-topics — C++ addon deep dives) — optional deep area
 
 ## Express (expressjs.com) — est ~30 — 21 done (API ref excluded)
 - [x] Starter: getting-started, installing, hello-world, generator, faq, examples
@@ -40,18 +43,20 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
-## Postman (learning.postman.com) — est ~150 — 18 done
+## Postman (learning.postman.com) — est ~150 — 32 done
 - [x] getting-started, create-requests, managing-environments, variables, create-collections, manage-collections, authorization, intro-to-scripts, mock-servers, testing, building-workflows, creating-workspaces
 - [x] Wave 8 (orders 13–18): quick-start, request-basics, parameters, headers, pre-request-scripts, intro-monitors
-- [ ] Learning Center ကျန် — responses/examples, define-variables (scope detail), collaborate-with-collections, intro-to-collection-runs, working-with-data-files, setting-up-monitor, sharing, using-workspaces — အများကြီး ကျန်သေး
+- [x] Wave 9 (orders 19–32): responses, examples, define-variables, test-data, intro-to-collections, intro-to-collection-runs, setting-up-monitor, sharing, using-workspaces, requests (overview), test-examples, troubleshoot-tests, create-dynamic-responses, comments
+- [ ] Learning Center ကျန် — request/response deep dives, authorization methods detail, testing libraries, collection runs (data files, reports), monitoring detail, API docs generation, workspaces admin, version control, private API network — အများကြီး ကျန်သေး
   - Note: learning.postman.com rebuilt on Fern platform — URLs changed (sending-requests/* → use/send-requests/*). Clean markdown available: append `.md` to any page URL (e.g. https://learning.postman.com/docs/<path>.md); full index at /llms.txt. sources.json note is outdated.
 
-## Prisma (prisma.io/docs) — est ~200 — 29 done
+## Prisma (prisma.io/docs) — est ~200 — 36 done
 - [x] getting-started, core-concepts, schema, data-modeling, relational-databases, relations, queries, reading-data, writing-data, relations-and-joins, advanced-queries, transactions, prisma-client
 - [x] Migrations: migrations, how-migrations-work, generating-a-migration, applying-a-migration, deploy (migrate deploy)
 - [x] More: how-middleware-works, logging, debugging, client-extensions
 - [x] Prisma 8 (v8) wave 8 (orders 23–29): the-data-contract, psl-syntax, the-migration-graph, editing-a-migration, rollbacks-and-recovery, authoring-custom-middleware, built-in-cache
-- [ ] ကျန် — Prisma 8: contract-artifact/capabilities/typescript-schema-builder, built-in-budgets/lints, extensions/using-extensions, data-modeling/mongodb + full reference (orm-client, error-reference — giant, skip); v7 classic pages live under /docs/orm/v7/**
+- [x] Prisma 8 wave 9 (orders 30–36): the-contract-artifact, capabilities, typescript-schema-builder, built-in-budgets, built-in-lints, using-extensions, data-modeling/mongodb
+- [ ] ကျန် — Prisma 8 reference (orm-client, pipeline-builder, raw-queries, sql-query-builder, transactions-and-runtime, error-reference — giant pages; low priority); v6/v7 classic pages archived under /docs/orm/v6/** and /docs/orm/v7/**
   - Note: prisma.io/docs now defaults to Prisma 8; v7 'classic' archived at /docs/orm/v7/**. Clean markdown: append `.md` (https://www.prisma.io/docs/<path>.md); indexes at /docs/llms.txt.
 
 ## TypeScript (typescriptlang.org handbook) — est ~100 — 25 done
