@@ -199,7 +199,7 @@ li {
 
 ဒါကို ရှောင်နိုင်တဲ့ နည်းတစ်ခုက — သူတို့ရဲ့ parent element ဆီ ref တစ်ခုတည်း ရယူပြီး — [`querySelectorAll`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) လိုမျိုး DOM manipulation methods တွေကို သုံးပြီး — child node တစ်ခုချင်းစီကို သူ့ကနေ "ရှာဖွေ" ခြင်းပါ။ ဒါပေမယ့် — ဒါက ပျက်စီးလွယ်ပြီး — သင့် DOM structure ပြောင်းလဲရင် ပျက်သွားနိုင်ပါတယ်။
 
-နောက်ထပ် ဖြေရှင်းနည်းတစ်ခုက **`ref` attribute ဆီ function တစ်ခုကို ပေးလိုက်ခြင်းပါ။** ဒါကို [`ref` callback](/docs/react/useRef) လို့ ခေါ်ပါတယ်။ React က ref ကို set လုပ်ဖို့ အချိန်ကျရင် သင့် ref callback ကို DOM node နဲ့အတူ ခေါ်ပြီး — clear လုပ်ဖို့ အချိန်ကျရင် callback ကနေ ပြန်လာတဲ့ cleanup function ကို ခေါ်ပါတယ်။ ဒါက သင့်ကိုယ်ပိုင် array တစ်ခု ဒါမှမဟုတ် [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) တစ်ခုကို ထိန်းသိမ်းနိုင်စေပြီး — ref တစ်ခုခုကို သူ့ရဲ့ index ဒါမှမဟုတ် ID တစ်မျိုးမျိုးနဲ့ ဝင်ရောက်နိုင်စေပါတယ်။
+နောက်ထပ် ဖြေရှင်းနည်းတစ်ခုက **`ref` attribute ဆီ function တစ်ခုကို ပေးလိုက်ခြင်းပါ။** ဒါကို [`ref` callback](/docs/react/use-ref) လို့ ခေါ်ပါတယ်။ React က ref ကို set လုပ်ဖို့ အချိန်ကျရင် သင့် ref callback ကို DOM node နဲ့အတူ ခေါ်ပြီး — clear လုပ်ဖို့ အချိန်ကျရင် callback ကနေ ပြန်လာတဲ့ cleanup function ကို ခေါ်ပါတယ်။ ဒါက သင့်ကိုယ်ပိုင် array တစ်ခု ဒါမှမဟုတ် [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) တစ်ခုကို ထိန်းသိမ်းနိုင်စေပြီး — ref တစ်ခုခုကို သူ့ရဲ့ index ဒါမှမဟုတ် ID တစ်မျိုးမျိုးနဲ့ ဝင်ရောက်နိုင်စေပါတယ်။
 
 ဒီဥပမာက — ရှည်လျားတဲ့ list တစ်ခုထဲက node တစ်ခုခုဆီ scroll လုပ်ဖို့ ဒီနည်းလမ်းကို ဘယ်လို သုံးနိုင်လဲ ပြပါတယ်:
 
@@ -304,7 +304,7 @@ li {
 }
 ```
 
-ဒီဥပမာမှာ — `itemsRef` က DOM node တစ်ခုတည်းကို မကိုင်ထားပါဘူး။ အဲဒီအစား — item ID ကနေ DOM node ဆီ ညွှန်တဲ့ [Map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map) တစ်ခုကို ကိုင်ထားပါတယ်။ ([Refs တွေက ဘာတန်ဖိုးမဆို ကိုင်ထားနိုင်ပါတယ်!](/docs/react/referencing-values-with-refs)) List item တိုင်းပေါ်က [`ref` callback](/docs/react/useRef) က Map ကို update လုပ်ဖို့ ဂရုစိုက်ပါတယ်:
+ဒီဥပမာမှာ — `itemsRef` က DOM node တစ်ခုတည်းကို မကိုင်ထားပါဘူး။ အဲဒီအစား — item ID ကနေ DOM node ဆီ ညွှန်တဲ့ [Map](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map) တစ်ခုကို ကိုင်ထားပါတယ်။ ([Refs တွေက ဘာတန်ဖိုးမဆို ကိုင်ထားနိုင်ပါတယ်!](/docs/react/referencing-values-with-refs)) List item တိုင်းပေါ်က [`ref` callback](/docs/react/use-ref) က Map ကို update လုပ်ဖို့ ဂရုစိုက်ပါတယ်:
 
 ```js
 <li
@@ -332,7 +332,7 @@ li {
 
 > **သတိပြုရန်:** Refs တွေက escape hatch တစ်ခုပါ။ တစ်ခြား component တစ်ခုရဲ့ DOM nodes တွေကို ကိုယ်တိုင် ပြုလုပ်တာက သင့် code ကို ပျက်စီးလွယ် (fragile) ဖြစ်စေနိုင်ပါတယ်။
 
-Refs တွေကို [တခြား prop တွေလိုပဲ](/docs/react/passing-props-to-a-component) parent component ကနေ child component တွေဆီ ပို့ပေးနိုင်ပါတယ်။
+Refs တွေကို [တခြား prop တွေလိုပဲ](/docs/react/props) parent component ကနေ child component တွေဆီ ပို့ပေးနိုင်ပါတယ်။
 
 ```js
 import { useRef } from 'react';

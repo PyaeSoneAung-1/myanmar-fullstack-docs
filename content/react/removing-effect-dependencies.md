@@ -557,7 +557,7 @@ function ChatRoom({ roomId }) {
 
 Message တစ်ခု လက်ခံရရှိတိုင်း — `setMessages()` က component ကို — message အသစ်ပါဝင်တဲ့ `messages` array အသစ်တစ်ခုနဲ့ re-render ဖြစ်စေပါတယ်။ ဒါပေမယ့် — ဒီ Effect က အခု `messages` ကို မှီခိုနေတာမို့ — Effect ကိုလည်း *ပြန်* re-synchronize လုပ်ပါလိမ့်မယ်။ ဒါကြောင့် — message အသစ်တိုင်းက chat ကို ပြန်ချိတ်ဆက်စေပါလိမ့်မယ်။ အသုံးပြုသူက အဲဒါကို မကြိုက်ပါဘူး!
 
-ပြဿနာကို ဖြေရှင်းဖို့ — Effect ရဲ့ အတွင်းမှာ `messages` ကို မဖတ်ပါနဲ့။ အဲဒီအစား — `setMessages` ဆီ [updater function](/docs/react/useState) တစ်ခုကို ပေးပါ:
+ပြဿနာကို ဖြေရှင်းဖို့ — Effect ရဲ့ အတွင်းမှာ `messages` ကို မဖတ်ပါနဲ့။ အဲဒီအစား — `setMessages` ဆီ [updater function](/docs/react/use-state) တစ်ခုကို ပေးပါ:
 
 ```js
 function ChatRoom({ roomId }) {
@@ -1153,7 +1153,7 @@ export default function Timer() {
 
 Effect ရဲ့ အတွင်းကနေ `count` state ကို `count + 1` ဖြစ်အောင် update လုပ်ချင်ပါတယ်။ ဒါပေမယ့် — ဒါက သင့် Effect ကို `count` ပေါ်မှာ မှီခိုစေပြီး — tick တိုင်း ပြောင်းလဲတာမို့ — ဒါကြောင့် — tick တိုင်းမှာ သင့် interval က ပြန်ဖန်တီးခံရတာပါ။
 
-ဒါကို ဖြေရှင်းဖို့ — [updater function](/docs/react/useState) ကို သုံးပြီး — `setCount(count + 1)` အစား `setCount(c => c + 1)` လို့ ရေးပါ:
+ဒါကို ဖြေရှင်းဖို့ — [updater function](/docs/react/use-state) ကို သုံးပြီး — `setCount(count + 1)` အစား `setCount(c => c + 1)` လို့ ရေးပါ:
 
 ```js
 import { useState, useEffect } from 'react';

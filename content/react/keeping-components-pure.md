@@ -107,7 +107,7 @@ export default function TeaSet() {
 
 ကျွန်တော်တို့ရဲ့ formula `y = 2x` ဆီ ပြန်သွားရင် — အခု `x = 2` ဖြစ်ရင်တောင် — `y = 4` လို့ ယုံကြည်လို့ မရတော့ပါဘူး။ ကျွန်တော်တို့ရဲ့ tests တွေ ကျရှုံးနိုင်တယ်၊ user တွေ ရှုပ်ထွေးသွားနိုင်တယ်၊ လေယာဉ်တွေ ကောင်းကင်ကနေ ပြုတ်ကျနိုင်တယ် — ဒါက ဘယ်လို ရှုပ်ထွေးတဲ့ bug တွေ ဖြစ်စေနိုင်လဲ သင်မြင်ရပါတယ်!
 
-ဒီ component ကို [`guest` ကို prop အဖြစ် ပို့ခြင်း](/docs/react/passing-props-to-a-component) ဖြင့် ပြုပြင်နိုင်ပါတယ်:
+ဒီ component ကို [`guest` ကို prop အဖြစ် ပို့ခြင်း](/docs/react/props) ဖြင့် ပြုပြင်နိုင်ပါတယ်:
 
 ```jsx
 function Cup({ guest }) {
@@ -130,7 +130,7 @@ export default function TeaSet() {
 
 #### StrictMode နဲ့ Impure တွက်ချက်မှုတွေကို ရှာဖွေခြင်း
 
-သင် အကုန်လုံး မသုံးရသေးပေမယ့် — React မှာ rendering လုပ်နေတုန်း ဖတ်လို့ရတဲ့ input သုံးမျိုး ရှိပါတယ်: [props](/docs/react/passing-props-to-a-component)၊ [state](/docs/react/state-a-components-memory) နဲ့ [context](/docs/react/passing-data-deeply-with-context) တို့ပါ။ ဒီ inputs တွေကို အမြဲတမ်း read-only အဖြစ် သဘောထားရပါမယ်။
+သင် အကုန်လုံး မသုံးရသေးပေမယ့် — React မှာ rendering လုပ်နေတုန်း ဖတ်လို့ရတဲ့ input သုံးမျိုး ရှိပါတယ်: [props](/docs/react/props)၊ [state](/docs/react/state-a-components-memory) နဲ့ [context](/docs/react/passing-data-deeply-with-context) တို့ပါ။ ဒီ inputs တွေကို အမြဲတမ်း read-only အဖြစ် သဘောထားရပါမယ်။
 
 User input ကို တုံ့ပြန်တဲ့အနေနဲ့ တစ်ခုခုကို *ပြောင်းလဲ* ချင်တဲ့အခါ — variable တစ်ခုကို ရေးမယ့်အစား — [state ကို set လုပ်](/docs/react/state-a-components-memory) သင့်ပါတယ်။ သင့် component render လုပ်နေတုန်း — ရှိပြီးသား variables တွေ ဒါမှမဟုတ် objects တွေကို ဘယ်တော့မှ မပြောင်းသင့်ပါဘူး။
 
@@ -167,7 +167,7 @@ export default function TeaGathering() {
 
 Functional programming က purity ပေါ်မှာ အများကြီး မှီခိုပေမယ့် — တစ်ချိန်ချိန်မှာ၊ တစ်နေရာရာမှာ — _တစ်ခုခု_ ကတော့ ပြောင်းလဲရပါတယ်။ အဲဒါက programming ရဲ့ ရည်ရွယ်ချက်လိုပါပဲ! ဒီပြောင်းလဲမှုတွေ — screen ကို update လုပ်တာ၊ animation စတင်တာ၊ data ကို ပြောင်းတာ — ကို **side effects** လို့ ခေါ်ပါတယ်။ သူတို့က rendering အတွင်း မဟုတ်ဘဲ — _"ဘေးချင်း"_ ဖြစ်ပျက်တဲ့ အရာတွေပါ။
 
-React မှာ — **side effects တွေက များသောအားဖြင့် [event handlers](/docs/react/responding-to-events) အတွင်းမှာ ဖြစ်လေ့ ရှိပါတယ်။** Event handlers တွေက — သင်တစ်ခုခု လုပ်ဆောင်တဲ့အခါ (ဥပမာ — button တစ်ခု နှိပ်လိုက်တဲ့အခါ) React က run လုပ်ပေးတဲ့ functions တွေပါ။ Event handlers တွေက သင့် component ရဲ့ *အတွင်းမှာ* သတ်မှတ်ထားပေမယ့် — သူတို့က rendering အတွင်း *မှာ* run လုပ်တာ မဟုတ်ပါဘူး! **ဒါကြောင့် — event handlers တွေက pure ဖြစ်စရာ မလိုပါဘူး။**
+React မှာ — **side effects တွေက များသောအားဖြင့် [event handlers](/docs/react/events) အတွင်းမှာ ဖြစ်လေ့ ရှိပါတယ်။** Event handlers တွေက — သင်တစ်ခုခု လုပ်ဆောင်တဲ့အခါ (ဥပမာ — button တစ်ခု နှိပ်လိုက်တဲ့အခါ) React က run လုပ်ပေးတဲ့ functions တွေပါ။ Event handlers တွေက သင့် component ရဲ့ *အတွင်းမှာ* သတ်မှတ်ထားပေမယ့် — သူတို့က rendering အတွင်း *မှာ* run လုပ်တာ မဟုတ်ပါဘူး! **ဒါကြောင့် — event handlers တွေက pure ဖြစ်စရာ မလိုပါဘူး။**
 
 တခြား နည်းလမ်းတွေ အကုန်ကုန်ပြီး — သင့် side effect အတွက် မှန်ကန်တဲ့ event handler တစ်ခုကို မတွေ့နိုင်ဘူးဆိုရင် — သင့် component ထဲမှာ [`useEffect`](https://react.dev/reference/react/useEffect) ခေါ်တာနဲ့ — ပြန်ပေးတဲ့ JSX ဆီ ချိတ်ဆက်နိုင်ပါသေးတယ်။ ဒါက side effects တွေ ခွင့်ပြုထားတဲ့ — rendering ပြီးတဲ့နောက်မှာ — နောက်မှ execute လုပ်ဖို့ React ကို ပြောပါတယ်။ **ဒါပေမယ့် — ဒီနည်းလမ်းက နောက်ဆုံး နည်းလမ်းဖြစ်သင့်ပါတယ်။**
 

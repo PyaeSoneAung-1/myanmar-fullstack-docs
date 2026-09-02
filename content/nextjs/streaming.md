@@ -31,11 +31,11 @@ Browser က page တစ်ခုကို request လုပ်တဲ့အခါ
 
 ### HTML stream
 
-React ရဲ့ server renderer က progressive HTML chunks တွေကို ထုတ်လုပ်ပါတယ်။ သင့် page ရဲ့ static အစိတ်အပိုင်းတွေ (layouts, navigation, Suspense fallbacks) က အရင်ဆုံး render လုပ်ပြီး ချက်ချင်း ပို့ပေးပါတယ်။ `<Suspense>` boundary တစ်ခုရဲ့ content အသင့်ဖြစ်တဲ့အခါ — ဥပမာ async [Server Component](/docs/nextjs/glossary#server-component) တစ်ခု ဖြေရှင်းပြီးတဲ့အခါ — React က ပြီးစီးသွားတဲ့ HTML ကို inline `<script>` tags တွေနဲ့အတူ stream လုပ်ပါတယ်: တစ်ခုက fallback DOM node ကို content အသစ်နဲ့ လဲလှယ်ပေးပြီး — နောက်တစ်ခုက React က နောက်ပိုင်းမှာ hydrate လုပ်နိုင်အောင် [component payload](#the-component-payload) ကို သယ်ဆောင်ပေးပါတယ်။ Browser က page ရဲ့ JavaScript bundle တင်လာတာ (သို့) hydration ပြီးတာကို မစောင့်ဘဲ — swap ကို ချက်ချင်း လုပ်ဆောင်ပါတယ်။ ဒါက user ကို _မြင်ရတဲ့_ အရာပါ: page က section တစ်ခုချင်းစီ အလိုက် တဖြည်းဖြည်း ပေါ်လာပါတယ်။
+React ရဲ့ server renderer က progressive HTML chunks တွေကို ထုတ်လုပ်ပါတယ်။ သင့် page ရဲ့ static အစိတ်အပိုင်းတွေ (layouts, navigation, Suspense fallbacks) က အရင်ဆုံး render လုပ်ပြီး ချက်ချင်း ပို့ပေးပါတယ်။ `<Suspense>` boundary တစ်ခုရဲ့ content အသင့်ဖြစ်တဲ့အခါ — ဥပမာ async [Server Component](https://nextjs.org/docs/app/glossary#server-component) တစ်ခု ဖြေရှင်းပြီးတဲ့အခါ — React က ပြီးစီးသွားတဲ့ HTML ကို inline `<script>` tags တွေနဲ့အတူ stream လုပ်ပါတယ်: တစ်ခုက fallback DOM node ကို content အသစ်နဲ့ လဲလှယ်ပေးပြီး — နောက်တစ်ခုက React က နောက်ပိုင်းမှာ hydrate လုပ်နိုင်အောင် [component payload](#the-component-payload) ကို သယ်ဆောင်ပေးပါတယ်။ Browser က page ရဲ့ JavaScript bundle တင်လာတာ (သို့) hydration ပြီးတာကို မစောင့်ဘဲ — swap ကို ချက်ချင်း လုပ်ဆောင်ပါတယ်။ ဒါက user ကို _မြင်ရတဲ့_ အရာပါ: page က section တစ်ခုချင်းစီ အလိုက် တဖြည်းဖြည်း ပေါ်လာပါတယ်။
 
 ### Component payload
 
-Component payload ဆိုတာ React က page ကို [hydrate](/docs/nextjs/glossary#hydration) လုပ်ပြီး client-side updates တွေကို ကိုင်တွယ်ဖို့ သုံးတဲ့ component tree ရဲ့ serialized လုပ်ထားတဲ့ ပုံစံတစ်ခုပါ။ ကနဦး load မှာ — ဒါက HTML stream ထဲမှာ ပါဝင်လာပါတယ် (အပေါ်မှာ ဖော်ပြခဲ့သလိုပါ)။ **Client-side navigation** မှာတော့ — component payload တစ်ခုတည်းကိုပဲ ယူပြီး (`rsc: 1` request header နဲ့) HTML ကို လုံးဝ မလွှဲပြောင်းပါဘူး။ React က ဒါကို သုံးပြီး component tree ကို နေရာတွင်းမှာ update လုပ်ပါတယ်။
+Component payload ဆိုတာ React က page ကို [hydrate](https://nextjs.org/docs/app/glossary#hydration) လုပ်ပြီး client-side updates တွေကို ကိုင်တွယ်ဖို့ သုံးတဲ့ component tree ရဲ့ serialized လုပ်ထားတဲ့ ပုံစံတစ်ခုပါ။ ကနဦး load မှာ — ဒါက HTML stream ထဲမှာ ပါဝင်လာပါတယ် (အပေါ်မှာ ဖော်ပြခဲ့သလိုပါ)။ **Client-side navigation** မှာတော့ — component payload တစ်ခုတည်းကိုပဲ ယူပြီး (`rsc: 1` request header နဲ့) HTML ကို လုံးဝ မလွှဲပြောင်းပါဘူး။ React က ဒါကို သုံးပြီး component tree ကို နေရာတွင်းမှာ update လုပ်ပါတယ်။
 
 ### Static shell
 
@@ -68,7 +68,7 @@ export default function Loading() {
 
 Page ရဲ့ data တွေ ဖြေရှင်းမပြီးခင်အထိ ပြသစရာ အဓိပ္ပာယ်ရှိတဲ့အရာ မရှိတဲ့အခါ `loading.js` က အသုံးဝင်ပါတယ်။ Page က ဘာမှ render မလုပ်ခင် data ကို await လုပ်ရမယ်ဆိုရင် — page တစ်ခုလုံးအတွက် skeleton တစ်ခုက ကျိုးကြောင်းဆီလျော်တဲ့ fallback တစ်ခုပါ။
 
-အသေးစိတ်အတွက် [`loading.js` API reference](/docs/nextjs/loading) ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [`loading.js` API reference](https://nextjs.org/docs/app/api-reference/file-conventions/loading) ကို ကြည့်ပါ။
 
 ## `<Suspense>` နဲ့ Granular streaming
 
@@ -228,17 +228,17 @@ Promise ကို `.then()` နဲ့ inline မှာလည်း ဖြေရ�
 | **Navigation** | Instant fallback အဖြစ် prefetch လုပ်ပါတယ်           | Default အနေနဲ့ prefetch မလုပ်ပါဘူး        |
 | **အကောင်းဆုံး အသုံး**   | Data မရှိရင် ဘာမှ render မလုပ်တဲ့ pages တွေ | Granular control လိုချင်တဲ့ pages အများစု |
 
-Dynamic access နဲ့ နီးကပ်တဲ့ နေရာမှာ ရှင်းရှင်းလင်းလင်း `<Suspense>` boundaries တွေကို သုံးပါ။ Prerenderer က dynamic အလုပ်တစ်ခုကို တွေ့တဲ့အခါ — အနီးဆုံး Suspense boundary ကို ရှာပြီး tree ပေါ် တက်လာပါတယ်။ ဘာမှ မတွေ့ရင် — build က [blocking route error](/docs/nextjs/blocking-prerender-dynamic) နဲ့ ကျရှုံးပါတယ်။ Tree ရဲ့ မြင့်တဲ့နေရာမှာ `loading.js` တစ်ခု ရှိနေရင် ဒါက boundary အဖြစ် အသုံးဝင်လို့ framework က ဒါကို တွေ့ပြီး ရပ်ပါတယ် — ဒါပေမယ့် အခုဆို page တစ်ခုလုံးက granular အနေနဲ့ stream လုပ်မယ့်အစား page တစ်ခုလုံးအတွက် skeleton တစ်ခုဆီ fallback ဖြစ်သွားပါတယ်။
+Dynamic access နဲ့ နီးကပ်တဲ့ နေရာမှာ ရှင်းရှင်းလင်းလင်း `<Suspense>` boundaries တွေကို သုံးပါ။ Prerenderer က dynamic အလုပ်တစ်ခုကို တွေ့တဲ့အခါ — အနီးဆုံး Suspense boundary ကို ရှာပြီး tree ပေါ် တက်လာပါတယ်။ ဘာမှ မတွေ့ရင် — build က [blocking route error](https://nextjs.org/docs/app/building-your-application/rendering/partial-prerendering) နဲ့ ကျရှုံးပါတယ်။ Tree ရဲ့ မြင့်တဲ့နေရာမှာ `loading.js` တစ်ခု ရှိနေရင် ဒါက boundary အဖြစ် အသုံးဝင်လို့ framework က ဒါကို တွေ့ပြီး ရပ်ပါတယ် — ဒါပေမယ့် အခုဆို page တစ်ခုလုံးက granular အနေနဲ့ stream လုပ်မယ့်အစား page တစ်ခုလုံးအတွက် skeleton တစ်ခုဆီ fallback ဖြစ်သွားပါတယ်။
 
 ### Stream အလယ်မှာ error ကိုင်တွယ်ခြင်း
 
-Streaming စတင်ပြီးနောက် component တစ်ခုက error တစ်ခု throw လုပ်ရင် — အနီးဆုံး [`error.js`](/docs/nextjs/error) boundary က ဒါကို ဖမ်းပြီး — ကျရှုံးသွားတဲ့ component နေရာမှာ error UI ကို render လုပ်ပါတယ်။ Page ရဲ့ ကျန်တဲ့ အစိတ်အပိုင်းတွေက မပျက်မစီး ရှိနေပြီး — error ဖြစ်တဲ့ section တစ်ခုတည်းကိုပဲ အစားထိုးပါတယ်။
+Streaming စတင်ပြီးနောက် component တစ်ခုက error တစ်ခု throw လုပ်ရင် — အနီးဆုံး [`error.js`](https://nextjs.org/docs/app/api-reference/file-conventions/error) boundary က ဒါကို ဖမ်းပြီး — ကျရှုံးသွားတဲ့ component နေရာမှာ error UI ကို render လုပ်ပါတယ်။ Page ရဲ့ ကျန်တဲ့ အစိတ်အပိုင်းတွေက မပျက်မစီး ရှိနေပြီး — error ဖြစ်တဲ့ section တစ်ခုတည်းကိုပဲ အစားထိုးပါတယ်။
 
 HTTP status code (`200 OK`) က ပထမဆုံး chunk နဲ့အတူ ပို့ပြီးသွားလို့ — ဒါကို `4xx` (သို့) `5xx` အဖြစ် ပြောင်းလို့ မရတော့ပါဘူး။ Error ကို stream လုပ်ထားတဲ့ HTML ထဲမှာပဲ အပြည့်အဝ ကိုင်တွယ်ပါတယ်။ ဒီ constraint အကြောင်း အသေးစိတ်အတွက် [HTTP contract](#the-http-contract) ကို ကြည့်ပါ။
 
 ## Client ဆီကို data streaming လုပ်ခြင်း
 
-[Server Component](/docs/nextjs/glossary#server-component) တစ်ခုထဲမှာ fetch တစ်ခု စတင်ပြီး — မဖြေရှင်းရသေးတဲ့ promise ကို prop အနေနဲ့ [Client Component](/docs/nextjs/glossary#client-component) တစ်ခုဆီ ပို့နိုင်ပါတယ်။ Promise ကို အလွှာဘယ်လောက်ပဲ ရှိ ဖြတ်သွားလို့ ရပါတယ်။ Value ကို ဖတ်ဖို့ React ရဲ့ [`use`](https://react.dev/reference/react/use) API ကို ခေါ်တဲ့ component တစ်ခုတည်းကိုပဲ သူ့ပတ်လည်မှာ `<Suspense>` boundary တစ်ခု လိုပါတယ်:
+[Server Component](https://nextjs.org/docs/app/glossary#server-component) တစ်ခုထဲမှာ fetch တစ်ခု စတင်ပြီး — မဖြေရှင်းရသေးတဲ့ promise ကို prop အနေနဲ့ [Client Component](https://nextjs.org/docs/app/glossary#client-component) တစ်ခုဆီ ပို့နိုင်ပါတယ်။ Promise ကို အလွှာဘယ်လောက်ပဲ ရှိ ဖြတ်သွားလို့ ရပါတယ်။ Value ကို ဖတ်ဖို့ React ရဲ့ [`use`](https://react.dev/reference/react/use) API ကို ခေါ်တဲ့ component တစ်ခုတည်းကိုပဲ သူ့ပတ်လည်မှာ `<Suspense>` boundary တစ်ခု လိုပါတယ်:
 
 ```tsx
 import { Suspense } from 'react'
@@ -295,7 +295,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 }
 ```
 
-ပုံစံအပြည့်အစုံအတွက် [React ရဲ့ `use` ကို Context Provider ထဲမှာ သုံးခြင်း](/docs/nextjs/single-page-applications#using-reacts-use-within-a-context-provider) ကို ကြည့်ပါ။
+ပုံစံအပြည့်အစုံအတွက် [React ရဲ့ `use` ကို Context Provider ထဲမှာ သုံးခြင်း](https://nextjs.org/docs/app/guides/single-page-applications#using-reacts-use-within-a-context-provider) ကို ကြည့်ပါ။
 
 ## Route Handlers တွေမှာ Streaming
 
@@ -394,7 +394,7 @@ Streaming စတင်တာနဲ့ — HTTP response headers တွေ (statu
 
 ### Status codes များ
 
-`<Suspense>` fallback တစ်ခု render လုပ်တဲ့အခါ (သို့) component တစ်ခု suspend လုပ်တဲ့အခါ — server က HTML stream စတင်ပို့ဖို့ `200 OK` ကို ကတိပြုရပါတယ်။ [`notFound()`](/docs/nextjs/not-found) တစ်ခုက stream အလယ်မှာ fire လုပ်ရင် — Next.js က နောက်ကြောင်းပြန်ပြီး status ကို 404 အဖြစ် ပြောင်းလို့ မရပါဘူး။ အဲဒီအစား — search engines တွေက page ကို index မလုပ်အောင် stream လုပ်ထားတဲ့ HTML ထဲ `<meta name="robots" content="noindex">` ကို ထည့်ပေးပါတယ်။ အလားတူပဲ — stream အလယ်မှာ [`redirect()`](/docs/nextjs/redirect) တစ်ခုက HTTP redirect header မဟုတ်ဘဲ client-side redirect ဖြစ်သွားပါတယ်။
+`<Suspense>` fallback တစ်ခု render လုပ်တဲ့အခါ (သို့) component တစ်ခု suspend လုပ်တဲ့အခါ — server က HTML stream စတင်ပို့ဖို့ `200 OK` ကို ကတိပြုရပါတယ်။ [`notFound()`](/docs/nextjs/not-found) တစ်ခုက stream အလယ်မှာ fire လုပ်ရင် — Next.js က နောက်ကြောင်းပြန်ပြီး status ကို 404 အဖြစ် ပြောင်းလို့ မရပါဘူး။ အဲဒီအစား — search engines တွေက page ကို index မလုပ်အောင် stream လုပ်ထားတဲ့ HTML ထဲ `<meta name="robots" content="noindex">` ကို ထည့်ပေးပါတယ်။ အလားတူပဲ — stream အလယ်မှာ [`redirect()`](https://nextjs.org/docs/app/api-reference/functions/redirect) တစ်ခုက HTTP redirect header မဟုတ်ဘဲ client-side redirect ဖြစ်သွားပါတယ်။
 
 ### Streaming က ဘယ်အချိန်မှာ စတင်လဲ
 
@@ -427,13 +427,13 @@ export default async function PostPage({
 }
 ```
 
-> **သိထားသင့်သည်** — Requests တွေကို စောစော reject လုပ်ဖို့ [`proxy`](/docs/nextjs/proxy) (redirects, rewrites (သို့) response တစ်ခု ပြန်ပို့ဖို့) (သို့) [`next.config.js` redirects](/docs/nextjs/redirects) တွေကိုလည်း သုံးနိုင်ပါတယ်။ နှစ်ခုလုံးက page render မလုပ်ခင် run လုပ်လို့ — HTTP status codes တွေ ရနေဆဲပါ။
+> **သိထားသင့်သည်** — Requests တွေကို စောစော reject လုပ်ဖို့ [`proxy`](https://nextjs.org/docs/app/api-reference/file-conventions/proxy) (redirects, rewrites (သို့) response တစ်ခု ပြန်ပို့ဖို့) (သို့) [`next.config.js` redirects](https://nextjs.org/docs/app/api-reference/next-config-js/redirects) တွေကိုလည်း သုံးနိုင်ပါတယ်။ နှစ်ခုလုံးက page render မလုပ်ခင် run လုပ်လို့ — HTTP status codes တွေ ရနေဆဲပါ။
 
 ### Bots နဲ့ crawlers တွေ
 
-HTML-only bots နဲ့ crawlers တွေက ကနဦး HTML ရဲ့ `<head>` ထဲမှာ metadata ရှိဖို့ လိုပါတယ်။ Next.js က သူတို့ရဲ့ user agent နဲ့ ခွဲခြားပြီး — page content ကို stream မလုပ်ခင် [`generateMetadata`](/docs/nextjs/generate-metadata) ဖြေရှင်းတာကို စောင့်ပါတယ်။ Full browsers နဲ့ DOM-capable crawlers တွေကတော့ page content နဲ့အတူ [streaming metadata](/docs/nextjs/generate-metadata#streaming-metadata) ကို ရရှိနိုင်ပါတယ်။
+HTML-only bots နဲ့ crawlers တွေက ကနဦး HTML ရဲ့ `<head>` ထဲမှာ metadata ရှိဖို့ လိုပါတယ်။ Next.js က သူတို့ရဲ့ user agent နဲ့ ခွဲခြားပြီး — page content ကို stream မလုပ်ခင် [`generateMetadata`](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) ဖြေရှင်းတာကို စောင့်ပါတယ်။ Full browsers နဲ့ DOM-capable crawlers တွေကတော့ page content နဲ့အတူ [streaming metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#streaming-metadata) ကို ရရှိနိုင်ပါတယ်။
 
-ဘယ် bots တွေက blocking metadata ရမလဲဆိုတာကို [`htmlLimitedBots`](/docs/nextjs/htmlLimitedBots) configuration option နဲ့ စိတ်ကြိုက် ပြောင်းလဲနိုင်ပါတယ်။ အသေးစိတ်အတွက် [`loading.js` SEO section](/docs/nextjs/loading#seo) ကို ကြည့်ပါ။
+ဘယ် bots တွေက blocking metadata ရမလဲဆိုတာကို [`htmlLimitedBots`](https://nextjs.org/docs/app/api-reference/next-config-js/htmlLimitedBots) configuration option နဲ့ စိတ်ကြိုက် ပြောင်းလဲနိုင်ပါတယ်။ အသေးစိတ်အတွက် [`loading.js` SEO section](https://nextjs.org/docs/app/api-reference/file-conventions/loading#seo) ကို ကြည့်ပါ။
 
 #### Cache Components
 
@@ -546,13 +546,13 @@ chunk 0 (+0ms) # fetch() က စောင့်ပြီးသားမို့
 | [Static export](/docs/nextjs/deploying#static-export)  | No                |
 | [Adapters](/docs/nextjs/deploying#adapters)            | Platform-specific |
 
-အသေးစိတ် configuration ညွှန်ကြားချက်တွေအတွက် [Self-Hosting guide](/docs/nextjs/self-hosting#streaming-and-suspense) ကို ကြည့်ပါ။
+အသေးစိတ် configuration ညွှန်ကြားချက်တွေအတွက် [Self-Hosting guide](https://nextjs.org/docs/app/guides/self-hosting#streaming-and-suspense) ကို ကြည့်ပါ။
 
 ## အကျဉ်းချုပ်
 
 Trigger က **သင့် code** ပါ: async အလုပ်, non-deterministic output (သို့) runtime data တွေပါ။ Framework က ဒါတွေကို တွေ့တဲ့အခါ — fallback အဖြစ် သုံးဖို့ `<Suspense>` boundary တစ်ခုကို ရှာပြီး tree ပေါ် တက်လာပါတယ်။ အဲဒီ boundaries တွေရဲ့ အပေါ်က အရာအားလုံးက [static shell](#the-static-shell) ကို ဖွဲ့စည်းပြီး — ချက်ချင်း ပို့ပေးပါတယ်။ Boundary တစ်ခုချင်းစီ ဖြေရှင်းတာနဲ့ — React က ရလဒ်ကို page ထဲ stream လုပ်ပါတယ်။
 
-အဓိက ဆုံးဖြတ်ချက်တွေက **ဘာကို cache လုပ်မလဲ** နဲ့ **Suspense boundaries တွေကို ဘယ်မှာ ထားမလဲ** ဆိုတာပါ။ Static shell ကို ကြီးထွားစေဖို့ သင်တတ်နိုင်သလောက် [`"use cache"`](/docs/nextjs/use-cache) နဲ့ cache လုပ်ပါ။ Dynamic access တွေကို လိုအပ်တဲ့ components တွေဆီ ရွှေ့ပြီး — ဒါတွေကို `<Suspense>` ထဲ wrap လုပ်ပါ။ ကျန်တာအားလုံးက shell ရဲ့ အစိတ်အပိုင်း ဖြစ်သွားပါတယ်။
+အဓိက ဆုံးဖြတ်ချက်တွေက **ဘာကို cache လုပ်မလဲ** နဲ့ **Suspense boundaries တွေကို ဘယ်မှာ ထားမလဲ** ဆိုတာပါ။ Static shell ကို ကြီးထွားစေဖို့ သင်တတ်နိုင်သလောက် [`"use cache"`](https://nextjs.org/docs/app/api-reference/directives/use-cache) နဲ့ cache လုပ်ပါ။ Dynamic access တွေကို လိုအပ်တဲ့ components တွေဆီ ရွှေ့ပြီး — ဒါတွေကို `<Suspense>` ထဲ wrap လုပ်ပါ။ ကျန်တာအားလုံးက shell ရဲ့ အစိတ်အပိုင်း ဖြစ်သွားပါတယ်။
 
 ## ထပ်ဆင့် ဖတ်ရှုရန်
 
@@ -560,4 +560,4 @@ Trigger က **သင့် code** ပါ: async အလုပ်, non-determinist
 - [Streams API on web.dev](https://web.dev/articles/streams) — Route Handlers တွေမှာ streaming ကို အခြေခံတဲ့ Web Streams API ရဲ့ မိတ်ဆက်
 - [Chunked transfer encoding (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Transfer-Encoding) — streaming responses တွေကို enable လုပ်တဲ့ HTTP/1.1 mechanism
 - [browser.engineering](https://browser.engineering/) — browsers တွေက network responses, rendering နဲ့ progressive display တွေကို ဘယ်လို ကိုင်တွယ်လဲဆိုတဲ့ နက်ရှိုင်းတဲ့ လေ့လာမှု
-- [Hydration မတိုင်ခင် flash ကာကွယ်ခြင်း](/docs/nextjs/preventing-flash-before-hydration) — browser မပန်းချီဆွဲခင် client-specific values တွေ (locale, theme, persisted state) နဲ့ server-rendered HTML ကို ဘယ်လို update လုပ်မလဲ
+- [Hydration မတိုင်ခင် flash ကာကွယ်ခြင်း](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming) — browser မပန်းချီဆွဲခင် client-specific values တွေ (locale, theme, persisted state) နဲ့ server-rendered HTML ကို ဘယ်လို update လုပ်မလဲ

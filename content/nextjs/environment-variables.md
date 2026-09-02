@@ -166,7 +166,7 @@ export default async function Component() {
 
 **သိထားသင့်သည်:**
 
-- Server startup မှာ code run လုပ်ဖို့ [`register` function](/docs/nextjs/instrumentation) ကို သုံးနိုင်ပါတယ်။
+- Server startup မှာ code run လုပ်ဖို့ [`register` function](https://nextjs.org/docs/app/api-reference/file-conventions/instrumentation) ကို သုံးနိုင်ပါတယ်။
 
 ## Test Environment Variables
 
@@ -206,7 +206,7 @@ Environment variables တွေကို အောက်ပါနေရာတွ
 
 ## သိထားသင့်သည်
 
-- [`/src` directory](/docs/nextjs/src-folder) သုံးနေရင် — `.env.*` files တွေက သင့် project ရဲ့ root မှာ ရှိနေသင့်ပါတယ်။
+- [`/src` directory](https://nextjs.org/docs/app/building-your-application/configuring/src-directory) သုံးနေရင် — `.env.*` files တွေက သင့် project ရဲ့ root မှာ ရှိနေသင့်ပါတယ်။
 - `NODE_ENV` environment variable ကို သတ်မှတ်မထားရင် — Next.js က `next dev` command run လုပ်တဲ့အခါ `development` ကို အလိုအလျောက် သတ်မှတ်ပြီး — တခြား commands တွေအတွက်တော့ `production` ကို သတ်မှတ်ပါတယ်။
 
 ## Version History (ဗားရှင်း မှတ်တမ်း)

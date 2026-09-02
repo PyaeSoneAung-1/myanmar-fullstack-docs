@@ -11,7 +11,7 @@ Default အားဖြင့် layout နဲ့ page တွေက [Server Comp
 
 ဒီ page မှာ Server နဲ့ Client Components တွေ Next.js မှာ ဘယ်လို အလုပ်လုပ်သလဲ၊ ဘယ်အချိန်မှာ သုံးရမလဲ၊ ပြီးတော့ app ထဲမှာ သူတို့ကို ဘယ်လို ပေါင်းစပ်သုံးရမလဲဆိုတာတွေကို ဥပမာတွေနဲ့တကွ ရှင်းပြပါမယ်။
 
-> **သိထားသင့်သည်** — component type တစ်ခုချင်းစီက ဘယ်နေရာမှာ run လုပ်သလဲ၊ boundary က ဘယ်လို အလုပ်လုပ်သလဲဆိုတဲ့ ရှင်းလင်းချက်အတွက် [Server နဲ့ Client Boundary](/docs/nextjs/server-client-boundary) ကို ကြည့်ပါ။
+> **သိထားသင့်သည်** — component type တစ်ခုချင်းစီက ဘယ်နေရာမှာ run လုပ်သလဲ၊ boundary က ဘယ်လို အလုပ်လုပ်သလဲဆိုတဲ့ ရှင်းလင်းချက်အတွက် [Server နဲ့ Client Boundary](/docs/nextjs/server-client-components) ကို ကြည့်ပါ။
 
 ## Server နဲ့ Client Components ကို ဘယ်အချိန်မှာ သုံးမလဲ
 
@@ -64,7 +64,7 @@ export default async function Page({
 Server ပေါ်မှာ Next.js က React ရဲ့ API တွေကို သုံးပြီး rendering ကို စီစဉ်ပေးပါတယ်။ Rendering အလုပ်တွေကို route segment တစ်ခုချင်းစီ ([layouts နဲ့ pages](/docs/nextjs/pages-layouts)) အလိုက် အပိုင်းပိုင်း ခွဲထားပြီး — ပြသခြင်း ရှိ/မရှိ မဆို [parallel route slots](/docs/nextjs/parallel-routes) တွေလည်း ပါဝင်ပါတယ်:
 
 - **Server Components** တွေကို React Server Component Payload (RSC Payload) လို့ခေါ်တဲ့ အထူး data format အနေနဲ့ render လုပ်ပါတယ်။
-- **Client Components** နဲ့ RSC Payload ကို သုံးပြီး HTML ကို [prerender](/docs/nextjs/glossary#prerendering) လုပ်ပါတယ်။
+- **Client Components** နဲ့ RSC Payload ကို သုံးပြီး HTML ကို [prerender](https://nextjs.org/docs/app/glossary#prerendering) လုပ်ပါတယ်။
 
 > **React Server Component Payload (RSC) ဆိုတာ ဘာလဲ?**
 >
@@ -120,7 +120,7 @@ export default function Counter() {
 
 File တစ်ခုကို `"use client"` နဲ့ မှတ်သားလိုက်တာနဲ့ — **အဲဒီ file ရဲ့ imports အားလုံးနဲ့ သူက တိုက်ရိုက် render လုပ်တဲ့ components တွေအားလုံးက client bundle ထဲ ပါဝင်သွားပါတယ်**။ ဆိုလိုတာက client အတွက် ရည်ရွယ်ထားတဲ့ component တိုင်းမှာ directive ထည့်စရာ မလိုပါဘူး။
 
-ဒီအပြုအမူက Client Component ရဲ့ [module graph](/docs/nextjs/glossary#module-graph) ထဲ ပါတဲ့ components တွေအတွက်ပါ — module graph မှာ သူ import လုပ်တဲ့ modules တွေနဲ့ သူ တိုက်ရိုက် render လုပ်တဲ့ components တွေ ပါဝင်ပါတယ်။ children ဒါမှမဟုတ် အခြား props အနေနဲ့ ပို့လိုက်တဲ့ Server Components တွေကိုတော့ မသက်ရောက်ပါဘူး။ အဲဒီ components တွေက Client Component ရဲ့ module graph ထဲ import မလုပ်ပါဘူး — သူတို့ကို server ပေါ်မှာ render လုပ်ပြီး render လုပ်ပြီးသား output အနေနဲ့ Client Component ဆီ ပို့ပေးပါတယ်။
+ဒီအပြုအမူက Client Component ရဲ့ [module graph](https://nextjs.org/docs/app/glossary#module-graph) ထဲ ပါတဲ့ components တွေအတွက်ပါ — module graph မှာ သူ import လုပ်တဲ့ modules တွေနဲ့ သူ တိုက်ရိုက် render လုပ်တဲ့ components တွေ ပါဝင်ပါတယ်။ children ဒါမှမဟုတ် အခြား props အနေနဲ့ ပို့လိုက်တဲ့ Server Components တွေကိုတော့ မသက်ရောက်ပါဘူး။ အဲဒီ components တွေက Client Component ရဲ့ module graph ထဲ import မလုပ်ပါဘူး — သူတို့ကို server ပေါ်မှာ render လုပ်ပြီး render လုပ်ပြီးသား output အနေနဲ့ Client Component ဆီ ပို့ပေးပါတယ်။
 
 Server နဲ့ Client Components တွေကို ဘယ်လို ပေါင်းစပ်သုံးနိုင်လဲဆိုတာကို [Server နဲ့ Client Components တွေ ရောယှက်သုံးခြင်း](#interleaving-server-and-client-components) မှာ ကြည့်ပါ။
 
@@ -267,7 +267,7 @@ export default function RootLayout({
 
 > **သိထားသင့်သည်** — Providers တွေကို tree ထဲမှာ တတ်နိုင်သမျှ နက်နက်နေရာမှာ render လုပ်သင့်ပါတယ် — `ThemeProvider` က `<html>` document တစ်ခုလုံးကို မပတ်ဘဲ `{children}` ကိုပဲ ပတ်ထားတာကို သတိပြုပါ။ ဒါက Next.js အတွက် Server Components တွေရဲ့ static အစိတ်အပိုင်းတွေကို optimize လုပ်ရ ပိုလွယ်စေပါတယ်။
 
-Server ကနေ fetch လုပ်ထားတဲ့ data ကို context ကနေတဆင့် ပို့ပြီး Client Components တွေမှာ `use()` နဲ့ ဖတ်ချင်ရင် [Context Provider တစ်ခုအတွင်း React ရဲ့ `use` ကို သုံးခြင်း](/docs/nextjs/single-page-applications#using-reacts-use-within-a-context-provider) ကို ကြည့်ပါ။
+Server ကနေ fetch လုပ်ထားတဲ့ data ကို context ကနေတဆင့် ပို့ပြီး Client Components တွေမှာ `use()` နဲ့ ဖတ်ချင်ရင် [Context Provider တစ်ခုအတွင်း React ရဲ့ `use` ကို သုံးခြင်း](https://nextjs.org/docs/app/guides/single-page-applications#using-reacts-use-within-a-context-provider) ကို ကြည့်ပါ။
 
 ### Third-party components
 

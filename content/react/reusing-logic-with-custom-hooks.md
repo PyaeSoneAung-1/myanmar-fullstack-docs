@@ -93,7 +93,7 @@ Component နှစ်ခုလုံး ကောင်းကောင်း �
 
 ### Component တစ်ခုကနေ ကိုယ်ပိုင် Custom Hook တစ်ခု ထုတ်ယူခြင်း
 
-[`useState`](/docs/react/useState) နဲ့ [`useEffect`](/docs/react/useEffect) လိုပဲ — built-in `useOnlineStatus` Hook တစ်ခု ရှိခဲ့ရင် ကောင်းမယ်လို့ ခဏ စိတ်ကူးကြည့်ပါ။ အဲဒါဆိုရင် — component နှစ်ခုလုံးကို ရိုးရှင်းအောင် လုပ်နိုင်ပြီး — သူတို့ကြားက ထပ်နေမှုကို ဖယ်ရှားနိုင်ပါလိမ့်မယ်:
+[`useState`](/docs/react/use-state) နဲ့ [`useEffect`](/docs/react/use-effect) လိုပဲ — built-in `useOnlineStatus` Hook တစ်ခု ရှိခဲ့ရင် ကောင်းမယ်လို့ ခဏ စိတ်ကူးကြည့်ပါ။ အဲဒါဆိုရင် — component နှစ်ခုလုံးကို ရိုးရှင်းအောင် လုပ်နိုင်ပြီး — သူတို့ကြားက ထပ်နေမှုကို ဖယ်ရှားနိုင်ပါလိမ့်မယ်:
 
 ```jsx
 function StatusBar() {
@@ -210,7 +210,7 @@ React application တွေက component တွေနဲ့ တည်ဆော�
 ဒီ naming conventions တွေကို လိုက်နာရပါမယ်:
 
 1. **React component နာမည်တွေက capital letter နဲ့ စရမယ်** — `StatusBar` နဲ့ `SaveButton` လိုမျိုးပါ။ React component တွေက JSX အပိုင်းတစ်ပိုင်းလိုမျိုး — React က ဘယ်လို ပြသရမယ်ဆိုတာ သိတဲ့ အရာတစ်ခုခုကိုလည်း ပြန်ပေးဖို့ လိုပါတယ်။
-2. **Hook နာမည်တွေက `use` နဲ့ စပြီး — capital letter တစ်လုံး လိုက်ရမယ်** — [`useState`](/docs/react/useState) (built-in) ဒါမှမဟုတ် `useOnlineStatus` (ဒီစာမျက်နှာ အစောပိုင်းက custom တစ်ခု) လိုမျိုးပါ။ Hooks တွေက ကြိုက်တဲ့ တန်ဖိုး ဘာမဆို ပြန်ပေးနိုင်ပါတယ်။
+2. **Hook နာမည်တွေက `use` နဲ့ စပြီး — capital letter တစ်လုံး လိုက်ရမယ်** — [`useState`](/docs/react/use-state) (built-in) ဒါမှမဟုတ် `useOnlineStatus` (ဒီစာမျက်နှာ အစောပိုင်းက custom တစ်ခု) လိုမျိုးပါ။ Hooks တွေက ကြိုက်တဲ့ တန်ဖိုး ဘာမဆို ပြန်ပေးနိုင်ပါတယ်။
 
 ဒီ convention က — component တစ်ခုကို ကြည့်လိုက်ရင် — သူ့ရဲ့ state၊ Effects နဲ့ တခြား React features တွေ ဘယ်မှာ "ပုန်းနေမယ်"ဆိုတာ အမြဲ သိနိုင်စေဖို့ အာမခံပါတယ်။ ဥပမာ — သင့် component ထဲမှာ `getColor()` function call တစ်ခု တွေ့ရင် — သူ့နာမည်က `use` နဲ့ မစတင်လို့ — အတွင်းမှာ React state ပါနိုင်စရာ မရှိဘူးဆိုတာ သေချာနိုင်ပါတယ်။ ဒါပေမယ့် — `useOnlineStatus()` လိုမျိုး function call တစ်ခုကတော့ — အတွင်းမှာ တခြား Hooks တွေကို ခေါ်နေဖို့ အလားအလာ အရမ်းများပါတယ်!
 
@@ -1217,9 +1217,9 @@ export function useOnlineStatus() {
 }
 ```
 
-အထက်က ဥပမာမှာ — `useOnlineStatus` ကို [`useState`](/docs/react/useState) နဲ့ [`useEffect`](/docs/react/useEffect) အတွဲတစ်တွဲနဲ့ implement လုပ်ထားပါတယ်။ ဒါပေမယ့် — ဒါက အကောင်းဆုံး ဖြေရှင်းနည်း မဟုတ်ပါဘူး။ သူ မစဉ်းစားမိတဲ့ edge cases တွေ အများကြီး ရှိပါတယ်။ ဥပမာ — component mount ဖြစ်တဲ့အခါ — `isOnline` က `true` ပြီးသားလို့ ယူဆထားပေမယ့် — network က ကြိုပြီး ပြတ်နေပြီးသားဆိုရင် — ဒါ မှားနိုင်ပါတယ်။ အဲဒါကို စစ်ဖို့ browser ရဲ့ [`navigator.onLine`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine) API ကို သုံးနိုင်ပေမယ့် — ကနဦး HTML ထုတ်လုပ်ဖို့ server ပေါ်မှာတော့ — တိုက်ရိုက် သုံးတာ အလုပ်မလုပ်ပါဘူး။ တိုတိုပြောရရင် — ဒီ code ကို တိုးတက်အောင် လုပ်နိုင်ပါတယ်။
+အထက်က ဥပမာမှာ — `useOnlineStatus` ကို [`useState`](/docs/react/use-state) နဲ့ [`useEffect`](/docs/react/use-effect) အတွဲတစ်တွဲနဲ့ implement လုပ်ထားပါတယ်။ ဒါပေမယ့် — ဒါက အကောင်းဆုံး ဖြေရှင်းနည်း မဟုတ်ပါဘူး။ သူ မစဉ်းစားမိတဲ့ edge cases တွေ အများကြီး ရှိပါတယ်။ ဥပမာ — component mount ဖြစ်တဲ့အခါ — `isOnline` က `true` ပြီးသားလို့ ယူဆထားပေမယ့် — network က ကြိုပြီး ပြတ်နေပြီးသားဆိုရင် — ဒါ မှားနိုင်ပါတယ်။ အဲဒါကို စစ်ဖို့ browser ရဲ့ [`navigator.onLine`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/onLine) API ကို သုံးနိုင်ပေမယ့် — ကနဦး HTML ထုတ်လုပ်ဖို့ server ပေါ်မှာတော့ — တိုက်ရိုက် သုံးတာ အလုပ်မလုပ်ပါဘူး။ တိုတိုပြောရရင် — ဒီ code ကို တိုးတက်အောင် လုပ်နိုင်ပါတယ်။
 
-React မှာ ဒီပြဿနာတွေ အားလုံးကို သင့်အတွက် ရှင်းပေးတဲ့ [`useSyncExternalStore`](/docs/react/useSyncExternalStore) လို့ခေါ်တဲ့ သီးသန့် API တစ်ခု ပါဝင်ပါတယ်။ ဒီ API အသစ်ရဲ့ အားသာချက်ကို ယူဖို့ ပြန်ရေးထားတဲ့ သင့် `useOnlineStatus` Hook က ဒီမှာပါ:
+React မှာ ဒီပြဿနာတွေ အားလုံးကို သင့်အတွက် ရှင်းပေးတဲ့ [`useSyncExternalStore`](https://react.dev/reference/react/useSyncExternalStore) လို့ခေါ်တဲ့ သီးသန့် API တစ်ခု ပါဝင်ပါတယ်။ ဒီ API အသစ်ရဲ့ အားသာချက်ကို ယူဖို့ ပြန်ရေးထားတဲ့ သင့် `useOnlineStatus` Hook က ဒီမှာပါ:
 
 ```jsx
 import { useOnlineStatus } from './useOnlineStatus.js';

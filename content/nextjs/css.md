@@ -13,8 +13,8 @@ Next.js က CSS သုံးပြီး သင့် application ကို styl
 - [CSS Modules](#css-modules)
 - [Global CSS](#global-css)
 - [External Stylesheets](#external-stylesheets)
-- [Sass](/docs/nextjs/sass)
-- [CSS-in-JS](/docs/nextjs/css-in-js)
+- [Sass](https://nextjs.org/docs/app/building-your-application/styling/sass)
+- [CSS-in-JS](https://nextjs.org/docs/app/building-your-application/styling/css-in-js)
 
 ## Tailwind CSS
 
@@ -72,7 +72,7 @@ export default function Page() {
 }
 ```
 
-> **သိထားသင့်သည်** — အရမ်းဟောင်းတဲ့ browsers တွေအတွက် ပိုကျယ်ပြန့်တဲ့ browser support လိုအပ်ရင် [Tailwind CSS v3 setup instructions](/docs/nextjs/tailwind-v3-css) ကို ကြည့်ပါ။
+> **သိထားသင့်သည်** — အရမ်းဟောင်းတဲ့ browsers တွေအတွက် ပိုကျယ်ပြန့်တဲ့ browser support လိုအပ်ရင် [Tailwind CSS v3 setup instructions](https://nextjs.org/docs/app/building-your-application/styling/css) ကို ကြည့်ပါ။
 
 ## CSS Modules
 
@@ -183,11 +183,11 @@ CSS ordering ကို ခန့်မှန်းလို့ရအောင်
 - သင့် CSS modules တွေအတွက် ညီညွတ်တဲ့ naming convention တစ်ခု သုံးပါ — ဥပမာ `<name>.tsx` ထက် `<name>.module.css` ဆိုတာမျိုး
 - Duplicate imports တွေ ရှောင်ဖို့ shared styles တွေကို shared components တွေထဲ ထုတ်ယူပါ
 - ESLint ရဲ့ [`sort-imports`](https://eslint.org/docs/latest/rules/sort-imports) လို imports တွေကို auto-sort လုပ်တဲ့ linters (သို့) formatters တွေကို ပိတ်ထားပါ
-- CSS ကို ဘယ်လို chunk လုပ်မလဲ ထိန်းချုပ်ဖို့ `next.config.js` ထဲမှာ [`cssChunking`](/docs/nextjs/cssChunking) option ကို သုံးနိုင်ပါတယ်
+- CSS ကို ဘယ်လို chunk လုပ်မလဲ ထိန်းချုပ်ဖို့ `next.config.js` ထဲမှာ [`cssChunking`](https://nextjs.org/docs/app/api-reference/next-config-js/cssChunking) option ကို သုံးနိုင်ပါတယ်
 
 ## Development vs Production
 
-- Development (`next dev`) မှာ CSS updates တွေက [Fast Refresh](/docs/nextjs/fast-refresh) နဲ့ ချက်ချင်း ကျရောက်ပါတယ်
+- Development (`next dev`) မှာ CSS updates တွေက [Fast Refresh](https://nextjs.org/docs/architecture/fast-refresh) နဲ့ ချက်ချင်း ကျရောက်ပါတယ်
 - Production (`next build`) မှာ CSS files တွေအားလုံးကို အလိုအလျောက် **minified နဲ့ code-split လုပ်ထားတဲ့** `.css` files အများအပြားအဖြစ် ပေါင်းစပ်ပြီး — route တစ်ခုအတွက် လိုအပ်တဲ့ CSS အနည်းဆုံးပဲ load ဖြစ်အောင် လုပ်ပါတယ်
 - Production မှာ JavaScript ပိတ်ထားတာတောင် CSS က load ဖြစ်ပါတယ် — ဒါပေမယ့် development မှာတော့ Fast Refresh အတွက် JavaScript လိုအပ်ပါတယ်
 - CSS ordering က development မှာ မတူညီစွာ ပြုမူနိုင်ပါတယ် — နောက်ဆုံး CSS order ကို သေချာအောင် အမြဲတမ်း build (`next build`) ကို စစ်ဆေးပါ

@@ -92,7 +92,7 @@ const [isActive, setIsActive] = useState(false);
 ```js
 function Panel({ title, children, isActive }) {
 ```
-အခု `Panel` ရဲ့ parent component က [prop အဖြစ် အောက်ကို ပို့ပေးခြင်းဖြင့်](/docs/react/passing-props-to-a-component) `isActive` ကို *ထိန်းချုပ်* နိုင်ပါပြီ။ အပြန်အလှန်အနေနဲ့ — `Panel` component က `isActive` ရဲ့ တန်ဖိုးအပေါ် *ထိန်းချုပ်မှု လုံးဝ မရှိတော့ပါဘူး* — အခုဆိုရင် အဲဒါ parent component ရဲ့ တာဝန်ပါ!
+အခု `Panel` ရဲ့ parent component က [prop အဖြစ် အောက်ကို ပို့ပေးခြင်းဖြင့်](/docs/react/props) `isActive` ကို *ထိန်းချုပ်* နိုင်ပါပြီ။ အပြန်အလှန်အနေနဲ့ — `Panel` component က `isActive` ရဲ့ တန်ဖိုးအပေါ် *ထိန်းချုပ်မှု လုံးဝ မရှိတော့ပါဘူး* — အခုဆိုရင် အဲဒါ parent component ရဲ့ တာဝန်ပါ!
 
 ### အဆင့် ၂ — Common Parent ကနေ Hardcoded Data ကို ပို့ပေးပါ
 

@@ -7,7 +7,7 @@ status: translated
 updated: 2026-09-01
 ---
 
-> ဒီ page က [Cache Components](/docs/nextjs/cache-components) နဲ့ revalidation အကြောင်းကို ဖော်ပြပါတယ် — `next.config.ts` file ထဲမှာ [`cacheComponents: true`](/docs/nextjs/cache-components) သတ်မှတ်ပြီး enable လုပ်ပါတယ်။ Cache Components မသုံးဘူးဆိုရင် [Caching and Revalidating (Previous Model)](/docs/nextjs/caching-without-cache-components) guide ကို ကြည့်ပါ။
+> ဒီ page က [Cache Components](https://nextjs.org/docs/app/api-reference/next-config-js/cacheComponents) နဲ့ revalidation အကြောင်းကို ဖော်ပြပါတယ် — `next.config.ts` file ထဲမှာ [`cacheComponents: true`](https://nextjs.org/docs/app/api-reference/next-config-js/cacheComponents) သတ်မှတ်ပြီး enable လုပ်ပါတယ်။ Cache Components မသုံးဘူးဆိုရင် [Caching and Revalidating (Previous Model)](https://nextjs.org/docs/app/guides/caching) guide ကို ကြည့်ပါ။
 
 **Revalidation** ဆိုတာ cache လုပ်ထားတဲ့ data တွေကို update လုပ်တဲ့ လုပ်ငန်းစဉ်ပါ။ ဒါက မြန်ဆန်တဲ့ cached responses တွေကို ဆက်ပြီး ပေးနေရင်းနဲ့ — content တွေ fresh ဖြစ်နေအောင် သေချာစေပါတယ်။ နည်းလမ်း နှစ်မျိုး ရှိပါတယ်:
 
@@ -16,7 +16,7 @@ updated: 2026-09-01
 
 ## `cacheLife`
 
-[`cacheLife`](/docs/nextjs/cacheLife) က cache လုပ်ထားတဲ့ data တွေ ဘယ်လောက်ကြာကြာ valid ဖြစ်နေမလဲ ထိန်းချုပ်ပါတယ်။ Cache lifetime သတ်မှတ်ဖို့ [`use cache`](/docs/nextjs/use-cache) scope အတွင်းမှာ သုံးပါ။
+[`cacheLife`](https://nextjs.org/docs/app/api-reference/functions/cacheLife) က cache လုပ်ထားတဲ့ data တွေ ဘယ်လောက်ကြာကြာ valid ဖြစ်နေမလဲ ထိန်းချုပ်ပါတယ်။ Cache lifetime သတ်မှတ်ဖို့ [`use cache`](https://nextjs.org/docs/app/api-reference/directives/use-cache) scope အတွင်းမှာ သုံးပါ။
 
 ```tsx
 import { cacheLife } from 'next/cache'
@@ -51,13 +51,13 @@ cacheLife({
 })
 ```
 
-> **သိထားသင့်သည်** — Cache တစ်ခုက `seconds` profile, `revalidate: 0` (သို့) မိနစ် ၅ ခုအောက် `expire` သုံးထားရင် "short-lived" (သက်တမ်းတို) အဖြစ် သတ်မှတ်ပါတယ်။ Short-lived caches တွေကို prerenders တွေကနေ အလိုအလျောက် ဖယ်ထုတ်ပြီး dynamic holes အဖြစ် ပြောင်းသွားပါတယ်။ အသေးစိတ်ကို [Prerendering behavior](/docs/nextjs/cacheLife#prerendering-behavior) မှာ ကြည့်ပါ။
+> **သိထားသင့်သည်** — Cache တစ်ခုက `seconds` profile, `revalidate: 0` (သို့) မိနစ် ၅ ခုအောက် `expire` သုံးထားရင် "short-lived" (သက်တမ်းတို) အဖြစ် သတ်မှတ်ပါတယ်။ Short-lived caches တွေကို prerenders တွေကနေ အလိုအလျောက် ဖယ်ထုတ်ပြီး dynamic holes အဖြစ် ပြောင်းသွားပါတယ်။ အသေးစိတ်ကို [Prerendering behavior](https://nextjs.org/docs/app/api-reference/functions/cacheLife#prerendering-behavior) မှာ ကြည့်ပါ။
 
-Profiles အားလုံးနဲ့ custom configuration options တွေအတွက် [`cacheLife` API reference](/docs/nextjs/cacheLife) ကို ကြည့်ပါ။
+Profiles အားလုံးနဲ့ custom configuration options တွေအတွက် [`cacheLife` API reference](https://nextjs.org/docs/app/api-reference/functions/cacheLife) ကို ကြည့်ပါ။
 
 ## `cacheTag`
 
-[`cacheTag`](/docs/nextjs/cacheTag) က cache လုပ်ထားတဲ့ data တွေကို tag လုပ်ပေးပြီး — on-demand နဲ့ invalidate လုပ်နိုင်အောင် လုပ်ပါတယ်။ [`use cache`](/docs/nextjs/use-cache) scope အတွင်းမှာ သုံးပါ:
+[`cacheTag`](https://nextjs.org/docs/app/api-reference/functions/cacheTag) က cache လုပ်ထားတဲ့ data တွေကို tag လုပ်ပေးပြီး — on-demand နဲ့ invalidate လုပ်နိုင်အောင် လုပ်ပါတယ်။ [`use cache`](https://nextjs.org/docs/app/api-reference/directives/use-cache) scope အတွင်းမှာ သုံးပါ:
 
 ```tsx
 import { cacheTag } from 'next/cache'
@@ -71,7 +71,7 @@ export async function getProducts() {
 
 Tag လုပ်ပြီးတာနဲ့ — [`revalidateTag`](#revalidatetag) (သို့) [`updateTag`](#updatetag) သုံးပြီး cache ကို invalidate လုပ်နိုင်ပါတယ်။
 
-ပိုသိချင်ရင် [`cacheTag` API reference](/docs/nextjs/cacheTag) ကို ကြည့်ပါ။
+ပိုသိချင်ရင် [`cacheTag` API reference](https://nextjs.org/docs/app/api-reference/functions/cacheTag) ကို ကြည့်ပါ။
 
 ## `revalidateTag`
 
@@ -86,15 +86,15 @@ export async function updateUser(id: string) {
 }
 ```
 
-Tag တစ်ခုတည်းကို function အများအပြားမှာ သုံးပြီး — အားလုံးကို တစ်ခါတည်း revalidate လုပ်နိုင်ပါတယ်။ `revalidateTag` ကို [Server Action](/docs/nextjs/mutating-data) (သို့) [Route Handler](/docs/nextjs/route-handlers) ထဲမှာ ခေါ်ပါ။
+Tag တစ်ခုတည်းကို function အများအပြားမှာ သုံးပြီး — အားလုံးကို တစ်ခါတည်း revalidate လုပ်နိုင်ပါတယ်။ `revalidateTag` ကို [Server Action](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) (သို့) [Route Handler](/docs/nextjs/route-handlers) ထဲမှာ ခေါ်ပါ။
 
 > **သိထားသင့်သည်** — ဒုတိယ argument က fresh content တွေ နောက်ခံမှာ ထုတ်လုပ်နေချိန်မှာ stale content ကို ဘယ်လောက်ကြာကြာ ဆက်ပေးနိုင်မလဲ သတ်မှတ်ပါတယ်။ သက်တမ်း ကုန်သွားတာနဲ့ — နောက်ထပ် requests တွေက fresh content အသင့်မဖြစ်မချင်း block ဖြစ်ပါတယ်။ `'max'` သုံးရင် stale window အရှည်ဆုံး ရပါတယ်။
 
-ပိုသိချင်ရင် [`revalidateTag` API reference](/docs/nextjs/revalidateTag) ကို ကြည့်ပါ။
+ပိုသိချင်ရင် [`revalidateTag` API reference](https://nextjs.org/docs/app/api-reference/functions/revalidateTag) ကို ကြည့်ပါ။
 
 ## `updateTag`
 
-`updateTag` က read-your-own-writes ဖြစ်ရပ်တွေအတွက် cache လုပ်ထားတဲ့ data တွေကို ချက်ချင်း expire လုပ်ပါတယ် — user က stale content မဟုတ်ဘဲ သူ့ရဲ့ ပြောင်းလဲမှုကို ချက်ချင်း မြင်ရပါတယ်။ `revalidateTag` နဲ့ မတူဘဲ — ဒါကို [Server Actions](/docs/nextjs/server-actions) တွေမှာပဲ သုံးလို့ရပါတယ်။
+`updateTag` က read-your-own-writes ဖြစ်ရပ်တွေအတွက် cache လုပ်ထားတဲ့ data တွေကို ချက်ချင်း expire လုပ်ပါတယ် — user က stale content မဟုတ်ဘဲ သူ့ရဲ့ ပြောင်းလဲမှုကို ချက်ချင်း မြင်ရပါတယ်။ `revalidateTag` နဲ့ မတူဘဲ — ဒါကို [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) တွေမှာပဲ သုံးလို့ရပါတယ်။
 
 ```tsx
 import { updateTag } from 'next/cache'
@@ -119,7 +119,7 @@ export async function createPost(formData: FormData) {
 | **အပြုအမူ** | Cache ကို ချက်ချင်း expire လုပ်သည်         | Stale-while-revalidate               |
 | **အသုံးပြုမှု** | Read-your-own-writes (user က သူ့ရဲ့ ပြောင်းလဲမှုကို မြင်ရသည်) | နောက်ခံမှာ refresh (နည်းနည်း နှောင့်နှေးတာ OK) |
 
-ပိုသိချင်ရင် [`updateTag` API reference](/docs/nextjs/updateTag) ကို ကြည့်ပါ။
+ပိုသိချင်ရင် [`updateTag` API reference](https://nextjs.org/docs/app/api-reference/functions/updateTag) ကို ကြည့်ပါ။
 
 ## `revalidatePath`
 
@@ -136,7 +136,7 @@ export async function updateUser(id: string) {
 
 > **သိထားသင့်သည်** — ဖြစ်နိုင်ရင် path-based ထက် tag-based revalidation (`revalidateTag`/`updateTag`) ကို ဦးစားပေးပါ — ပိုတိကျပြီး over-invalidating (မလိုအပ်ဘဲ invalidate လုပ်မိတာ) ရှောင်နိုင်လို့ပါ။
 
-ပိုသိချင်ရင် [`revalidatePath` API reference](/docs/nextjs/revalidatePath) ကို ကြည့်ပါ။
+ပိုသိချင်ရင် [`revalidatePath` API reference](https://nextjs.org/docs/app/api-reference/functions/revalidatePath) ကို ကြည့်ပါ။
 
 ## ဘာတွေကို cache လုပ်သင့်လဲ
 
@@ -144,4 +144,4 @@ export async function updateUser(id: string) {
 
 Content က time-based revalidation မလိုအပ်တဲ့အခါ — ဥပမာ CMS ကနေ ရတဲ့ data — [`cacheTag`](#cachetag) နဲ့ `max` လို ရှည်လျားတဲ့ [`cacheLife`](#cachelife) တစ်ခုကို သုံးပြီး static shell ထဲမှာ ထားပါ။ Content source ကို configure လုပ်ပြီး — content ပြောင်းတဲ့အခါ [`revalidateTag`](#revalidatetag) ကို ခေါ်တဲ့ webhook (သို့) အခြား notification တစ်ခု ဖြစ်အောင် လုပ်ပါ။ ဒါက မပြောင်းလဲတဲ့ content အတွက် မလိုအပ်တဲ့ time-based revalidation တွေကို လျှော့ချပေးပါတယ်။
 
-> **သိထားသင့်သည်** — Serverless environment တွေမှာ in-memory cache entries တွေက revalidations တွေကြားမှာ မတည်မြဲနိုင်ပါဘူး။ အသေးစိတ်အတွက် [runtime caching considerations](/docs/nextjs/use-cache#runtime-caching-considerations) ကို ကြည့်ပါ။
+> **သိထားသင့်သည်** — Serverless environment တွေမှာ in-memory cache entries တွေက revalidations တွေကြားမှာ မတည်မြဲနိုင်ပါဘူး။ အသေးစိတ်အတွက် [runtime caching considerations](https://nextjs.org/docs/app/api-reference/directives/use-cache#runtime-caching-considerations) ကို ကြည့်ပါ။

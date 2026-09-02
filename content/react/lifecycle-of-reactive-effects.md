@@ -559,7 +559,7 @@ Mutable values တွေ (global variables တွေ အပါအဝင်) က 
 
 **[`location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname) လိုမျိုး mutable value တစ်ခုက dependency တစ်ခု မဖြစ်နိုင်ပါဘူး။** အဲဒါက mutable ဖြစ်လို့ — React rendering data flow ရဲ့ လုံးဝအပြင်ဘက်မှာ — ဘယ်အချိန်မဆို ပြောင်းလဲနိုင်ပါတယ်။ အဲဒါကို ပြောင်းတာက သင့် component ရဲ့ re-render တစ်ခုကို မဖြစ်ပေါ်စေပါဘူး။ ဒါကြောင့် — dependencies တွေထဲမှာ သတ်မှတ်ထားရင်တောင် — အဲဒါ ပြောင်းတဲ့အခါ React က Effect ကို re-synchronize လုပ်ဖို့ *မသိ* ပါဘူး။ ဒါက React ရဲ့ စည်းမျဉ်းတွေကိုလည်း ချိုးဖောက်ပါတယ် — ဘာလို့လဲဆိုတော့ rendering အတွင်း (dependencies တွေကို တွက်ချက်တဲ့အချိန်) mutable data ဖတ်တာက [rendering ရဲ့ purity](/docs/react/keeping-components-pure) ကို ချိုးဖောက်လို့ပါ။ အဲဒီအစား — external mutable value တစ်ခုကို [`useSyncExternalStore`](/docs/react/you-might-not-need-an-effect#subscribing-to-an-external-store) နဲ့ ဖတ်ပြီး subscribe လုပ်သင့်ပါတယ်။
 
-**[`ref.current`](/docs/react/useRef) လိုမျိုး mutable value တစ်ခု ဒါမှမဟုတ် အဲဒီကနေ ဖတ်တဲ့အရာတွေလည်း dependency တစ်ခု မဖြစ်နိုင်ပါဘူး။** `useRef` က ပြန်ပေးတဲ့ ref object ကိုယ်တိုင်က dependency တစ်ခု ဖြစ်နိုင်ပေမယ့် — သူ့ရဲ့ `current` property ကတော့ ရည်ရွယ်ချက်ရှိရှိ mutable ပါ။ အဲဒါက [re-render တစ်ခုကို မဖြစ်ပေါ်စေဘဲ တစ်ခုခုကို ခြေရာခံနိုင်စေပါတယ်](/docs/react/referencing-values-with-refs)။ ဒါပေမယ့် — အဲဒါကို ပြောင်းတာက re-render ကို မဖြစ်ပေါ်စေတာမို့ — reactive value မဟုတ်ဘဲ — အဲဒါ ပြောင်းတဲ့အခါ React က သင့် Effect ကို ပြန် run လုပ်ဖို့ မသိပါဘူး။
+**[`ref.current`](/docs/react/use-ref) လိုမျိုး mutable value တစ်ခု ဒါမှမဟုတ် အဲဒီကနေ ဖတ်တဲ့အရာတွေလည်း dependency တစ်ခု မဖြစ်နိုင်ပါဘူး။** `useRef` က ပြန်ပေးတဲ့ ref object ကိုယ်တိုင်က dependency တစ်ခု ဖြစ်နိုင်ပေမယ့် — သူ့ရဲ့ `current` property ကတော့ ရည်ရွယ်ချက်ရှိရှိ mutable ပါ။ အဲဒါက [re-render တစ်ခုကို မဖြစ်ပေါ်စေဘဲ တစ်ခုခုကို ခြေရာခံနိုင်စေပါတယ်](/docs/react/referencing-values-with-refs)။ ဒါပေမယ့် — အဲဒါကို ပြောင်းတာက re-render ကို မဖြစ်ပေါ်စေတာမို့ — reactive value မဟုတ်ဘဲ — အဲဒါ ပြောင်းတဲ့အခါ React က သင့် Effect ကို ပြန် run လုပ်ဖို့ မသိပါဘူး။
 
 ဒီ page ရဲ့ အောက်မှာ သင်လေ့လာရမယ့်အတိုင်း — linter တစ်ခုက ဒီပြဿနာတွေကို အလိုအလျောက် စစ်ဆေးပေးပါလိမ့်မယ်။
 
@@ -653,7 +653,7 @@ function ChatRoom({ roomId }) { // roomId is reactive
 
 အထက်က sandbox ထဲမှာ ဒီပြုပြင်မှုကို စမ်းကြည့်ပါ။ Linter error ပျောက်သွားပြီး — လိုအပ်တဲ့အခါ chat က ပြန်ချိတ်ဆက်ကြောင်း စစ်ဆေးပါ။
 
-> **မှတ်ချက်:** တချို့ကိစ္စတွေမှာ — component ရဲ့ အတွင်းမှာ ကြေညာထားပေမယ့် — React က တန်ဖိုးတစ်ခုက ဘယ်တော့မှ မပြောင်းဘူးဆိုတာ *သိ* ပါတယ်။ ဥပမာ — `useState` က ပြန်ပေးတဲ့ [`set` function](/docs/react/useState) နဲ့ [`useRef`](/docs/react/useRef) က ပြန်ပေးတဲ့ ref object တွေက *stable* ပါ — re-render တစ်ခုမှာ မပြောင်းဘူးလို့ အာမခံထားပါတယ်။ Stable values တွေက reactive မဟုတ်တာမို့ — သူတို့ကို စာရင်းကနေ ချန်လှပ်နိုင်ပါတယ်။ ထည့်သွင်းတာလည်း ခွင့်ပြုပါတယ်: သူတို့က မပြောင်းတာမို့ — အရေးမကြီးပါဘူး။
+> **မှတ်ချက်:** တချို့ကိစ္စတွေမှာ — component ရဲ့ အတွင်းမှာ ကြေညာထားပေမယ့် — React က တန်ဖိုးတစ်ခုက ဘယ်တော့မှ မပြောင်းဘူးဆိုတာ *သိ* ပါတယ်။ ဥပမာ — `useState` က ပြန်ပေးတဲ့ [`set` function](/docs/react/use-state) နဲ့ [`useRef`](/docs/react/use-ref) က ပြန်ပေးတဲ့ ref object တွေက *stable* ပါ — re-render တစ်ခုမှာ မပြောင်းဘူးလို့ အာမခံထားပါတယ်။ Stable values တွေက reactive မဟုတ်တာမို့ — သူတို့ကို စာရင်းကနေ ချန်လှပ်နိုင်ပါတယ်။ ထည့်သွင်းတာလည်း ခွင့်ပြုပါတယ်: သူတို့က မပြောင်းတာမို့ — အရေးမကြီးပါဘူး။
 
 ### Re-Synchronize မလုပ်စေချင်တဲ့အခါ ဘာလုပ်မလဲ
 

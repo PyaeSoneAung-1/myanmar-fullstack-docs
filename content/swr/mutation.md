@@ -93,7 +93,7 @@ function App () {
 }
 ```
 
-> ဒီ revalidation က [cache provider](/docs/advanced/cache) scope တစ်ခုတည်းအောက်က SWR hook တွေဆီ ပျံ့နှံ့ (broadcast) သွားပါတယ်။ Cache provider မရှိရင်တော့ SWR hook အားလုံးဆီ broadcast ဖြစ်ပါတယ်။
+> ဒီ revalidation က [cache provider](/docs/swr/cache) scope တစ်ခုတည်းအောက်က SWR hook တွေဆီ ပျံ့နှံ့ (broadcast) သွားပါတယ်။ Cache provider မရှိရင်တော့ SWR hook အားလုံးဆီ broadcast ဖြစ်ပါတယ်။
 
 ### API
 

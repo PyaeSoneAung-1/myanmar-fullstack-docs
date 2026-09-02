@@ -19,7 +19,7 @@ Next.js မှာ redirect တွေကို ကိုင်တွယ်ဖိ�
 
 ## `redirect` function
 
-`redirect` function က user ကို တခြား URL တစ်ခုဆီ redirect လုပ်နိုင်စေပါတယ်။ [Server Components](/docs/nextjs/server-client-components), [Route Handlers](/docs/nextjs/route-handlers) နဲ့ [Server Functions](/docs/nextjs/mutating-data) တွေမှာ `redirect` ကို ခေါ်နိုင်ပါတယ်။
+`redirect` function က user ကို တခြား URL တစ်ခုဆီ redirect လုပ်နိုင်စေပါတယ်။ [Server Components](/docs/nextjs/server-client-components), [Route Handlers](/docs/nextjs/route-handlers) နဲ့ [Server Functions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) တွေမှာ `redirect` ကို ခေါ်နိုင်ပါတယ်။
 
 `redirect` ကို mutation (သို့) event တစ်ခု အပြီးမှာ မကြာခဏ သုံးပါတယ်။ ဥပမာ — post တစ်ခု ဖန်တီးတဲ့အခါ:
 
@@ -49,11 +49,11 @@ export async function createPost(id: string) {
 > - `redirect` က absolute URLs တွေကိုလည်း လက်ခံပြီး — external links တွေဆီ redirect လုပ်ဖို့ သုံးနိုင်ပါတယ်။
 > - Render process မစခင် redirect လုပ်ချင်ရင် — [`next.config.js`](#redirects-in-nextconfigjs) (သို့) [Proxy](#nextresponseredirect-in-proxy) ကို သုံးပါ။
 
-အသေးစိတ်အတွက် [`redirect` API reference](/docs/nextjs/redirect) ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [`redirect` API reference](https://nextjs.org/docs/app/api-reference/functions/redirect) ကို ကြည့်ပါ။
 
 ## `permanentRedirect` function
 
-`permanentRedirect` function က user ကို တခြား URL တစ်ခုဆီ **အမြဲတမ်း (permanently)** redirect လုပ်နိုင်စေပါတယ်။ [Server Components](/docs/nextjs/server-client-components), [Route Handlers](/docs/nextjs/route-handlers) နဲ့ [Server Functions](/docs/nextjs/mutating-data) တွေမှာ `permanentRedirect` ကို ခေါ်နိုင်ပါတယ်။
+`permanentRedirect` function က user ကို တခြား URL တစ်ခုဆီ **အမြဲတမ်း (permanently)** redirect လုပ်နိုင်စေပါတယ်။ [Server Components](/docs/nextjs/server-client-components), [Route Handlers](/docs/nextjs/route-handlers) နဲ့ [Server Functions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations) တွေမှာ `permanentRedirect` ကို ခေါ်နိုင်ပါတယ်။
 
 `permanentRedirect` ကို entity တစ်ခုရဲ့ canonical URL ကို ပြောင်းလဲစေတဲ့ mutation (သို့) event တစ်ခု အပြီးမှာ မကြာခဏ သုံးပါတယ် — ဥပမာ user တစ်ယောက် သူ့ရဲ့ username ပြောင်းပြီးနောက် profile URL ကို update လုပ်တာမျိုးပါ:
 
@@ -81,7 +81,7 @@ export async function updateUsername(username: string, formData: FormData) {
 > - `permanentRedirect` က absolute URLs တွေကိုလည်း လက်ခံပြီး — external links တွေဆီ redirect လုပ်ဖို့ သုံးနိုင်ပါတယ်။
 > - Render process မစခင် redirect လုပ်ချင်ရင် — [`next.config.js`](#redirects-in-nextconfigjs) (သို့) [Proxy](#nextresponseredirect-in-proxy) ကို သုံးပါ။
 
-အသေးစိတ်အတွက် [`permanentRedirect` API reference](/docs/nextjs/permanent-redirect) ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [`permanentRedirect` API reference](https://nextjs.org/docs/app/api-reference/functions/redirect#permanentRedirect) ကို ကြည့်ပါ။
 
 ## `useRouter()` hook
 
@@ -105,15 +105,15 @@ export default function Page() {
 
 > **သိထားသင့်သည်**:
 >
-> - User ကို programmatically navigate လုပ်စရာ မလိုဘူးဆိုရင် — [`<Link>`](/docs/nextjs/link) component ကို သုံးသင့်ပါတယ်။
+> - User ကို programmatically navigate လုပ်စရာ မလိုဘူးဆိုရင် — [`<Link>`](https://nextjs.org/docs/app/api-reference/components/link) component ကို သုံးသင့်ပါတယ်။
 
-အသေးစိတ်အတွက် [`useRouter` API reference](/docs/nextjs/use-router) ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [`useRouter` API reference](https://nextjs.org/docs/app/api-reference/functions/use-router) ကို ကြည့်ပါ။
 
 ## `next.config.js` ထဲက `redirects`
 
 `next.config.js` file ထဲက `redirects` option က incoming request path တစ်ခုကို မတူညီတဲ့ destination path တစ်ခုဆီ redirect လုပ်နိုင်စေပါတယ်။ Pages တွေရဲ့ URL structure ကို ပြောင်းတဲ့အခါ (သို့) အချိန်မတိုင်ခင် သိထားပြီးသား redirect စာရင်းတစ်ခု ရှိတဲ့အခါ ဒါက အသုံးဝင်ပါတယ်။
 
-`redirects` က [path](/docs/nextjs/redirects#path-matching), [header, cookie နဲ့ query matching](/docs/nextjs/redirects#header-cookie-and-query-matching) တွေကို support လုပ်ပြီး — incoming request တစ်ခုပေါ် မူတည်ပြီး user တွေကို redirect လုပ်ဖို့ လိုအပ်တဲ့ ပြောင်းလွယ်ပြင်လွယ် ပေးပါတယ်။
+`redirects` က [path](https://nextjs.org/docs/app/api-reference/next-config-js/redirects#path-matching), [header, cookie နဲ့ query matching](https://nextjs.org/docs/app/api-reference/next-config-js/redirects#header-cookie-and-query-matching) တွေကို support လုပ်ပြီး — incoming request တစ်ခုပေါ် မူတည်ပြီး user တွေကို redirect လုပ်ဖို့ လိုအပ်တဲ့ ပြောင်းလွယ်ပြင်လွယ် ပေးပါတယ်။
 
 `redirects` သုံးဖို့ — option ကို သင့် `next.config.js` file ထဲ ထည့်ပါ:
 
@@ -142,12 +142,12 @@ const nextConfig: NextConfig = {
 export default nextConfig
 ```
 
-အသေးစိတ်အတွက် [`redirects` API reference](/docs/nextjs/redirects) ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [`redirects` API reference](https://nextjs.org/docs/app/api-reference/next-config-js/redirects) ကို ကြည့်ပါ။
 
 > **သိထားသင့်သည်**:
 >
 > - `redirects` က `permanent` option နဲ့အတူ 307 (Temporary Redirect) (သို့) 308 (Permanent Redirect) status code ကို ပြန်ပေးနိုင်ပါတယ်။
-> - `redirects` က platforms တွေမှာ limit ရှိနိုင်ပါတယ်။ ဥပမာ — Vercel ပေါ်မှာ redirect 1,024 ခုအထိ limit ရှိပါတယ်။ Redirect အများအပြား (1000+) ကို စီမံဖို့ — [Proxy](/docs/nextjs/proxy) ကို သုံးပြီး custom solution တစ်ခု ဖန်တီးစဉ်းစားပါ။ အသေးစိတ်အတွက် [redirects တွေကို scale နဲ့ စီမံခန့်ခွဲခြင်း](#managing-redirects-at-scale-advanced) ကို ကြည့်ပါ။
+> - `redirects` က platforms တွေမှာ limit ရှိနိုင်ပါတယ်။ ဥပမာ — Vercel ပေါ်မှာ redirect 1,024 ခုအထိ limit ရှိပါတယ်။ Redirect အများအပြား (1000+) ကို စီမံဖို့ — [Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy) ကို သုံးပြီး custom solution တစ်ခု ဖန်တီးစဉ်းစားပါ။ အသေးစိတ်အတွက် [redirects တွေကို scale နဲ့ စီမံခန့်ခွဲခြင်း](#managing-redirects-at-scale-advanced) ကို ကြည့်ပါ။
 > - `redirects` က Proxy ထက် **အရင်** run လုပ်ပါတယ်။
 
 ## Proxy ထဲက `NextResponse.redirect`
@@ -181,7 +181,7 @@ export const config = {
 >
 > - Proxy က `next.config.js` ထဲက `redirects` **ပြီးမှ** run လုပ်ပြီး — rendering ထက် **အရင်** run လုပ်ပါတယ်။
 
-အသေးစိတ်အတွက် [Proxy](/docs/nextjs/proxy) documentation ကို ကြည့်ပါ။
+အသေးစိတ်အတွက် [Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy) documentation ကို ကြည့်ပါ။
 
 ## Redirects အများအပြားကို စီမံခန့်ခွဲခြင်း (အဆင့်မြင့်)
 
@@ -213,7 +213,7 @@ Redirect map ဆိုတာ database (များသောအားဖြင�
 }
 ```
 
-[Proxy](/docs/nextjs/proxy) ထဲမှာ — Vercel ရဲ့ [Global Config](https://vercel.com/docs/global-config/get-started) (သို့) [Redis](https://vercel.com/docs/redis) လို database တစ်ခုကနေ ဖတ်ပြီး — incoming request ပေါ် မူတည်ကာ user ကို redirect လုပ်နိုင်ပါတယ်:
+[Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy) ထဲမှာ — Vercel ရဲ့ [Global Config](https://vercel.com/docs/global-config/get-started) (သို့) [Redis](https://vercel.com/docs/redis) လို database တစ်ခုကနေ ဖတ်ပြီး — incoming request ပေါ် မူတည်ကာ user ကို redirect လုပ်နိုင်ပါတယ်:
 
 ```ts
 import { NextResponse, NextRequest } from 'next/server'

@@ -11,7 +11,7 @@ Component တွေက — interaction တစ်ခုရဲ့ ရလဒ်အ�
 
 ## သင်ယူရမည့်အကြောင်းအရာများ
 
-- [`useState`](https://react.dev/reference/react/useState) Hook နဲ့ state variable တစ်ခု ဘယ်လို ထည့်မလဲ
+- [`useState`](/docs/react/use-state) Hook နဲ့ state variable တစ်ခု ဘယ်လို ထည့်မလဲ
 - `useState` Hook က value တွဲ ဘယ်လိုမျိုး ပြန်ပေးလဲ
 - State variable တစ်ခုထက်ပို ဘယ်လို ထည့်မလဲ
 - State ကို local လို့ ဘာကြောင့် ခေါ်လဲ
@@ -153,7 +153,7 @@ Component တစ်ခုကို data အသစ်နဲ့ update လုပ�
 1. Data ကို renders တွေကြားမှာ **ထိန်းသိမ်း** ထားဖို့။
 2. Component ကို data အသစ်နဲ့ render လုပ်ဖို့ (re-rendering) React ကို **trigger** လုပ်ဖို့။
 
-[`useState`](https://react.dev/reference/react/useState) Hook က ဒီအချက် နှစ်ခုကို ပေးပါတယ်:
+[`useState`](/docs/react/use-state) Hook က ဒီအချက် နှစ်ခုကို ပေးပါတယ်:
 
 1. Renders တွေကြားမှာ data ကို ထိန်းသိမ်းဖို့ **state variable** တစ်ခု။
 2. Variable ကို update လုပ်ပြီး — component ကို နောက်တစ်ကြိမ် render ဖို့ React ကို trigger လုပ်ဖို့ — **state setter function** တစ်ခု။
@@ -325,7 +325,7 @@ State က အဲဒီ features တွေထဲက တစ်ခုပဲ ဖြ�
 
 ### `useState` ရဲ့ ခန္ဓာဗေဒ (Anatomy)
 
-[`useState`](https://react.dev/reference/react/useState) ကို ခေါ်တဲ့အခါ — ဒီ component က တစ်ခုခုကို မှတ်မိစေချင်တယ်လို့ React ကို ပြောနေတာပါ:
+[`useState`](/docs/react/use-state) ကို ခေါ်တဲ့အခါ — ဒီ component က တစ်ခုခုကို မှတ်မိစေချင်တယ်လို့ React ကို ပြောနေတာပါ:
 
 ```jsx
 const [index, setIndex] = useState(0);

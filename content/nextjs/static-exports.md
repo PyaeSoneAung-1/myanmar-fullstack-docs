@@ -193,18 +193,18 @@ Node.js server တစ်ခု လိုအပ်တဲ့ (သို့) build 
 - `dynamicParams: true` နဲ့ [Dynamic Routes](/docs/nextjs/dynamic-routes)
 - `generateStaticParams()` မပါတဲ့ [Dynamic Routes](/docs/nextjs/dynamic-routes)
 - Request ပေါ် မှီခိုတဲ့ [Route Handlers](/docs/nextjs/route-handlers)
-- [Cookies](/docs/nextjs/cookies)
-- [Rewrites](/docs/nextjs/rewrites)
-- [Redirects](/docs/nextjs/redirects)
-- [Headers](/docs/nextjs/headers)
-- [Proxy](/docs/nextjs/proxy)
-- [Incremental Static Regeneration](/docs/nextjs/incremental-static-regeneration)
+- [Cookies](https://nextjs.org/docs/app/api-reference/functions/cookies)
+- [Rewrites](https://nextjs.org/docs/app/api-reference/next-config-js/rewrites)
+- [Redirects](https://nextjs.org/docs/app/api-reference/next-config-js/redirects)
+- [Headers](https://nextjs.org/docs/app/api-reference/functions/headers)
+- [Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy)
+- [Incremental Static Regeneration](https://nextjs.org/docs/app/guides/incremental-static-regeneration)
 - Default `loader` နဲ့ [Image Optimization](/docs/nextjs/image)
-- [Draft Mode](/docs/nextjs/draft-mode)
-- [Server Actions](/docs/nextjs/mutating-data)
+- [Draft Mode](https://nextjs.org/docs/app/api-reference/functions/draft-mode)
+- [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
 - [Intercepting Routes](/docs/nextjs/intercepting-routes)
 
-`next dev` နဲ့ ဒီ features တွေထဲက တစ်ခုခုကို သုံးဖို့ ကြိုးစားရင် — root layout မှာ [`dynamic`](/docs/nextjs/caching-without-cache-components#dynamic) option ကို `error` အဖြစ် သတ်မှတ်ထားတာနဲ့ ဆင်တူတဲ့ error တစ်ခု ရပါလိမ့်မယ်:
+`next dev` နဲ့ ဒီ features တွေထဲက တစ်ခုခုကို သုံးဖို့ ကြိုးစားရင် — root layout မှာ [`dynamic`](https://nextjs.org/docs/app/guides/caching#dynamic) option ကို `error` အဖြစ် သတ်မှတ်ထားတာနဲ့ ဆင်တူတဲ့ error တစ်ခု ရပါလိမ့်မယ်:
 
 ```jsx
 export const dynamic = 'error'

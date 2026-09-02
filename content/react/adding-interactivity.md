@@ -63,7 +63,7 @@ Event handlers တွေ ဘယ်လို ထည့်မလဲဆိုတာ
 
 Component တွေက interaction တစ်ခုရဲ့ ရလဒ်အနေနဲ့ — screen ပေါ်က အရာတွေကို ပြောင်းဖို့ မကြာခဏ လိုအပ်ပါတယ်။ Form ထဲ စာရိုက်တာက input field ကို update လုပ်သင့်တယ်၊ image carousel ပေါ်က "next" ကို နှိပ်တာက ပြသနေတဲ့ image ကို ပြောင်းသင့်တယ်၊ "buy" ကို နှိပ်တာက ပစ္စည်းတစ်ခုကို shopping cart ထဲ ထည့်သင့်တယ်။ Component တွေက အရာတွေကို "မှတ်မိ" ဖို့ လိုပါတယ် — လက်ရှိ input value၊ လက်ရှိ image၊ shopping cart စသဖြင့်ပေါ့။ React မှာ — ဒီလို component-specific memory မျိုးကို *state* လို့ ခေါ်ပါတယ်။
 
-[`useState`](/docs/react/useState) Hook နဲ့ component တစ်ခုကို state ထည့်နိုင်ပါတယ်။ *Hooks* တွေက — သင့် component တွေကို React features တွေ သုံးခွင့်ပေးတဲ့ အထူး functions တွေပါ (state က အဲဒီ features တွေထဲက တစ်ခုပါ)။ `useState` Hook က state variable တစ်ခုကို ကြေညာခွင့် ပေးပါတယ် — ကနဦး state ကို ယူပြီး — တန်ဖိုးအတွဲတစ်တွဲ ပြန်ပေးပါတယ်: လက်ရှိ state နဲ့ — အဲဒါကို update လုပ်ဖို့ state setter function တစ်ခုပါ:
+[`useState`](/docs/react/use-state) Hook နဲ့ component တစ်ခုကို state ထည့်နိုင်ပါတယ်။ *Hooks* တွေက — သင့် component တွေကို React features တွေ သုံးခွင့်ပေးတဲ့ အထူး functions တွေပါ (state က အဲဒီ features တွေထဲက တစ်ခုပါ)။ `useState` Hook က state variable တစ်ခုကို ကြေညာခွင့် ပေးပါတယ် — ကနဦး state ကို ယူပြီး — တန်ဖိုးအတွဲတစ်တွဲ ပြန်ပေးပါတယ်: လက်ရှိ state နဲ့ — အဲဒါကို update လုပ်ဖို့ state setter function တစ်ခုပါ:
 
 ```js
 const [index, setIndex] = useState(0);

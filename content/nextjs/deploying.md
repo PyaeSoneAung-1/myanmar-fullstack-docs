@@ -30,9 +30,9 @@ Next.js ကို Node.js ကို support လုပ်တဲ့ provider မ�
 }
 ```
 
-ပြီးတော့ `npm run build` ကို run လုပ်ပြီး [သင့် application ကို build လုပ်ပါ](/docs/nextjs/building) — `npm run start` နဲ့ Node.js server ကို စတင်ပါ။ ဒီ server က Next.js ရဲ့ features အားလုံးကို support လုပ်ပါတယ်။ လိုအပ်ရင် [custom server](/docs/nextjs/custom-server) တစ်ခုဆီ eject လုပ်လို့လည်း ရပါတယ်။
+ပြီးတော့ `npm run build` ကို run လုပ်ပြီး [သင့် application ကို build လုပ်ပါ](https://nextjs.org/docs/app/getting-started/deploying) — `npm run start` နဲ့ Node.js server ကို စတင်ပါ။ ဒီ server က Next.js ရဲ့ features အားလုံးကို support လုပ်ပါတယ်။ လိုအပ်ရင် [custom server](https://nextjs.org/docs/app/building-your-application/configuring/custom-server) တစ်ခုဆီ eject လုပ်လို့လည်း ရပါတယ်။
 
-Node.js deployments တွေက Next.js features အားလုံးကို support လုပ်ပါတယ်။ သင့် infrastructure အတွက် [ဘယ်လို configure လုပ်ရမလဲ](/docs/nextjs/self-hosting) ကို လေ့လာပါ။
+Node.js deployments တွေက Next.js features အားလုံးကို support လုပ်ပါတယ်။ သင့် infrastructure အတွက် [ဘယ်လို configure လုပ်ရမလဲ](https://nextjs.org/docs/app/guides/self-hosting) ကို လေ့လာပါ။
 
 ### Templates
 
@@ -45,9 +45,9 @@ Node.js deployments တွေက Next.js features အားလုံးကို
 
 Next.js ကို [Docker](https://www.docker.com/) containers တွေကို support လုပ်တဲ့ provider မဆီ deploy လုပ်နိုင်ပါတယ် — Kubernetes လို container orchestrators တွေ (သို့) Docker run လုပ်ပေးတဲ့ cloud provider တွေ အပါအဝင်ပါ။ သင့် app ကို containerize လုပ်တဲ့ အကောင်းဆုံး အလေ့အကျင့်တွေအတွက် Docker ရဲ့ တရားဝင် [Next.js](https://docs.docker.com/guides/nextjs) နဲ့ [React.js](https://docs.docker.com/guides/reactjs) guides တွေကို ကိုးကားပါ။
 
-Docker deployments တွေက Next.js features အားလုံးကို support လုပ်ပါတယ်။ သင့် infrastructure အတွက် [ဘယ်လို configure လုပ်ရမလဲ](/docs/nextjs/self-hosting) ကို လေ့လာပါ။
+Docker deployments တွေက Next.js features အားလုံးကို support လုပ်ပါတယ်။ သင့် infrastructure အတွက် [ဘယ်လို configure လုပ်ရမလဲ](https://nextjs.org/docs/app/guides/self-hosting) ကို လေ့လာပါ။
 
-> **Development အတွက် မှတ်ချက်** — Docker က production deployments တွေအတွက် ကောင်းပေမယ့် — Mac နဲ့ Windows ပေါ်မှာ development ကာလအတွင်းတော့ performance ပိုကောင်းဖို့ Docker အစား local development (`npm run dev`) ကို သုံးစဉ်းစားပါ။ [Local development ကို optimize လုပ်ခြင်းအကြောင်း ပိုလေ့လာပါ](/docs/nextjs/local-development)။
+> **Development အတွက် မှတ်ချက်** — Docker က production deployments တွေအတွက် ကောင်းပေမယ့် — Mac နဲ့ Windows ပေါ်မှာ development ကာလအတွင်းတော့ performance ပိုကောင်းဖို့ Docker အစား local development (`npm run dev`) ကို သုံးစဉ်းစားပါ။ [Local development ကို optimize လုပ်ခြင်းအကြောင်း ပိုလေ့လာပါ](https://nextjs.org/docs/app/getting-started/deploying)။
 
 ### Templates
 
@@ -67,7 +67,7 @@ Docker deployments တွေက Next.js features အားလုံးကို 
 
 ## Static export
 
-Next.js က static site (သို့) [Single-Page Application (SPA)](/docs/nextjs/single-page-applications) အဖြစ် စတင်နိုင်ပြီး — နောက်ပိုင်းမှာ server လိုအပ်တဲ့ features တွေကို သုံးဖို့ optionally upgrade လုပ်နိုင်ပါတယ်။
+Next.js က static site (သို့) [Single-Page Application (SPA)](https://nextjs.org/docs/app/guides/single-page-applications) အဖြစ် စတင်နိုင်ပြီး — နောက်ပိုင်းမှာ server လိုအပ်တဲ့ features တွေကို သုံးဖို့ optionally upgrade လုပ်နိုင်ပါတယ်။
 
 Next.js က [static exports](/docs/nextjs/static-exports) တွေကို support လုပ်လို့ — HTML/CSS/JS static assets တွေကို ပေးနိုင်တဲ့ web server မဆီ deploy လုပ်ပြီး host လုပ်နိုင်ပါတယ်။ AWS S3, Nginx (သို့) Apache လို tools တွေ အပါအဝင်ပါ။
 
@@ -79,11 +79,11 @@ Next.js က [static exports](/docs/nextjs/static-exports) တွေကို sup
 
 ## Adapters
 
-Next.js ကို platform အမျိုးမျိုးရဲ့ infrastructure capabilities တွေကို support လုပ်ဖို့ လိုက်လျောညီထွေ ပြောင်းလဲနိုင်ပါတယ်။ [Deployment Adapter API](/docs/nextjs/adapterPath) က platforms တွေကို Next.js applications တွေ ဘယ်လို build လုပ်ပြီး deploy လုပ်မလဲ စိတ်ကြိုက် ပြောင်းလဲခွင့် ပေးပါတယ်။
+Next.js ကို platform အမျိုးမျိုးရဲ့ infrastructure capabilities တွေကို support လုပ်ဖို့ လိုက်လျောညီထွေ ပြောင်းလဲနိုင်ပါတယ်။ [Deployment Adapter API](https://nextjs.org/docs/app/api-reference/next-config-js/adapterPath) က platforms တွေကို Next.js applications တွေ ဘယ်လို build လုပ်ပြီး deploy လုပ်မလဲ စိတ်ကြိုက် ပြောင်းလဲခွင့် ပေးပါတယ်။
 
 ### Verified Adapters
 
-Verified adapters တွေက open source ဖြစ်ပြီး — [Next.js compatibility test suite](/docs/nextjs/testing-adapters) အပြည့်အစုံကို run လုပ်ကာ [Next.js GitHub organization](https://github.com/nextjs) အောက်မှာ host လုပ်ထားပါတယ်။ Next.js team က major releases တွေ မတိုင်ခင် ဒီ platforms တွေနဲ့ testing တွေကို ညှိနှိုင်း လုပ်ဆောင်ပါတယ်။ Adapter တစ်ခုချင်းစီအတွက် လူသိရှင်ကြား မြင်နိုင်တဲ့ test results တွေက မကြာခင် ထွက်လာပါမယ်။ [Verified adapters အကြောင်း ပိုလေ့လာပါ](/docs/nextjs/deploying-to-platforms#verified-adapters)။
+Verified adapters တွေက open source ဖြစ်ပြီး — [Next.js compatibility test suite](https://nextjs.org/docs/app/getting-started/deploying) အပြည့်အစုံကို run လုပ်ကာ [Next.js GitHub organization](https://github.com/nextjs) အောက်မှာ host လုပ်ထားပါတယ်။ Next.js team က major releases တွေ မတိုင်ခင် ဒီ platforms တွေနဲ့ testing တွေကို ညှိနှိုင်း လုပ်ဆောင်ပါတယ်။ Adapter တစ်ခုချင်းစီအတွက် လူသိရှင်ကြား မြင်နိုင်တဲ့ test results တွေက မကြာခင် ထွက်လာပါမယ်။ [Verified adapters အကြောင်း ပိုလေ့လာပါ](https://nextjs.org/docs/app/getting-started/deploying#verified-adapters)။
 
 - [Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs)
 - [Bun](https://bun.com/docs/guides/ecosystem/nextjs)
@@ -92,7 +92,7 @@ Cloudflare နဲ့ Netlify တို့က Adapter API ပေါ်မှာ �
 
 ### အခြား Platforms များ
 
-အောက်ဖော်ပြပါ platforms တွေက သူတို့ရဲ့ ကိုယ်ပိုင် Next.js integrations တွေ ပေးထားပါတယ်။ ဒါတွေက public [Adapter API](/docs/nextjs/adapterPath) ပေါ်မှာ တည်ဆောက်ထားတာ မဟုတ်ဘဲ Next.js team ရဲ့ verification လည်း မခံရတာမို့ — feature support နဲ့ compatibility ကွဲပြားနိုင်ပါတယ်။ အသေးစိတ်အတွက် provider တစ်ခုချင်းစီရဲ့ documentation တွေကို ကိုးကားပါ:
+အောက်ဖော်ပြပါ platforms တွေက သူတို့ရဲ့ ကိုယ်ပိုင် Next.js integrations တွေ ပေးထားပါတယ်။ ဒါတွေက public [Adapter API](https://nextjs.org/docs/app/api-reference/next-config-js/adapterPath) ပေါ်မှာ တည်ဆောက်ထားတာ မဟုတ်ဘဲ Next.js team ရဲ့ verification လည်း မခံရတာမို့ — feature support နဲ့ compatibility ကွဲပြားနိုင်ပါတယ်။ အသေးစိတ်အတွက် provider တစ်ခုချင်းစီရဲ့ documentation တွေကို ကိုးကားပါ:
 
 - [Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/nextjs)
 - [AWS Amplify Hosting](https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components)
@@ -101,4 +101,4 @@ Cloudflare နဲ့ Netlify တို့က Adapter API ပေါ်မှာ �
 - [Firebase App Hosting](https://firebase.google.com/docs/app-hosting/get-started)
 - [Netlify](https://docs.netlify.com/frameworks/next-js/overview/#next-js-support-on-netlify)
 
-ဘယ် Next.js features တွေက platform capabilities အချို့ လိုအပ်လဲဆိုတဲ့ အသေးစိတ်အတွက် — [Deploying to Platforms](/docs/nextjs/deploying-to-platforms) ကို ကြည့်ပါ။
+ဘယ် Next.js features တွေက platform capabilities အချို့ လိုအပ်လဲဆိုတဲ့ အသေးစိတ်အတွက် — [Deploying to Platforms](https://nextjs.org/docs/app/getting-started/deploying) ကို ကြည့်ပါ။

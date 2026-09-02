@@ -61,9 +61,9 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ 20 pages ဘာသာပြန်ပြီး (getting-started တစ်ခုစီ + Zustand/SWR core)
-- 🔄 ကျန် ~1,700 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `npm run build` ပြီးရင်
-  `/roadmap` page မှာ progress ကြည့်ပါ
+- ✅ **289 pages ဘာသာပြန်ပြီး** (wave 7, 2026-09-02) — Zustand + SWR အပြည့်အစုံ၊ Express နီးပါး၊ React learn section အားလုံး
+- 🔄 ကျန် ~1,700 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `/roadmap` page မှာ
+  progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
 

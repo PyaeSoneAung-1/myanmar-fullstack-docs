@@ -34,7 +34,7 @@ let defaultLocale = 'en-US'
 match(languages, locales, defaultLocale) // -> 'en-US'
 ```
 
-Routing ကို sub-path (`/fr/products`) (သို့) domain (`my-site.fr/products`) အားဖြင့် နှစ်မျိုးလုံးနဲ့ internationalize လုပ်နိုင်ပါတယ်။ ဒီအချက်အလက်နဲ့ — [Proxy](/docs/nextjs/proxy) ထဲမှာ locale ပေါ် မူတည်ပြီး user ကို redirect လုပ်နိုင်ပါပြီ:
+Routing ကို sub-path (`/fr/products`) (သို့) domain (`my-site.fr/products`) အားဖြင့် နှစ်မျိုးလုံးနဲ့ internationalize လုပ်နိုင်ပါတယ်။ ဒီအချက်အလက်နဲ့ — [Proxy](https://nextjs.org/docs/app/api-reference/file-conventions/proxy) ထဲမှာ locale ပေါ် မူတည်ပြီး user ကို redirect လုပ်နိုင်ပါပြီ:
 
 ```js
 import { NextResponse } from "next/server";
@@ -82,7 +82,7 @@ export default async function Page({ params }: PageProps<'/[lang]'>) {
 }
 ```
 
-> **သိထားသင့်သည်** — `PageProps` နဲ့ `LayoutProps` တွေက route parameters တွေအတွက် strong typing ပေးတဲ့ globally available TypeScript helpers တွေပါ။ အသေးစိတ်အတွက် [PageProps](/docs/nextjs/page#page-props-helper) နဲ့ [LayoutProps](/docs/nextjs/layout#layout-props-helper) တွေကို ကြည့်ပါ။
+> **သိထားသင့်သည်** — `PageProps` နဲ့ `LayoutProps` တွေက route parameters တွေအတွက် strong typing ပေးတဲ့ globally available TypeScript helpers တွေပါ။ အသေးစိတ်အတွက် [PageProps](https://nextjs.org/docs/app/api-reference/file-conventions/page#page-props-helper) နဲ့ [LayoutProps](https://nextjs.org/docs/app/api-reference/file-conventions/layout#layout-props-helper) တွေကို ကြည့်ပါ။
 
 Root layout ကိုလည်း folder အသစ်ထဲမှာ nested လုပ်နိုင်ပါတယ် (ဥပမာ `app/[lang]/layout.js`)။
 
@@ -148,7 +148,7 @@ export default async function Page({ params }: PageProps<'/[lang]'>) {
 
 ## Locale ကို app တစ်ခုလုံးမှာ share လုပ်ခြင်း
 
-Locale ကို လက်ခံတဲ့ page ထက်ကျော်ပြီး — shared data-fetching utilities (သို့) နက်နက်ရှိုင်းရှိုင်း nested ဖြစ်တဲ့ components တွေမှာလည်း မကြာခဏ လိုအပ်ပါတယ်။ `lang` ကို အလွှာတစ်ခုချင်းစီကနေ prop drilling လုပ်မယ့်အစား — [`next/root-params`](/docs/nextjs/next-root-params) နဲ့ တိုက်ရိုက် ဖတ်နိုင်ပါတယ်။
+Locale ကို လက်ခံတဲ့ page ထက်ကျော်ပြီး — shared data-fetching utilities (သို့) နက်နက်ရှိုင်းရှိုင်း nested ဖြစ်တဲ့ components တွေမှာလည်း မကြာခဏ လိုအပ်ပါတယ်။ `lang` ကို အလွှာတစ်ခုချင်းစီကနေ prop drilling လုပ်မယ့်အစား — [`next/root-params`](https://nextjs.org/docs/app/api-reference/functions/next-root-params) နဲ့ တိုက်ရိုက် ဖတ်နိုင်ပါတယ်။
 
 `next/root-params` က root layout ရဲ့ အပေါ်မှာ ရှိတဲ့ dynamic segment တစ်ခုချင်းစီအတွက် getter တစ်ခုစီ ထုတ်ပေးပါတယ်။ Route တိုင်းက `app/[lang]` အောက်မှာ nested ဖြစ်လို့ — `lang` က root parameter တစ်ခု ဖြစ်ပြီး — Server Component (သို့) server-side utility မဆို သူ့ရဲ့ getter ကို ခေါ်နိုင်ပါတယ်။ Locale lookup ကို `getDictionary` ထဲ ရွှေ့လိုက်လို့ — ခေါ်သူတွေက `lang` ကို ထပ်မပို့တော့ပါဘူး:
 
@@ -186,7 +186,7 @@ export default async function Page() {
 }
 ```
 
-> **သိထားသင့်သည်** — Root parameter getters တွေက Server Components နဲ့ server-side utilities တွေမှာ run လုပ်ပြီး — Client Components, Server Actions (သို့) Route Handlers တွေမှာတော့ run မလုပ်ပါဘူး။ API အပြည့်အစုံနဲ့ caching နဲ့အတူ ပြုမူပုံအတွက် [`next/root-params`](/docs/nextjs/next-root-params) ကို ကြည့်ပါ။
+> **သိထားသင့်သည်** — Root parameter getters တွေက Server Components နဲ့ server-side utilities တွေမှာ run လုပ်ပြီး — Client Components, Server Actions (သို့) Route Handlers တွေမှာတော့ run မလုပ်ပါဘူး။ API အပြည့်အစုံနဲ့ caching နဲ့အတူ ပြုမူပုံအတွက် [`next/root-params`](https://nextjs.org/docs/app/api-reference/functions/next-root-params) ကို ကြည့်ပါ။
 
 ## Static Rendering
 

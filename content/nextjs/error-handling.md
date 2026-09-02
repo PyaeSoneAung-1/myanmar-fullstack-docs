@@ -68,7 +68,7 @@ export function Form() {
 
 ### Server Components
 
-Server Component တစ်ခုထဲမှာ data fetch လုပ်တဲ့အခါ — response ကို သုံးပြီး error message တစ်ခုကို condition ပေါ်မူတည်ပြီး render လုပ်နိုင်သလို (သို့) [`redirect`](/docs/nextjs/redirect) လုပ်နိုင်ပါတယ်။
+Server Component တစ်ခုထဲမှာ data fetch လုပ်တဲ့အခါ — response ကို သုံးပြီး error message တစ်ခုကို condition ပေါ်မူတည်ပြီး render လုပ်နိုင်သလို (သို့) [`redirect`](https://nextjs.org/docs/app/api-reference/functions/redirect) လုပ်နိုင်ပါတယ်။
 
 ```tsx
 export default async function Page() {
@@ -121,7 +121,7 @@ Uncaught exceptions တွေဆိုတာ မမျှော်လင့်�
 
 Next.js က uncaught exceptions တွေကို ကိုင်တွယ်ဖို့ error boundaries တွေကို သုံးပါတယ်။ Error boundaries တွေက သူတို့ရဲ့ child components တွေထဲက errors တွေကို ဖမ်းပြီး — ပျက်စီးသွားတဲ့ component tree အစား fallback UI တစ်ခုကို ပြသပါတယ်။
 
-Error boundary တစ်ခု ဖန်တီးဖို့ — route segment တစ်ခုအတွင်းမှာ [`error.js`](/docs/nextjs/error) file တစ်ခု ထည့်ပြီး React component တစ်ခုကို export လုပ်ပါ:
+Error boundary တစ်ခု ဖန်တီးဖို့ — route segment တစ်ခုအတွင်းမှာ [`error.js`](https://nextjs.org/docs/app/api-reference/file-conventions/error) file တစ်ခု ထည့်ပြီး React component တစ်ခုကို export လုပ်ပါ:
 
 ```tsx
 'use client' // Error boundaries တွေက Client Components ဖြစ်ရမယ်
@@ -158,7 +158,7 @@ export default function ErrorPage({
 
 Errors တွေက အနီးဆုံး parent error boundary ဆီ အပေါ်ကို ပြန့်တက်သွားပါတယ် (bubble up)။ ဒါကြောင့် [route hierarchy](/docs/nextjs/project-structure#component-hierarchy) ရဲ့ အဆင့်အမျိုးမျိုးမှာ `error.tsx` files တွေ ထားခြင်းဖြင့် — အသေးစိတ်ကျတဲ့ (granular) error handling လုပ်နိုင်ပါတယ်။
 
-Component-level error recovery အတွက် — [`catchError`](/docs/nextjs/catchError) function က သင့် component tree ရဲ့ ဘယ်အစိတ်အပိုင်းကိုမဆို wrap လုပ်နိုင်တဲ့ error boundaries တွေ ဖန်တီးပေးပါတယ်:
+Component-level error recovery အတွက် — [`catchError`](https://nextjs.org/docs/app/api-reference/functions/catchError) function က သင့် component tree ရဲ့ ဘယ်အစိတ်အပိုင်းကိုမဆို wrap လုပ်နိုင်တဲ့ error boundaries တွေ ဖန်တီးပေးပါတယ်:
 
 ```tsx
 'use client'
@@ -248,7 +248,7 @@ export function Button() {
 
 ### Global errors
 
-သိပ်မအဖြစ်များပေမယ့် — root app directory ထဲမှာ တည်ရှိတဲ့ [`global-error.js`](/docs/nextjs/global-error) file ကို သုံးပြီး root layout ထဲက errors တွေကိုလည်း ကိုင်တွယ်နိုင်ပါတယ် — [internationalization](/docs/nextjs/internationalization) သုံးနေတာတောင် ရပါတယ်။ Global error UI က သူ့ရဲ့ ကိုယ်ပိုင် `<html>` နဲ့ `<body>` tags တွေ သတ်မှတ်ရပါမယ် — ဘာလို့လဲဆိုတော့ active ဖြစ်ချိန်မှာ သူက root layout (သို့) template ကို အစားထိုးလို့ပါ။
+သိပ်မအဖြစ်များပေမယ့် — root app directory ထဲမှာ တည်ရှိတဲ့ [`global-error.js`](https://nextjs.org/docs/app/building-your-application/routing/error-handling) file ကို သုံးပြီး root layout ထဲက errors တွေကိုလည်း ကိုင်တွယ်နိုင်ပါတယ် — [internationalization](/docs/nextjs/internationalization) သုံးနေတာတောင် ရပါတယ်။ Global error UI က သူ့ရဲ့ ကိုယ်ပိုင် `<html>` နဲ့ `<body>` tags တွေ သတ်မှတ်ရပါမယ် — ဘာလို့လဲဆိုတော့ active ဖြစ်ချိန်မှာ သူက root layout (သို့) template ကို အစားထိုးလို့ပါ။
 
 ```tsx
 'use client' // Error boundaries တွေက Client Components ဖြစ်ရမယ်
