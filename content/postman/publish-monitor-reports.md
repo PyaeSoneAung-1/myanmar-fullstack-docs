@@ -13,7 +13,7 @@ Published monitor reports တွေနဲ့ဆိုရင် — API uptime, p
 
 ## Monitor report တစ်ခု publish လုပ်ခြင်း
 
-[Monitor Editor](/docs/administration/roles-and-permissions#monitor-roles) တစ်ယောက်အနေနဲ့ — ကိုယ့်မှာ access ရှိတဲ့ monitors တွေအတွက် monitor reports တွေကို publish လုပ်နိုင်ပါတယ်။ Published monitor reports တွေက နောက်ဆုံး monitor runs ၃၀ နဲ့ run တစ်ခုချင်းစီအတွက် request-level အသေးစိတ်တွေကို ပြသပါတယ်။ Monitor တစ်ခုမှာ တစ်ကြိမ်မှာ published report တစ်ခုပဲ ရှိနိုင်ပါတယ်။ [Team Admin](/docs/administration/roles-and-permissions#team-roles) တစ်ယောက်က [publish လုပ်ဖို့ requests တွေကို approve](#monitor-reports-တွေ-publish-လုပ်ဖို့-requests-တွေကို-ပြန်လည်သုံးသပ်ခြင်း) လုပ်ပေးရတဲ့ Enterprise plan ပေါ်မှာ ရှိနေရင်တော့ — monitor reports တွေ publish လုပ်ဖို့ approve လိုအပ်ပါတယ်။
+[Monitor Editor](https://learning.postman.com/docs/administration/roles-and-permissions/#monitor-roles) တစ်ယောက်အနေနဲ့ — ကိုယ့်မှာ access ရှိတဲ့ monitors တွေအတွက် monitor reports တွေကို publish လုပ်နိုင်ပါတယ်။ Published monitor reports တွေက နောက်ဆုံး monitor runs ၃၀ နဲ့ run တစ်ခုချင်းစီအတွက် request-level အသေးစိတ်တွေကို ပြသပါတယ်။ Monitor တစ်ခုမှာ တစ်ကြိမ်မှာ published report တစ်ခုပဲ ရှိနိုင်ပါတယ်။ [Team Admin](https://learning.postman.com/docs/administration/roles-and-permissions/#team-roles) တစ်ယောက်က [publish လုပ်ဖို့ requests တွေကို approve](#monitor-reports-တွေ-publish-လုပ်ဖို့-requests-တွေကို-ပြန်လည်သုံးသပ်ခြင်း) လုပ်ပေးရတဲ့ Enterprise plan ပေါ်မှာ ရှိနေရင်တော့ — monitor reports တွေ publish လုပ်ဖို့ approve လိုအပ်ပါတယ်။
 
 Monitor reports တွေကို internal team workspaces တွေနဲ့ public workspaces တွေမှာ publish လုပ်နိုင်ပါတယ်။ Internal private workspaces တွေနဲ့ Partner Workspaces တွေမှာတော့ — published monitor reports တွေကို ပံ့ပိုးမပေးပါဘူး။
 

@@ -4,10 +4,10 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 555 pages translated** (wave 12, 2026-09-02: +35 pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555
+**Total: 633 pages translated** (wave 13, 2026-09-02: +78 pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633
 
-## React (react.dev/learn + core reference) — est ~120 — 115 done
+## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
 - [x] API reference (condensed): useState, use, useEffect, useEffectEvent, useImperativeHandle, useRef, built-in-components
 - [x] API reference batch 2 (wave 8): useReducer, useMemo, useCallback, useContext, useLayoutEffect, forwardRef, createContext, Suspense, lazy, startTransition (orders 50–59)
@@ -18,10 +18,10 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] react-dom resource preloading (wave 11, orders 96–101): preconnect, prefetchDNS, preinit, preinitModule, preload, preloadModule
 - [x] Misc API (wave 11, orders 102–107): act, cache, createRef, Profiler, PureComponent, legacy
 - [x] Wave 12 (orders 108–115): react-dom/static (prerender, prerenderToNodeStream, resumeAndPrerender, resumeAndPrerenderToNodeStream, hub), Children, Fragment, ViewTransition
-- [ ] API reference ကျန် (optional): Activity (~31KB) + learn extras (installation variants, react-compiler, using-typescript) — optional
-- [ ] Learn extras (installation page variants, react-compiler, using-typescript) — optional
+- [x] Wave 13 (orders 116–123): Activity, using-typescript, add-react-to-an-existing-project, react-developer-tools, react-compiler (+ installation, incremental-adoption, debugging) — React core Learn + Reference ပြည့်စုံ 🎉 (123/120 est)
+- [ ] React ကျန် (optional, low value): tutorial-tic-tac-toe, learn hubs (installation/setup/index), reference hubs (apis/components/hooks), addTransitionType, experimental_taint*, canary APIs (cacheSignal, captureOwnerStack)
 
-## Next.js (nextjs.org/docs app) — est ~300 — 73 done
+## Next.js (nextjs.org/docs app) — est ~300 — 107 done
 - [x] getting-started (hub), project-structure, pages-layouts, dynamic-routes, linking, css, image, fonts, forms (server functions/mutations)
 - [x] Building: data-fetching, route-handlers, server-client-components, caching (cache components model), revalidating, error-handling, not-found, parallel-routes, intercepting-routes, loading/streaming, lazy-loading
 - [x] Config/deploy: environment-variables, redirecting, static-exports, deploying, internationalization
@@ -32,7 +32,10 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Functions batch 2 (wave 11, orders 61–69): after, draftMode, io, generateSitemaps, userAgent, useParams, ImageResponse, refresh, useOffline
 - [x] Components reference (wave 12, orders 70–73): link (<Link>), script, form, font (next/font google+local)
 - [x] Route Segment Config (wave 12, order 74): merged page — runtime, maxDuration, dynamicParams, preferredRegion, prefetch, instant
-- [ ] API reference ကျန်: components/image (~61KB), next.config.js options (~40 files, small — good quick win), CLI reference (create-next-app + next), file-conventions (proxy ~31KB, instrumentation-client), guides ကျန် (client-side-data-fetching, testing, upgrading/version-16, migrating, authentication, deployment) — prose pages already link to official nextjs.org URLs pending translation
+- [x] Wave 13 API reference (orders 75–80): components/image (next/image full reference, complete), file-conventions middleware + proxy + instrumentation-client, CLI (next + create-next-app)
+- [x] Wave 13 next.config.js options (orders 81–100, 20 pages): reactStrictMode, poweredByHeader, compress, output, distDir, basePath, assetPrefix, env, headers, redirects, rewrites, images, trailingSlash, typedRoutes, logging, devIndicators, webpack, transpilePackages, sassOptions, serverActions
+- [x] Wave 13 file conventions + guides (orders 101–108): dynamic-routes, mdx-components, public-folder, route-groups, src-folder, unauthorized; guides: testing, client-side-data-fetching
+- [ ] API reference ကျန်: next.config.js options အသေးစား ~45 ကျန် (turbopack*, experimental/nishe items — low priority), components (none left), guides ကျန် (upgrading/version-16, migrating/*, authentication, mdx, view-transitions, custom-server, production-checklist စသည်) — prose pages already link to official nextjs.org URLs pending translation
 
 ## Node.js (nodejs.org/en/learn) — est ~180 — 81 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
@@ -57,7 +60,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
-## Postman (learning.postman.com) — est ~150 — 74 done
+## Postman (learning.postman.com) — est ~150 — 104 done
 - [x] getting-started, create-requests, managing-environments, variables, create-collections, manage-collections, authorization, intro-to-scripts, mock-servers, testing, building-workflows, creating-workspaces
 - [x] Wave 8 (orders 13–18): quick-start, request-basics, parameters, headers, pre-request-scripts, intro-monitors
 - [x] Wave 9 (orders 19–32): responses, examples, define-variables, test-data, intro-to-collections, intro-to-collection-runs, setting-up-monitor, sharing, using-workspaces, requests (overview), test-examples, troubleshoot-tests, create-dynamic-responses, comments
@@ -88,11 +91,12 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Examples: auth, optimistic-ui
 - [ ] Examples ကျန် (basic demos — website sandbox examples; optional)
 
-## TanStack Query (tanstack.com/query react) — est ~100 — 63 done
+## TanStack Query (tanstack.com/query react) — est ~100 — 69 done
 - [x] Guides (complete): getting-started, queries, query-keys, query-functions, dependent-queries, parallel-queries, infinite-queries, disabling-queries, paginated-queries, placeholder-query-data, initial-query-data, prefetching, mutations, optimistic-updates, updates-from-mutation-responses, query-invalidation, query-cancellation, network-mode, background-fetching-indicators, filters, query-retries, suspense, polling, ssr, advanced-ssr, window-focus-refetching, scroll-restoration, testing, render-optimizations, request-waterfalls, default-query-function, query-options, important-defaults, typescript, devtools, cache
 - [x] API reference functions (wave 10, orders 37–53): useQuery, useMutation, useInfiniteQuery, useQueries, useQueryClient, useIsFetching, useIsMutating, useMutationState, useSuspenseQuery, useSuspenseInfiniteQuery, useSuspenseQueries, usePrefetchQuery, usePrefetchInfiniteQuery, QueryClientProvider, HydrationBoundary, QueryErrorResetBoundary, useQueryErrorResetBoundary
 - [x] Plugins + misc (wave 11, orders 54–63): useIsRestoring, persistQueryClient, createSyncStoragePersister, createAsyncStoragePersister, createPersister (experimental_createQueryPersister), broadcastQueryClient, quick-start, installation, react-native, graphql
-- [ ] API reference ကျန် (optional): queryOptions/infiniteQueryOptions/mutationOptions function refs (slug collision with guides — merge/rename decision needed), Interfaces type pages (generated), comparison guide (~20KB), migrating-to-*
+- [x] Wave 13 guides (orders 64–69): comparison (framework/comparison), does-this-replace-client-state, invalidations-from-mutations, migrating-to-react-query-3, migrating-to-react-query-4, migrating-to-v5
+- [ ] API reference ကျန် (optional): queryOptions/infiniteQueryOptions/mutationOptions function refs (slug collision with guides — merge/rename decision needed), Interfaces type pages (generated)
 
 ## Zustand (zustand.docs.pmnd.rs) — ~25 — 25 done 🎉 COMPLETE
 
