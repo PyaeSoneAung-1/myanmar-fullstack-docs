@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **393 pages ဘာသာပြန်ပြီး** (wave 9, 2026-09-02) — Zustand + SWR + Express အပြည့်အစုံ၊ React API reference (hooks + DOM APIs) အများစု၊ Node.js learn section နီးပါး ပြည့် (test-runner, diagnostics, userland migrations အပါအဝင်)၊ Prisma 8 contract/middleware/extensions section ပြည့်၊ Postman learning-center အပိုင်းသစ်
-- 🔄 ကျန် ~1,330 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `/roadmap` page မှာ
+- ✅ **457 pages ဘာသာပြန်ပြီး** (wave 10, 2026-09-02) — React react-dom components/client + misc APIs အပြည့်နီးပါး၊ Next.js functions/file-conventions/metadata reference အစုအဝေး၊ TanStack Query API reference (hooks/providers)၊ Node.js learn node-api section (getting-started + build-tools)
+- 🔄 ကျန် ~1,260 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
