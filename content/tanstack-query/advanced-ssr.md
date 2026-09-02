@@ -17,7 +17,7 @@ Advanced Server Rendering guide မှ ကြိုဆိုပါတယ် — 
 
 Server Components တွေကို ဒီမှာ အသေးစိတ် မဖော်ပြတော့ပါဘူး — ဒါပေမယ့် အတိုချုပ် ပြောရရင် — ဒါတွေက server ပေါ်မှာသာ _ပဲ_ run မယ်လို့ အာမခံထားတဲ့ components တွေပါ — ကနဦး page view အတွက်ရော page transitions တွေမှာပါ။ ဒါက Next.js ရဲ့ `getServerSideProps`/`getStaticProps` နဲ့ Remix ရဲ့ `loader` တွေ အလုပ်လုပ်ပုံနဲ့ ဆင်တူပါတယ် — ဒါတွေကလည်း server ပေါ်မှာ အမြဲ run ပြီး — ဒါပေမယ့် အဲဒီဟာတွေက data ကိုပဲ return လုပ်လို့ ရပေမယ့် Server Components တွေကတော့ အများကြီး ပိုလုပ်နိုင်ပါတယ်။ ဒါပေမယ့် React Query အတွက်တော့ data အပိုင်းက အဓိကပါ — ဒါကြောင့် ဒါကို အဓိကထား ကြည့်ရအောင်။
 
-Server Rendering guide ထဲက [framework loaders တွေထဲမှာ prefetch လုပ်ထားတဲ့ data တွေကို app ဆီ ပို့နည်း](/docs/tanstack-query/ssr#using-the-hydration-apis) ကို Server Components နဲ့ Next.js app router မှာ ဘယ်လို အသုံးချမလဲ။ စဉ်းစားဖို့ အကောင်းဆုံး နည်းလမ်းက — Server Components တွေကို "ပုံမှန်" framework loader တစ်ခုလိုပဲ သဘောထားဖို့ပါ။
+Server Rendering guide ထဲက [framework loaders တွေထဲမှာ prefetch လုပ်ထားတဲ့ data တွေကို app ဆီ ပို့နည်း](/docs/tanstack-query/ssr) ကို Server Components နဲ့ Next.js app router မှာ ဘယ်လို အသုံးချမလဲ။ စဉ်းစားဖို့ အကောင်းဆုံး နည်းလမ်းက — Server Components တွေကို "ပုံမှန်" framework loader တစ်ခုလိုပဲ သဘောထားဖို့ပါ။
 
 ### ဝေါဟာရအကြောင်း အမြန် မှတ်ချက်
 

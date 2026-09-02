@@ -4,10 +4,10 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 520 pages translated** (wave 11, 2026-09-02: +63 pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520
+**Total: 555 pages translated** (wave 12, 2026-09-02: +35 pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555
 
-## React (react.dev/learn + core reference) — est ~120 — 107 done
+## React (react.dev/learn + core reference) — est ~120 — 115 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
 - [x] API reference (condensed): useState, use, useEffect, useEffectEvent, useImperativeHandle, useRef, built-in-components
 - [x] API reference batch 2 (wave 8): useReducer, useMemo, useCallback, useContext, useLayoutEffect, forwardRef, createContext, Suspense, lazy, startTransition (orders 50–59)
@@ -17,10 +17,11 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] react-dom/server (wave 11, orders 89–95): server hub (react-dom-server), renderToString, renderToStaticMarkup, resume, resumeToPipeableStream, renderToPipeableStream, renderToReadableStream
 - [x] react-dom resource preloading (wave 11, orders 96–101): preconnect, prefetchDNS, preinit, preinitModule, preload, preloadModule
 - [x] Misc API (wave 11, orders 102–107): act, cache, createRef, Profiler, PureComponent, legacy
-- [ ] API reference ကျန် (optional): Children (~26KB giant), ViewTransition (~70KB new), Activity (~31KB), react-dom/static — next wave candidate
+- [x] Wave 12 (orders 108–115): react-dom/static (prerender, prerenderToNodeStream, resumeAndPrerender, resumeAndPrerenderToNodeStream, hub), Children, Fragment, ViewTransition
+- [ ] API reference ကျန် (optional): Activity (~31KB) + learn extras (installation variants, react-compiler, using-typescript) — optional
 - [ ] Learn extras (installation page variants, react-compiler, using-typescript) — optional
 
-## Next.js (nextjs.org/docs app) — est ~300 — 68 done
+## Next.js (nextjs.org/docs app) — est ~300 — 73 done
 - [x] getting-started (hub), project-structure, pages-layouts, dynamic-routes, linking, css, image, fonts, forms (server functions/mutations)
 - [x] Building: data-fetching, route-handlers, server-client-components, caching (cache components model), revalidating, error-handling, not-found, parallel-routes, intercepting-routes, loading/streaming, lazy-loading
 - [x] Config/deploy: environment-variables, redirecting, static-exports, deploying, internationalization
@@ -29,7 +30,9 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Functions/file-conventions + metadata (wave 10, orders 45–52): generateMetadata (Metadata API), route.js, instrumentation, opengraph-image, robots, sitemap, manifest, app-icons
 - [x] Directives reference (wave 11, orders 56–60): use client, use server, use cache, use cache: private, use cache: remote (sources = bundled node_modules/next/dist/docs, live URLs verified 200)
 - [x] Functions batch 2 (wave 11, orders 61–69): after, draftMode, io, generateSitemaps, userAgent, useParams, ImageResponse, refresh, useOffline
-- [ ] Guides ကျန် + API reference ကျန်: components reference (font/image/script/form/link), route-segment-config options, next.config.js options, CLI reference, remaining guides (client-side-data-fetching, testing, upgrading/version-16, migrating, authentication, deployment) — prose pages already link to official nextjs.org URLs pending translation
+- [x] Components reference (wave 12, orders 70–73): link (<Link>), script, form, font (next/font google+local)
+- [x] Route Segment Config (wave 12, order 74): merged page — runtime, maxDuration, dynamicParams, preferredRegion, prefetch, instant
+- [ ] API reference ကျန်: components/image (~61KB), next.config.js options (~40 files, small — good quick win), CLI reference (create-next-app + next), file-conventions (proxy ~31KB, instrumentation-client), guides ကျန် (client-side-data-fetching, testing, upgrading/version-16, migrating, authentication, deployment) — prose pages already link to official nextjs.org URLs pending translation
 
 ## Node.js (nodejs.org/en/learn) — est ~180 — 81 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
@@ -54,13 +57,14 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
-## Postman (learning.postman.com) — est ~150 — 52 done
+## Postman (learning.postman.com) — est ~150 — 74 done
 - [x] getting-started, create-requests, managing-environments, variables, create-collections, manage-collections, authorization, intro-to-scripts, mock-servers, testing, building-workflows, creating-workspaces
 - [x] Wave 8 (orders 13–18): quick-start, request-basics, parameters, headers, pre-request-scripts, intro-monitors
 - [x] Wave 9 (orders 19–32): responses, examples, define-variables, test-data, intro-to-collections, intro-to-collection-runs, setting-up-monitor, sharing, using-workspaces, requests (overview), test-examples, troubleshoot-tests, create-dynamic-responses, comments
 - [x] Wave 11 auth methods (orders 33–45): authorization-types, specifying-authorization-details, digest-auth, oauth-20, aws-signature, ntlm-authentication, hawk-authentication, authentication-for-public-apis, certificates, oauth-10, akamai-edgegrid, atlassian
 - [x] Wave 11 runs + version control (orders 46–52): running-collections-overview, scheduling-collection-runs, working-with-data-files, collection-webhooks, version-control-overview, forking-elements, creating-pull-requests, reviewing-pull-requests
-- [ ] Learning Center ကျန် — request/response deep dives (response saving/viewing), testing libraries (chai etc.), collection runs (reports), monitoring detail, API docs generation/design-apis, workspaces admin, private API network, admin/enterprise — အများကြီး ကျန်သေး
+- [x] Wave 12 API design/monitoring (orders 53–74): specifications (overview, create/import/edit/validate, add-files, collaborate, generate-collections, view-live-documentation), api-builder, monitor results + reports (viewing, publish, update, usage, troubleshooting, faqs, static-IPs), sandbox reference (overview, pm.variables, pm.request, pm.response)
+- [ ] Learning Center ကျန် — request/response deep dives (response saving/viewing), testing libraries (chai etc.), remaining sandbox pm.* pages, collection run reports/analysis, workspaces admin, private API network, admin/enterprise, webhooks/api-catalog — အများကြီး ကျန်သေး
   - Note: learning.postman.com rebuilt on Fern platform — URLs changed (sending-requests/* → use/send-requests/*). Clean markdown available: append `.md` to any page URL (e.g. https://learning.postman.com/docs/<path>.md); full index at /llms.txt. sources.json note is outdated.
 
 ## Prisma (prisma.io/docs) — est ~200 — 36 done

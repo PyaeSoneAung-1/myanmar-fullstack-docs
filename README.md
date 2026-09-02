@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **520 pages ဘာသာပြန်ပြီး** (wave 11, 2026-09-02: +63) — React react-dom/server + resource preloading + misc APIs (act/cache/createRef/Profiler/PureComponent/legacy)၊ Next.js directives (use client/server/cache/private/remote) + functions batch 2 (after, draftMode, io, generateSitemaps, userAgent, useParams, ImageResponse, refresh, useOffline)၊ Postman authorization methods detail + collection runs + version control၊ TanStack Query plugins + quick-start/installation/react-native/graphql
-- 🔄 ကျန် ~1,200 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `/roadmap` page မှာ
+- ✅ **555 pages ဘာသာပြန်ပြီး** (wave 12, 2026-09-02: +35) — React react-dom/static (prerender APIs) + Children/Fragment/ViewTransition (115/120)၊ Next.js components (link/script/form/font) + Route Segment Config (73/300)၊ Postman API specifications + monitoring + sandbox reference (74/150)၊ TanStack Query plugins (63/100)
+- 🔄 ကျန် ~1,165 pages (official docs စုစုပေါင်း ခန့်မှန်းချက်) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
