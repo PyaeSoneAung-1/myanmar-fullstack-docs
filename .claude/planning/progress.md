@@ -104,3 +104,11 @@ Plan: 12 workers × 3 rounds — React react-dom components + client (+15, order
 - Conventions held: heading numbers + English + Burmese paren gloss (## 4.1. Lexical Structure (ဝါကျဖွဲ့စည်းပုံ)); Note/Tip/Caution → မှတ်ချက်/အကြံပြုချက်/သတိပြုရန်; cross-ref labels translated (Section→အပိုင်း, Chapter→အခန်း, Table→ဇယား, Appendix→နောက်ဆက်တွဲ); subsection index bullets kept w/ glosses; workers spliced fences programmatically to guarantee byte parity.
 - Ch4/Ch7 chapter landing pages (sql-syntax.html, queries.html) = TOC-only chrome → skipped, consistent with Ch5/Ch6 landings.
 - Next optional: PostgreSQL Ch8 Data Types (huge), Ch9 Functions & Operators, Ch11/13/14; Next.js 07-adapters section (13 pages); TanStack API leftovers.
+
+## 2026-09-03 — Session 14 (wave 21: +20 → 896 pages, PostgreSQL Ch8 COMPLETE)
+- Translated +20 PostgreSQL 18.6 official pages via 12 parallel workers (2 rounds): Chapter 8 Data Types COMPLETE (orders 48–67): 8.1 numeric, 8.2 money, 8.3 character, 8.4 binary, 8.5 datetime (~62KB out), 8.6 boolean, 8.7 enum, 8.8 geometric, 8.9 net-types, 8.10 bit, 8.11 textsearch, 8.12 uuid, 8.13 xml, 8.14 json (~64KB out), 8.15 arrays, 8.16 rowtypes, 8.17 rangetypes, 8.18 domains, 8.19 oid, 8.21 pseudo → PostgreSQL 47 → 67/500. Biggest Part II chapter done.
+- Notes: PG 18.6 has no standalone 8.20 pg_lsn page (datatype-pglsn.html = 404); section numbering 8.19 oid → 8.21 pseudo keeps official numbers. Ch8 landing (datatype.html) = TOC chrome → skipped per convention.
+- Sources: postgresql.org/docs/current HTML → `scripts/pg-html2md.py` (converted sources staged in /home/user/.workspace/pg-src, not committed).
+- QA (independent sweep): orders 1–67 contiguous, 0 collisions; frontmatter complete on all 20; 147 code fences byte-identical to converted source; 0 dead internal links corpus-wide; no []() artifacts; no .html remnants in bodies.
+- Conventions held: heading numbers + Burmese paren gloss; Note/Tip/Caution → မှတ်ချက်/အကြံပြုချက်/သတိပြုရန်; cross-ref labels (Table→ဇယား incl. table captions like **ဇယား 8.23**, Example→ဥပမာ); tables translated text-cells, type names/code kept; JSON-key/cidr/bytea hex cells byte-faithful (incl. ZWSP rows).
+- Next optional: PostgreSQL Ch9 Functions & Operators (very large), Ch11/13/14; Next.js 07-adapters (13 pages); TanStack API leftovers; Node.js core API digest.

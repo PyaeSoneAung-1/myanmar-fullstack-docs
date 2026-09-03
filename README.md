@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **876 pages ဘာသာပြန်ပြီး** (wave 20, 2026-09-03: +10 — PostgreSQL Chapter 4 SQL Syntax + Chapter 7 Queries, PG 18.6) — PostgreSQL 47/500; core SQL language chapters (Ch4–Ch7) ပြီးစီး
-- 🔄 ကျန် ~844 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **896 pages ဘာသာပြန်ပြီး** (wave 21, 2026-09-03: +20 — PostgreSQL Chapter 8 Data Types COMPLETE, PG 18.6) — PostgreSQL 67/500; Part II core chapter (Ch8) ပြီးစီး
+- 🔄 ကျန် ~824 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
