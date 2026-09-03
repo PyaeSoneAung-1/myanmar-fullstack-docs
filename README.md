@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **722 pages ဘာသာပြန်ပြီး** (wave 15, 2026-09-03: +50 — Postman focus) — Postman 166/150 🎉 ခန့်မှန်းချက် ကျော်ပြီ: sandbox reference section ပြည့်စုံ (pm-info/message/mock/require/state), write-scripts + dynamic variables list, datasets (CSV/JSON) section, test-apis (end-to-end/integration/regression/performance), run-tests (manual/schedule/monitors), use-collections (add-requests/collaborate/overview-tab/schemas), publishing-your-api docs section + Run in Postman buttons, Newman CLI (7) နဲ့ Postman CLI (8) စတဲ့ developer-tooling sections အသစ်များ
-- 🔄 ကျန် ~998 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **847 pages ဘာသာပြန်ပြီး** (wave 18, 2026-09-03: +24 — Next.js guides/API ref) — Next.js 244/300 🎉 guides queue အကုန် ပြီးစီး: app-router-migration, migrating-to-cache-components, interactive-apps, instant-navigation, backend-for-frontend, progressive-web-apps, offline-support, preserving-ui-state, content-security-policy, scripts, videos, building, package-bundling, tailwind-v3-css + upgrading v14/v15; API ref အသစ်: notFound function, Edge Runtime, Turbopack, config typescript/eslint, metadata-and-og-images
+- 🔄 ကျန် ~873 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
