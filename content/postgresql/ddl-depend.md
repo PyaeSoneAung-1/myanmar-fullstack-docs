@@ -1,7 +1,7 @@
 ---
 title: "Dependency Tracking (မှီခိုမှု ခြေရာခံခြင်း)"
 description: "Object တွေကြားက dependency တွေကို ခြေရာခံခြင်း — DROP ... CASCADE/RESTRICT အပြုအမူ၊ dependent object တွေရှိနေချိန် drop ကြိုးစားရင် ရတဲ့ error message နဲ့ SQL function body ရဲ့ dependency စည်းမျဉ်းများ"
-order: 33
+order: 36
 source: "https://www.postgresql.org/docs/current/ddl-depend.html"
 status: translated
 updated: 2026-09-03

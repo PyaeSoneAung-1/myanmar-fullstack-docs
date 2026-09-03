@@ -1,7 +1,7 @@
 ---
 title: "Inserting Data (ဒေတာ ထည့်သွင်းခြင်း)"
 description: "Table ထဲ row အသစ် ထည့်နည်း — INSERT command, column တန်ဖိုး သတ်မှတ်ခြင်း, default value သုံးခြင်း, command တစ်ခုထဲ row အများကြီး ထည့်ခြင်း, query result ထည့်ခြင်း"
-order: 34
+order: 37
 source: "https://www.postgresql.org/docs/current/dml-insert.html"
 status: translated
 updated: 2026-09-03

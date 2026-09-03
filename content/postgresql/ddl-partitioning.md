@@ -1,7 +1,7 @@
 ---
 title: "Table Partitioning (table ခွဲဝေခြင်း)"
 description: "ကြီးမားတဲ့ table တစ်ခုကို partition အသေးများအဖြစ် ခွဲဝေသိမ်းဆည်းခြင်း (table partitioning) — declarative partitioning, inheritance နည်းဖြင့် partitioning, partition pruning, constraint exclusion နဲ့ အကောင်းဆုံး လုပ်နည်းများ"
-order: 30
+order: 33
 source: "https://www.postgresql.org/docs/current/ddl-partitioning.html"
 status: translated
 updated: 2026-09-03

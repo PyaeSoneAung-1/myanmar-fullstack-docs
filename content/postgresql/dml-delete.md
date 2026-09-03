@@ -1,7 +1,7 @@
 ---
 title: "Deleting Data (ဒေတာ ဖျက်ခြင်း)"
 description: "DELETE command နဲ့ မလိုတော့တဲ့ row တွေ ဖယ်ရှားနည်း — condition နဲ့ row ရွေးဖျက်ခြင်း, table ထဲက row အားလုံး ဖျက်ခြင်း"
-order: 36
+order: 39
 source: "https://www.postgresql.org/docs/current/dml-delete.html"
 status: translated
 updated: 2026-09-03

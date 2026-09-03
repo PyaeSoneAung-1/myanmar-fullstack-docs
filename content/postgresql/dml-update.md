@@ -1,7 +1,7 @@
 ---
 title: "Updating Data (ဒေတာ ပြင်ဆင်ခြင်း)"
 description: "UPDATE command နဲ့ ရှိပြီးသား row တွေ ပြင်ဆင်နည်း — WHERE နဲ့ row ရွေးချယ်ခြင်း, SET clause ထဲက expression, column အများကြီး တစ်ပြိုင်နက် update လုပ်ခြင်း"
-order: 35
+order: 38
 source: "https://www.postgresql.org/docs/current/dml-update.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Modifying Tables (table များ ပြုပြင်ခြင်း)"
 description: "ရှိပြီးသား table ကို ALTER TABLE နဲ့ ပြုပြင်နည်း — column/constraint ပေါင်းထည့်ခြင်းနဲ့ ဖယ်ရှားခြင်း၊ default value နဲ့ data type ပြောင်းခြင်း၊ column နဲ့ table နာမည်ပြောင်းခြင်း"
-order: 25
+order: 28
 source: "https://www.postgresql.org/docs/current/ddl-alter.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Table Basics (table အခြေခံ)"
 description: "Relational database ထဲက table ရဲ့ အခြေခံ — row/column သဘောတရား၊ data type များ၊ CREATE TABLE နဲ့ table ဖန်တီးခြင်း၊ DROP TABLE နဲ့ table ဖျက်ခြင်း"
-order: 19
+order: 22
 source: "https://www.postgresql.org/docs/current/ddl-basics.html"
 status: translated
 updated: 2026-09-03

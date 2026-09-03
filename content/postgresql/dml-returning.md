@@ -1,7 +1,7 @@
 ---
 title: "Returning Data from Modified Rows (ပြင်ဆင်ထားသော row များမှ ဒေတာ ပြန်ထုတ်ခြင်း)"
 description: "RETURNING clause နဲ့ ပြင်ဆင်လိုက်တဲ့ row ဆီက data တွေ ပြန်ယူနည်း — INSERT/UPDATE/DELETE/MERGE မှာ သုံးပုံ, old/new value ပြန်ထုတ်ခြင်း"
-order: 37
+order: 40
 source: "https://www.postgresql.org/docs/current/dml-returning.html"
 status: translated
 updated: 2026-09-03

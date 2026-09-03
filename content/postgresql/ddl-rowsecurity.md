@@ -1,7 +1,7 @@
 ---
 title: "Row Security Policies (row လုံခြုံရေး မူဝါဒများ)"
 description: "Row security policy ဆိုတာ ဘာလဲ — rows တွေကို user/role အလိုက် ကန့်သတ်ခြင်း၊ CREATE/ALTER/DROP POLICY, permissive နဲ့ restrictive policies, RLS ဥပမာများ"
-order: 27
+order: 30
 source: "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"
 status: translated
 updated: 2026-09-03

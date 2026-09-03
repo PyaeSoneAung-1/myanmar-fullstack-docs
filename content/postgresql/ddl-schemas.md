@@ -1,7 +1,7 @@
 ---
 title: "Schemas (schema များ)"
 description: "Schema များအကြောင်း — schema ဖန်တီးခြင်း၊ public schema၊ schema search path (ရှာဖွေရေး လမ်းကြောင်း)၊ schema နှင့် privilege များ၊ system catalog schema နှင့် အသုံးပြုမှု ပုံစံများ"
-order: 28
+order: 31
 source: "https://www.postgresql.org/docs/current/ddl-schemas.html"
 status: translated
 updated: 2026-09-03

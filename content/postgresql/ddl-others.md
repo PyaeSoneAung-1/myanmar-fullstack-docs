@@ -1,7 +1,7 @@
 ---
 title: "Other Database Objects (အခြား database object များ)"
 description: "Table မဟုတ်ဘဲ database ထဲမှာ ဖန်တီးလို့ရတဲ့ အခြား object အမျိုးအစားများ — views, functions/procedures/operators, data types/domains, triggers — ရဲ့ အကျဉ်းချုပ် စာရင်း"
-order: 32
+order: 35
 source: "https://www.postgresql.org/docs/current/ddl-others.html"
 status: translated
 updated: 2026-09-03

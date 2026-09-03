@@ -1,7 +1,7 @@
 ---
 title: "Constraints (table data ကန့်သတ်ချက်များ)"
 description: "Check, NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, EXCLUDE စတဲ့ constraint တွေနဲ့ table data ကို ကန့်သတ်ချုပ်ချယ်နည်း — column constraint နဲ့ table constraint syntax များ"
-order: 23
+order: 26
 source: "https://www.postgresql.org/docs/current/ddl-constraints.html"
 status: translated
 updated: 2026-09-03

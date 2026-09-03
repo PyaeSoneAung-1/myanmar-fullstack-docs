@@ -1,7 +1,7 @@
 ---
 title: "Privileges (ခွင့်ပြုချက်များ)"
 description: "Privilege (ခွင့်ပြုချက်) များအကြောင်း — owner နှင့် GRANT/REVOKE, grant option, PUBLIC, privilege အမျိုးအစားများနှင့် ACL အတိုကောက်များ"
-order: 26
+order: 29
 source: "https://www.postgresql.org/docs/current/ddl-priv.html"
 status: translated
 updated: 2026-09-03

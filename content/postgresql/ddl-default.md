@@ -1,7 +1,7 @@
 ---
 title: "Default Values (ပုံမှန်တန်ဖိုးများ)"
 description: "Column တွေအတွက် default value သတ်မှတ်နည်း — null default, default value expression (CURRENT_TIMESTAMP, nextval) နဲ့ SERIAL shorthand အကြောင်း"
-order: 20
+order: 23
 source: "https://www.postgresql.org/docs/current/ddl-default.html"
 status: translated
 updated: 2026-09-03

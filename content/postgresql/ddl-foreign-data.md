@@ -1,7 +1,7 @@
 ---
 title: "Foreign Data (ပြင်ပ data များ)"
 description: "PostgreSQL အပြင်ဘက်မှာ ရှိတဲ့ data တွေကို SQL query နဲ့ ဝင်ရောက်နိုင်အောင် လုပ်ပေးတဲ့ SQL/MED — foreign data wrapper, foreign server, foreign table, user mapping တွေအကြောင်း"
-order: 31
+order: 34
 source: "https://www.postgresql.org/docs/current/ddl-foreign-data.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "System Columns (system မှ သတ်မှတ်ပေးသော column များ)"
 description: "Table တိုင်းမှာ ပါဝင်တဲ့ system columns (tableoid, xmin, cmin, xmax, cmax, ctid) တွေရဲ့ အဓိပ္ပာယ်နဲ့ အသုံးဝင်ပုံ — user column name အဖြစ် မသုံးနိုင်ခြင်း၊ transaction/command identifier များ"
-order: 24
+order: 27
 source: "https://www.postgresql.org/docs/current/ddl-system-columns.html"
 status: translated
 updated: 2026-09-03

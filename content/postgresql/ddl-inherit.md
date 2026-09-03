@@ -1,7 +1,7 @@
 ---
 title: "Inheritance (table အမွေဆက်ခံခြင်း)"
 description: "INHERITS clause နဲ့ table inheritance (အမွေဆက်ခံခြင်း) — child table ဖန်တီးပုံ၊ ONLY keyword နဲ့ descendant table တွေ ပါဝင်မှု ထိန်းချုပ်ပုံ၊ tableoid/regclass သုံးပြီး မူရင်း table ရှာပုံ၊ constraint/column အမွေဆက်ခံမှု စည်းမျဉ်းများနဲ့ caveats"
-order: 29
+order: 32
 source: "https://www.postgresql.org/docs/current/ddl-inherit.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Identity Columns (sequence မှ တန်ဖိုး အလိုအလျောက် ထုတ်ပေးသော column များ)"
 description: "Identity column (sequence မှ အလိုအလျောက် တန်ဖိုး ထုတ်ပေးသော column) ဖန်တီးနည်းနဲ့ — ALWAYS/BY DEFAULT, OVERRIDING SYSTEM VALUE, DEFAULT keyword, inheritance နဲ့ partition အပြုအမူများ"
-order: 21
+order: 24
 source: "https://www.postgresql.org/docs/current/ddl-identity-columns.html"
 status: translated
 updated: 2026-09-03

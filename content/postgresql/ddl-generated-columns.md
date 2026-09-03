@@ -1,7 +1,7 @@
 ---
 title: "Generated Columns (အလိုအလျောက် တွက်ချက်သော column များ)"
 description: "Generated column — အခြား column များမှ အလိုအလျောက် တွက်ချက်ပေးသော column — အကြောင်း၊ stored/virtual အမျိုးအစားများ၊ default နှင့် ကွာခြားချက်နှင့် ကန့်သတ်ချက်များ"
-order: 22
+order: 25
 source: "https://www.postgresql.org/docs/current/ddl-generated-columns.html"
 status: translated
 updated: 2026-09-03
