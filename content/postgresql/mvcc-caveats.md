@@ -1,7 +1,7 @@
 ---
 title: "Caveats (သတိပြုရန် အချက်များ)"
 description: "MVCC-safe မဟုတ်တဲ့ DDL command များ၊ hot standby ပေါ်မှ ပံ့ပိုးမှု အကန့်အသတ်များနဲ့ system catalog မြင်နိုင်မှုဆိုင်ရာ သတိပြုရန် အချက်များ"
-order: 91
+order: 102
 source: "https://www.postgresql.org/docs/current/mvcc-caveats.html"
 status: translated
 updated: 2026-09-03

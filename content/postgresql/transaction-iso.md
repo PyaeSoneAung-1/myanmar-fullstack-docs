@@ -1,7 +1,7 @@
 ---
 title: "Transaction Isolation (transaction သီးခြားသတ်မှတ်ခြင်း)"
 description: "Transaction isolation level (transaction သီးခြားသတ်မှတ်မှု အဆင့်) လေးမျိုး — Read Committed, Repeatable Read နဲ့ Serializable — တို့ ဘယ်လို အလုပ်လုပ်လဲ၊ dirty read / nonrepeatable read / phantom read စတဲ့ phenomena တွေကို ဘယ်လို ကာကွယ်ပေးလဲ"
-order: 87
+order: 98
 source: "https://www.postgresql.org/docs/current/transaction-iso.html"
 status: translated
 updated: 2026-09-03

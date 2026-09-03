@@ -1,7 +1,7 @@
 ---
 title: "Statistics Used by the Planner (planner အသုံးပြုသော statistics များ)"
 description: "Planner က query plan ရွေးချယ်ရာမှာ အသုံးပြုတဲ့ statistics များအကြောင်း — single-column statistics (column တစ်ခုချင်းစီအလိုက်) နဲ့ extended statistics (column မျိုးစုံ ခြုံငုံသော) နှစ်မျိုးလုံးကို ရှင်းလင်းချက်"
-order: 94
+order: 105
 source: "https://www.postgresql.org/docs/current/planner-stats.html"
 status: translated
 updated: 2026-09-03

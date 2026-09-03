@@ -1,7 +1,7 @@
 ---
 title: "Explicit Locking (explicit lock ပြုလုပ်ခြင်း)"
 description: "Explicit locking (ကိုယ်တိုင် အတိအကျ ပြုလုပ်သော locking) — table-level, row-level နှင့် page-level lock modes များ၊ lock compatibility ဇယားများ၊ deadlock နှင့် advisory lock များအကြောင်း"
-order: 88
+order: 99
 source: "https://www.postgresql.org/docs/current/explicit-locking.html"
 status: translated
 updated: 2026-09-03

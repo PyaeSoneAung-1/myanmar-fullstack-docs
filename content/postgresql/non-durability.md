@@ -1,7 +1,7 @@
 ---
 title: "Non-Durable Settings (non-durable ဆက်တင်များ)"
 description: "Durability အာမခံချက် မလိုအပ်တဲ့ အခြေအနေတွေမှာ PostgreSQL ကို ပိုမြန်အောင် configure လုပ်နိုင်တဲ့ ဆက်တင်များ — RAM disk သုံးခြင်း၊ fsync ပိတ်ခြင်း၊ synchronous_commit စသည်"
-order: 97
+order: 108
 source: "https://www.postgresql.org/docs/current/non-durability.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Locking and Indexes (lock နှင့် index များ)"
 description: "B-tree, GiST/SP-GiST, Hash, GIN index တွေရဲ့ locking ယန္တရားများ — concurrency နဲ့ deadlock ဆိုင်ရာ သုံးသပ်ချက်များ"
-order: 92
+order: 103
 source: "https://www.postgresql.org/docs/current/locking-indexes.html"
 status: translated
 updated: 2026-09-03
