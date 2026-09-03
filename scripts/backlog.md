@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 909 pages translated** (wave 22, 2026-09-03: +13 Next.js pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909
+**Total: 921 pages translated** (wave 23, 2026-09-03: +12 PostgreSQL pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -67,7 +67,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 14 (orders 22–30): advanced (healthcheck-graceful-shutdown, security-updates), guide (database-integration, migrating-4, migrating-5), resources (glossary, community, utils), support — expressjs.com မျက်နှာစုံ ပြီးစီး 🎉
 - [ ] api-reference (4.x/5.x) — excluded per sources.json note
 
-## PostgreSQL (postgresql.org/docs — tutorial + core chapters) — est ~500 — 67 done
+## PostgreSQL (postgresql.org/docs — tutorial + core chapters) — est ~500 — 79 done
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [x] Wave 19 (orders 19–37, 19 pages — 2026-09-03): Chapter 5 Data Definition (15 pages: 5.1 basics → 5.15 dependency tracking) + Chapter 6 Data Manipulation (4 pages: insert/update/delete/returning) — PostgreSQL 18.6 docs, official per-section pages (PostgreSQL 18 docs consolidated; old per-subsection URLs like ddl-constraints-fk.html are gone)
   - Sources: postgresql.org/docs/current HTML → clean markdown via `scripts/pg-html2md.py` (committed converter, needs `beautifulsoup4`); no official markdown source exists
@@ -77,7 +77,11 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 21 (orders 48–67, 20 pages — 2026-09-03): Chapter 8 Data Types COMPLETE 🎉 (8.1 numeric → 8.21 pseudo-types — numeric, money, character, binary, datetime, boolean, enum, geometric, network, bit, textsearch, uuid, xml, json/jsonb, arrays, composite/rowtypes, range types, domains, oid, pseudo) — Part II "SQL Language" ရဲ့ အကြီးဆုံး chapter ပြီးစီး
   - PG 18.6: 8.20 pg_lsn standalone page မရှိတော့ (datatype-pglsn.html 404); 8.21 pseudo-types နှင့် ဆက်တိုက်ဖြစ်သည် — landing (datatype.html) က TOC chrome မို့ skip
   - Sources: postgresql.org/docs/current HTML → `scripts/pg-html2md.py`; QA: fences byte-identical (147), 0 dead internal links, orders 1–67 contiguous
-- [ ] ကျန် (next wave အလို့ငှာ): Chapter 9 Functions and Operators (ကြီးမား — Part II core), Chapter 11 Indexes, Chapter 13 Concurrency, Chapter 14 Performance; SQL Commands reference (Part VI, giant) — နောက်ပိုင်း ဆက်ရန်
+- [x] Wave 23 (orders 68–79, 12 pages — 2026-09-03): Chapter 11 Indexes COMPLETE 🎉 (11.1 indexes-intro → 11.12 indexes-examine — indexes-types w/ 11.2.1–11.2.6 B-Tree/Hash/GiST/SP-GiST/GIN/BRIN, indexes-ordering, indexes-bitmap-scans, indexes-unique, indexes-expressional, indexes-partial, indexes-index-only-scans, indexes-opclass, indexes-collations, indexes-examine) — PostgreSQL 67 → 79. Part II core chapters: Tutorial + Ch4–Ch8 + Ch11 ပြီးစီး
+  - Sources: postgresql.org/docs/current HTML → `scripts/pg-html2md.py` (converted sources staged /home/user/.workspace/pg-src/ch11, not committed)
+  - QA (independent sweep): orders 68–79 contiguous, 0 collisions; frontmatter complete; all code fences byte-identical to converted source; 0 dead internal links (corpus-wide); no []() / bare-.html / (#anchor) artifacts; no English prose leaks
+  - Note: tutorial `indexes.md` (order 6, from indexes.html landing) kept as-is — distinct tutorial page; ch11 reference pages are the real section docs
+- [ ] ကျန် (next wave အလို့ငှာ): Chapter 9 Functions and Operators (ကြီးမား — Part II core), Chapter 13 Concurrency, Chapter 14 Performance; SQL Commands reference (Part VI, giant) — နောက်ပိုင်း ဆက်ရန်
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
 ## Postman (learning.postman.com) — est ~150 — 166 done

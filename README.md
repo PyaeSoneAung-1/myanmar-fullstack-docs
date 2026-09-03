@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **909 pages ဘာသာပြန်ပြီး** (wave 22, 2026-09-03: +13 — Next.js Adapters API reference COMPLETE, Next 16.3.4) — Next.js 257/300; PostgreSQL 67/500 (Ch4–Ch8)
-- 🔄 ကျန် ~811 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **921 pages ဘာသာပြန်ပြီး** (wave 23, 2026-09-03: +12 — PostgreSQL Chapter 11 Indexes COMPLETE) — Next.js 257/300; PostgreSQL 79/500 (Tutorial + Ch4–Ch8 + Ch11)
+- 🔄 ကျန် ~799 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
