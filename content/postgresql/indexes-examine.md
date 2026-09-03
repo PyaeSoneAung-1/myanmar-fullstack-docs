@@ -1,7 +1,7 @@
 ---
 title: "Examining Index Usage (index အသုံးပြုမှု စစ်ဆေးခြင်း)"
 description: "PostgreSQL မှာ ဘယ် index တွေကို query တွေက တကယ် အသုံးပြုနေလဲ စစ်ဆေးနည်း — EXPLAIN command၊ ANALYZE ကို ဦးစွာ run ရန်၊ တကယ့် data ဖြင့် စမ်းသပ်ရန်၊ index အသုံးပြုမှုကို အတင်းအကျပ် ပြုလုပ်ခြင်း အစရှိသော index ရွေးချယ်မှုအတွက် အကြံပြုချက်များ"
-order: 79
+order: 85
 source: "https://www.postgresql.org/docs/current/indexes-examine.html"
 status: translated
 updated: 2026-09-03

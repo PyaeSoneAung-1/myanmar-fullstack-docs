@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **921 pages ဘာသာပြန်ပြီး** (wave 23, 2026-09-03: +12 — PostgreSQL Chapter 11 Indexes COMPLETE) — Next.js 257/300; PostgreSQL 79/500 (Tutorial + Ch4–Ch8 + Ch11)
-- 🔄 ကျန် ~799 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **939 pages ဘာသာပြန်ပြီး** (wave 24, 2026-09-03: +18 — PostgreSQL Ch10 Type Conversion + Ch13 Concurrency + Ch14 Performance COMPLETE) — Next.js 257/300; PostgreSQL 97/500 (Tutorial + Ch4–Ch8 + Ch10 + Ch11 + Ch13 + Ch14)
+- 🔄 ကျန် ~781 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note

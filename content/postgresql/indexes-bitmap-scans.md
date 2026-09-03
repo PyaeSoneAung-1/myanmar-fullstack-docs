@@ -1,7 +1,7 @@
 ---
 title: "Combining Multiple Indexes (index များစွာ ပေါင်းစပ်အသုံးပြုခြင်း)"
 description: "Index scan တစ်ခုတည်းနဲ့ မဖြေရှင်းနိုင်တဲ့ query တွေအတွက် index အများအပြားကို bitmap နဲ့ ပေါင်းစပ်အသုံးပြုပုံ၊ ဘယ်အခါမှာ သီးခြား index တွေက multicolumn index ထက် ပိုသင့်လျော်လဲဆိုတာ"
-order: 72
+order: 78
 source: "https://www.postgresql.org/docs/current/indexes-bitmap-scans.html"
 status: translated
 updated: 2026-09-03

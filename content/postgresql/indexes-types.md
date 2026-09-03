@@ -1,7 +1,7 @@
 ---
 title: "Index Types (index အမျိုးအစားများ)"
 description: "PostgreSQL ၏ index type အမျိုးမျိုး — B-tree, Hash, GiST, SP-GiST, GIN, BRIN တို့၏ သဘောတရား၊ တစ်ခုချင်းစီက ထောက်ပံ့နိုင်သော query နှင့် operator အမျိုးအစားများ"
-order: 69
+order: 75
 source: "https://www.postgresql.org/docs/current/indexes-types.html"
 status: translated
 updated: 2026-09-03

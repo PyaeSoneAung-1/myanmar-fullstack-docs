@@ -1,7 +1,7 @@
 ---
 title: "Index-Only Scans and Covering Indexes (index-only scan နဲ့ covering index များ)"
 description: "Heap ကို မထိဘဲ index တစ်ခုတည်းကနေ query ဖြေဆိုပေးနိုင်တဲ့ index-only scan နဲ့ လိုအပ်တဲ့ column တွေ ပါဝင်အောင် ဖန်တီးထားတဲ့ covering index အကြောင်း — သုံးလို့ရတဲ့ အခြေအနေတွေ၊ visibility map ရဲ့ အခန်းကဏ္ဍ၊ INCLUDE clause သုံးနည်းနဲ့ ကန့်သတ်ချက်များ"
-order: 76
+order: 82
 source: "https://www.postgresql.org/docs/current/indexes-index-only-scans.html"
 status: translated
 updated: 2026-09-03

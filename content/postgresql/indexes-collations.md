@@ -1,7 +1,7 @@
 ---
 title: "Indexes and Collations (index နဲ့ collation များ)"
 description: "Index column တစ်ခုစီအတွက် collation တစ်ခုတည်းကိုပဲ ထောက်ပံ့နိုင်တာကြောင့် — collation အမျိုးမျိုး လိုအပ်ရင် index အများအပြား လိုအပ်ပုံနဲ့ index က အောက်ခံ column ရဲ့ collation ကို အလိုအလျောက် သုံးပုံ"
-order: 78
+order: 84
 source: "https://www.postgresql.org/docs/current/indexes-collations.html"
 status: translated
 updated: 2026-09-03

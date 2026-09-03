@@ -1,7 +1,7 @@
 ---
 title: "Introduction (index မိတ်ဆက်)"
 description: "Index ဆိုတာ ဘာလဲ — query ရှာဖွေမှုကို index က ဘယ်လို မြန်ဆန်စေသလဲ၊ index ဖန်တီးခြင်း/ဖျက်ခြင်း၊ indexable clause ပုံစံများနဲ့ index ရဲ့ overhead အကြောင်း မိတ်ဆက်"
-order: 68
+order: 74
 source: "https://www.postgresql.org/docs/current/indexes-intro.html"
 status: translated
 updated: 2026-09-03

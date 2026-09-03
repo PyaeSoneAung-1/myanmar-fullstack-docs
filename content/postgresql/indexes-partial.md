@@ -1,7 +1,7 @@
 ---
 title: "Partial Indexes (partial index များ)"
 description: "Partial index — table ရဲ့ အစိတ်အပိုင်း တစ်ခုပေါ်မှာသာ တည်ဆောက်တဲ့ index — အဖြစ်များတဲ့ တန်ဖိုးတွေကို index လုပ်ခြင်းမှ ရှောင်ရှားခြင်း၊ စိတ်မဝင်စားစရာ တန်ဖိုးတွေကို ချန်လှပ်ခြင်း၊ partial unique index နဲ့ predicate ကိုက်ညီမှု စည်းမျဉ်းများ"
-order: 75
+order: 81
 source: "https://www.postgresql.org/docs/current/indexes-partial.html"
 status: translated
 updated: 2026-09-03
