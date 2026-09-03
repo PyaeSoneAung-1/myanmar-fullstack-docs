@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **896 pages ဘာသာပြန်ပြီး** (wave 21, 2026-09-03: +20 — PostgreSQL Chapter 8 Data Types COMPLETE, PG 18.6) — PostgreSQL 67/500; Part II core chapter (Ch8) ပြီးစီး
-- 🔄 ကျန် ~824 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **909 pages ဘာသာပြန်ပြီး** (wave 22, 2026-09-03: +13 — Next.js Adapters API reference COMPLETE, Next 16.3.4) — Next.js 257/300; PostgreSQL 67/500 (Ch4–Ch8)
+- 🔄 ကျန် ~811 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
