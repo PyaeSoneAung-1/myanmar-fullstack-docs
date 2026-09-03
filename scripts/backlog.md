@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 633 pages translated** (wave 13, 2026-09-02: +78 pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633
+**Total: 672 pages translated** (wave 14, 2026-09-03: +39 pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -21,7 +21,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 13 (orders 116–123): Activity, using-typescript, add-react-to-an-existing-project, react-developer-tools, react-compiler (+ installation, incremental-adoption, debugging) — React core Learn + Reference ပြည့်စုံ 🎉 (123/120 est)
 - [ ] React ကျန် (optional, low value): tutorial-tic-tac-toe, learn hubs (installation/setup/index), reference hubs (apis/components/hooks), addTransitionType, experimental_taint*, canary APIs (cacheSignal, captureOwnerStack)
 
-## Next.js (nextjs.org/docs app) — est ~300 — 107 done
+## Next.js (nextjs.org/docs app) — est ~300 — 119 done
 - [x] getting-started (hub), project-structure, pages-layouts, dynamic-routes, linking, css, image, fonts, forms (server functions/mutations)
 - [x] Building: data-fetching, route-handlers, server-client-components, caching (cache components model), revalidating, error-handling, not-found, parallel-routes, intercepting-routes, loading/streaming, lazy-loading
 - [x] Config/deploy: environment-variables, redirecting, static-exports, deploying, internationalization
@@ -35,9 +35,10 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 13 API reference (orders 75–80): components/image (next/image full reference, complete), file-conventions middleware + proxy + instrumentation-client, CLI (next + create-next-app)
 - [x] Wave 13 next.config.js options (orders 81–100, 20 pages): reactStrictMode, poweredByHeader, compress, output, distDir, basePath, assetPrefix, env, headers, redirects, rewrites, images, trailingSlash, typedRoutes, logging, devIndicators, webpack, transpilePackages, sassOptions, serverActions
 - [x] Wave 13 file conventions + guides (orders 101–108): dynamic-routes, mdx-components, public-folder, route-groups, src-folder, unauthorized; guides: testing, client-side-data-fetching
-- [ ] API reference ကျန်: next.config.js options အသေးစား ~45 ကျန် (turbopack*, experimental/nishe items — low priority), components (none left), guides ကျန် (upgrading/version-16, migrating/*, authentication, mdx, view-transitions, custom-server, production-checklist စသည်) — prose pages already link to official nextjs.org URLs pending translation
+- [x] Wave 14 guides (orders 108–119, 12 pages): authentication, upgrading (hub), upgrading-version-16, mdx, custom-server, production-checklist, css-in-js, sass, view-transitions, multi-zones, debugging, ci-build-caching
+- [ ] API reference ကျန်: next.config.js options အသေးစား ~45 ကျန် (turbopack*, experimental/nishe items — low priority), api-reference functions/file-conventions အသေးစားများ, guides ကျန် (migrating/*, analytics, open-telemetry, third-party-libraries, testing suites (cypress/jest/playwright/vitest), self-hosting, single-page-applications, progressive-web-apps, ai-agents, mcp, view-transitions done ✓) — prose pages link to official nextjs.org URLs pending translation
 
-## Node.js (nodejs.org/en/learn) — est ~180 — 81 done
+## Node.js (nodejs.org/en/learn) — est ~180 — 87 done (nodejs.org/en/learn repo အကုန် COMPLETE 🎉)
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
 - [x] Asynchronous work: event loop, timers, promises, async-programming, async flow control, blocking vs non-blocking, event emitter, process.nextTick, setImmediate, dont-block-the-event-loop
 - [x] Files: file paths, descriptors, file stats, file-system, reading-files, writing-files, working-with-folders, output/input command line
@@ -47,27 +48,29 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 9 (orders 45–71): nodejs-with-webassembly, comparing-nodejs-concurrency-models, diagnostics section complete (live-debugging, using-inspector, flame-graphs, poor-performance, using-linux-perf, memory, understanding-and-tuning-memory, using-gc-traces, using-heap-profiler, using-heap-snapshot, user-journey), modules (publishing-a-package, abi-stability, publishing-node-api-modules), test-runner complete (introduction, using-test-runner, mocking, collecting-code-coverage), typescript/introduction, userland-migrations complete (hub + axios-to-whatwg-fetch, chalk-to-util-styletext, correct-ts-specifiers, kleur-to-util-styletext, mocha-to-node-test-runner)
   - Note: nodejs.org/learn/modules/publishing-a-package now hosts 'Publishing ECMAScript modules' (module formats/dual-package) content — translated as-is
 - [x] node-api (wave 10, orders 72–81): section hub, getting-started (prerequisites, project-structure, your-first-project, tools, migration, objectwrap), build-tools (hub, node-gyp, cmake-js)
-- [ ] node-api special-topics (asyncworker, context-awareness, object-function-refs, thread-safe-functions) — optional deep area
+- [x] Wave 14 node-api special topics (orders 82–87): special-topics hub, asyncworker, context-awareness, object-function-refs, thread-safe-functions, node-pre-gyp — nodejs.org/en/learn section ပြည့်စုံ 🎉
 - [ ] Core API reference digest (nodejs.org/api — est scope of the 180 total) — not started
 
-## Express (expressjs.com) — est ~30 — 21 done (API ref excluded)
+## Express (expressjs.com) — est ~30 — 30 done 🎉 COMPLETE (API ref excluded)
 - [x] Starter: getting-started, installing, hello-world, generator, faq, examples
 - [x] Guide: routing, middleware, writing-middleware, error-handling, static-files, template-engines, developing-template-engines, advanced-routing, debugging, behind-proxies, best-practices, security, overriding-express-api
 - [x] Resources: resources, contribution-guide
+- [x] Wave 14 (orders 22–30): advanced (healthcheck-graceful-shutdown, security-updates), guide (database-integration, migrating-4, migrating-5), resources (glossary, community, utils), support — expressjs.com မျက်နှာစုံ ပြီးစီး 🎉
 - [ ] api-reference (4.x/5.x) — excluded per sources.json note
 
 ## PostgreSQL (postgresql.org/docs tutorial + core) — est ~500 — 18 done
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
-## Postman (learning.postman.com) — est ~150 — 104 done
+## Postman (learning.postman.com) — est ~150 — 116 done
 - [x] getting-started, create-requests, managing-environments, variables, create-collections, manage-collections, authorization, intro-to-scripts, mock-servers, testing, building-workflows, creating-workspaces
 - [x] Wave 8 (orders 13–18): quick-start, request-basics, parameters, headers, pre-request-scripts, intro-monitors
 - [x] Wave 9 (orders 19–32): responses, examples, define-variables, test-data, intro-to-collections, intro-to-collection-runs, setting-up-monitor, sharing, using-workspaces, requests (overview), test-examples, troubleshoot-tests, create-dynamic-responses, comments
 - [x] Wave 11 auth methods (orders 33–45): authorization-types, specifying-authorization-details, digest-auth, oauth-20, aws-signature, ntlm-authentication, hawk-authentication, authentication-for-public-apis, certificates, oauth-10, akamai-edgegrid, atlassian
 - [x] Wave 11 runs + version control (orders 46–52): running-collections-overview, scheduling-collection-runs, working-with-data-files, collection-webhooks, version-control-overview, forking-elements, creating-pull-requests, reviewing-pull-requests
 - [x] Wave 12 API design/monitoring (orders 53–74): specifications (overview, create/import/edit/validate, add-files, collaborate, generate-collections, view-live-documentation), api-builder, monitor results + reports (viewing, publish, update, usage, troubleshooting, faqs, static-IPs), sandbox reference (overview, pm.variables, pm.request, pm.response)
-- [ ] Learning Center ကျန် — request/response deep dives (response saving/viewing), testing libraries (chai etc.), remaining sandbox pm.* pages, collection run reports/analysis, workspaces admin, private API network, admin/enterprise, webhooks/api-catalog — အများကြီး ကျန်သေး
+- [x] Wave 14 (orders 102–110, 105–116): GraphQL client (graphql-overview, graphql-http, graphql-client-first-request, graphql-client-interface), WebSocket (websocket-overview, create-a-websocket-request), capturing request data section complete (capture-overview, capturing-http-requests, capturing-https-traffic, capture-with-proxy, interceptor, syncing-cookies)
+- [ ] Learning Center ကျန် — request/response deep dives, testing libraries (chai etc.), remaining sandbox pm.* (pm-info, pm-message, pm-mock, pm-require, pm-state), collection run reports/analysis, workspaces admin (private/internal/partner), private API network, admin/enterprise, integrations/webhooks/api-catalog, Postman CLI, Newman — အများကြီး ကျန်သေး
   - Note: learning.postman.com rebuilt on Fern platform — URLs changed (sending-requests/* → use/send-requests/*). Clean markdown available: append `.md` to any page URL (e.g. https://learning.postman.com/docs/<path>.md); full index at /llms.txt. sources.json note is outdated.
 
 ## Prisma (prisma.io/docs) — est ~200 — 36 done

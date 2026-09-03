@@ -1,7 +1,7 @@
 ---
 title: "Client-side Data Fetching (client ဘက်မှ data ယူခြင်း)"
 description: "Client Components တွေထဲမှာ data-fetching library (SWR, TanStack Query, Apollo Client) နဲ့ data ယူနည်း; Server Component ကနေ initial data ထောက်ပံ့ခြင်း, fetching pattern ရွေးချယ်ခြင်း, cache layers များနှင့် mutations ညှိနှိုင်းခြင်း"
-order: 108
+order: 120
 source: "https://nextjs.org/docs/app/guides/client-side-data-fetching"
 status: translated
 updated: 2026-09-02

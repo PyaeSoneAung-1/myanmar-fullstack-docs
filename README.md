@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **633 pages ဘာသာပြန်ပြီး** (wave 13, 2026-09-02: +78) — React ပြည့်စုံ (Activity, using-typescript, add-react-to-an-existing-project, react-developer-tools, react-compiler ×4 → 123/120)၊ Next.js +34 (components/image တစ်ခုလုံး, file-conventions middleware/proxy/instrumentation-client/dynamic-routes/mdx-components/public-folder/route-groups/src-folder/unauthorized, CLI next + create-next-app, next.config.js options ×20, guides testing + client-side-data-fetching → 107/300)၊ Postman +30 (response-data/variables/sandbox pm.* /collaborating → 104/150)၊ TanStack Query +6 (comparison + migrating guides → 69/100)
-- 🔄 ကျန် ~1,087 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **672 pages ဘာသာပြန်ပြီး** (wave 14, 2026-09-03: +39) — Express ပြည့်စုံ 🎉 (advanced/healthcheck-graceful-shutdown, security-updates, database-integration, migrating-4/5, glossary, community, utils, support → 30/30)၊ Node.js learn repo အကုန်ပြီး 🎉 (node-api special-topics: asyncworker, context-awareness, object-function-refs, thread-safe-functions + node-pre-gyp → 87)၊ Next.js +12 guides (authentication, upgrading + version-16, mdx, custom-server, production-checklist, css-in-js, sass, view-transitions, multi-zones, debugging, ci-build-caching → 119/300)၊ Postman +12 (GraphQL client, WebSocket, capturing request data section အကုန် → 116/150)
+- 🔄 ကျန် ~1,048 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
