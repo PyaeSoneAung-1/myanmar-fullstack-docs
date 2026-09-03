@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **847 pages ဘာသာပြန်ပြီး** (wave 18, 2026-09-03: +24 — Next.js guides/API ref) — Next.js 244/300 🎉 guides queue အကုန် ပြီးစီး: app-router-migration, migrating-to-cache-components, interactive-apps, instant-navigation, backend-for-frontend, progressive-web-apps, offline-support, preserving-ui-state, content-security-policy, scripts, videos, building, package-bundling, tailwind-v3-css + upgrading v14/v15; API ref အသစ်: notFound function, Edge Runtime, Turbopack, config typescript/eslint, metadata-and-og-images
-- 🔄 ကျန် ~873 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **866 pages ဘာသာပြန်ပြီး** (wave 19, 2026-09-03: +19 — PostgreSQL Chapter 5 Data Definition + Chapter 6 Data Manipulation, PG 18.6) — PostgreSQL 37/500; tutorial → core SQL language chapters စတင်ပြီ
+- 🔄 ကျန် ~854 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
