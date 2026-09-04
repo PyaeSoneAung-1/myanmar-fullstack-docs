@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 1005 pages translated** (wave 28, 2026-09-04: +12 PostgreSQL SQL Commands pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005
+**Total: 1017 pages translated** (wave 29, 2026-09-04: +12 PostgreSQL SQL Commands pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -104,7 +104,12 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - QA (independent sweep): orders 152–163 contiguous, 0 collisions; frontmatter complete; ALL code fences byte-identical to converted source; 0 dead internal links (corpus-wide); 0 non-absolute .html link targets; no []() / [[ ]] / trailing-# / English-leak artifacts
   - Quirks handled by workers: MERGE nested ordered lists rebuilt (micromark-verified); COPY backslash-escaping mirrored byte-exact; WORK/TRANSACTION glued terms unfurled; flattened Warning div mid-dl-item → multi-paragraph blockquote; rollback-to/release-savepoint NOT in corpus → external links
   - Next: SQL Commands batch 3 — roles/privileges (CREATE/ALTER/DROP ROLE, GRANT, REVOKE...) or table cluster (CREATE/ALTER/DROP TABLE...) or data-query (SELECT...) — SELECT/CREATE TABLE ကြီးတွေကို wave တစ်ခုတည်းမှာ သီးသန့် လုပ်သင့်
-- [ ] ကျန် (next wave အလို့ငှာ): SQL Commands batch 3 (roles/privileges, tables, indexes, functions, SELECT...) — ~160 commands ကျန်; Node.js core API digest; TanStack API leftovers; Next.js API-reference index hubs
+- [x] Wave 29 SQL Commands batch 3 (orders 164–175, 12 pages — 2026-09-04): roles/privileges/access control cluster COMPLETE — CREATE/ALTER/DROP ROLE, CREATE/ALTER/DROP USER, SET ROLE, SET SESSION AUTHORIZATION, GRANT, REVOKE, DROP OWNED, REASSIGN OWNED → PostgreSQL 163 → 175; corpus total 1017
+  - Sources: postgresql.org/docs/current HTML → scripts/pg-html2md.py (staged /home/user/.workspace/pg-src/w29)
+  - QA (independent sweep): orders 164–175 contiguous, 0 collisions; frontmatter complete; ALL code fences byte-identical to converted source; 0 dead internal links (corpus-wide); 0 non-absolute .html link targets; no []() / [[ ]] / trailing-# / English-leak artifacts
+  - Quirks handled: GRANT/ALTER ROLE glued DocBook privilege/attribute terms unfurled (SELECTINSERT→15 terms, SUPERUSERNOSUPERUSER...); CREATE USER/ALTER USER/DROP USER alias-stub pages translated fully; empty `[](glossary.html#...)` link artifact merged into one external link
+  - Next: SQL Commands batch 4 — data-definition cluster (CREATE/ALTER/DROP TABLE — giant pages, သီးသန့် waves) သို့မဟုတ် indexes cluster (CREATE/ALTER/DROP INDEX + REINDEX) သို့မဟုတ် SELECT (data query — giant)
+- [ ] ကျန် (next wave အလို့ငှာ): SQL Commands batch 4 (~145 commands ကျန် — tables, indexes, functions/procedures/triggers, SELECT/VALUES, session/config, maintenance, misc); Node.js core API digest; TanStack API leftovers; Next.js API-reference index hubs
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
 ## Postman (learning.postman.com) — est ~150 — 166 done
