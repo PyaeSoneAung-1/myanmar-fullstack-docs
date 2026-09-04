@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1060 pages ဘာသာပြန်ပြီး** (wave 33, 2026-09-04: +7 — PostgreSQL SQL Commands batch 7: giant data-definition + data-query cluster — CREATE TABLE, ALTER TABLE, DROP TABLE, SELECT, SELECT INTO, CREATE TABLE AS, VALUES) — Next.js 257/300; PostgreSQL 218/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1–7)
-- 🔄 ကျန် ~660 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1080 pages ဘာသာပြန်ပြီး** (wave 34, 2026-09-04: +20 — PostgreSQL SQL Commands batch 8: function/trigger/type/domain clusters — CREATE/ALTER/DROP FUNCTION, CREATE/ALTER/DROP PROCEDURE, ALTER/DROP ROUTINE, CREATE/ALTER/DROP TRIGGER, CREATE/ALTER/DROP EVENT TRIGGER, CREATE/ALTER/DROP TYPE, CREATE/ALTER/DROP DOMAIN) — Next.js 257/300; PostgreSQL 238/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1–8)
+- 🔄 ကျန် ~640 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
