@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **981 pages ဘာသာပြန်ပြီး** (wave 26, 2026-09-04: +31 — PostgreSQL Chapter 9 Functions and Operators COMPLETE) — Next.js 257/300; PostgreSQL 139/500 (Tutorial + Ch4–Ch14 core chapters)
-- 🔄 ကျန် ~770 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **993 pages ဘာသာပြန်ပြီး** (wave 27, 2026-09-04: +12 — PostgreSQL SQL Commands batch 1: CREATE/ALTER/DROP DATABASE + SCHEMA/VIEW/SEQUENCE + COMMENT) — Next.js 257/300; PostgreSQL 151/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1)
+- 🔄 ကျန် ~727 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note

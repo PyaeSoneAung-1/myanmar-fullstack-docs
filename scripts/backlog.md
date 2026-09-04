@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 981 pages translated** (wave 26, 2026-09-04: +31 PostgreSQL pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981
+**Total: 993 pages translated** (wave 27, 2026-09-04: +12 PostgreSQL SQL Commands pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -92,7 +92,14 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - QA (independent sweep): orders 1–108 contiguous, 0 collisions; frontmatter complete; fenced bodies byte-identical to source; 0 dead internal links; no []() / [[ ]] / bare-# artifacts
   - Note: converter left some psql <programlisting> sessions inside list items UNFENCED (GFM would mangle pipe tables) — textsearch-psql.md sessions wrapped in plain fences (8 added); all fenced bodies verified verbatim from EN source
   - Notes: "264" superscript mangling → 2^64 (house caret style); backticks restored on tsvector/tsquery/<N>
-- [ ] ကျန် (next wave အလို့ငှာ): Chapter 9 Functions and Operators (ကြီးမား — Part II core), SQL Commands reference (Part VI, giant); Node.js core API digest; TanStack API leftovers; Next.js API-reference index hubs
+- [x] Wave 26 (orders 68–98, 31 pages — 2026-09-04): Chapter 9 Functions and Operators COMPLETE (9.1 logical → 9.28 statistics — functions-* 31 pages) — Part II SQL Language ပြည့်စုံ 🎉 (Tutorial + Ch4–Ch14 အားလုံး)
+  - Sources: postgresql.org/docs/current HTML → scripts/pg-html2md.py (staged /home/user/.workspace/pg-src/w26)
+- [x] Wave 27 SQL Commands batch 1 (orders 140–151, 12 pages — 2026-09-04): database/object management commands COMPLETE — CREATE/ALTER/DROP DATABASE, CREATE/DROP SCHEMA, CREATE/ALTER/DROP VIEW, CREATE/ALTER/DROP SEQUENCE, COMMENT → PostgreSQL 139 → 151; corpus total 993
+  - Sources: postgresql.org/docs/current HTML → scripts/pg-html2md.py (staged /home/user/.workspace/pg-src/w27); slugs sql-<page>.md (source page names)
+  - QA (independent sweep): orders 140–151 contiguous, 0 collisions; frontmatter complete; ALL code fences byte-identical to converted source; 0 dead internal links (corpus-wide); 0 non-absolute .html link targets; no []() / [[ ]] / trailing-# / English-leak artifacts
+  - Links: corpus-translated targets → internal /docs/postgresql/<slug>; untranslated commands/sections → absolute postgresql.org/docs/current URLs
+  - Note: bare syntax lines inside list items (e.g. CREATE VIEW RECURSIVE) wrapped in indented ```sql fences per wave-25 practice
+- [ ] ကျန် (next wave အလို့ငှာ): SQL Commands batch 2+ (Part VI — ~170 commands ကျန်; SELECT/CREATE TABLE/INSERT စတဲ့ ကြီးမားတဲ့ commands တွေ အပါအဝင်); Node.js core API digest; TanStack API leftovers; Next.js API-reference index hubs
 - [ ] Core chapters + reference — ကြီးမားလွန်း (full docs ~3000 pages); tutorial ပြီးမြောက်။ နောက်ဆုံးမှ ဆက်ရန်
 
 ## Postman (learning.postman.com) — est ~150 — 166 done
