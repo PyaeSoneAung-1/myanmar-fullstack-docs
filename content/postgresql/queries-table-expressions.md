@@ -300,7 +300,7 @@ ROWS FROM( function_call [, ... ] ) [WITH ORDINALITY] [[AS] table_alias [(column
 
 `WITH ORDINALITY` clause ကို သတ်မှတ်ထားရင် — function ရဲ့ result column တွေထဲကို `bigint` type ရှိတဲ့ column ထပ်တစ်ခု ပေါင်းထည့်ပါလိမ့်မယ်။ ဒီ column က function result set ထဲက row တွေကို 1 ကစပြီး နံပါတ်စဉ် သတ်မှတ်ပေးပါတယ်။ (ဒါက SQL standard ရဲ့ `UNNEST ... WITH ORDINALITY` syntax ကို ယေဘုယျ ချဲ့ထွင်ထားတာ ဖြစ်ပါတယ်။) Default အနေနဲ့ — ordinal column ကို `ordinality` လို့ ခေါ်ပြီး — `AS` clause သုံးပြီး တခြား column နာမည် တစ်ခု သတ်မှတ်ပေးလို့လည်း ရပါတယ်။
 
-အထူး table function ဖြစ်တဲ့ `UNNEST` ကို — array parameter အရေအတွက် ဘယ်လောက်နဲ့မဆို ခေါ်လို့ရပြီး — parameter တစ်ခုချင်းစီအပေါ် `UNNEST` ([အပိုင်း 9.19](https://www.postgresql.org/docs/current/functions-array.html)) ကို သီးခြားခေါ်ပြီး `ROWS FROM` တည်ဆောက်ပုံနဲ့ ပေါင်းစပ်ထားသလို — ကိုက်ညီတဲ့ column အရေအတွက်ကို ပြန်ပေးပါတယ်။
+အထူး table function ဖြစ်တဲ့ `UNNEST` ကို — array parameter အရေအတွက် ဘယ်လောက်နဲ့မဆို ခေါ်လို့ရပြီး — parameter တစ်ခုချင်းစီအပေါ် `UNNEST` ([အပိုင်း 9.19](/docs/postgresql/functions-array)) ကို သီးခြားခေါ်ပြီး `ROWS FROM` တည်ဆောက်ပုံနဲ့ ပေါင်းစပ်ထားသလို — ကိုက်ညီတဲ့ column အရေအတွက်ကို ပြန်ပေးပါတယ်။
 
 ```sql
 UNNEST( array_expression [, ... ] ) [WITH ORDINALITY] [[AS] table_alias [(column_alias [, ... ])]]
@@ -522,7 +522,7 @@ SELECT select_list
 (3 rows)
 ```
 
-ဒီမှာ `sum` က — group တစ်ခုလုံးအပေါ်မှာ တန်ဖိုးတစ်ခုတည်း တွက်ချက်ပေးတဲ့ — aggregate function တစ်ခုပါ။ ရနိုင်တဲ့ aggregate function တွေအကြောင်း နောက်ထပ် အချက်အလက်တွေကို [အပိုင်း 9.21](https://www.postgresql.org/docs/current/functions-aggregate.html) မှာ တွေ့နိုင်ပါတယ်။
+ဒီမှာ `sum` က — group တစ်ခုလုံးအပေါ်မှာ တန်ဖိုးတစ်ခုတည်း တွက်ချက်ပေးတဲ့ — aggregate function တစ်ခုပါ။ ရနိုင်တဲ့ aggregate function တွေအကြောင်း နောက်ထပ် အချက်အလက်တွေကို [အပိုင်း 9.21](/docs/postgresql/functions-aggregate) မှာ တွေ့နိုင်ပါတယ်။
 
 > **အကြံပြုချက်:** Aggregate expression တွေ မပါဘဲ grouping လုပ်တာက — column တစ်ခုထဲက distinct (မထပ်တူ) တန်ဖိုးတွေရဲ့ အစုကို ထိရောက်စွာ တွက်ချက်ပေးပါတယ်။ ဒါကို `DISTINCT` clause သုံးပြီးလည်း ရနိုင်ပါတယ် ([အပိုင်း 7.3.3](/docs/postgresql/queries-select-lists) ကို ကြည့်ပါ)။
 
@@ -607,7 +607,7 @@ Query တစ်ခုမှာ aggregate function call တွေ ပါဝင်
 
 `GROUPING SETS` ရဲ့ sublist တစ်ခုချင်းစီမှာ — column တွေ ဒါမှမဟုတ် expression တွေကို သုည ဒါမှမဟုတ် တစ်ခုထက်ပိုပြီး သတ်မှတ်နိုင်ပြီး — `GROUP BY` clause ထဲမှာ တိုက်ရိုက် ရေးထားသလိုပဲ အဓိပ္ပာယ် ဖွင့်ဆိုပါတယ်။ Grouping set အလွတ် (empty) တစ်ခုဆိုရင် — row အားလုံးကို group တစ်ခုတည်းအထိ စုစည်းလိုက်တာကို ဆိုလိုပါတယ် (input row တွေ မရှိခဲ့ရင်တောင် output ထွက်ပါတယ်) — ဒါက အပေါ်မှာ `GROUP BY` clause မပါတဲ့ aggregate function တွေရဲ့ ကိစ္စအတွက် ဖော်ပြခဲ့တာနဲ့ အတူတူပါ။
 
-Grouping column တွေ ဒါမှမဟုတ် expression တွေကို ရည်ညွှန်းတာတွေကို — အဲဒီ column တွေ မပါဝင်တဲ့ grouping set တွေရဲ့ result row တွေထဲမှာ — null value တွေနဲ့ အစားထိုးပါတယ်။ Output row တစ်ခုက ဘယ် grouping ကနေ ဖြစ်ပေါ်လာလဲဆိုတာ ခွဲခြားဖို့ — [ဇယား 9.66](https://www.postgresql.org/docs/current/functions-aggregate.html#FUNCTIONS-GROUPING-TABLE) ကို ကြည့်ပါ။
+Grouping column တွေ ဒါမှမဟုတ် expression တွေကို ရည်ညွှန်းတာတွေကို — အဲဒီ column တွေ မပါဝင်တဲ့ grouping set တွေရဲ့ result row တွေထဲမှာ — null value တွေနဲ့ အစားထိုးပါတယ်။ Output row တစ်ခုက ဘယ် grouping ကနေ ဖြစ်ပေါ်လာလဲဆိုတာ ခွဲခြားဖို့ — [ဇယား 9.66](/docs/postgresql/functions-aggregate) ကို ကြည့်ပါ။
 
 Grouping set အမျိုးအစား အသုံးများတဲ့ နှစ်မျိုးကို သတ်မှတ်ဖို့ အတိုကောက် notation တစ်ခု ပံ့ပိုးပေးထားပါတယ်။ ဒီပုံစံ clause တစ်ခုက —
 
@@ -755,7 +755,7 @@ GROUP BY GROUPING SETS (
 
 ### 7.2.5. Window Function Processing (window function ဆောင်ရွက်ခြင်း)
 
-Query တစ်ခုထဲမှာ window function တွေ ပါဝင်နေရင် ([အပိုင်း 3.5](/docs/postgresql/window-functions), [အပိုင်း 9.22](https://www.postgresql.org/docs/current/functions-window.html) နဲ့ [အပိုင်း 4.2.8](/docs/postgresql/sql-expressions) ကို ကြည့်ပါ) — ဒီ function တွေကို grouping, aggregation နဲ့ `HAVING` filtering တွေ လုပ်ဆောင်ပြီးမှ — အကဲဖြတ်ပါတယ်။ ဆိုလိုတာက — query ထဲမှာ aggregate တွေ၊ `GROUP BY` ဒါမှမဟုတ် `HAVING` သုံးထားရင် — window function တွေ မြင်ရတဲ့ row တွေက — `FROM`/`WHERE` ကနေ လာတဲ့ မူလ table row တွေ မဟုတ်ဘဲ — group row တွေ ဖြစ်ပါတယ်။
+Query တစ်ခုထဲမှာ window function တွေ ပါဝင်နေရင် ([အပိုင်း 3.5](/docs/postgresql/window-functions), [အပိုင်း 9.22](/docs/postgresql/functions-window) နဲ့ [အပိုင်း 4.2.8](/docs/postgresql/sql-expressions) ကို ကြည့်ပါ) — ဒီ function တွေကို grouping, aggregation နဲ့ `HAVING` filtering တွေ လုပ်ဆောင်ပြီးမှ — အကဲဖြတ်ပါတယ်။ ဆိုလိုတာက — query ထဲမှာ aggregate တွေ၊ `GROUP BY` ဒါမှမဟုတ် `HAVING` သုံးထားရင် — window function တွေ မြင်ရတဲ့ row တွေက — `FROM`/`WHERE` ကနေ လာတဲ့ မူလ table row တွေ မဟုတ်ဘဲ — group row တွေ ဖြစ်ပါတယ်။
 
 Window function အများကြီး သုံးထားတဲ့အခါ — သူတို့ရဲ့ window definition တွေထဲမှာ ညီမျှတဲ့ `PARTITION BY` နဲ့ `ORDER BY` clause တွေ ရှိတဲ့ window function အားလုံးက — `ORDER BY` က အစဉ်ကို သီးသန့် သတ်မှတ်မပေးနိုင်ရင်တောင် — input row တွေရဲ့ အစဉ်အတူတူကိုပဲ မြင်ရမယ်လို့ အာမခံပါတယ်။ ဒါပေမယ့် — မတူညီတဲ့ `PARTITION BY` ဒါမှမဟုတ် `ORDER BY` သတ်မှတ်ချက်တွေ ရှိတဲ့ function တွေရဲ့ အကဲဖြတ်မှုအကြောင်းကိုတော့ အာမခံချက် မပေးပါဘူး။ (ဒီလိုကိစ္စမျိုးမှာ — window function အကဲဖြတ်မှု အဆင့်တွေကြားမှာ sort (စီခြင်း) အဆင့်တစ်ခု ပုံမှန် လိုအပ်ပြီး — အဲဒီ sort က — သူ့ရဲ့ `ORDER BY` က ညီမျှတယ်လို့ မြင်တဲ့ row တွေရဲ့ အစဉ်ကို ထိန်းသိမ်းပေးမယ်လို့တော့ အာမခံချက် မရှိပါဘူး။)
 

@@ -1,7 +1,7 @@
 ---
 title: "Multicolumn Indexes (column များစွာ ပါတဲ့ index များ)"
 description: "Column တစ်ခုထက်ပိုပြီး သတ်မှတ်နိုင်တဲ့ index — B-tree, GiST, GIN, BRIN type များရဲ့ column မျိုးစုံ ပံ့ပိုးမှု၊ leading column စည်းမျဉ်း၊ skip scan optimization နဲ့ multicolumn index ကို ချွေတာပြီး သုံးသင့်ခြင်း"
-order: 76
+order: 107
 source: "https://www.postgresql.org/docs/current/indexes-multicolumn.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Operators (operator များ)"
 description: "Operator expression ထဲမှာ သုံးမည့် operator ကို ရွေးချယ်သည့် operator type resolution လုပ်ထုံးလုပ်နည်း — pg_operator catalog မှ ရွေးချယ်ခြင်း၊ exact match ရှာခြင်း၊ best match စည်းမျဉ်းများ — ဥပမာများနှင့်တကွ"
-order: 69
+order: 100
 source: "https://www.postgresql.org/docs/current/typeconv-oper.html"
 status: translated
 updated: 2026-09-03

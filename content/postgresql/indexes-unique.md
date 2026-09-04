@@ -1,7 +1,7 @@
 ---
 title: "Unique Indexes (unique index များ)"
 description: "Unique index တွေက column တန်ဖိုး ဒါမှမဟုတ် column ပေါင်းစုံတန်ဖိုးတွေရဲ့ uniqueness ကို အတင်းအကျပ် လိုက်နာစေပုံ၊ null တန်ဖိုးတွေကို ကိုင်တွယ်ပုံနဲ့ unique constraint / primary key အတွက် အလိုအလျောက် ဖန်တီးခံရပုံ"
-order: 79
+order: 110
 source: "https://www.postgresql.org/docs/current/indexes-unique.html"
 status: translated
 updated: 2026-09-03

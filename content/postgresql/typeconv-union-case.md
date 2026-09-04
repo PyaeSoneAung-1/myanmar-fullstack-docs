@@ -1,7 +1,7 @@
 ---
 title: "UNION, CASE, and Related Constructs (UNION, CASE နှင့် ဆက်စပ်တည်ဆောက်မှုများ)"
 description: "UNION ၊ CASE ၊ INTERSECT ၊ EXCEPT စသည့် construct များတွင် မတူညီသော type များကို result data type တစ်ခုတည်း အဖြစ် ဖြေရှင်းပုံ — type resolution algorithm ၏ စည်းမျဉ်းများနှင့် ဥပမာများ ပါဝင်သည်"
-order: 72
+order: 103
 source: "https://www.postgresql.org/docs/current/typeconv-union-case.html"
 status: translated
 updated: 2026-09-03

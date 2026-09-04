@@ -1,7 +1,7 @@
 ---
 title: "Functions (function များ)"
 description: "Function call တစ်ခုက ရည်ညွှန်းတဲ့ function ကို ရွေးချယ်သည့် function type resolution လုပ်ထုံးလုပ်နည်း — pg_proc catalog မှ ရွေးချယ်ခြင်း၊ variadic/default parameter စည်းမျဉ်းများ၊ exact match နှင့် best match ရှာဖွေခြင်း၊ CAST specification သဘောတရား — ဥပမာများနှင့်တကွ"
-order: 70
+order: 101
 source: "https://www.postgresql.org/docs/current/typeconv-func.html"
 status: translated
 updated: 2026-09-03

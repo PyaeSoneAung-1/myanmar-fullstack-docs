@@ -1,7 +1,7 @@
 ---
 title: "Dictionaries (dictionary များ)"
 description: "Text search (စာသားရှာဖွေမှု) အတွက် dictionary များ — stop words ဖယ်ရှားခြင်းနှင့် simple, synonym, thesaurus, Ispell, snowball dictionary များကို ဖန်တီးသုံးစွဲခြင်း"
-order: 91
+order: 122
 source: "https://www.postgresql.org/docs/current/textsearch-dictionaries.html"
 status: translated
 updated: 2026-09-03

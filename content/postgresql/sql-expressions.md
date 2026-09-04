@@ -264,11 +264,11 @@ FROM generate_series(1,10) AS s(i);
 (1 row)
 ```
 
-ကြိုတင် သတ်မှတ်ထားတဲ့ (predefined) aggregate function တွေကို [အပိုင်း 9.21](https://www.postgresql.org/docs/current/functions-aggregate.html) မှာ ဖော်ပြထားပါတယ်။ User က တခြား aggregate function တွေကိုလည်း ထပ်ပေါင်းထည့်လို့ ရပါတယ်။
+ကြိုတင် သတ်မှတ်ထားတဲ့ (predefined) aggregate function တွေကို [အပိုင်း 9.21](/docs/postgresql/functions-aggregate) မှာ ဖော်ပြထားပါတယ်။ User က တခြား aggregate function တွေကိုလည်း ထပ်ပေါင်းထည့်လို့ ရပါတယ်။
 
 Aggregate expression တစ်ခုကို `SELECT` command ရဲ့ result list သို့မဟုတ် `HAVING` clause ထဲမှာပဲ ထည့်လို့ ရပါတယ်။ `WHERE` စတဲ့ တခြား clause တွေမှာတော့ တားမြစ်ပါတယ် — အကြောင်းကတော့ အဲဒီ clause တွေကို aggregate တွေရဲ့ ရလဒ်တွေ မပေါ်ပေါက်ခင် logical အရ အရင်ဆုံး အကဲဖြတ်လို့ပါ။
 
-Aggregate expression တစ်ခုက subquery ထဲမှာ ပေါ်လာရင် ([အပိုင်း 4.2.11](/docs/postgresql/sql-expressions) နဲ့ [အပိုင်း 9.24](https://www.postgresql.org/docs/current/functions-subquery.html) ကို ကြည့်ပါ) — aggregate ကို ပုံမှန်အားဖြင့် subquery ရဲ့ row တွေအပေါ်မှာ အကဲဖြတ်ပါတယ်။ ဒါပေမယ့် — aggregate ရဲ့ argument တွေ (နဲ့ `filter_clause` ရှိရင် ၎င်းပါ) က outer-level variable တွေပဲ ပါဝင်နေရင်တော့ ခြွင်းချက် ဖြစ်ပါတယ်: အဲဒီအခါ aggregate က အနီးဆုံး ဖြစ်တဲ့ အဲဒီလို outer level နဲ့ သက်ဆိုင်ပြီး — အဲဒီ query ရဲ့ row တွေအပေါ်မှာ အကဲဖြတ်ပါတယ်။ အဲဒီအခါ aggregate expression တစ်ခုလုံးက သူပါဝင်နေတဲ့ subquery အတွက် outer reference ဖြစ်လာပြီး — အဲဒီ subquery ရဲ့ အကဲဖြတ်မှု တစ်ခုခုအပေါ်မှာ constant အဖြစ် ပြုမူပါတယ်။ Result list သို့မဟုတ် `HAVING` clause ထဲမှာပဲ ပေါ်နိုင်တဲ့ ကန့်သတ်ချက်က aggregate သက်ဆိုင်တဲ့ query level အပေါ်မှာ သက်ရောက်ပါတယ်။
+Aggregate expression တစ်ခုက subquery ထဲမှာ ပေါ်လာရင် ([အပိုင်း 4.2.11](/docs/postgresql/sql-expressions) နဲ့ [အပိုင်း 9.24](/docs/postgresql/functions-subquery) ကို ကြည့်ပါ) — aggregate ကို ပုံမှန်အားဖြင့် subquery ရဲ့ row တွေအပေါ်မှာ အကဲဖြတ်ပါတယ်။ ဒါပေမယ့် — aggregate ရဲ့ argument တွေ (နဲ့ `filter_clause` ရှိရင် ၎င်းပါ) က outer-level variable တွေပဲ ပါဝင်နေရင်တော့ ခြွင်းချက် ဖြစ်ပါတယ်: အဲဒီအခါ aggregate က အနီးဆုံး ဖြစ်တဲ့ အဲဒီလို outer level နဲ့ သက်ဆိုင်ပြီး — အဲဒီ query ရဲ့ row တွေအပေါ်မှာ အကဲဖြတ်ပါတယ်။ အဲဒီအခါ aggregate expression တစ်ခုလုံးက သူပါဝင်နေတဲ့ subquery အတွက် outer reference ဖြစ်လာပြီး — အဲဒီ subquery ရဲ့ အကဲဖြတ်မှု တစ်ခုခုအပေါ်မှာ constant အဖြစ် ပြုမူပါတယ်။ Result list သို့မဟုတ် `HAVING` clause ထဲမှာပဲ ပေါ်နိုင်တဲ့ ကန့်သတ်ချက်က aggregate သက်ဆိုင်တဲ့ query level အပေါ်မှာ သက်ရောက်ပါတယ်။
 
 ### 4.2.8. Window Function Calls (window function ခေါ်ဆိုခြင်း)
 
@@ -346,13 +346,13 @@ Default framing option က `RANGE UNBOUNDED PRECEDING` ဖြစ်ပြီး 
 
 `FILTER` ကို သတ်မှတ်ထားရင် — `filter_clause` က true လို့ အကဲဖြတ်တဲ့ input row တွေကိုပဲ window function ဆီ ပို့ပြီး — တခြား row တွေကို ဖယ်ပစ်ပါတယ်။ Aggregate တွေဖြစ်တဲ့ window function တွေကပဲ `FILTER` clause ကို လက်ခံပါတယ်။
 
-Built-in window function တွေကို [ဇယား 9.67](https://www.postgresql.org/docs/current/functions-window.html#FUNCTIONS-WINDOW-TABLE) မှာ ဖော်ပြထားပါတယ်။ User က တခြား window function တွေကိုလည်း ထပ်ပေါင်းထည့်လို့ ရပါတယ်။ ပြီးတော့ — built-in ဖြစ်စေ user-defined ဖြစ်စေ — general-purpose သို့မဟုတ် statistical aggregate တစ်ခုခုကိုလည်း window function အဖြစ် သုံးနိုင်ပါတယ်။ (Ordered-set နဲ့ hypothetical-set aggregate တွေကိုတော့ လောလောဆယ် window function အဖြစ် သုံးလို့ မရသေးပါဘူး။)
+Built-in window function တွေကို [ဇယား 9.67](/docs/postgresql/functions-window) မှာ ဖော်ပြထားပါတယ်။ User က တခြား window function တွေကိုလည်း ထပ်ပေါင်းထည့်လို့ ရပါတယ်။ ပြီးတော့ — built-in ဖြစ်စေ user-defined ဖြစ်စေ — general-purpose သို့မဟုတ် statistical aggregate တစ်ခုခုကိုလည်း window function အဖြစ် သုံးနိုင်ပါတယ်။ (Ordered-set နဲ့ hypothetical-set aggregate တွေကိုတော့ လောလောဆယ် window function အဖြစ် သုံးလို့ မရသေးပါဘူး။)
 
 `*` သုံးထားတဲ့ syntax တွေက — parameter မလိုတဲ့ (parameter-less) aggregate function တွေကို window function အဖြစ် ခေါ်ယူဖို့ သုံးပါတယ် — ဥပမာ `count(*) OVER (PARTITION BY x ORDER BY y)` လိုမျိုးပေါ့။ Asterisk (`*`) ကို window-specific function တွေမှာတော့ ထုံးစံအတိုင်း မသုံးပါဘူး။ Window-specific function တွေက function argument list ထဲမှာ `DISTINCT` သို့မဟုတ် `ORDER BY` သုံးတာကို ခွင့်မပြုပါဘူး။
 
 Window function call တွေကို query ရဲ့ `SELECT` list နဲ့ `ORDER BY` clause ထဲမှာပဲ ခွင့်ပြုပါတယ်။
 
-Window function တွေအကြောင်း နောက်ထပ် အချက်အလက်တွေကို [အပိုင်း 3.5](/docs/postgresql/window-functions), [အပိုင်း 9.22](https://www.postgresql.org/docs/current/functions-window.html) နဲ့ [အပိုင်း 7.2.5](/docs/postgresql/queries-table-expressions) တို့မှာ တွေ့နိုင်ပါတယ်။
+Window function တွေအကြောင်း နောက်ထပ် အချက်အလက်တွေကို [အပိုင်း 3.5](/docs/postgresql/window-functions), [အပိုင်း 9.22](/docs/postgresql/functions-window) နဲ့ [အပိုင်း 7.2.5](/docs/postgresql/queries-table-expressions) တို့မှာ တွေ့နိုင်ပါတယ်။
 
 ### 4.2.9. Type Casts (type cast များ)
 
@@ -419,7 +419,7 @@ SELECT * FROM tbl WHERE (a > 'foo') COLLATE "C";
 
 ### 4.2.11. Scalar Subqueries (scalar subquery များ)
 
-Scalar subquery ဆိုတာ — row တစ်ခုတည်းနဲ့ column တစ်ခုတည်းကို ပြန်ပေးတဲ့ — parentheses ထဲမှာ ထည့်ထားတဲ့ သာမန် `SELECT` query တစ်ခု ဖြစ်ပါတယ်။ (Query တွေ ရေးနည်း အချက်အလက်အတွက် [အခန်း 7](https://www.postgresql.org/docs/current/queries.html) ကို ကြည့်ပါ။) အဲဒီ `SELECT` query ကို execute လုပ်ပြီး — ပြန်လာတဲ့ တန်ဖိုးတစ်ခုတည်းကို ဝန်းရံထားတဲ့ value expression ထဲမှာ သုံးပါတယ်။ Row တစ်ခုထက်ပို သို့မဟုတ် column တစ်ခုထက်ပို ပြန်ပေးတဲ့ query ကို scalar subquery အဖြစ် သုံးရင် error ပါ။ (ဒါပေမယ့် — သီးခြား execution တစ်ခုအတွင်းမှာ subquery က row ဘာမှ မပြန်ခဲ့ရင်တော့ error မဟုတ်ဘဲ — scalar ရလဒ်ကို null လို့ မှတ်ယူပါတယ်။) Subquery က ဝန်းရံထားတဲ့ query ကနေ variable တွေကို ရည်ညွှန်းနိုင်ပြီး — အဲဒီ variable တွေက subquery ရဲ့ အကဲဖြတ်မှု တစ်ခုခုအတွင်း constant တွေအဖြစ် ပြုမူပါတယ်။ Subquery တွေ ပါဝင်တဲ့ တခြား expression တွေအတွက် [အပိုင်း 9.24](https://www.postgresql.org/docs/current/functions-subquery.html) ကိုလည်း ကြည့်ပါ။
+Scalar subquery ဆိုတာ — row တစ်ခုတည်းနဲ့ column တစ်ခုတည်းကို ပြန်ပေးတဲ့ — parentheses ထဲမှာ ထည့်ထားတဲ့ သာမန် `SELECT` query တစ်ခု ဖြစ်ပါတယ်။ (Query တွေ ရေးနည်း အချက်အလက်အတွက် [အခန်း 7](https://www.postgresql.org/docs/current/queries.html) ကို ကြည့်ပါ။) အဲဒီ `SELECT` query ကို execute လုပ်ပြီး — ပြန်လာတဲ့ တန်ဖိုးတစ်ခုတည်းကို ဝန်းရံထားတဲ့ value expression ထဲမှာ သုံးပါတယ်။ Row တစ်ခုထက်ပို သို့မဟုတ် column တစ်ခုထက်ပို ပြန်ပေးတဲ့ query ကို scalar subquery အဖြစ် သုံးရင် error ပါ။ (ဒါပေမယ့် — သီးခြား execution တစ်ခုအတွင်းမှာ subquery က row ဘာမှ မပြန်ခဲ့ရင်တော့ error မဟုတ်ဘဲ — scalar ရလဒ်ကို null လို့ မှတ်ယူပါတယ်။) Subquery က ဝန်းရံထားတဲ့ query ကနေ variable တွေကို ရည်ညွှန်းနိုင်ပြီး — အဲဒီ variable တွေက subquery ရဲ့ အကဲဖြတ်မှု တစ်ခုခုအတွင်း constant တွေအဖြစ် ပြုမူပါတယ်။ Subquery တွေ ပါဝင်တဲ့ တခြား expression တွေအတွက် [အပိုင်း 9.24](/docs/postgresql/functions-subquery) ကိုလည်း ကြည့်ပါ။
 
 ဥပမာ — အောက်ပါ query က state တစ်ခုချင်းစီထဲမှာ လူဦးရေ အများဆုံး city ကို ရှာဖွေပေးပါတယ်:
 
@@ -568,7 +568,7 @@ SELECT getf1(CAST(ROW(11,'this is a test',2.5) AS myrowtype));
 (1 row)
 ```
 
-Row constructor တွေကို — composite-type table column တစ်ခုထဲမှာ သိမ်းဆည်းဖို့ ဒါမှမဟုတ် composite parameter လက်ခံတဲ့ function တစ်ခုဆီ ပို့ဖို့ — composite value တွေ တည်ဆောက်ရာမှာ သုံးနိုင်ပါတယ်။ ပြီးတော့ — [အပိုင်း 9.2](https://www.postgresql.org/docs/current/functions-comparison.html) မှာ ဖော်ပြထားတဲ့အတိုင်း standard comparison operator တွေ သုံးပြီး row တစ်ခုချင်းစီကို စမ်းသပ်ဖို့လည်း ဖြစ်နိုင်ပြီး — [အပိုင်း 9.25](https://www.postgresql.org/docs/current/functions-comparisons.html) မှာ ဖော်ပြထားသလို row တစ်ခုကို နောက် row တစ်ခုနဲ့ နှိုင်းယှဉ်ဖို့လည်း ရပါတယ်။ Subquery တွေနဲ့ တွဲသုံးတာကိုလည်း — [အပိုင်း 9.24](https://www.postgresql.org/docs/current/functions-subquery.html) မှာ ဆွေးနွေးထားသလို — လုပ်နိုင်ပါတယ်။
+Row constructor တွေကို — composite-type table column တစ်ခုထဲမှာ သိမ်းဆည်းဖို့ ဒါမှမဟုတ် composite parameter လက်ခံတဲ့ function တစ်ခုဆီ ပို့ဖို့ — composite value တွေ တည်ဆောက်ရာမှာ သုံးနိုင်ပါတယ်။ ပြီးတော့ — [အပိုင်း 9.2](/docs/postgresql/functions-comparison) မှာ ဖော်ပြထားတဲ့အတိုင်း standard comparison operator တွေ သုံးပြီး row တစ်ခုချင်းစီကို စမ်းသပ်ဖို့လည်း ဖြစ်နိုင်ပြီး — [အပိုင်း 9.25](/docs/postgresql/functions-comparisons) မှာ ဖော်ပြထားသလို row တစ်ခုကို နောက် row တစ်ခုနဲ့ နှိုင်းယှဉ်ဖို့လည်း ရပါတယ်။ Subquery တွေနဲ့ တွဲသုံးတာကိုလည်း — [အပိုင်း 9.24](/docs/postgresql/functions-subquery) မှာ ဆွေးနွေးထားသလို — လုပ်နိုင်ပါတယ်။
 
 ### 4.2.14. Expression Evaluation Rules (expression အကဲဖြတ်ခြင်း စည်းမျဉ်းများ)
 
@@ -590,7 +590,7 @@ SELECT somefunc() OR true;
 
 အကျိုးဆက်အနေနဲ့ — side effect (ဘေးထွက် သက်ရောက်မှု) ရှိတဲ့ function တွေကို ရှုပ်ထွေးတဲ့ expression တွေရဲ့ အစိတ်အပိုင်းအဖြစ် သုံးတာက မသင့်ပါဘူး။ `WHERE` နဲ့ `HAVING` clause တွေမှာ side effect သို့မဟုတ် အကဲဖြတ်မှု အစဉ်ကို အားကိုးတာက အထူးသဖြင့် အန္တရာယ် များပါတယ် — အဲဒီ clause တွေကို execution plan တစ်ခု ရေးဆွဲရာမှာ ကျယ်ကျယ်ပြန့်ပြန့် ပြန်လည် ဆောင်ရွားလေ့ ရှိလို့ပါ။ အဲဒီ clause တွေထဲက Boolean expression တွေ (`AND`/`OR`/`NOT` ပေါင်းစပ်မှုများ) ကို Boolean algebra ရဲ့ နိယာမတွေက ခွင့်ပြုတဲ့ ဘယ်ပုံစံနဲ့မဆို ပြန်စီပြောင်းလဲနိုင်ပါတယ်။
 
-အကဲဖြတ်မှု အစဉ်ကို အတင်းအကျပ် သတ်မှတ်ဖို့ မရှိမဖြစ် လိုအပ်တဲ့အခါ — `CASE` construct ([အပိုင်း 9.18](https://www.postgresql.org/docs/current/functions-conditional.html) ကို ကြည့်ပါ) ကို သုံးနိုင်ပါတယ်။ ဥပမာ — ဒါက `WHERE` clause ထဲမှာ zero နဲ့ စားတာကို ရှောင်ဖို့ ကြိုးစားတဲ့ မယုံကြည်ထိုက်တဲ့ နည်းလမ်း တစ်ခုပါ:
+အကဲဖြတ်မှု အစဉ်ကို အတင်းအကျပ် သတ်မှတ်ဖို့ မရှိမဖြစ် လိုအပ်တဲ့အခါ — `CASE` construct ([အပိုင်း 9.18](/docs/postgresql/functions-conditional) ကို ကြည့်ပါ) ကို သုံးနိုင်ပါတယ်။ ဥပမာ — ဒါက `WHERE` clause ထဲမှာ zero နဲ့ စားတာကို ရှောင်ဖို့ ကြိုးစားတဲ့ မယုံကြည်ထိုက်တဲ့ နည်းလမ်း တစ်ခုပါ:
 
 ```sql
 SELECT ... WHERE x > 0 AND y/x > 1.5;

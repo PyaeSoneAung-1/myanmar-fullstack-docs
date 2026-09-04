@@ -15,7 +15,7 @@ Bit strings ဆိုတာ 1 တွေနဲ့ 0 တွေ ပါဝင်တ�
 
 > **မှတ်ချက်:** bit-string တန်ဖိုး တစ်ခုကို `bit(n)` အဖြစ် အတိအကျ (explicitly) cast လုပ်ရင် — error မတက်စေဘဲ — အတိအကျ `n` bits ဖြစ်အောင် ညာဘက်မှာ ဖြတ်တောက် (truncate) ခြင်း သို့မဟုတ် သုည ဖြည့်စွက် (zero-pad) လုပ်ခြင်း ခံရပါတယ်။ အလားတူပဲ — bit-string တန်ဖိုး တစ်ခုကို `bit varying(n)` အဖြစ် အတိအကျ cast လုပ်ရင် — `n` bits ထက် ပိုနေရင် ညာဘက်မှာ ဖြတ်တောက်ပါတယ်။
 
-Bit string constants တွေရဲ့ syntax (ရေးသားပုံ) အကြောင်း အချက်အလက်အတွက် [အပိုင်း 4.1.2.5](/docs/postgresql/sql-syntax-lexical) ကို ကြည့်ပါ။ Bit-logical operators (bit ယုတ္တိ operator များ) နဲ့ string manipulation (string ကိုင်တွယ်ခြင်း) function တွေလည်း ရနိုင်ပါတယ်; [အပိုင်း 9.6](https://www.postgresql.org/docs/current/functions-bitstring.html) ကို ကြည့်ပါ။
+Bit string constants တွေရဲ့ syntax (ရေးသားပုံ) အကြောင်း အချက်အလက်အတွက် [အပိုင်း 4.1.2.5](/docs/postgresql/sql-syntax-lexical) ကို ကြည့်ပါ။ Bit-logical operators (bit ယုတ္တိ operator များ) နဲ့ string manipulation (string ကိုင်တွယ်ခြင်း) function တွေလည်း ရနိုင်ပါတယ်; [အပိုင်း 9.6](/docs/postgresql/functions-bitstring) ကို ကြည့်ပါ။
 
 **ဥပမာ 8.3. Using the Bit String Types (bit string type များ အသုံးပြုခြင်း)**
 

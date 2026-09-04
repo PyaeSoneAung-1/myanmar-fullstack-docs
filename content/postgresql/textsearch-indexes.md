@@ -1,7 +1,7 @@
 ---
 title: "Preferred Index Types for Text Search (text search အတွက် ဦးစားပေး index type များ)"
 description: "Full text search ကို မြန်ဆန်စေရန် သုံးသော index type များ — GIN နှင့် GiST နှစ်မျိုး၏ သဘောတရား၊ lossy signature နှင့် siglen parameter၊ covering index (INCLUDE)၊ maintenance_work_mem နှင့် partitioning အကြောင်း"
-order: 94
+order: 125
 source: "https://www.postgresql.org/docs/current/textsearch-indexes.html"
 status: translated
 updated: 2026-09-03

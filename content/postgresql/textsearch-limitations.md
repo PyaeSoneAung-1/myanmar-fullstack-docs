@@ -1,7 +1,7 @@
 ---
 title: "Limitations (ကန့်သတ်ချက်များ)"
 description: "PostgreSQL text search feature များ၏ လက်ရှိ ကန့်သတ်ချက်များ — lexeme/tsvector/tsquery အရွယ်အစားနှင့် အရေအတွက် ကန့်သတ်ချက်များ"
-order: 96
+order: 127
 source: "https://www.postgresql.org/docs/current/textsearch-limitations.html"
 status: translated
 updated: 2026-09-03

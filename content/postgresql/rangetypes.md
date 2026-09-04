@@ -62,7 +62,7 @@ SELECT int4range(10, 20) * int4range(15, 25);
 SELECT isempty(numrange(1, 5));
 ```
 
-Range type တွေပေါ်မှာ သုံးတဲ့ operator နဲ့ function တွေရဲ့ အပြည့်အစုံ စာရင်းအတွက် [ဇယား 9.58](https://www.postgresql.org/docs/current/functions-range.html#RANGE-OPERATORS-TABLE) နဲ့ [ဇယား 9.60](https://www.postgresql.org/docs/current/functions-range.html#RANGE-FUNCTIONS-TABLE) တို့ကို ကြည့်ပါ။
+Range type တွေပေါ်မှာ သုံးတဲ့ operator နဲ့ function တွေရဲ့ အပြည့်အစုံ စာရင်းအတွက် [ဇယား 9.58](/docs/postgresql/functions-range) နဲ့ [ဇယား 9.60](/docs/postgresql/functions-range) တို့ကို ကြည့်ပါ။
 
 ### 8.17.3. Inclusive and Exclusive Bounds (inclusive နဲ့ exclusive bound များ)
 
@@ -213,7 +213,7 @@ GiST နဲ့ SP-GiST index တွေကို range type တွေရဲ့ ta
 CREATE INDEX reservation_idx ON reservation USING GIST (during);
 ```
 
-Range တွေပေါ်က GiST သို့မဟုတ် SP-GiST index တစ်ခုက — ဒီ range operator တွေ ပါဝင်တဲ့ query တွေကို မြန်ဆန်စေနိုင်ပါတယ်: `=`, `&&`, `<@`, `@>`, `<<`, `>>`, `-|-`, `&<`, နဲ့ `&>` တို့ပါ။ Multirange တွေပေါ်က GiST index တစ်ခုကလည်း — အဲဒီ multirange operator အစုတစ်ခုတည်း ပါဝင်တဲ့ query တွေကို မြန်ဆန်စေနိုင်ပါတယ်။ Range တွေပေါ်က GiST index နဲ့ multirange တွေပေါ်က GiST index တွေက — ဒီ cross-type range-to-multirange နဲ့ multirange-to-range operator တွေ ပါဝင်တဲ့ query တွေကိုလည်း အသီးသီး မြန်ဆန်စေနိုင်ပါတယ်: `&&`, `<@`, `@>`, `<<`, `>>`, `-|-`, `&<`, နဲ့ `&>` တို့ပါ။ နောက်ထပ် အချက်အလက်အတွက် [ဇယား 9.58](https://www.postgresql.org/docs/current/functions-range.html#RANGE-OPERATORS-TABLE) ကို ကြည့်ပါ။
+Range တွေပေါ်က GiST သို့မဟုတ် SP-GiST index တစ်ခုက — ဒီ range operator တွေ ပါဝင်တဲ့ query တွေကို မြန်ဆန်စေနိုင်ပါတယ်: `=`, `&&`, `<@`, `@>`, `<<`, `>>`, `-|-`, `&<`, နဲ့ `&>` တို့ပါ။ Multirange တွေပေါ်က GiST index တစ်ခုကလည်း — အဲဒီ multirange operator အစုတစ်ခုတည်း ပါဝင်တဲ့ query တွေကို မြန်ဆန်စေနိုင်ပါတယ်။ Range တွေပေါ်က GiST index နဲ့ multirange တွေပေါ်က GiST index တွေက — ဒီ cross-type range-to-multirange နဲ့ multirange-to-range operator တွေ ပါဝင်တဲ့ query တွေကိုလည်း အသီးသီး မြန်ဆန်စေနိုင်ပါတယ်: `&&`, `<@`, `@>`, `<<`, `>>`, `-|-`, `&<`, နဲ့ `&>` တို့ပါ။ နောက်ထပ် အချက်အလက်အတွက် [ဇယား 9.58](/docs/postgresql/functions-range) ကို ကြည့်ပါ။
 
 ဒါအပြင် — B-tree နဲ့ hash index တွေကိုလည်း range type တွေရဲ့ table column တွေအတွက် ဖန်တီးနိုင်ပါတယ်။ ဒီ index type တွေအတွက်တော့ — အခြေခံအားဖြင့် အသုံးဝင်တဲ့ range operation က equality (တူညီမှု) တစ်ခုတည်းပါ။ Range တန်ဖိုးတွေအတွက် — သက်ဆိုင်ရာ `<` နဲ့ `>` operator တွေပါတဲ့ B-tree sort ordering တစ်ခု သတ်မှတ်ထားပေမယ့် — အဲဒီ ordering က အတော်လေး ထင်သလို ဖြစ်ပြီး — လက်တွေ့ ကမ္ဘာမှာ သိပ်အသုံးမဝင်ပါဘူး။ Range type တွေရဲ့ B-tree နဲ့ hash ထောက်ပံ့မှုက — အဓိကအားဖြင့် query တွေထဲမှာ အတွင်းပိုင်း sorting နဲ့ hashing လုပ်နိုင်ဖို့ ရည်ရွယ်တာပါ — index အစစ်တွေ ဖန်တီးဖို့ မဟုတ်ပါဘူး။
 

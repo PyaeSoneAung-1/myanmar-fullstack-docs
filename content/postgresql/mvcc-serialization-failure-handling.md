@@ -1,7 +1,7 @@
 ---
 title: "Serialization Failure Handling (serialization မအောင်မြင်မှု ကိုင်တွယ်ခြင်း)"
 description: "Serialization error (SQLSTATE 40001) အပြင် deadlock, unique-key နဲ့ exclusion constraint မအောင်မြင်မှုများကို retry လုပ်ခြင်းနဲ့ ပတ်သက်၍ သိသင့်သည်များ"
-order: 101
+order: 132
 source: "https://www.postgresql.org/docs/current/mvcc-serialization-failure-handling.html"
 status: translated
 updated: 2026-09-03

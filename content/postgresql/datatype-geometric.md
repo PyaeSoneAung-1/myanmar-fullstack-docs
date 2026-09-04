@@ -34,7 +34,7 @@ Geometric data types (ဂျီဩမေတြီ data type များ) တွ
 
 ဒီ type တွေ အားလုံးမှာ — coordinate (ကိုဩဒိနိတ်) တစ်ခုချင်းစီကို `double precision` (`float8`) ဂဏန်းတွေ အနေနဲ့ သိမ်းဆည်းပါတယ်။
 
-Scaling (အချိုးကျ ချဲ့ခြင်း) ၊ translation (နေရာရွှေ့ခြင်း) ၊ rotation (လှည့်ခြင်း) နဲ့ intersection (ဆုံမှတ်) ရှာဖွေခြင်း စတဲ့ geometric operation (ဂျီဩမေတြီ လုပ်ဆောင်ချက်) အမျိုးမျိုးကို လုပ်ဆောင်ဖို့ — function နဲ့ operator အစုအဝေး ကြွယ်ဝစွာ ရရှိနိုင်ပါတယ်။ အဲဒါတွေကို [အပိုင်း 9.11](https://www.postgresql.org/docs/current/functions-geometry.html) မှာ ရှင်းပြထားပါတယ်။
+Scaling (အချိုးကျ ချဲ့ခြင်း) ၊ translation (နေရာရွှေ့ခြင်း) ၊ rotation (လှည့်ခြင်း) နဲ့ intersection (ဆုံမှတ်) ရှာဖွေခြင်း စတဲ့ geometric operation (ဂျီဩမေတြီ လုပ်ဆောင်ချက်) အမျိုးမျိုးကို လုပ်ဆောင်ဖို့ — function နဲ့ operator အစုအဝေး ကြွယ်ဝစွာ ရရှိနိုင်ပါတယ်။ အဲဒါတွေကို [အပိုင်း 9.11](/docs/postgresql/functions-geometry) မှာ ရှင်းပြထားပါတယ်။
 
 ### 8.8.1. Points (အမှတ်များ)
 

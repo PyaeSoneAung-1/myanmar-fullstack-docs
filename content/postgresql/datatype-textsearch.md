@@ -12,7 +12,7 @@ updated: 2026-09-03
 - **8.11.1. tsvector (tsvector type)**
 - **8.11.2. tsquery (tsquery type)**
 
-Full text search (စာသား အပြည့်အစုံ ရှာဖွေမှု) ဆိုတာ — သဘာဝ ဘာသာစကားနဲ့ ရေးထားတဲ့ *documents* (စာတမ်းများ) အစုတစ်စုထဲကနေ — ပေးထားတဲ့ *query* (ရှာဖွေမေးခွန်း) တစ်ခုနဲ့ အကောင်းဆုံး ကိုက်ညီတဲ့ဟာတွေကို ရှာဖွေတဲ့ လုပ်ဆောင်ချက် ဖြစ်ပါတယ်။ ဒီလို full text search ကို ထောက်ကူဖို့ PostgreSQL က data type နှစ်မျိုး ပံ့ပိုးပေးထားပါတယ်။ `tsvector` type က document တစ်ခုကို text search အတွက် optimize (ပုံစံချွေတာ ပြင်ဆင်) လုပ်ထားတဲ့ ပုံစံနဲ့ ကိုယ်စားပြုပြီး — `tsquery` type ကလည်း text query တစ်ခုကို အလားတူ ကိုယ်စားပြုပါတယ်။ ဒီစွမ်းဆောင်နိုင်မှုရဲ့ အသေးစိတ် ရှင်းလင်းချက်ကို [အခန်း 12](https://www.postgresql.org/docs/current/textsearch.html) မှာ ဖော်ပြထားပြီး — ဆက်စပ် function နဲ့ operator တွေရဲ့ အကျဉ်းချုပ်ကို [အပိုင်း 9.13](https://www.postgresql.org/docs/current/functions-textsearch.html) မှာ ဖော်ပြထားပါတယ်။
+Full text search (စာသား အပြည့်အစုံ ရှာဖွေမှု) ဆိုတာ — သဘာဝ ဘာသာစကားနဲ့ ရေးထားတဲ့ *documents* (စာတမ်းများ) အစုတစ်စုထဲကနေ — ပေးထားတဲ့ *query* (ရှာဖွေမေးခွန်း) တစ်ခုနဲ့ အကောင်းဆုံး ကိုက်ညီတဲ့ဟာတွေကို ရှာဖွေတဲ့ လုပ်ဆောင်ချက် ဖြစ်ပါတယ်။ ဒီလို full text search ကို ထောက်ကူဖို့ PostgreSQL က data type နှစ်မျိုး ပံ့ပိုးပေးထားပါတယ်။ `tsvector` type က document တစ်ခုကို text search အတွက် optimize (ပုံစံချွေတာ ပြင်ဆင်) လုပ်ထားတဲ့ ပုံစံနဲ့ ကိုယ်စားပြုပြီး — `tsquery` type ကလည်း text query တစ်ခုကို အလားတူ ကိုယ်စားပြုပါတယ်။ ဒီစွမ်းဆောင်နိုင်မှုရဲ့ အသေးစိတ် ရှင်းလင်းချက်ကို [အခန်း 12](https://www.postgresql.org/docs/current/textsearch.html) မှာ ဖော်ပြထားပြီး — ဆက်စပ် function နဲ့ operator တွေရဲ့ အကျဉ်းချုပ်ကို [အပိုင်း 9.13](/docs/postgresql/functions-textsearch) မှာ ဖော်ပြထားပါတယ်။
 
 ### 8.11.1. `tsvector` (tsvector type)
 

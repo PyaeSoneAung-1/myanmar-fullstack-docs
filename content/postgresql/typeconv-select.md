@@ -1,7 +1,7 @@
 ---
 title: "SELECT Output Columns (SELECT output column များ)"
 description: "SELECT output list ထဲမှ unspecified-type literal များ၏ type ကို text အဖြစ် ဖြေရှင်းပုံ — UNION ၊ INSERT ... SELECT ၊ RETURNING အခြေအနေများအတွက် ခြွင်းချက်များ"
-order: 73
+order: 104
 source: "https://www.postgresql.org/docs/current/typeconv-select.html"
 status: translated
 updated: 2026-09-03

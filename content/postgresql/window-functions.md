@@ -145,7 +145,7 @@ SELECT sum(salary) OVER w, avg(salary) OVER w
   WINDOW w AS (PARTITION BY depname ORDER BY salary DESC);
 ```
 
-Window function တွေအကြောင်း နောက်ထပ် အသေးစိတ်ကို [Section 4.2.8](https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS), [Section 9.22](https://www.postgresql.org/docs/current/functions-window.html), [Section 7.2.5](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-WINDOW) နဲ့ [SELECT](https://www.postgresql.org/docs/current/sql-select.html) reference page တွေမှာ တွေ့နိုင်ပါတယ်။
+Window function တွေအကြောင်း နောက်ထပ် အသေးစိတ်ကို [Section 4.2.8](https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS), [Section 9.22](/docs/postgresql/functions-window), [Section 7.2.5](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-WINDOW) နဲ့ [SELECT](https://www.postgresql.org/docs/current/sql-select.html) reference page တွေမှာ တွေ့နိုင်ပါတယ်။
 
 > **[5] မှတ်စု:** Window frame ကို တခြားနည်းတွေနဲ့ သတ်မှတ်ဖို့ option တွေ ရှိပါတယ် — ဒါပေမယ့် ဒီ tutorial မှာ မဖော်ပြပါဘူး။ အသေးစိတ်အတွက် [Section 4.2.8](https://www.postgresql.org/docs/current/sql-expressions.html#SYNTAX-WINDOW-FUNCTIONS) ကို ကြည့်ပါ။
 

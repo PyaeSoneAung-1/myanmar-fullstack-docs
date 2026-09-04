@@ -149,7 +149,7 @@ SET search_path TO myschema;
 
 ဒါဆိုရင် — explicit qualification မပါဘဲ public schema ကို နောက်ထပ် access လုပ်လို့ မရတော့ပါဘူး။ Public schema မှာ — ပုံမှန်အားဖြင့် တည်ရှိနေတယ်ဆိုတာကလွဲရင် — ထူးခြားတာ ဘာမှ မရှိပါဘူး။ အဲဒါကိုလည်း drop လုပ်လို့ရပါတယ်။
 
-Schema search path ကို ကိုင်တွယ်ဖို့ တခြား နည်းလမ်းတွေအတွက် [အပိုင်း 9.27](https://www.postgresql.org/docs/current/functions-info.html) ကိုလည်း ကြည့်ပါ။
+Schema search path ကို ကိုင်တွယ်ဖို့ တခြား နည်းလမ်းတွေအတွက် [အပိုင်း 9.27](/docs/postgresql/functions-info) ကိုလည်း ကြည့်ပါ။
 
 Search path က data type နာမည်တွေ၊ function နာမည်တွေနဲ့ operator နာမည်တွေအတွက်လည်း — table နာမည်တွေအတွက် လုပ်ဆောင်သလိုပဲ — အလုပ်လုပ်ပါတယ်။ Data type နဲ့ function နာမည်တွေကို table နာမည်တွေလိုပဲ အတိအကျ qualification လုပ်လို့ရပါတယ်။ Expression တစ်ခုထဲမှာ qualified operator နာမည် တစ်ခု ရေးဖို့ လိုအပ်ရင် — အထူး ပြဋ္ဌာန်းချက် (special provision) တစ်ခု ရှိပါတယ်: ဒီလို ရေးရပါတယ်
 

@@ -1,7 +1,7 @@
 ---
 title: "Controlling the Planner with Explicit JOIN Clauses (explicit JOIN clause များဖြင့် planner ထိန်းချုပ်ခြင်း)"
 description: "Explicit JOIN syntax သုံးပြီး query planner ကို ထိန်းချုပ်ခြင်း — join order နှင့် join_collapse_limit, from_collapse_limit run-time parameter များ"
-order: 106
+order: 137
 source: "https://www.postgresql.org/docs/current/explicit-joins.html"
 status: translated
 updated: 2026-09-03

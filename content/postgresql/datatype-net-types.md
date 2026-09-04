@@ -15,7 +15,7 @@ updated: 2026-09-03
 - **8.9.4. macaddr (MAC address type)**
 - **8.9.5. macaddr8 (EUI-64 MAC address type)**
 
-PostgreSQL က IPv4, IPv6 နဲ့ MAC addresses တွေကို သိမ်းဆည်းဖို့ data types တွေ ပေးထားပါတယ် — [ဇယား 8.21](/docs/postgresql/datatype-net-types) မှာ ပြထားပါတယ်။ Network addresses (network လိပ်စာများ) တွေကို သိမ်းဆည်းတဲ့အခါ — သာမန် text types တွေအစား ဒီ types တွေကို သုံးတာ ပိုကောင်းပါတယ် — အကြောင်းကတော့ ဒီ types တွေမှာ input error checking (input အမှား စစ်ဆေးခြင်း) နဲ့ အထူးပြု (specialized) operators နဲ့ functions တွေ ပါဝင်လို့ပါ ([အပိုင်း 9.12](https://www.postgresql.org/docs/current/functions-net.html) ကို ကြည့်ပါ)။
+PostgreSQL က IPv4, IPv6 နဲ့ MAC addresses တွေကို သိမ်းဆည်းဖို့ data types တွေ ပေးထားပါတယ် — [ဇယား 8.21](/docs/postgresql/datatype-net-types) မှာ ပြထားပါတယ်။ Network addresses (network လိပ်စာများ) တွေကို သိမ်းဆည်းတဲ့အခါ — သာမန် text types တွေအစား ဒီ types တွေကို သုံးတာ ပိုကောင်းပါတယ် — အကြောင်းကတော့ ဒီ types တွေမှာ input error checking (input အမှား စစ်ဆေးခြင်း) နဲ့ အထူးပြု (specialized) operators နဲ့ functions တွေ ပါဝင်လို့ပါ ([အပိုင်း 9.12](/docs/postgresql/functions-net) ကို ကြည့်ပါ)။
 
 **ဇယား 8.21. Network Address Types (network address type များ)**
 

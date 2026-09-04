@@ -1,7 +1,7 @@
 ---
 title: "Overview (ခြုံငုံသုံးသပ်ချက်)"
 description: "Type conversion (type ပြောင်းလဲခြင်း) စည်းမျဉ်းများ ခြုံငုံသုံးသပ်ချက် — function call, operator, value storage, UNION/CASE စသည့် construct များအတွက် parser က type ကို မည်သို့ ဖြေရှင်းသည်နှင့် cast, type category, preferred type အကြောင်း"
-order: 68
+order: 99
 source: "https://www.postgresql.org/docs/current/typeconv-overview.html"
 status: translated
 updated: 2026-09-03

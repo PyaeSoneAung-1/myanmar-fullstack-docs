@@ -1,7 +1,7 @@
 ---
 title: "Data Consistency Checks at the Application Level (application အဆင့်တွင် data ညီညွတ်မှု စစ်ဆေးခြင်း)"
 description: "Application အဆင့်တွင် data consistency (data ညီညွတ်မှု) စစ်ဆေးခြင်း — Serializable transaction များဖြင့် ဖြစ်စေ၊ explicit blocking locks များဖြင့် ဖြစ်စေ အကောင်အထည်ဖော်ပုံ၊ read/write conflicts သဘောတရားပါ ပါဝင်"
-order: 100
+order: 131
 source: "https://www.postgresql.org/docs/current/applevel-consistency.html"
 status: translated
 updated: 2026-09-03

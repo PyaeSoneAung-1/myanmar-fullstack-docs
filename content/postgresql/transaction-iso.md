@@ -1,7 +1,7 @@
 ---
 title: "Transaction Isolation (transaction သီးခြားသတ်မှတ်ခြင်း)"
 description: "Transaction isolation level (transaction သီးခြားသတ်မှတ်မှု အဆင့်) လေးမျိုး — Read Committed, Repeatable Read နဲ့ Serializable — တို့ ဘယ်လို အလုပ်လုပ်လဲ၊ dirty read / nonrepeatable read / phantom read စတဲ့ phenomena တွေကို ဘယ်လို ကာကွယ်ပေးလဲ"
-order: 98
+order: 129
 source: "https://www.postgresql.org/docs/current/transaction-iso.html"
 status: translated
 updated: 2026-09-03
@@ -39,7 +39,7 @@ PostgreSQL မှာ standard isolation level လေးမျိုးထဲက 
 
 Transaction တစ်ခုရဲ့ isolation level ကို သတ်မှတ်ဖို့ဆိုရင် — [SET TRANSACTION](https://www.postgresql.org/docs/current/sql-set-transaction.html) command ကို သုံးပါ။
 
-> **အရေးကြီး:** PostgreSQL ရဲ့ data type နဲ့ function တချို့မှာ transaction ဆိုင်ရာ အပြုအမူအတွက် အထူး စည်းမျဉ်းတွေ ရှိပါတယ်။ အထူးသဖြင့် — sequence တစ်ခုကို ပြောင်းလဲမှုတွေ (ဒါကြောင့် `serial` သုံးပြီး declare လုပ်ထားတဲ့ column ရဲ့ counter) က တခြား transaction တွေ အားလုံးကို ချက်ချင်း မြင်နိုင်ပြီး — အဲဒီ အပြောင်းအလဲတွေ လုပ်တဲ့ transaction က abort (ဖျက်သိမ်း) ဖြစ်သွားရင်တောင် roll back လုပ်မပေးပါဘူး။ [အပိုင်း 9.17](https://www.postgresql.org/docs/current/functions-sequence.html) နဲ့ [အပိုင်း 8.1.4](/docs/postgresql/datatype-numeric) ကို ကြည့်ပါ။
+> **အရေးကြီး:** PostgreSQL ရဲ့ data type နဲ့ function တချို့မှာ transaction ဆိုင်ရာ အပြုအမူအတွက် အထူး စည်းမျဉ်းတွေ ရှိပါတယ်။ အထူးသဖြင့် — sequence တစ်ခုကို ပြောင်းလဲမှုတွေ (ဒါကြောင့် `serial` သုံးပြီး declare လုပ်ထားတဲ့ column ရဲ့ counter) က တခြား transaction တွေ အားလုံးကို ချက်ချင်း မြင်နိုင်ပြီး — အဲဒီ အပြောင်းအလဲတွေ လုပ်တဲ့ transaction က abort (ဖျက်သိမ်း) ဖြစ်သွားရင်တောင် roll back လုပ်မပေးပါဘူး။ [အပိုင်း 9.17](/docs/postgresql/functions-sequence) နဲ့ [အပိုင်း 8.1.4](/docs/postgresql/datatype-numeric) ကို ကြည့်ပါ။
 
 ### 13.2.1. Read Committed Isolation Level (commit လုပ်ပြီးသား အချက်အလက်များကိုသာ ဖတ်ရသည့် isolation level)
 

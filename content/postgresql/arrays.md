@@ -382,7 +382,7 @@ SELECT * FROM sal_emp WHERE pay_by_quarter[1] = 10000 OR
                             pay_by_quarter[3] = 10000 OR
                             pay_by_quarter[4] = 10000;
 ```
-ဒါပေမယ့် — array ကြီးတွေအတွက်တော့ ဒါက မကြာခင်မှာ ငြီးငွေ့စရာ ဖြစ်လာပြီး — array ရဲ့ အရွယ်အစားကို မသိရင်လည်း အသုံးမဝင်ပါဘူး။ အခြားရွေးချယ်စရာ နည်းလမ်းတစ်ခုကို [အပိုင်း 9.25](https://www.postgresql.org/docs/current/functions-comparisons.html) မှာ ဖော်ပြထားပါတယ်။ အထက်က query ကို ဒီလိုနဲ့ အစားထိုးနိုင်ပါတယ်:
+ဒါပေမယ့် — array ကြီးတွေအတွက်တော့ ဒါက မကြာခင်မှာ ငြီးငွေ့စရာ ဖြစ်လာပြီး — array ရဲ့ အရွယ်အစားကို မသိရင်လည်း အသုံးမဝင်ပါဘူး။ အခြားရွေးချယ်စရာ နည်းလမ်းတစ်ခုကို [အပိုင်း 9.25](/docs/postgresql/functions-comparisons) မှာ ဖော်ပြထားပါတယ်။ အထက်က query ကို ဒီလိုနဲ့ အစားထိုးနိုင်ပါတယ်:
 
 ```sql
 SELECT * FROM sal_emp WHERE 10000 = ANY (pay_by_quarter);
@@ -401,14 +401,14 @@ SELECT * FROM
       FROM sal_emp) AS foo
  WHERE pay_by_quarter[s] = 10000;
 ```
-ဒီ function အကြောင်းကို [ဇယား 9.70](https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS) မှာ ဖော်ပြထားပါတယ်။
+ဒီ function အကြောင်းကို [ဇယား 9.70](/docs/postgresql/functions-srf) မှာ ဖော်ပြထားပါတယ်။
 
 `&&` operator ကို သုံးပြီးလည်း array တစ်ခုကို ရှာဖွေနိုင်ပါတယ် — ဒီ operator က ဘယ်ဘက် operand နဲ့ ညာဘက် operand တို့ ထပ်နေလားဆိုတာ စစ်ဆေးပါတယ်။ ဥပမာ:
 
 ```sql
 SELECT * FROM sal_emp WHERE pay_by_quarter && ARRAY[10000];
 ```
-ဒီ operator နဲ့ တခြား array operator တွေကို [အပိုင်း 9.19](https://www.postgresql.org/docs/current/functions-array.html) မှာ ထပ်ဆင့် ဖော်ပြထားပါတယ်။ [အပိုင်း 11.2](https://www.postgresql.org/docs/current/indexes-types.html) မှာ ဖော်ပြထားသလို — သင့်လျော်တဲ့ index တစ်ခုနဲ့ ၎င်းကို အရှိန်မြှင့်လို့လည်း ရပါတယ်။
+ဒီ operator နဲ့ တခြား array operator တွေကို [အပိုင်း 9.19](/docs/postgresql/functions-array) မှာ ထပ်ဆင့် ဖော်ပြထားပါတယ်။ [အပိုင်း 11.2](https://www.postgresql.org/docs/current/indexes-types.html) မှာ ဖော်ပြထားသလို — သင့်လျော်တဲ့ index တစ်ခုနဲ့ ၎င်းကို အရှိန်မြှင့်လို့လည်း ရပါတယ်။
 
 `array_position` နဲ့ `array_positions` function တွေကို သုံးပြီး — array တစ်ခုထဲမှာ တိကျတဲ့ တန်ဖိုးတွေကိုလည်း ရှာဖွေနိုင်ပါတယ်။ ရှေ့ function က array ထဲမှာ တန်ဖိုးတစ်ခု ပထမဆုံး ပေါ်လာတဲ့ နေရာရဲ့ subscript ကို ပြန်ပေးပြီး — နောက် function ကတော့ array ထဲမှာ အဲဒီ တန်ဖိုး ပေါ်ပေါက်တဲ့ နေရာ အားလုံးရဲ့ subscript တွေ ပါဝင်တဲ့ array တစ်ခုကို ပြန်ပေးပါတယ်။ ဥပမာ:
 

@@ -68,7 +68,7 @@ nextval('foo')              searches search path for foo
 > nextval('foo'::text)      foo is looked up at runtime
 > ```
 > 
-> `to_regclass()` function နဲ့ ၎င်းရဲ့ ညီအစ်ကို (sibling) function တွေကိုလည်း run-time lookup (လည်ပတ်ချိန် ရှာဖွေမှု) တွေ လုပ်ဖို့ သုံးနိုင်ပါတယ်။ [ဇယား 9.76](https://www.postgresql.org/docs/current/functions-info.html#FUNCTIONS-INFO-CATALOG-TABLE) ကို ကြည့်ပါ။
+> `to_regclass()` function နဲ့ ၎င်းရဲ့ ညီအစ်ကို (sibling) function တွေကိုလည်း run-time lookup (လည်ပတ်ချိန် ရှာဖွေမှု) တွေ လုပ်ဖို့ သုံးနိုင်ပါတယ်။ [ဇယား 9.76](/docs/postgresql/functions-info) ကို ကြည့်ပါ။
 
 `regclass` ကို သုံးတဲ့ နောက်ထပ် လက်တွေ့ ဥပမာ တစ်ခုကတော့ — OID တွေကို တိုက်ရိုက် မပေးတဲ့ `information_schema` view တွေထဲမှာ စာရင်းပြုထားတဲ့ table တစ်ခုရဲ့ OID ကို ရှာဖွေတာပါ။ ဥပမာ — table OID လိုအပ်တဲ့ `pg_relation_size()` function ကို ခေါ်ယူချင်တယ် ဆိုပါစို့။ အပေါ်က စည်းမျဉ်းတွေကို ထည့်သွင်း စဉ်းစားရင် — ဒီလိုလုပ်တာက မှန်ကန်တဲ့ နည်းလမ်း ဖြစ်ပါတယ်:
 

@@ -15,7 +15,7 @@ updated: 2026-09-03
 - **8.5.4. Interval Input (interval input)**
 - **8.5.5. Interval Output (interval output)**
 
-PostgreSQL က SQL ရဲ့ date နဲ့ time type အစုအဝေး အပြည့်အစုံကို ထောက်ပံ့ပါတယ် — [ဇယား 8.9](/docs/postgresql/datatype-datetime) မှာ ပြထားပါတယ်။ ဒီ data type တွေပေါ်မှာ ရနိုင်တဲ့ operation တွေကို [အပိုင်း 9.9](https://www.postgresql.org/docs/current/functions-datetime.html) မှာ ဖော်ပြထားပါတယ်။ ရက်စွဲတွေကို Gregorian calendar (ဂရီဂေါရီးယန်း ပြက္ခဒိန်) အရ ရေတွက်ပါတယ် — အဲဒီ ပြက္ခဒိန် မပေါ်သေးတဲ့ နှစ်တွေအတွက်တောင် ဖြစ်ပါတယ် (အသေးစိတ်အတွက် [အပိုင်း B.6](https://www.postgresql.org/docs/current/datetime-units-history.html) ကို ကြည့်ပါ)။
+PostgreSQL က SQL ရဲ့ date နဲ့ time type အစုအဝေး အပြည့်အစုံကို ထောက်ပံ့ပါတယ် — [ဇယား 8.9](/docs/postgresql/datatype-datetime) မှာ ပြထားပါတယ်။ ဒီ data type တွေပေါ်မှာ ရနိုင်တဲ့ operation တွေကို [အပိုင်း 9.9](/docs/postgresql/functions-datetime) မှာ ဖော်ပြထားပါတယ်။ ရက်စွဲတွေကို Gregorian calendar (ဂရီဂေါရီးယန်း ပြက္ခဒိန်) အရ ရေတွက်ပါတယ် — အဲဒီ ပြက္ခဒိန် မပေါ်သေးတဲ့ နှစ်တွေအတွက်တောင် ဖြစ်ပါတယ် (အသေးစိတ်အတွက် [အပိုင်း B.6](https://www.postgresql.org/docs/current/datetime-units-history.html) ကို ကြည့်ပါ)။
 
 **ဇယား 8.9. Date/Time Types (ရက်စွဲ/အချိန် type များ)**
 
@@ -176,7 +176,7 @@ TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02'
 
 `timestamp with time zone` value တွေအတွက်တော့ — explicit time zone ပါဝင်တဲ့ input string ကို အဲဒီ time zone အတွက် သင့်လျော်တဲ့ offset သုံးပြီး UTC ([Universal Coordinated Time](https://www.postgresql.org/docs/current/glossary.html#GLOSSARY-UTC)) အဖြစ် ပြောင်းလဲပါလိမ့်မယ်။ Input string ထဲမှာ time zone ဖော်ပြမထားရင် — system ရဲ့ [TimeZone](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-TIMEZONE) parameter က ညွှန်ပြတဲ့ time zone မှာ ရှိတယ်လို့ ယူဆပြီး — `timezone` zone အတွက် offset သုံးကာ UTC အဖြစ် ပြောင်းပါတယ်။ ကိစ္စ နှစ်မျိုးလုံးမှာ value ကို အတွင်းပိုင်းမှာ UTC အဖြစ် သိမ်းပြီး — မူလ ဖော်ပြထားတဲ့ သို့မဟုတ် ယူဆထားတဲ့ time zone ကိုတော့ ထိန်းသိမ်းမထားပါဘူး။
 
-`timestamp with time zone` value တစ်ခုကို output လုပ်တဲ့အခါ — ၎င်းကို UTC ကနေ လက်ရှိ `timezone` zone ဆီ အမြဲ ပြောင်းပြီး — အဲဒီ zone ထဲက local time အဖြစ် ပြသပါတယ်။ တခြား time zone တစ်ခုထဲက အချိန်ကို ကြည့်ချင်ရင် — `timezone` ကို ပြောင်းလိုက်ပါ ဒါမှမဟုတ် `AT TIME ZONE` construct ကို သုံးပါ ([အပိုင်း 9.9.4](https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTIONS-DATETIME-ZONECONVERT) ကို ကြည့်ပါ)။
+`timestamp with time zone` value တစ်ခုကို output လုပ်တဲ့အခါ — ၎င်းကို UTC ကနေ လက်ရှိ `timezone` zone ဆီ အမြဲ ပြောင်းပြီး — အဲဒီ zone ထဲက local time အဖြစ် ပြသပါတယ်။ တခြား time zone တစ်ခုထဲက အချိန်ကို ကြည့်ချင်ရင် — `timezone` ကို ပြောင်းလိုက်ပါ ဒါမှမဟုတ် `AT TIME ZONE` construct ကို သုံးပါ ([အပိုင်း 9.9.4](/docs/postgresql/functions-datetime) ကို ကြည့်ပါ)။
 
 `timestamp without time zone` နဲ့ `timestamp with time zone` အကြား ပြောင်းလဲမှုတွေမှာ — `timestamp without time zone` value ကို `timezone` local time အဖြစ် ယူဆပြီး ယူတာ သို့မဟုတ် ပေးတာ ဖြစ်ပါတယ်။ Conversion အတွက် တခြား time zone တစ်ခုကို `AT TIME ZONE` သုံးပြီး သတ်မှတ်လို့ ရပါတယ်။
 
@@ -197,7 +197,7 @@ TIMESTAMP WITH TIME ZONE '2004-10-19 10:23:54+02'
 | `yesterday` | `date`, `timestamp` | မနေ့က သန်းခေါင်ယံ (`00:00`) |
 | `allballs` | `time` | 00:00:00.00 UTC |
 
-သက်ဆိုင်ရာ data type အတွက် လက်ရှိ အချိန် တန်ဖိုးကို ရဖို့ အောက်ပါ SQL-compatible function တွေကိုလည်း သုံးနိုင်ပါတယ်: `CURRENT_DATE`, `CURRENT_TIME`, `CURRENT_TIMESTAMP`, `LOCALTIME`, `LOCALTIMESTAMP`။ ([အပိုင်း 9.9.5](https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTIONS-DATETIME-CURRENT) ကို ကြည့်ပါ။) ဒါတွေက SQL function တွေ ဖြစ်ပြီး — data input string တွေထဲမှာတော့ အသိအမှတ်ပြုမခံရဘူးဆိုတာ သတိပြုပါ။
+သက်ဆိုင်ရာ data type အတွက် လက်ရှိ အချိန် တန်ဖိုးကို ရဖို့ အောက်ပါ SQL-compatible function တွေကိုလည်း သုံးနိုင်ပါတယ်: `CURRENT_DATE`, `CURRENT_TIME`, `CURRENT_TIMESTAMP`, `LOCALTIME`, `LOCALTIMESTAMP`။ ([အပိုင်း 9.9.5](/docs/postgresql/functions-datetime) ကို ကြည့်ပါ။) ဒါတွေက SQL function တွေ ဖြစ်ပြီး — data input string တွေထဲမှာတော့ အသိအမှတ်ပြုမခံရဘူးဆိုတာ သတိပြုပါ။
 
 > **သတိပြုရန်:** `now`, `today`, `tomorrow` နဲ့ `yesterday` input string တွေက interactive SQL command တွေမှာ သုံးလို့ အဆင်ပြေပေမယ့် — command ကို နောက်မှ execute လုပ်ဖို့ သိမ်းထားတဲ့အခါ — ဥပမာ prepared statements, views နဲ့ function definitions တွေမှာ — မမျှော်လင့်တဲ့ အပြုအမူတွေ ဖြစ်စေနိုင်ပါတယ်။ String က သီးခြား အချိန်တန်ဖိုး တစ်ခုအဖြစ် ပြောင်းလဲခံရပြီး — ခေတ်မမီ (stale) ဖြစ်သွားပြီးချိန် ကြာမြင့်စွာ ဆက်သုံးနေနိုင်ပါတယ်။ အဲဒီလို context တွေမှာ SQL function တွေထဲက တစ်ခုကို အစားထိုး သုံးပါ။ ဥပမာ — `CURRENT_DATE + 1` က `'tomorrow'::date` ထက် ပိုလုံခြုံပါတယ်။
 
@@ -230,7 +230,7 @@ ISO ပုံစံမှာ — time zone ကို UTC ကနေ signed numeri
 
 User က date/time style ကို — `SET datestyle` command, `postgresql.conf` configuration file ထဲက [DateStyle](https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-DATESTYLE) parameter, ဒါမှမဟုတ် server ဒါမှမဟုတ် client ပေါ်က `PGDATESTYLE` environment variable — သုံးပြီး ရွေးချယ်နိုင်ပါတယ်။
 
-`to_char` formatting function ([အပိုင်း 9.8](https://www.postgresql.org/docs/current/functions-formatting.html)) ကလည်း date/time output တွေကို ပိုပြီး ပြောင်းလွယ်ပြင်လွယ် ပုံစံချနိုင်ဖို့ ရနိုင်ပါတယ်။
+`to_char` formatting function ([အပိုင်း 9.8](/docs/postgresql/functions-formatting)) ကလည်း date/time output တွေကို ပိုပြီး ပြောင်းလွယ်ပြင်လွယ် ပုံစံချနိုင်ဖို့ ရနိုင်ပါတယ်။
 
 ### 8.5.3. Time Zones (အချိန်ဇုန်များ)
 
@@ -337,7 +337,7 @@ Input field တန်ဖိုးတွေမှာ အပိုင်းကိ�
 
 ### 8.5.5. Interval Output (interval output)
 
-အရင်က ရှင်းပြခဲ့သလိုပဲ — PostgreSQL က `interval` value တွေကို months, days နဲ့ microseconds အနေနဲ့ သိမ်းပါတယ်။ Output အတွက်တော့ months field ကို 12 နဲ့ စားပြီး years နဲ့ months အဖြစ် ပြောင်းပါတယ်။ Days field ကတော့ ရှိတဲ့အတိုင်းပဲ ပြပါတယ်။ Microseconds field ကို hours, minutes, seconds နဲ့ fractional seconds အဖြစ် ပြောင်းပါတယ်။ ဒါကြောင့် months, minutes နဲ့ seconds တွေက ၎င်းတို့ရဲ့ အကွာအဝေး 0–11, 0–59 နဲ့ 0–59 တွေကို အသီးသီး ကျော်လွန်တာမျိုး ဘယ်တော့မှ ပြမှာ မဟုတ်ဘဲ — ပြနေတဲ့ years, days နဲ့ hours field တွေကတော့ အတော်လေး ကြီးနိုင်ပါတယ်။ (ကြီးမားတဲ့ days ဒါမှမဟုတ် hours တန်ဖိုးတွေကို နောက် ပိုမြင့်တဲ့ field တစ်ခုဆီ ပြောင်းချင်ရင် — [`justify_days`](https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTION-JUSTIFY-DAYS) နဲ့ [`justify_hours`](https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTION-JUSTIFY-HOURS) function တွေကို သုံးနိုင်ပါတယ်။)
+အရင်က ရှင်းပြခဲ့သလိုပဲ — PostgreSQL က `interval` value တွေကို months, days နဲ့ microseconds အနေနဲ့ သိမ်းပါတယ်။ Output အတွက်တော့ months field ကို 12 နဲ့ စားပြီး years နဲ့ months အဖြစ် ပြောင်းပါတယ်။ Days field ကတော့ ရှိတဲ့အတိုင်းပဲ ပြပါတယ်။ Microseconds field ကို hours, minutes, seconds နဲ့ fractional seconds အဖြစ် ပြောင်းပါတယ်။ ဒါကြောင့် months, minutes နဲ့ seconds တွေက ၎င်းတို့ရဲ့ အကွာအဝေး 0–11, 0–59 နဲ့ 0–59 တွေကို အသီးသီး ကျော်လွန်တာမျိုး ဘယ်တော့မှ ပြမှာ မဟုတ်ဘဲ — ပြနေတဲ့ years, days နဲ့ hours field တွေကတော့ အတော်လေး ကြီးနိုင်ပါတယ်။ (ကြီးမားတဲ့ days ဒါမှမဟုတ် hours တန်ဖိုးတွေကို နောက် ပိုမြင့်တဲ့ field တစ်ခုဆီ ပြောင်းချင်ရင် — [`justify_days`](/docs/postgresql/functions-datetime) နဲ့ [`justify_hours`](/docs/postgresql/functions-datetime) function တွေကို သုံးနိုင်ပါတယ်။)
 
 `interval` type ရဲ့ output ပုံစံကို — `SET intervalstyle` command သုံးပြီး — `sql_standard`, `postgres`, `postgres_verbose` ဒါမှမဟုတ် `iso_8601` ဆိုတဲ့ ပုံစံ လေးမျိုးထဲက တစ်ခုအဖြစ် သတ်မှတ်နိုင်ပါတယ်။ Default ကတော့ `postgres` ပုံစံ ဖြစ်ပါတယ်။ [ဇယား 8.18](/docs/postgresql/datatype-datetime) က output ပုံစံ တစ်ခုချင်းစီအတွက် ဥပမာတွေ ပြပါတယ်။
 

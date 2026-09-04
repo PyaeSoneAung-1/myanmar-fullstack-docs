@@ -1,7 +1,7 @@
 ---
 title: "Operator Classes and Operator Families (operator class နဲ့ operator family များ)"
 description: "Index column တစ်ခုချင်းစီအတွက် သုံးမယ့် operator တွေကို သတ်မှတ်ပေးတဲ့ operator class နဲ့ operator class တွေ စုဖွဲ့ရာ operator family သဘောတရား — text_pattern_ops လို built-in operator class များ၊ pattern-matching query တွေအတွက် xxx_pattern_ops operator class များ သုံးပုံနဲ့ operator class / operator family စာရင်းကြည့်ရန် catalog query များ"
-order: 83
+order: 114
 source: "https://www.postgresql.org/docs/current/indexes-opclass.html"
 status: translated
 updated: 2026-09-03

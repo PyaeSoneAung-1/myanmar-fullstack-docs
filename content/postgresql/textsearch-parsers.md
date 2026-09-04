@@ -1,7 +1,7 @@
 ---
 title: "Parsers (parser များ)"
 description: "Text search parser များ — raw document text ကို token အဖြစ် ပိုင်းခြားပြီး type ဖော်ထုတ်ခြင်း၊ built-in pg_catalog.default parser နှင့် ၎င်း၏ token type 23 မျိုး"
-order: 90
+order: 121
 source: "https://www.postgresql.org/docs/current/textsearch-parsers.html"
 status: translated
 updated: 2026-09-03

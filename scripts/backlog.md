@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 950 pages translated** (wave 25, 2026-09-03: +11 PostgreSQL pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950
+**Total: 981 pages translated** (wave 26, 2026-09-04: +31 PostgreSQL pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -67,7 +67,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 14 (orders 22–30): advanced (healthcheck-graceful-shutdown, security-updates), guide (database-integration, migrating-4, migrating-5), resources (glossary, community, utils), support — expressjs.com မျက်နှာစုံ ပြီးစီး 🎉
 - [ ] api-reference (4.x/5.x) — excluded per sources.json note
 
-## PostgreSQL (postgresql.org/docs — tutorial + core chapters) — est ~500 — 108 done
+## PostgreSQL (postgresql.org/docs — tutorial + core chapters) — est ~500 — 139 done
 - [x] Tutorial (complete): getting-started, creating-db, creating-table, populating-table, querying-table, updating-data, deleting-data, sql-basics, joins, aggregate, advanced-features, views, foreign-keys, transactions, window-functions, inheritance, indexes, conclusion
 - [x] Wave 19 (orders 19–37, 19 pages — 2026-09-03): Chapter 5 Data Definition (15 pages: 5.1 basics → 5.15 dependency tracking) + Chapter 6 Data Manipulation (4 pages: insert/update/delete/returning) — PostgreSQL 18.6 docs, official per-section pages (PostgreSQL 18 docs consolidated; old per-subsection URLs like ddl-constraints-fk.html are gone)
   - Sources: postgresql.org/docs/current HTML → clean markdown via `scripts/pg-html2md.py` (committed converter, needs `beautifulsoup4`); no official markdown source exists

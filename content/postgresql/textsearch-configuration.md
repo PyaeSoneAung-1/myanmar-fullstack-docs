@@ -1,7 +1,7 @@
 ---
 title: "Configuration Example (configuration ဥပမာ)"
 description: "ကိုယ်ပိုင် text search configuration ဖန်တီးခြင်း ဥပမာ — built-in english configuration ကို ကူးယူပြီး synonym/Ispell dictionary များနှင့် mapping သတ်မှတ်ပုံ"
-order: 92
+order: 123
 source: "https://www.postgresql.org/docs/current/textsearch-configuration.html"
 status: translated
 updated: 2026-09-03

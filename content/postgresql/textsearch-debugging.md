@@ -1,7 +1,7 @@
 ---
 title: "Testing and Debugging Text Search (text search စမ်းသပ်ခြင်းနဲ့ ပြဿနာရှာဖွေခြင်း)"
 description: "Text search configuration/parser/dictionary များကို စမ်းသပ်ရန် ts_debug, ts_parse, ts_token_type, ts_lexize function များ — နမူနာ output များနှင့်တကွ"
-order: 93
+order: 124
 source: "https://www.postgresql.org/docs/current/textsearch-debugging.html"
 status: translated
 updated: 2026-09-03

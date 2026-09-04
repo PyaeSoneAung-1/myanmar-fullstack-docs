@@ -1,7 +1,7 @@
 ---
 title: "Explicit Locking (explicit lock ပြုလုပ်ခြင်း)"
 description: "Explicit locking (ကိုယ်တိုင် အတိအကျ ပြုလုပ်သော locking) — table-level, row-level နှင့် page-level lock modes များ၊ lock compatibility ဇယားများ၊ deadlock နှင့် advisory lock များအကြောင်း"
-order: 99
+order: 130
 source: "https://www.postgresql.org/docs/current/explicit-locking.html"
 status: translated
 updated: 2026-09-03
@@ -130,4 +130,4 @@ SELECT pg_advisory_lock(q.id) FROM
 
 အပေါ်က query တွေထဲမှာ — ဒုတိယ ပုံစံက အန္တရာယ် ရှိပါတယ် — `LIMIT` က locking function ကို execute (လုပ်ဆောင်) လုပ်တာထက် အရင် သက်ရောက်မယ်လို့ အာမခံချက် မရှိလို့ပါ။ ဒါက — application က မျှော်လင့်မထားတဲ့ lock တချို့ ရယူခံရပြီး — ရလဒ်အနေနဲ့ — (session ပြီးဆုံးတဲ့အထိ) — လွှတ်ပေးဖို့ ပျက်ကွက်စေနိုင်ပါတယ်။ Application ရဲ့ ရှုထောင့်ကနေ ကြည့်ရင် — အဲဒီလို lock တွေက dangling (အချည်းနှီး ကျန်နေ) ဖြစ်နေပေမယ့် — `pg_locks` ထဲမှာတော့ ဆက်ပြီး မြင်ရဆဲ ဖြစ်ပါတယ်။
 
-Advisory lock တွေကို ကိုင်တွယ်ဖို့ ပေးထားတဲ့ function တွေကို [အပိုင်း 9.28.10](https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADVISORY-LOCKS) မှာ ဖော်ပြထားပါတယ်။
+Advisory lock တွေကို ကိုင်တွယ်ဖို့ ပေးထားတဲ့ function တွေကို [အပိုင်း 9.28.10](/docs/postgresql/functions-admin) မှာ ဖော်ပြထားပါတယ်။

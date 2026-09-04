@@ -1,7 +1,7 @@
 ---
 title: "Introduction (နိဒါန်း)"
 description: "PostgreSQL ရဲ့ MVCC (Multiversion Concurrency Control) သဘောတရား မိတ်ဆက် — concurrent access ကို စီမံခန့်ခွဲပုံ၊ transaction isolation နဲ့ locking ထက် MVCC ရဲ့ အားသာချက်များ"
-order: 97
+order: 128
 source: "https://www.postgresql.org/docs/current/mvcc-intro.html"
 status: translated
 updated: 2026-09-03

@@ -1,7 +1,7 @@
 ---
 title: "Value Storage (တန်ဖိုး သိမ်းဆည်းခြင်း)"
 description: "Table ထဲသို့ ထည့်သွင်းမည့် value များကို destination column ၏ data type အဖြစ် ပြောင်းလဲ သိမ်းဆည်းပုံ — exact match ၊ assignment cast နှင့် sizing cast စည်းမျဉ်းများ"
-order: 71
+order: 102
 source: "https://www.postgresql.org/docs/current/typeconv-query.html"
 status: translated
 updated: 2026-09-03

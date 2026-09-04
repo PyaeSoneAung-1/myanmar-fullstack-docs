@@ -251,7 +251,7 @@ SELECT * FROM inventory_item c ORDER BY c.*;
 SELECT * FROM inventory_item c ORDER BY ROW(c.*);
 ```
 
-ဒီ `ORDER BY` clause တွေ အားလုံးက row ရဲ့ composite value ကို သတ်မှတ်ပေးလို့ — [အပိုင်း 9.25.6](https://www.postgresql.org/docs/current/functions-comparisons.html#COMPOSITE-TYPE-COMPARISON) မှာ ဖော်ပြထားတဲ့ စည်းမျဉ်းတွေနဲ့အညီ — row တွေကို စီခြင်း ရလဒ် ထွက်ပေါ်စေပါတယ်။ ဒါပေမယ့် `inventory_item` မှာ `c` လို့ နာမည်တပ်ထားတဲ့ column တစ်ခု ပါဝင်နေခဲ့ရင် — ပထမ ကိစ္စက တခြားဟာတွေနဲ့ ကွဲပြားမှာ ဖြစ်ပါတယ် — အကြောင်းကတော့ ၎င်းက အဲဒီ column တစ်ခုတည်းနဲ့ပဲ စီမှာ ဖြစ်လို့ပါ။ အရင်က ပြထားတဲ့ column name တွေနဲ့ဆိုရင် — ဒီ query တွေကလည်း အပေါ်က ဟာတွေနဲ့ ညီမျှပါတယ်:
+ဒီ `ORDER BY` clause တွေ အားလုံးက row ရဲ့ composite value ကို သတ်မှတ်ပေးလို့ — [အပိုင်း 9.25.6](/docs/postgresql/functions-comparisons) မှာ ဖော်ပြထားတဲ့ စည်းမျဉ်းတွေနဲ့အညီ — row တွေကို စီခြင်း ရလဒ် ထွက်ပေါ်စေပါတယ်။ ဒါပေမယ့် `inventory_item` မှာ `c` လို့ နာမည်တပ်ထားတဲ့ column တစ်ခု ပါဝင်နေခဲ့ရင် — ပထမ ကိစ္စက တခြားဟာတွေနဲ့ ကွဲပြားမှာ ဖြစ်ပါတယ် — အကြောင်းကတော့ ၎င်းက အဲဒီ column တစ်ခုတည်းနဲ့ပဲ စီမှာ ဖြစ်လို့ပါ။ အရင်က ပြထားတဲ့ column name တွေနဲ့ဆိုရင် — ဒီ query တွေကလည်း အပေါ်က ဟာတွေနဲ့ ညီမျှပါတယ်:
 
 ```sql
 SELECT * FROM inventory_item c ORDER BY ROW(c.name, c.supplier_id, c.price);

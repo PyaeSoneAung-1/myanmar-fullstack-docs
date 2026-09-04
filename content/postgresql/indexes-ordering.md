@@ -1,7 +1,7 @@
 ---
 title: "Indexes and ORDER BY (index နဲ့ ORDER BY)"
 description: "Index က query ရဲ့ ORDER BY ကို သီးခြား sort step မပါဘဲ ဖြည့်ဆည်းပေးနိုင်ခြင်း — B-tree တစ်မျိုးတည်းသာ sorted output ထုတ်ပေးနိုင်မှု၊ ASC/DESC/NULLS FIRST/LAST option များနဲ့ B-tree index ရဲ့ sort ordering ကို ချိန်ညှိခြင်း"
-order: 77
+order: 108
 source: "https://www.postgresql.org/docs/current/indexes-ordering.html"
 status: translated
 updated: 2026-09-03

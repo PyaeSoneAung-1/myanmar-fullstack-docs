@@ -1,7 +1,7 @@
 ---
 title: "Controlling Text Search (text search ထိန်းချုပ်ခြင်း)"
 description: "Full text search ထိန်းချုပ်ခြင်း — document နှင့် query များကို parse လုပ်ခြင်း၊ ts_rank/ts_rank_cd ဖြင့် search result များ အဆင့်သတ်မှတ်ခြင်း၊ ts_headline ဖြင့် highlight ပြုလုပ်ခြင်း"
-order: 88
+order: 119
 source: "https://www.postgresql.org/docs/current/textsearch-controls.html"
 status: translated
 updated: 2026-09-03

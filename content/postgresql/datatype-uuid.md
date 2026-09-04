@@ -31,4 +31,4 @@ a0ee-bc99-9c0b-4ef8-bb6d-6bb9-bd38-0a11
 
 Output (ထွက်ပေါ်လာသော ရလဒ်) ကတော့ အမြဲတမ်း standard ပုံစံနဲ့ပဲ ဖြစ်ပါတယ်။
 
-PostgreSQL မှာ UUID တစ်ခုကို ဘယ်လို ထုတ်လုပ်မလဲဆိုတာအတွက် — [အပိုင်း 9.14](https://www.postgresql.org/docs/current/functions-uuid.html) ကို ကြည့်ပါ။
+PostgreSQL မှာ UUID တစ်ခုကို ဘယ်လို ထုတ်လုပ်မလဲဆိုတာအတွက် — [အပိုင်း 9.14](/docs/postgresql/functions-uuid) ကို ကြည့်ပါ။

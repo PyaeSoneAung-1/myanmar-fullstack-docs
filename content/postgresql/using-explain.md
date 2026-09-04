@@ -1,7 +1,7 @@
 ---
 title: "Using EXPLAIN (EXPLAIN အသုံးပြုခြင်း)"
 description: "PostgreSQL က query တစ်ခုစီအတွက် ရေးဆွဲတဲ့ query plan ကို EXPLAIN command နဲ့ ကြည့်ရှုနည်း — EXPLAIN အခြေခံ၊ cost/rows ခန့်မှန်းချက် ဖတ်နည်း၊ EXPLAIN ANALYZE ဖြင့် တကယ့် execution အချက်အလက် စစ်ဆေးခြင်း၊ သတိပြုရန် အချက်များ"
-order: 104
+order: 135
 source: "https://www.postgresql.org/docs/current/using-explain.html"
 status: translated
 updated: 2026-09-03

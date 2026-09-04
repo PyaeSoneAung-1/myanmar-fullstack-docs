@@ -1,7 +1,7 @@
 ---
 title: "Tables and Indexes (table နဲ့ index များ)"
 description: "Table data တွေကို full text search လုပ်ခြင်း — index မပါဘဲ ရှာဖွေခြင်း၊ GIN index များ ဖန်တီးခြင်းနဲ့ expression index / သီးခြား tsvector column ချဉ်းကပ်နည်း နှစ်မျိုး"
-order: 87
+order: 118
 source: "https://www.postgresql.org/docs/current/textsearch-tables.html"
 status: translated
 updated: 2026-09-03

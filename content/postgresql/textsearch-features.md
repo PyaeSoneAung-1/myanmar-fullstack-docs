@@ -1,7 +1,7 @@
 ---
 title: "Additional Features (နောက်ထပ် feature များ)"
 description: "tsvector/tsquery တန်ဖိုးများကို ကိုင်တွယ်ရန် နောက်ထပ် function နှင့် operator များ — concatenation, setweight, strip, query rewriting, အလိုအလျောက် update triggers နှင့် document statistics စုဆောင်းခြင်း"
-order: 89
+order: 120
 source: "https://www.postgresql.org/docs/current/textsearch-features.html"
 status: translated
 updated: 2026-09-03
@@ -29,7 +29,7 @@ updated: 2026-09-03
 - **length(vector tsvector) returns integer** — Vector ထဲမှာ သိမ်းထားတဲ့ lexemes အရေအတွက်ကို ပြန်ပေးပါတယ်။
 - **strip(vector tsvector) returns tsvector** — ပေးလိုက်တဲ့ vector ထဲက lexemes တွေအတိုင်း စာရင်းပြုစုထားပေမယ့် — position ဒါမှမဟုတ် weight အချက်အလက် မပါဝင်တဲ့ vector တစ်ခုကို ပြန်ပေးပါတယ်။ ရလဒ်က ပုံမှန်အားဖြင့် unstripped vector ထက် အများကြီး သေးငယ်ပေမယ့် — အသုံးဝင်မှုကလည်း လျော့နည်းပါတယ်။ Relevance ranking (ဆီလျော်မှုအလိုက် အဆင့်သတ်မှတ်ခြင်း) က stripped vector တွေမှာ unstripped vector တွေလောက် ကောင်းကောင်း အလုပ် မလုပ်ပါဘူး။ ဒါ့အပြင် `<->` (FOLLOWED BY) tsquery operator က — lexeme တွေရဲ့ ဖြစ်ပေါ်မှုကြားက အကွာအဝေးကို ဆုံးဖြတ်လို့ မရတာကြောင့် — stripped input နဲ့ဆိုရင် ဘယ်တော့မှ ကိုက်ညီမှု ရှိမှာ မဟုတ်ပါဘူး။
 
-`tsvector` နဲ့ ဆက်စပ်တဲ့ function တွေရဲ့ အပြည့်အစုံ စာရင်းကို [ဇယား 9.43](https://www.postgresql.org/docs/current/functions-textsearch.html#TEXTSEARCH-FUNCTIONS-TABLE) မှာ ကြည့်ရှုနိုင်ပါတယ်။
+`tsvector` နဲ့ ဆက်စပ်တဲ့ function တွေရဲ့ အပြည့်အစုံ စာရင်းကို [ဇယား 9.43](/docs/postgresql/functions-textsearch) မှာ ကြည့်ရှုနိုင်ပါတယ်။
 
 ### 12.4.2. Manipulating Queries (query များကို ကိုင်တွယ်ခြင်း)
 

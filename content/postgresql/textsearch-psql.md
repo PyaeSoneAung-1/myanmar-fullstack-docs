@@ -1,7 +1,7 @@
 ---
 title: "psql Support (psql ပံ့ပိုးမှု)"
 description: "psql ထဲမှာ text search configuration object များအကြောင်း အချက်အလက်တွေ ကြည့်ရှုနိုင်တဲ့ dF/dFd/dFp/dFt command များ — နမူနာ output များနှင့်တကွ"
-order: 95
+order: 126
 source: "https://www.postgresql.org/docs/current/textsearch-psql.html"
 status: translated
 updated: 2026-09-03

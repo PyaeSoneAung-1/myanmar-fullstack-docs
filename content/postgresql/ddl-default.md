@@ -32,7 +32,7 @@ CREATE TABLE products (
 );
 ```
 
-ဒီမှာ `nextval()` function က *sequence object* (နောက်ဆက်တွဲ တန်ဖိုးများကို ထောက်ပံ့ပေးသော object) ကနေ ဆက်တိုက် တန်ဖိုးတွေ ထုတ်ပေးပါတယ် ([အပိုင်း 9.17](https://www.postgresql.org/docs/current/functions-sequence.html) ကို ကြည့်ပါ)။ ဒီစနစ်က အတော်လေး အသုံးများလို့ — သူ့အတွက် သီးခြား အတိုကောက် (shorthand) တစ်ခု ရှိပါတယ်:
+ဒီမှာ `nextval()` function က *sequence object* (နောက်ဆက်တွဲ တန်ဖိုးများကို ထောက်ပံ့ပေးသော object) ကနေ ဆက်တိုက် တန်ဖိုးတွေ ထုတ်ပေးပါတယ် ([အပိုင်း 9.17](/docs/postgresql/functions-sequence) ကို ကြည့်ပါ)။ ဒီစနစ်က အတော်လေး အသုံးများလို့ — သူ့အတွက် သီးခြား အတိုကောက် (shorthand) တစ်ခု ရှိပါတယ်:
 
 ```sql
 CREATE TABLE products (

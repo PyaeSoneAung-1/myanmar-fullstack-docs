@@ -1,7 +1,7 @@
 ---
 title: "Populating a Database (database တစ်ခုကို data ဖြည့်သွင်းခြင်း)"
 description: "Database တစ်ခုကို data အမြောက်အများ ထိရောက်စွာ ဖြည့်သွင်းနည်း — autocommit ပိတ်ခြင်း၊ COPY သုံးခြင်း၊ index/FK များ ဖယ်ရှားခြင်း၊ maintenance_work_mem နှင့် max_wal_size မြှင့်တင်ခြင်း၊ WAL archival ပိတ်ခြင်း၊ ANALYZE နှင့် pg_dump မှတ်စုများ"
-order: 107
+order: 138
 source: "https://www.postgresql.org/docs/current/populate.html"
 status: translated
 updated: 2026-09-03

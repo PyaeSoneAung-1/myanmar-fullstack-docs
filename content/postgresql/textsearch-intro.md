@@ -1,7 +1,7 @@
 ---
 title: "Introduction (နိဒါန်း)"
 description: "Full text search (စာသား အပြည့်အစုံ ရှာဖွေမှု) ရဲ့ မိတ်ဆက် — document ဆိုတာ ဘာလဲ၊ အခြေခံ text matching (tsvector/tsquery နဲ့ @@ operator) နဲ့ text search configurations အကြောင်း"
-order: 86
+order: 117
 source: "https://www.postgresql.org/docs/current/textsearch-intro.html"
 status: translated
 updated: 2026-09-03
@@ -35,7 +35,7 @@ Dictionaries တွေက tokens တွေကို ဘယ်လို normalize
 - Ispell dictionary ကို သုံးပြီး စကားလုံး တစ်လုံးရဲ့ ပုံစံကွဲတွေကို canonical (စံပြု) ပုံစံ တစ်ခုတည်းအဖြစ် ပေါင်းစပ်ခြင်း။
 - Snowball stemmer rules တွေကို သုံးပြီး စကားလုံး တစ်လုံးရဲ့ ပုံစံကွဲတွေကို canonical ပုံစံ တစ်ခုတည်းအဖြစ် ပေါင်းစပ်ခြင်း။
 
-Preprocessed document တွေကို သိမ်းဆည်းဖို့ data type တစ်ခုဖြစ်တဲ့ `tsvector` ကိုလည်းကောင်း — process လုပ်ပြီးသား queries တွေကို ကိုယ်စားပြုဖို့ `tsquery` type ကိုလည်းကောင်း ပံ့ပိုးပေးထားပါတယ် ([အပိုင်း 8.11](/docs/postgresql/datatype-textsearch))။ ဒီ data type တွေအတွက် function နဲ့ operator တွေ အများအပြား ရနိုင်ပါတယ် ([အပိုင်း 9.13](https://www.postgresql.org/docs/current/functions-textsearch.html)) — အဲဒီထဲက အရေးအကြီးဆုံးကတော့ match operator `@@` ဖြစ်ပြီး — အဲဒါကို အပိုင်း 12.1.2 မှာ မိတ်ဆက် ပေးသွားပါမယ်။ Full text search တွေကို index တွေ သုံးပြီး မြန်ဆန်အောင် လုပ်နိုင်ပါတယ် ([အပိုင်း 12.9](/docs/postgresql/textsearch-indexes))။
+Preprocessed document တွေကို သိမ်းဆည်းဖို့ data type တစ်ခုဖြစ်တဲ့ `tsvector` ကိုလည်းကောင်း — process လုပ်ပြီးသား queries တွေကို ကိုယ်စားပြုဖို့ `tsquery` type ကိုလည်းကောင်း ပံ့ပိုးပေးထားပါတယ် ([အပိုင်း 8.11](/docs/postgresql/datatype-textsearch))။ ဒီ data type တွေအတွက် function နဲ့ operator တွေ အများအပြား ရနိုင်ပါတယ် ([အပိုင်း 9.13](/docs/postgresql/functions-textsearch)) — အဲဒီထဲက အရေးအကြီးဆုံးကတော့ match operator `@@` ဖြစ်ပြီး — အဲဒါကို အပိုင်း 12.1.2 မှာ မိတ်ဆက် ပေးသွားပါမယ်။ Full text search တွေကို index တွေ သုံးပြီး မြန်ဆန်အောင် လုပ်နိုင်ပါတယ် ([အပိုင်း 12.9](/docs/postgresql/textsearch-indexes))။
 
 ### 12.1.1. What Is a Document? (document ဆိုတာ ဘာလဲ)
 

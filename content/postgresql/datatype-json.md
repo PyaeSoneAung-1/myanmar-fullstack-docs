@@ -17,7 +17,7 @@ updated: 2026-09-03
 - **8.14.6. Transforms (jsonb type transforms များ)**
 - **8.14.7. jsonpath Type (jsonpath type)**
 
-JSON data types ဆိုတာ — [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159) မှာ သတ်မှတ်ထားတဲ့အတိုင်း — JSON (JavaScript Object Notation) data တွေကို သိမ်းဆည်းဖို့ သုံးတဲ့ data types တွေ ဖြစ်ပါတယ်။ ဒီလို data တွေကို `text` အနေနဲ့လည်း သိမ်းဆည်းလို့ ရပါတယ် — ဒါပေမယ့် JSON data types တွေမှာ သိမ်းဆည်းလိုက်တဲ့ တန်ဖိုးတိုင်းက JSON စည်းမျဉ်းတွေနဲ့အညီ valid (မှန်ကန်သော) ဖြစ်ကြောင်း အတင်းအကျပ် စစ်ဆေးပေးတဲ့ အားသာချက် ရှိပါတယ်။ ဒီ data types တွေထဲမှာ သိမ်းထားတဲ့ data တွေအတွက် JSON-specific function နဲ့ operator အမျိုးမျိုးလည်း ရနိုင်ပါတယ်; [အပိုင်း 9.16](https://www.postgresql.org/docs/current/functions-json.html) ကို ကြည့်ပါ။
+JSON data types ဆိုတာ — [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159) မှာ သတ်မှတ်ထားတဲ့အတိုင်း — JSON (JavaScript Object Notation) data တွေကို သိမ်းဆည်းဖို့ သုံးတဲ့ data types တွေ ဖြစ်ပါတယ်။ ဒီလို data တွေကို `text` အနေနဲ့လည်း သိမ်းဆည်းလို့ ရပါတယ် — ဒါပေမယ့် JSON data types တွေမှာ သိမ်းဆည်းလိုက်တဲ့ တန်ဖိုးတိုင်းက JSON စည်းမျဉ်းတွေနဲ့အညီ valid (မှန်ကန်သော) ဖြစ်ကြောင်း အတင်းအကျပ် စစ်ဆေးပေးတဲ့ အားသာချက် ရှိပါတယ်။ ဒီ data types တွေထဲမှာ သိမ်းထားတဲ့ data တွေအတွက် JSON-specific function နဲ့ operator အမျိုးမျိုးလည်း ရနိုင်ပါတယ်; [အပိုင်း 9.16](/docs/postgresql/functions-json) ကို ကြည့်ပါ။
 
 JSON data တွေကို သိမ်းဆည်းဖို့ PostgreSQL က type နှစ်မျိုး ပေးထားပါတယ်: `json` နဲ့ `jsonb`။ ဒီ data types တွေအတွက် ထိရောက်တဲ့ query ယန္တရားတွေ (mechanisms) အကောင်အထည်ဖော်နိုင်ဖို့ — PostgreSQL က [အပိုင်း 8.14.7](/docs/postgresql/datatype-json) မှာ ဖော်ပြထားတဲ့ `jsonpath` data type ကိုလည်း ထောက်ပံ့ပေးပါတယ်။
 
@@ -31,7 +31,7 @@ RFC 7159 က JSON string တွေကို UTF8 နဲ့ encode လုပ်�
 
 RFC 7159 က JSON string တွေထဲမှာ `\uXXXX` နဲ့ ဖော်ပြတဲ့ Unicode escape sequence တွေ ပါဝင်ခွင့် ပြုပါတယ်။ `json` type ရဲ့ input function မှာတော့ — database encoding ဘာပဲ ဖြစ်ဖြစ် Unicode escapes တွေကို ခွင့်ပြုပြီး — syntax ပိုင်း မှန်ကန်မှုကိုပဲ စစ်ဆေးပါတယ် (ဆိုလိုတာက `\u` နောက်မှာ hex digit လေးလုံး ပါရမယ်ဆိုတာမျိုးပါ)။ ဒါပေမယ့် `jsonb` ရဲ့ input function ကတော့ ပိုတင်းကျပ်ပါတယ်: database encoding မှာ ကိုယ်စားပြုလို့ မရတဲ့ character တွေအတွက် Unicode escapes တွေကို ခွင့်မပြုပါဘူး။ `jsonb` type က `\u0000` ကိုလည်း ငြင်းပယ်ပါတယ် (PostgreSQL ရဲ့ `text` type မှာ အဲဒါကို ကိုယ်စားပြုလို့ မရလို့ပါ) — ပြီးတော့ Unicode Basic Multilingual Plane အပြင်ဘက်က character တွေကို ရည်ညွှန်းဖို့ Unicode surrogate pairs တွေ သုံးတာဟာလည်း မှန်ကန်ဖို့ တောင်းဆိုပါတယ်။ Valid Unicode escapes တွေကို သိမ်းဆည်းတဲ့အခါ ညီမျှတဲ့ character တစ်လုံးတည်းအဖြစ် ပြောင်းလဲပေးပါတယ်; ဒီထဲမှာ surrogate pairs တွေကို character တစ်လုံးတည်းထဲ ပေါင်းလိုက်တာလည်း ပါဝင်ပါတယ်။
 
-> **မှတ်ချက်:** [အပိုင်း 9.16](https://www.postgresql.org/docs/current/functions-json.html) မှာ ဖော်ပြထားတဲ့ JSON processing functions တွေ အများစုက Unicode escapes တွေကို ပုံမှန် character တွေအဖြစ် ပြောင်းပေးတာမို့ — သူတို့ရဲ့ input က `jsonb` မဟုတ်ဘဲ `json` type ဖြစ်နေရင်တောင် — အပေါ်မှာ ဖော်ပြခဲ့တဲ့ error အမျိုးအစား အတိုင်းပဲ ဖြစ်စေနိုင်ပါတယ်။ `json` input function က ဒီစစ်ဆေးမှုတွေ မလုပ်တာက သမိုင်းကြောင်းအရ ကျန်ရစ်ခဲ့တဲ့ အပြုအမူ (historical artifact) တစ်ခုလို့ ယူဆလို့ ရပေမယ့် — ကိုယ်စားပြုလို့ မရတဲ့ character တွေ ပါဝင်တဲ့ JSON Unicode escapes တွေကို — processing မလုပ်ဘဲ — ရိုးရိုး သိမ်းဆည်းထားရုံအတွက်တော့ ခွင့်ပြုပေးပါတယ်။
+> **မှတ်ချက်:** [အပိုင်း 9.16](/docs/postgresql/functions-json) မှာ ဖော်ပြထားတဲ့ JSON processing functions တွေ အများစုက Unicode escapes တွေကို ပုံမှန် character တွေအဖြစ် ပြောင်းပေးတာမို့ — သူတို့ရဲ့ input က `jsonb` မဟုတ်ဘဲ `json` type ဖြစ်နေရင်တောင် — အပေါ်မှာ ဖော်ပြခဲ့တဲ့ error အမျိုးအစား အတိုင်းပဲ ဖြစ်စေနိုင်ပါတယ်။ `json` input function က ဒီစစ်ဆေးမှုတွေ မလုပ်တာက သမိုင်းကြောင်းအရ ကျန်ရစ်ခဲ့တဲ့ အပြုအမူ (historical artifact) တစ်ခုလို့ ယူဆလို့ ရပေမယ့် — ကိုယ်စားပြုလို့ မရတဲ့ character တွေ ပါဝင်တဲ့ JSON Unicode escapes တွေကို — processing မလုပ်ဘဲ — ရိုးရိုး သိမ်းဆည်းထားရုံအတွက်တော့ ခွင့်ပြုပေးပါတယ်။
 
 Textual JSON input ကို `jsonb` အဖြစ် ပြောင်းတဲ့အခါ — RFC 7159 မှာ ဖော်ပြထားတဲ့ primitive types တွေကို [ဇယား 8.23](/docs/postgresql/datatype-json) မှာ ပြထားတဲ့အတိုင်း — PostgreSQL ရဲ့ ဇာတိ (native) types တွေအပေါ်ကို ထိရောက်စွာ (effectively) မြေပုံဆွဲ (map) လုပ်ပါတယ်။ ဒါကြောင့် — အောက်ခံ data type ရဲ့ ကိုယ်စားပြုနိုင်မှု ကန့်သတ်ချက်တွေနဲ့ ဆက်စပ်ပြီး — `jsonb` မှာ valid ဖြစ်တဲ့ data ဆိုတာကို သတ်မှတ်ရာတွင် `json` type မှာရော သဘောတရားအရ JSON မှာပါ မရှိတဲ့ — အသေးစား ထပ်ဆောင်း ကန့်သတ်ချက်တချို့ ရှိပါတယ်။ အထူးသဖြင့် — `jsonb` က PostgreSQL `numeric` data type ရဲ့ အကွာအဝေး (range) အပြင်ဘက်က ဂဏန်းတွေကို ငြင်းပယ်ပြီး — `json` ကတော့ မငြင်းပါဘူး။ ဒီလို implementation-defined (အကောင်အထည်ဖော်မှုအလိုက် သတ်မှတ်သော) ကန့်သတ်ချက်တွေကို RFC 7159 က ခွင့်ပြုထားပါတယ်။ ဒါပေမယ့် — လက်တွေ့မှာတော့ ဒီလို ပြဿနာတွေက တခြား implementation တွေမှာ ဖြစ်နိုင်ခြေ အများကြီး ပိုများပါတယ် — JSON ရဲ့ `number` primitive type ကို IEEE 754 double precision floating point အနေနဲ့ ကိုယ်စားပြုတာ အသုံးများလို့ပါ (RFC 7159 က ဒါကို ကြိုမြင်၍ ခွင့်ပြုထားပါတယ်)။ ဒီလို system တွေနဲ့ JSON ကို interchange format (အပြန်အလှန် ဖလှယ်ရေး ပုံစံ) အနေနဲ့ သုံးတဲ့အခါ — PostgreSQL က မူလ သိမ်းဆည်းထားတဲ့ data နဲ့ ယှဉ်ရင် numeric precision (ဂဏန်း တိကျမှု) ဆုံးရှုံးနိုင်တဲ့ အန္တရာယ်ကို ထည့်စဉ်းစားသင့်ပါတယ်။
 
@@ -96,7 +96,7 @@ SELECT '{"reading": 1.230e-5}'::json, '{"reading": 1.230e-5}'::jsonb;
 
 ဒါပေမယ့် — ဒီဥပမာမှာ မြင်ရတဲ့အတိုင်း — `jsonb` က trailing fractional zeroes (ဂဏန်း၏ နောက်ဆုံးမှာ ပါတဲ့ သုညများ) တွေကိုတော့ ထိန်းသိမ်းပါတယ် — equality checks လိုမျိုး ရည်ရွယ်ချက်တွေအတွက် အဓိပ္ပာယ် မရှိတဲ့ဟာတွေ ဖြစ်နေပေမယ့်ပေါ့။
 
-JSON တန်ဖိုးတွေကို တည်ဆောက်ဖို့နဲ့ process လုပ်ဖို့ ရနိုင်တဲ့ built-in functions နဲ့ operators တွေရဲ့ စာရင်းအတွက် — [အပိုင်း 9.16](https://www.postgresql.org/docs/current/functions-json.html) ကို ကြည့်ပါ။
+JSON တန်ဖိုးတွေကို တည်ဆောက်ဖို့နဲ့ process လုပ်ဖို့ ရနိုင်တဲ့ built-in functions နဲ့ operators တွေရဲ့ စာရင်းအတွက် — [အပိုင်း 9.16](/docs/postgresql/functions-json) ကို ကြည့်ပါ။
 
 ### 8.14.2. Designing JSON Documents (JSON document များ ရေးဆွဲခြင်း)
 
@@ -190,13 +190,13 @@ Keys တွေ ဒါမှမဟုတ် elements တွေ အများက
 > 
 > တဖက်မှာတော့ — JSON existence operator က nested မဟုတ်ပါဘူး: သတ်မှတ်ထားတဲ့ key ဒါမှမဟုတ် array element ကို JSON တန်ဖိုးရဲ့ top level မှာပဲ ရှာဖွေပေးမှာ ဖြစ်ပါတယ်။
 
-ဒီ containment နဲ့ existence operators တွေ အပြင် — တခြား JSON operators နဲ့ functions တွေ အားလုံးကို [အပိုင်း 9.16](https://www.postgresql.org/docs/current/functions-json.html) မှာ မှတ်တမ်းပြုထားပါတယ်။
+ဒီ containment နဲ့ existence operators တွေ အပြင် — တခြား JSON operators နဲ့ functions တွေ အားလုံးကို [အပိုင်း 9.16](/docs/postgresql/functions-json) မှာ မှတ်တမ်းပြုထားပါတယ်။
 
 ### 8.14.4. `jsonb` Indexing (`jsonb` index ပြုလုပ်ခြင်း)
 
 GIN indexes တွေက `jsonb` documents (datums) အများအပြားထဲမှာ keys တွေ ဒါမှမဟုတ် key/value pairs တွေ ဖြစ်ပေါ်နေမှုကို ထိရောက်စွာ ရှာဖွေဖို့ သုံးနိုင်ပါတယ်။ Performance နဲ့ flexibility ကြားက မတူညီတဲ့ trade-offs တွေ ပေးတဲ့ — GIN “operator classes” နှစ်ခုကို ထောက်ပံ့ထားပါတယ်။
 
-`jsonb` အတွက် default GIN operator class က — key-exists operators `?`, `?|` နဲ့ `?&`၊ containment operator `@>`၊ ပြီးတော့ `jsonpath` match operators `@?` နဲ့ `@@` ပါတဲ့ queries တွေကို ထောက်ပံ့ပါတယ်။ (ဒီ operators တွေ အကောင်အထည်ဖော်တဲ့ အဓိပ္ပာယ် (semantics) အသေးစိတ်အတွက် [ဇယား 9.48](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-JSONB-OP-TABLE) ကို ကြည့်ပါ။) ဒီ operator class နဲ့ index တစ်ခု ဖန်တီးတဲ့ ဥပမာက:
+`jsonb` အတွက် default GIN operator class က — key-exists operators `?`, `?|` နဲ့ `?&`၊ containment operator `@>`၊ ပြီးတော့ `jsonpath` match operators `@?` နဲ့ `@@` ပါတဲ့ queries တွေကို ထောက်ပံ့ပါတယ်။ (ဒီ operators တွေ အကောင်အထည်ဖော်တဲ့ အဓိပ္ပာယ် (semantics) အသေးစိတ်အတွက် [ဇယား 9.48](/docs/postgresql/functions-json) ကို ကြည့်ပါ။) ဒီ operator class နဲ့ index တစ်ခု ဖန်တီးတဲ့ ဥပမာက:
 
 ```sql
 CREATE INDEX idxgin ON api USING GIN (jdoc);
@@ -400,14 +400,14 @@ Path expression တစ်ခုက path elements တွေရဲ့ sequence (�
 - အပိုင်း 9.16.2.3 မှာ စာရင်းပြုထားတဲ့ jsonpath operators နဲ့ methods တွေ။
 - Filter expressions တွေ ပေးဖို့ ဒါမှမဟုတ် path evaluation ရဲ့ အစဉ်ကို သတ်မှတ်ဖို့ သုံးနိုင်တဲ့ Parentheses တွေ။
 
-SQL/JSON query functions တွေနဲ့ `jsonpath` expressions တွေ သုံးပုံ အသေးစိတ်အတွက် — [အပိုင်း 9.16.2](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-SQLJSON-PATH) ကို ကြည့်ပါ။
+SQL/JSON query functions တွေနဲ့ `jsonpath` expressions တွေ သုံးပုံ အသေးစိတ်အတွက် — [အပိုင်း 9.16.2](/docs/postgresql/functions-json) ကို ကြည့်ပါ။
 
 **ဇယား 8.24. jsonpath Variables**
 
 | Variable | Description |
 | --- | --- |
 | `$` | Query လုပ်နေတဲ့ JSON တန်ဖိုး (ခေါ် *context item*) ကို ကိုယ်စားပြုတဲ့ variable |
-| `$varname` | Named variable တစ်ခု။ သူ့ရဲ့ တန်ဖိုးကို JSON processing functions အများအပြားရဲ့ *vars* parameter ကနေ သတ်မှတ်နိုင်ပါတယ်; အသေးစိတ်အတွက် [ဇယား 9.51](https://www.postgresql.org/docs/current/functions-json.html#FUNCTIONS-JSON-PROCESSING-TABLE) ကို ကြည့်ပါ။ |
+| `$varname` | Named variable တစ်ခု။ သူ့ရဲ့ တန်ဖိုးကို JSON processing functions အများအပြားရဲ့ *vars* parameter ကနေ သတ်မှတ်နိုင်ပါတယ်; အသေးစိတ်အတွက် [ဇယား 9.51](/docs/postgresql/functions-json) ကို ကြည့်ပါ။ |
 | `@` | Filter expressions တွေထဲမှာ path evaluation ရဲ့ ရလဒ်ကို ကိုယ်စားပြုတဲ့ variable |
 
 **ဇယား 8.25. jsonpath Accessors**

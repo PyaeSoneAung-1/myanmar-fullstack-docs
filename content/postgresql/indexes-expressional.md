@@ -1,7 +1,7 @@
 ---
 title: "Indexes on Expressions (expression ပေါ်မှာ index များ)"
 description: "Index column က column တစ်ခု သက်သက် မဟုတ်ဘဲ function ဒါမှမဟုတ် scalar expression ရဲ့ ရလဒ်ပေါ်မှာလည်း ဖန်တီးနိုင်ပုံ — case-insensitive ရှာဖွေမှုတွေအတွက် lower(col1) လို expression index သုံးပုံ၊ UNIQUE expression index နဲ့ constraint ချမှတ်နိုင်ပုံနဲ့ expression index ရဲ့ ထိန်းသိမ်းမှု စရိတ် သဘောတရား"
-order: 80
+order: 111
 source: "https://www.postgresql.org/docs/current/indexes-expressional.html"
 status: translated
 updated: 2026-09-03

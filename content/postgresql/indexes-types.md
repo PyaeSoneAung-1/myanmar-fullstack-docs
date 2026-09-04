@@ -1,7 +1,7 @@
 ---
 title: "Index Types (index အမျိုးအစားများ)"
 description: "PostgreSQL ၏ index type အမျိုးမျိုး — B-tree, Hash, GiST, SP-GiST, GIN, BRIN တို့၏ သဘောတရား၊ တစ်ခုချင်းစီက ထောက်ပံ့နိုင်သော query နှင့် operator အမျိုးအစားများ"
-order: 75
+order: 106
 source: "https://www.postgresql.org/docs/current/indexes-types.html"
 status: translated
 updated: 2026-09-03
@@ -52,7 +52,7 @@ GiST index တွေက index အမျိုးအစား တစ်ခုတ�
 <<   &<   &>   >>   <<|   &<|   |&>   |>>   @>   <@   ~=   &&
 ```
 
-(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.11](https://www.postgresql.org/docs/current/functions-geometry.html) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ GiST operator class တွေကို [ဇယား 65.1](https://www.postgresql.org/docs/current/gist.html#GIST-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ `contrib` collection ထဲမှာ ဒါမှမဟုတ် သီးခြား project တွေအနေနဲ့ — တခြား GiST operator class တွေ အများကြီးလည်း ရနိုင်ပါသေးတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.2](https://www.postgresql.org/docs/current/gist.html) ကို ကြည့်ပါ။
+(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.11](/docs/postgresql/functions-geometry) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ GiST operator class တွေကို [ဇယား 65.1](https://www.postgresql.org/docs/current/gist.html#GIST-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ `contrib` collection ထဲမှာ ဒါမှမဟုတ် သီးခြား project တွေအနေနဲ့ — တခြား GiST operator class တွေ အများကြီးလည်း ရနိုင်ပါသေးတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.2](https://www.postgresql.org/docs/current/gist.html) ကို ကြည့်ပါ။
 
 GiST index တွေက “nearest-neighbor” (အနီးဆုံး အိမ်နီးချင်း) ရှာဖွေမှုတွေကိုလည်း optimize (အကောင်းဆုံးဖြစ်အောင် ပြုလုပ်) နိုင်ပါတယ် — ဥပမာ —
 
@@ -70,7 +70,7 @@ SP-GiST index တွေက GiST index တွေလိုပဲ — ရှာဖ�
 <<   >>   ~=   <@   <<|   |>>
 ```
 
-(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.11](https://www.postgresql.org/docs/current/functions-geometry.html) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ SP-GiST operator class တွေကို [ဇယား 65.2](https://www.postgresql.org/docs/current/spgist.html#SPGIST-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.3](https://www.postgresql.org/docs/current/spgist.html) ကို ကြည့်ပါ။
+(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.11](/docs/postgresql/functions-geometry) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ SP-GiST operator class တွေကို [ဇယား 65.2](https://www.postgresql.org/docs/current/spgist.html#SPGIST-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.3](https://www.postgresql.org/docs/current/spgist.html) ကို ကြည့်ပါ။
 
 GiST လိုပဲ — SP-GiST ကလည်း “nearest-neighbor” ရှာဖွေမှုတွေကို ထောက်ပံ့ပါတယ်။ Distance (အကွာအဝေး) အလိုက် စီစဉ်မှု (distance ordering) ကို ထောက်ပံ့တဲ့ SP-GiST operator class တွေအတွက် — သက်ဆိုင်ရာ operator ကို [ဇယား 65.2](https://www.postgresql.org/docs/current/spgist.html#SPGIST-BUILTIN-OPCLASSES-TABLE) ထဲက “Ordering Operators” column မှာ စာရင်းပြုစုထားပါတယ်။
 
@@ -84,7 +84,7 @@ GiST နဲ့ SP-GiST လိုပဲ — GIN ကလည်း user-defined (အ
 <@   @>   =   &&
 ```
 
-(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.19](https://www.postgresql.org/docs/current/functions-array.html) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ GIN operator class တွေကို [ဇယား 65.3](https://www.postgresql.org/docs/current/gin.html#GIN-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ `contrib` collection ထဲမှာ ဒါမှမဟုတ် သီးခြား project တွေအနေနဲ့ — တခြား GIN operator class တွေ အများကြီးလည်း ရနိုင်ပါသေးတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.4](https://www.postgresql.org/docs/current/gin.html) ကို ကြည့်ပါ။
+(ဒီ operator တွေရဲ့ အဓိပ္ပာယ်အတွက် [အပိုင်း 9.19](/docs/postgresql/functions-array) ကို ကြည့်ပါ။) စံ distribution ထဲမှာ ပါဝင်တဲ့ GIN operator class တွေကို [ဇယား 65.3](https://www.postgresql.org/docs/current/gin.html#GIN-BUILTIN-OPCLASSES-TABLE) မှာ မှတ်တမ်းတင်ထားပါတယ်။ `contrib` collection ထဲမှာ ဒါမှမဟုတ် သီးခြား project တွေအနေနဲ့ — တခြား GIN operator class တွေ အများကြီးလည်း ရနိုင်ပါသေးတယ်။ နောက်ထပ် အချက်အလက်တွေအတွက် [အပိုင်း 65.4](https://www.postgresql.org/docs/current/gin.html) ကို ကြည့်ပါ။
 
 ### 11.2.6. BRIN (block range တစ်ခုချင်းစီအလိုက် အကျဉ်းချုပ်များ သိမ်းဆည်းသော index)
 
