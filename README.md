@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1197 pages ဘာသာပြန်ပြီး** (wave 38, 2026-09-04: +17 — Node.js core API digest batch 2: assert, debugger, diagnostics_channel, esm, events, globals, intl, packages, permissions, report, stream_iter, tracing, tty, url, v8, wasi, webstreams — nodejs.org/api v26.8.1) — Node.js 120/180 (core API digest 33/69 module pages); PostgreSQL 322/500 (SQL Commands 183/183 COMPLETE)
-- 🔄 ကျန် ~523 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1212 pages ဘာသာပြန်ပြီး** (wave 39, 2026-09-04: +15 — Node.js core API digest batch 3: addons, async_context, child_process, embedding, environment_variables, ffi, module, net, single-executable-applications, sqlite, typescript, util, vfs, webcrypto, worker_threads — nodejs.org/api v26.8.1) — Node.js 135/180 (core API digest 48/69 module pages); PostgreSQL 322/500 (SQL Commands 183/183 COMPLETE)
+- 🔄 ကျန် ~508 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
