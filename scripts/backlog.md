@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 1212 pages translated** (wave 39, 2026-09-04: +15 Node.js core API pages)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164 → W37=1180 → W38=1197 → W39=1212
+**Total: 1220 pages translated** (wave 40, 2026-09-04: +8 Node.js core API pages — digest batch 4 part 1)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164 → W37=1180 → W38=1197 → W39=1212 → W40=1220
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -47,7 +47,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - Sources: bundled node_modules/next/dist/docs/01-app/03-api-reference/07-adapters (canonical Next 16.3.4); live URLs verified 200 (nextjs.org/docs/app/api-reference/adapters/*)
 - [ ] ကျန် (optional): API-reference index hubs (file-conventions/components/directives/functions/config/cli index pages), functions/not-found slug rename (bare slug ကို file-convention page ကယူထား — clean up လုပ်ချင်ရင် rename + backlink sweep လိုမည်)
 
-## Node.js (nodejs.org/en/learn + core API) — est ~180 — 135 done
+## Node.js (nodejs.org/en/learn + core API) — est ~180 — 143 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
 - [x] Asynchronous work: event loop, timers, promises, async-programming, async flow control, blocking vs non-blocking, event emitter, process.nextTick, setImmediate, dont-block-the-event-loop
 - [x] Files: file paths, descriptors, file stats, file-system, reading-files, writing-files, working-with-folders, output/input command line
@@ -72,6 +72,12 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - Methods: singles ≤64KB; 4 chains ×2 parts at ## boundaries (net 70KB, child_process 78KB, util 102KB, module 71KB); combos for small pages (ffi+SEA; vfs+embedding+env-vars+typescript)
   - QA (automated): node orders 1–135 contiguous, 0 collisions; fences byte-identical to staged 15/15; frontmatter complete; 0 merged junctions; 0 dead internal links; EN-leak clean (flags = C++ headers/util-inspect output inside fences); npm run build clean
   - Note: util encoding tables (3) header rows kept English (os.md precedent — headers stay EN on node pages); child-process prose typo normalized sendHandler→sendHandle (upstream doc typo) for learner accuracy
+- [x] Wave 40 core API digest batch 4 part 1 (orders 136–143, 8 pages — 2026-09-04): stream (3-part chain), errors (3-part chain), tls, zlib, vm, deprecations, perf_hooks → perf-hooks, modules (CommonJS) → commonjs-modules (new slug; existing modules.md intro page keeps its slug) → Node.js 135 → 143; corpus total 1220
+  - Sources: nodejs/node v26.8.1 doc/api markdown → scripts/node_api_clean.py (committed); staged /home/user/.workspace/node-src/w40 (raw) + w40-clean (converted, not committed)
+  - Methods: 17 part-files (fence-aware heading slices ≤ ~50KB each), parallel workers ×4 rounds; parts assembled with single blank line at heading junctions; frontmatter (Burmese description/order/source/status/updated) added at assembly
+  - QA (automated): node orders 1–143 contiguous, 0 collisions; ALL code fences byte-identical to staged source (389 fences across 8 pages, programmatic per-fence diff); frontmatter complete; 0 dead internal links added (20 pre-existing dead /docs links in postman/nextjs files from older waves — see cleanup note); EN-leak scan clean (15 flags = verbatim annotation/code lines); artifacts scan clean; npm run build clean
+  - Conventions held: wave-37/38/39 rules (API headings verbatim, prose headings Burmese-first + gloss, Stability verbatim, {type} tokens verbatim, table headers EN, bottom ref-defs verbatim); deprecation Type: values kept EN (machine-checkable); anchor <a id> lines verbatim; upstream typos rendered semantically
+  - Note: 17 part files staged under /home/user/.workspace/node-src/w40/out (not committed); next tranche: giants batch 4 part 2 — buffer, cli, crypto, fs, http, http2, n-api, process, quic, test (~1.6MB cleaned — expect 4-6 chains per file)
 - [ ] Core API reference digest batch 4 — remaining nodejs.org/api module pages (~30: buffer, cli, crypto, deprecations, errors, fs, http, http2, n-api, process, quic, stream, test, tls, vm, zlib, quic … — giants 100–300KB → slice+chain; est scope of the 180 total)
 
 ## Express (expressjs.com) — est ~30 — 30 done 🎉 COMPLETE (API ref excluded)

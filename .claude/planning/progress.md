@@ -202,3 +202,17 @@ Plan: 12 workers × 3 rounds — React react-dom components + client (+15, order
 - Conventions held (wave-37/38 rules); new precedents: ffi.md first file with HTML `<details>` block (tags dropped, caption+content kept); util encoding-table header rows kept English (os.md precedent); child-process prose typo normalized sendHandler→sendHandle (upstream doc typo; learner accuracy) — flagged in backlog.
 - QA (automated): node orders 1–135 contiguous, 0 collisions; fences byte-identical to staged 15/15; frontmatter complete; 0 merged junctions; 0 dead internal links corpus-wide (no relative .md refs to missing pages); EN-leak clean (flags = C++ headers `<node.h>`/`<stdlib.h>`, util.inspect `<ref *1>` output — inside byte-identical fences); npm run build clean.
 - Next optional queues: Node.js core API digest batch 4 (giants only: buffer 156KB, cli 127, crypto 237, deprecations 139, errors 121, fs 297, http 139, http2 167, n-api 240, process 131, quic 133, stream 155, test 164, tls 100, vm 92, zlib 101 — all need slice+chain 2–4 parts; fs/crypto/n-api 200KB+ → 3–4 parts each, dedicated waves); TanStack API leftovers; Next.js API-reference index hubs; PostgreSQL Ch15+ (far future).
+
+## 2026-09-04 — Session (wave 40: +8 → 1220 pages)
+- Node.js core API digest batch 4 part 1 (orders 136–143): stream, errors, tls, zlib, vm,
+  deprecations, perf_hooks → perf-hooks, api/modules (CommonJS) → commonjs-modules (new
+  slug; learn "modules" intro page keeps its slug).
+- Sources: nodejs/node v26.8.1 doc/api raw markdown downloaded → scripts/node_api_clean.py
+  (committed) → staged /home/user/.workspace/node-src/w40-clean. 17 fence-aware slices
+  (~50KB) → parallel workers ×4 rounds → part files in w40/out → assembled with frontmatter.
+- QA: 389/389 code fences byte-identical; node orders 1–143 contiguous; 0 new dead links;
+  EN-leak clean (verbatim-token flags only); npm run build clean.
+- Note: 20 pre-existing dead /docs links found corpus-wide in postman + 2 nextjs files
+  (older waves, Postman URL drift) — cleanup candidate for a later session.
+- Next: batch 4 part 2 giants (buffer, cli, crypto, fs, http, http2, n-api, process, quic,
+  test) — then nodejs.org/api digest 69/69 complete.
