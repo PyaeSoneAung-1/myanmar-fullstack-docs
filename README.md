@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1017 pages ဘာသာပြန်ပြီး** (wave 29, 2026-09-04: +12 — PostgreSQL SQL Commands batch 3: CREATE/ALTER/DROP ROLE + USER, SET ROLE, SET SESSION AUTHORIZATION, GRANT, REVOKE, DROP/REASSIGN OWNED) — Next.js 257/300; PostgreSQL 175/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1–3)
-- 🔄 ကျန် ~703 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1029 pages ဘာသာပြန်ပြီး** (wave 30, 2026-09-04: +12 — PostgreSQL SQL Commands batch 4: CREATE/ALTER/DROP INDEX, REINDEX, CLUSTER, ANALYZE, EXPLAIN, SET/RESET/SHOW, DISCARD, LOAD) — Next.js 257/300; PostgreSQL 187/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1–4)
+- 🔄 ကျန် ~691 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
