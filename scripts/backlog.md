@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 1164 pages translated** (wave 36, 2026-09-04: +15 PostgreSQL SQL Commands pages — SQL Commands reference 183/183 COMPLETE)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164
+**Total: 1180 pages translated** (wave 37, 2026-09-04: +16 Node.js core API pages)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164 → W37=1180
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -47,7 +47,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - Sources: bundled node_modules/next/dist/docs/01-app/03-api-reference/07-adapters (canonical Next 16.3.4); live URLs verified 200 (nextjs.org/docs/app/api-reference/adapters/*)
 - [ ] ကျန် (optional): API-reference index hubs (file-conventions/components/directives/functions/config/cli index pages), functions/not-found slug rename (bare slug ကို file-convention page ကယူထား — clean up လုပ်ချင်ရင် rename + backlink sweep လိုမည်)
 
-## Node.js (nodejs.org/en/learn) — est ~180 — 87 done (nodejs.org/en/learn repo အကုန် COMPLETE 🎉)
+## Node.js (nodejs.org/en/learn + core API) — est ~180 — 103 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
 - [x] Asynchronous work: event loop, timers, promises, async-programming, async flow control, blocking vs non-blocking, event emitter, process.nextTick, setImmediate, dont-block-the-event-loop
 - [x] Files: file paths, descriptors, file stats, file-system, reading-files, writing-files, working-with-folders, output/input command line
@@ -58,7 +58,11 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - Note: nodejs.org/learn/modules/publishing-a-package now hosts 'Publishing ECMAScript modules' (module formats/dual-package) content — translated as-is
 - [x] node-api (wave 10, orders 72–81): section hub, getting-started (prerequisites, project-structure, your-first-project, tools, migration, objectwrap), build-tools (hub, node-gyp, cmake-js)
 - [x] Wave 14 node-api special topics (orders 82–87): special-topics hub, asyncworker, context-awareness, object-function-refs, thread-safe-functions, node-pre-gyp — nodejs.org/en/learn section ပြည့်စုံ 🎉
-- [ ] Core API reference digest (nodejs.org/api — est scope of the 180 total) — not started
+- [x] Wave 37 core API digest batch 1 (orders 88–103, 16 pages — 2026-09-04): official nodejs.org/api (v26.8.1) module pages — async_hooks, cluster, console, dgram, dns, domain, https, inspector, os, path, punycode, querystring, readline, repl, string_decoder, timers → Node.js 87 → 103/180; corpus total 1180
+  - Sources: nodejs/node v26.8.1 doc/api markdown → workspace converter node_api_clean.py (YAML-comment strip, HTML→GFM tables, H1 drop); staged /home/user/.workspace/node-src/w37
+  - Conventions: code/API headings verbatim EN; prose headings Burmese-first; annotation bullets keep `* Returns: {type}` tokens; Stability blockquotes verbatim (multi-line prose translated); bottom ref-defs verbatim (external nodejs.org/api); tables text cells translated
+  - QA (automated): node orders 1–103 contiguous; ALL fences byte-identical to staged source; ref-defs parity; 0 dead internal links; EN-leak clean; build verified
+- [ ] Core API reference digest batch 2 — remaining nodejs.org/api module pages (~40: buffer, events, fs, http, net, stream, util, url, process, child_process, crypto, zlib, tls, worker_threads, http2, errors … — giant pages → slice+chain method; est scope of the 180 total)
 
 ## Express (expressjs.com) — est ~30 — 30 done 🎉 COMPLETE (API ref excluded)
 - [x] Starter: getting-started, installing, hello-world, generator, faq, examples

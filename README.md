@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1164 pages ဘာသာပြန်ပြီး** (wave 36, 2026-09-04: +15 — PostgreSQL SQL Commands batch 10: final big/moderate pages — CREATE AGGREGATE/POLICY/SUBSCRIPTION/FOREIGN TABLE/CAST/PUBLICATION/EXTENSION/OPERATOR/OPERATOR CLASS/RULE/STATISTICS + ALTER FOREIGN TABLE/OPERATOR FAMILY/PUBLICATION/SUBSCRIPTION — **SQL Commands reference 183/183 COMPLETE**) — Next.js 257/300; PostgreSQL 322/500 (Tutorial + Ch4–Ch14 + SQL Commands 183/183)
-- 🔄 ကျန် ~556 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1180 pages ဘာသာပြန်ပြီး** (wave 37, 2026-09-04: +16 — Node.js core API digest batch 1: async_hooks, cluster, console, dgram, dns, domain, https, inspector, os, path, punycode, querystring, readline, repl, string_decoder, timers — nodejs.org/api v26.8.1) — Node.js 103/180 (core API digest started); PostgreSQL 322/500 (SQL Commands 183/183 COMPLETE)
+- 🔄 ကျန် ~540 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
