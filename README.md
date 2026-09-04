@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1080 pages ဘာသာပြန်ပြီး** (wave 34, 2026-09-04: +20 — PostgreSQL SQL Commands batch 8: function/trigger/type/domain clusters — CREATE/ALTER/DROP FUNCTION, CREATE/ALTER/DROP PROCEDURE, ALTER/DROP ROUTINE, CREATE/ALTER/DROP TRIGGER, CREATE/ALTER/DROP EVENT TRIGGER, CREATE/ALTER/DROP TYPE, CREATE/ALTER/DROP DOMAIN) — Next.js 257/300; PostgreSQL 238/500 (Tutorial + Ch4–Ch14 + SQL Commands batch 1–8)
-- 🔄 ကျန် ~640 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1149 pages ဘာသာပြန်ပြီး** (wave 35, 2026-09-04: +69 — PostgreSQL SQL Commands batch 9: small remaining commands — 2PC/savepoint (PREPARE/COMMIT/ROLLBACK PREPARED, RELEASE SAVEPOINT, ROLLBACK TO), COLLATION, CONVERSION, EXTENSION (alter/drop), LANGUAGE, LARGE OBJECT, TEXT SEARCH (config/dictionary/parser/template families), FOREIGN DATA WRAPPER/SERVER/USER MAPPING/IMPORT FOREIGN SCHEMA, TABLESPACE, ACCESS METHOD, TRANSFORM, GROUP aliases, AGGREGATE/OPERATOR/OPERATOR CLASS/FAMILY (alter/drop/create-fam), RULE/POLICY/PUBLICATION/STATISTICS/SUBSCRIPTION (alter/drop), ALTER SYSTEM, ALTER SCHEMA, DROP CAST/FOREIGN TABLE) — Next.js 257/300; PostgreSQL 307/500 (Tutorial + Ch4–Ch14 + SQL Commands 168/183)
+- 🔄 ကျန် ~571 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note
