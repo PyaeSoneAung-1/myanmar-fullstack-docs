@@ -1,7 +1,7 @@
 ---
 title: "Integrating with Build Tools (Build Tools နဲ့ ပေါင်းစည်းခြင်း)"
 description: "TypeScript ကို Babel, Browserify, Grunt, Gulp, Jspm, MSBuild, NuGet, Rollup, Svelte Compiler, Vite နဲ့ Webpack စတဲ့ build tools တွေနဲ့ ဘယ်လို ပေါင်းစည်း အသုံးပြုမလဲ"
-order: 70
+order: 71
 source: "https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html"
 status: translated
 updated: 2026-09-05

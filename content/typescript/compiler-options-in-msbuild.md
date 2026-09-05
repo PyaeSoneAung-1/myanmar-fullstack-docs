@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options in MSBuild (MSBuild ထဲက Compiler Options)"
 description: "MSBuild အခြေပြု project (ASP.NET Core စသည်) တွေမှာ TypeScript ကို configure လုပ်နည်း — tsconfig.json နဲ့ project settings နည်းလမ်းနှစ်မျိုး၊ MSBuild config name နဲ့ TSC flag mapping ဇယားအပြည့်အစုံ"
-order: 71
+order: 72
 source: "https://www.typescriptlang.org/docs/handbook/compiler-options-in-msbuild.html"
 status: translated
 updated: 2026-09-05

@@ -55,7 +55,7 @@ Run type တစ်ခုကြားမှာ response time ဘယ်လို �
 * Manual runs တွေကို Postman ထဲမှာ စတင်တာပဲ ဖြစ်ဖြစ် [Postman API](/api-docs/api-reference/monitors/run-monitor/) ကနေ trigger လုပ်တာပဲ ဖြစ်ဖြစ် ပြုလုပ်ပါတယ်။
 * Scheduled runs တွေကို — monitor တစ်ခု ဖန်တီးတဲ့အခါ ဒါမှမဟုတ် တည်းဖြတ်တဲ့အခါ ကိုယ် သတ်မှတ်ထားတဲ့ schedule ကနေ စတင်ပါတယ်။
 * Webhook runs တွေကို ကိုယ် ဖန်တီးထားတဲ့ integrations တွေကနေ စတင်ပါတယ်။
-* Postman CLI runs တွေကို [`postman monitor run` command](/docs/postman-cli/postman-cli-monitoring/#postman-monitor-run) ကနေ trigger လုပ်ပါတယ်။
+* Postman CLI runs တွေကို [`postman monitor run` command](https://learning.postman.com/docs/postman-cli/postman-cli-monitoring/#postman-monitor-run) ကနေ trigger လုပ်ပါတယ်။
 
 ရွေးထားတဲ့ filters တွေကို ရှင်းဖို့ dropdown ထဲက **Clear selected** ကို နှိပ်ပါ။
 

@@ -1,7 +1,7 @@
 ---
 title: "Project References (Project References)"
 description: "TypeScript program တွေကို project ငယ်များ ခွဲ၍ ဖွဲ့စည်းနိုင်စေသည့် project references အကြောင်း — build မြန်ဆန်စေခြင်း၊ composite နဲ့ declarationMap settings များ၊ tsc --build build mode နဲ့ ဖွဲ့စည်းပုံ လမ်းညွှန်များ"
-order: 72
+order: 73
 source: "https://www.typescriptlang.org/docs/handbook/project-references.html"
 status: translated
 updated: 2026-09-05

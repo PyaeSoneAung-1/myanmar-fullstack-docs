@@ -1,7 +1,7 @@
 ---
 title: "Configuring Watch (Watch Mode ပြင်ဆင်ခြင်း)"
 description: "TypeScript compiler ရဲ့ file နဲ့ directory watching ကို — tsconfig.json ထဲက watchOptions ဒါမှမဟုတ် TSC_WATCHFILE နဲ့ TSC_WATCHDIRECTORY environment variables တွေသုံးပြီး ဘယ်လို ပြင်ဆင်မလဲ"
-order: 69
+order: 70
 source: "https://www.typescriptlang.org/docs/handbook/configuring-watch.html"
 status: translated
 updated: 2026-09-05
