@@ -31,34 +31,34 @@ export default async function TechPage({
           Official docs ↗
         </a>
       </div>
-      <p className="mt-3 text-ink-600 dark:text-ink-300 leading-relaxed max-w-2xl">
+      <p className="mt-3 text-ink-600 dark:text-ink-300 leading-relaxed max-w-2xl [overflow-wrap:anywhere]">
         {meta.tagline}
       </p>
       <p className="mt-2 text-xs text-ink-400">
         ဘာသာပြန်ပြီး {done} / {pages.length} မျက်နှာ
       </p>
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
         {pages.map((p) => (
           <Link
             key={p.slug}
             href={`/docs/${tech}/${p.slug}`}
-            className="rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-sm transition-all"
+            className="min-w-0 rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-sm transition-all"
           >
             <div className="flex items-center gap-2">
-              <h3 className="font-bold">{p.title}</h3>
+              <h3 className="font-bold [overflow-wrap:anywhere]">{p.title}</h3>
               {p.status === "translated" ? (
-                <span className="ml-auto text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold">
+                <span className="ml-auto text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold shrink-0">
                   ပြီး
                 </span>
               ) : (
-                <span className="ml-auto text-[10px] px-1.5 py-0.5 rounded-full bg-ink-100 dark:bg-ink-800 text-ink-500 font-semibold">
+                <span className="ml-auto text-[10px] px-1.5 py-0.5 rounded-full bg-ink-100 dark:bg-ink-800 text-ink-500 font-semibold shrink-0">
                   မပြီးသေး
                 </span>
               )}
             </div>
             {p.description && (
-              <p className="mt-1.5 text-sm text-ink-600 dark:text-ink-300 leading-relaxed">
+              <p className="mt-1.5 text-sm text-ink-600 dark:text-ink-300 leading-relaxed [overflow-wrap:anywhere]">
                 {p.description}
               </p>
             )}

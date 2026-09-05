@@ -7,10 +7,10 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-ink-100 dark:border-ink-800 bg-white/85 dark:bg-ink-950/85 backdrop-blur">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 h-14 flex items-center gap-4">
         <Link href="/" className="flex items-center gap-2 font-bold text-[15px] shrink-0">
-          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-brand-600 text-white text-sm">
+          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-brand-600 text-white text-sm shrink-0">
             မ
           </span>
-          <span lang="my">
+          <span lang="my" className="hidden min-[420px]:inline truncate">
             Myanmar <span className="text-brand-600 dark:text-brand-400">Fullstack</span> Docs
           </span>
         </Link>

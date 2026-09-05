@@ -24,7 +24,7 @@ export default function DocsIndex() {
             <h2 className="text-sm font-bold uppercase tracking-wider text-ink-400 dark:text-ink-500 mb-3">
               {cat.label}
             </h2>
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {cat.techs.map((tech) => {
                 const t = tech.slug;
                 const pages = getTechPages(t);
@@ -34,7 +34,7 @@ export default function DocsIndex() {
                   <Link
                     key={t}
                     href={`/docs/${t}`}
-                    className="rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-sm transition-all"
+                    className="min-w-0 rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-sm transition-all"
                   >
                     <div className="flex items-center gap-3">
                       <span

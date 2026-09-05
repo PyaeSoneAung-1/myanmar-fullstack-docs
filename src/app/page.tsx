@@ -66,23 +66,23 @@ export default function Home() {
             <h2 className="text-sm font-bold uppercase tracking-wider text-ink-400 dark:text-ink-500 mb-4">
               {cat.label}
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {cat.techs.map((tech) => {
                 const t = tech.slug;
                 return (
                   <Link
                     key={t}
                     href={`/docs/${t}`}
-                    className="group rounded-2xl border border-ink-100 dark:border-ink-800 bg-white dark:bg-ink-900 p-5 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-md transition-all"
+                    className="group min-w-0 rounded-2xl border border-ink-100 dark:border-ink-800 bg-white dark:bg-ink-900 p-5 hover:border-ink-300 dark:hover:border-ink-600 hover:shadow-md transition-all"
                   >
                     <div className="flex items-center gap-3">
                       <span
-                        className="inline-block w-3 h-3 rounded-full"
+                        className="inline-block w-3 h-3 rounded-full shrink-0"
                         style={{ background: tech.color }}
                       />
-                      <h3 className="font-bold text-lg">{tech.name}</h3>
+                      <h3 className="font-bold text-lg [overflow-wrap:anywhere]">{tech.name}</h3>
                     </div>
-                    <p className="mt-2 text-sm text-ink-600 dark:text-ink-300 leading-relaxed">
+                    <p className="mt-2 text-sm text-ink-600 dark:text-ink-300 leading-relaxed [overflow-wrap:anywhere]">
                       {tech.tagline}
                     </p>
                     <p className="mt-3 text-xs text-brand-600 dark:text-brand-400 font-semibold group-hover:underline">
