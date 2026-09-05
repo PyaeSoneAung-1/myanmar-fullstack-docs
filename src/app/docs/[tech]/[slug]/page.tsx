@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPage, getTech, getTechPages } from "@/lib/content";
 import Markdown from "@/components/Markdown";
+import MobileNav from "@/components/MobileNav";
 import Sidebar from "@/components/Sidebar";
 
 function extractToc(content: string): { id: string; text: string; level: number }[] {
@@ -63,13 +64,19 @@ export default async function ArticlePage({
   const prev = idx > 0 ? allPages[idx - 1] : null;
   const next = idx >= 0 && idx < allPages.length - 1 ? allPages[idx + 1] : null;
   const toc = extractToc(page.content);
+  const sidebar = <Sidebar activeTech={tech} activeSlug={slug} />;
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
+      {/* Mobile nav trigger (sidebar is desktop-only via lg:grid) */}
+      <div className="pt-4 lg:hidden">
+        <MobileNav>{sidebar}</MobileNav>
+      </div>
+
       <div className="lg:grid lg:grid-cols-[260px_minmax(0,1fr)_220px] lg:gap-8">
-        {/* Sidebar */}
+        {/* Sidebar (desktop) */}
         <aside className="hidden lg:block sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto">
-          <Sidebar activeTech={tech} activeSlug={slug} />
+          {sidebar}
         </aside>
 
         {/* Article */}
@@ -127,14 +134,14 @@ export default async function ArticlePage({
           </div>
 
           {/* Prev / Next */}
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 border-t border-ink-100 dark:border-ink-800 pt-6">
+          <div className="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-2 border-t border-ink-100 dark:border-ink-800 pt-6">
             {prev ? (
               <Link
                 href={`/docs/${tech}/${prev.slug}`}
-                className="rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 transition-colors"
+                className="min-w-0 rounded-xl border border-ink-100 dark:border-ink-800 p-4 hover:border-ink-300 dark:hover:border-ink-600 transition-colors"
               >
                 <p className="text-[11px] text-ink-400">← ရှေ့မျက်နှာ</p>
-                <p className="mt-1 font-semibold text-sm">{prev.title}</p>
+                <p className="mt-1 font-semibold text-sm [overflow-wrap:anywhere]">{prev.title}</p>
               </Link>
             ) : (
               <span />
@@ -142,10 +149,10 @@ export default async function ArticlePage({
             {next ? (
               <Link
                 href={`/docs/${tech}/${next.slug}`}
-                className="rounded-xl border border-ink-100 dark:border-ink-800 p-4 text-right hover:border-ink-300 dark:hover:border-ink-600 transition-colors"
+                className="min-w-0 rounded-xl border border-ink-100 dark:border-ink-800 p-4 text-right hover:border-ink-300 dark:hover:border-ink-600 transition-colors"
               >
                 <p className="text-[11px] text-ink-400">နောက်မျက်နှာ →</p>
-                <p className="mt-1 font-semibold text-sm">{next.title}</p>
+                <p className="mt-1 font-semibold text-sm [overflow-wrap:anywhere]">{next.title}</p>
               </Link>
             ) : null}
           </div>

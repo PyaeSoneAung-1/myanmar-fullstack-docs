@@ -111,6 +111,7 @@ body {
   --tw-prose-th-borders: var(--color-ink-300);
   --tw-prose-td-borders: var(--color-ink-200);
   line-height: 1.9;
+  overflow-wrap: anywhere; /* long unbreakable tokens must wrap, not blow out layout */
 }
 .dark .prose {
   --tw-prose-links: var(--color-brand-400);
