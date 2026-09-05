@@ -114,5 +114,5 @@ pm.test("Response ထဲမှာ id ပါရမယ်", () => {
 Postman ကိုယ်တိုင် မလိုဘဲ API စမ်းသပ်ချင်ရင် curl လည်း သုံးလို့ရပါတယ် —
 ဒါပေမယ့် Postman က request history, collections, environments, tests
 စတဲ့ အဆင်ပြေမှုတွေ အများကြီး ပိုပေးပါတယ်။
-[Express routing](/docs/express/routing) မှာ API route တွေ ဘယ်လို ရေးသလဲ
+[Express routing](https://learning.postman.com/docs/express/routing)) မှာ API route တွေ ဘယ်လို ရေးသလဲ
 ဆက်ကြည့်နိုင်ပါတယ်။

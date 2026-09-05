@@ -9,7 +9,7 @@ updated: 2026-09-02
 
 > **မှတ်ချက်**: `middleware` file convention က deprecated ဖြစ်ပြီး `proxy` ဆိုပြီး အမည်ပြောင်းသွားပါပြီ။ အသေးစိတ်အတွက် [Migration to Proxy](#migration-to-proxy) ကို ကြည့်ပါ။
 
-`proxy.js|ts` file ကို [Proxy](/docs/app/getting-started/proxy) တစ်ခု ရေးဖို့နဲ့ — request တစ်ခု ပြီးမြောက်ခင် server ပေါ်မှာ code တွေ run လုပ်ဖို့ သုံးပါတယ်။ ပြီးရင် — incoming request ပေါ် မူတည်ပြီး rewriting, redirecting, request (သို့) response headers တွေ ပြုပြင်ခြင်း (သို့) တိုက်ရိုက် response ပြန်ခြင်း စတာတွေနဲ့ — response ကို ပြုပြင်နိုင်ပါတယ်။
+`proxy.js|ts` file ကို [Proxy](/docs/nextjs/proxy-guide) တစ်ခု ရေးဖို့နဲ့ — request တစ်ခု ပြီးမြောက်ခင် server ပေါ်မှာ code တွေ run လုပ်ဖို့ သုံးပါတယ်။ ပြီးရင် — incoming request ပေါ် မူတည်ပြီး rewriting, redirecting, request (သို့) response headers တွေ ပြုပြင်ခြင်း (သို့) တိုက်ရိုက် response ပြန်ခြင်း စတာတွေနဲ့ — response ကို ပြုပြင်နိုင်ပါတယ်။
 
 Proxy က routes တွေ render မလုပ်ခင် execute လုပ်ပါတယ်။ Authentication, logging (သို့) redirects တွေကို ကိုင်တွယ်တာလိုမျိုး — custom server-side logic တွေ အကောင်အထည်ဖော်ဖို့ အထူး အသုံးဝင်ပါတယ်။
 
@@ -449,7 +449,7 @@ Snippet ထဲမှာ အောက်ပါတွေကို သုံးထ�
 - `NextResponse.next({ request: { headers: requestHeaders } })` — `requestHeaders` ကို upstream မှာ ရနိုင်အောင် လုပ်ပေးတယ်
 - **မဟုတ်ဘဲ** — `NextResponse.next({ headers: requestHeaders })` — ဒါကတော့ `requestHeaders` ကို clients တွေဆီ ရနိုင်စေတာပါ
 
-[Proxy ထဲက NextResponse headers](/docs/app/api-reference/functions/next-response#next) အကြောင်း ပိုလေ့လာပါ။
+[Proxy ထဲက NextResponse headers](/docs/nextjs/next-response) အကြောင်း ပိုလေ့လာပါ။
 
 > **သိထားသင့်သည်:** Headers တွေ အကြီးကြီး သတ်မှတ်တာကို ရှောင်ပါ — သင့် backend web server configuration ပေါ် မူတည်ပြီး [431 Request Header Fields Too Large](https://developer.mozilla.org/docs/Web/HTTP/Status/431) error ဖြစ်စေနိုင်လို့ပါ။
 

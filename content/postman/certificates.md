@@ -13,7 +13,7 @@ Mutual TLS (mTLS) သုံးတဲ့ API တစ်ခုဆီ ချိတ�
 
 Postman ထဲကို custom CA certificate တစ်ခုလည်း ထည့်နိုင်ပါတယ်။ Endpoint တစ်ခုက internal certificate registry တစ်ခုမှာ register လုပ်ထားတဲ့ certificate တစ်ခုကို သုံးနေရင် — Postman ကနေ ပို့တဲ့ requests တွေက "SSL Error: Self signed certificate" ဆိုတဲ့ error message နဲ့ ကျဆုံးနိုင်ပါတယ်။ Custom CA certificate တစ်ခု ထည့်လိုက်ရင် — [SSL verification ကို ပိတ်စရာ မလိုဘဲ](#certificate-errors-တွေ-troubleshoot-လုပ်ခြင်း) endpoint ဆီ requests တွေ ပို့နိုင်ပါတယ်။
 
-Postman web app ကို သုံးပြီး certificates တွေ ထည့်တာ စီမံတာ လုပ်နေရင် — [Postman Desktop Agent](/docs/getting-started/basics/about-postman-agent/#postman-desktop-agent) ကို သုံးရပါမယ်။ နောက်ဆုံးရတဲ့ အပြောင်းအလဲတွေနဲ့ တိုးတက်မှုတွေ ရဖို့ — [Postman Desktop Agent ရဲ့ နောက်ဆုံး version](/docs/getting-started/basics/about-postman-agent/#update-the-postman-desktop-agent) ကို သုံးဖို့ Postman က အကြံပြုပါတယ်။
+Postman web app ကို သုံးပြီး certificates တွေ ထည့်တာ စီမံတာ လုပ်နေရင် — [Postman Desktop Agent](https://learning.postman.com/docs/getting-started/basics/about-postman-agent/)#postman-desktop-agent) ကို သုံးရပါမယ်။ နောက်ဆုံးရတဲ့ အပြောင်းအလဲတွေနဲ့ တိုးတက်မှုတွေ ရဖို့ — [Postman Desktop Agent ရဲ့ နောက်ဆုံး version](https://learning.postman.com/docs/getting-started/basics/about-postman-agent/)#update-the-postman-desktop-agent) ကို သုံးဖို့ Postman က အကြံပြုပါတယ်။
 
 ## Certificates တွေကို စီမံခန့်ခွဲခြင်း
 
@@ -27,7 +27,7 @@ Certificates အတွက် settings တွေဆီ သွားဖို့ �
 
    ![Certificates tab](https://assets.postman.com/postman-docs/v12/manage-certs-3-5-26-v12.png)
 
-CA နဲ့ client certificates တွေကို စီမံဖို့ — [Postman VS Code extension](/docs/reference/vs-code-extension/overview/) ကိုလည်း သုံးနိုင်ပါတယ်။
+CA နဲ့ client certificates တွေကို စီမံဖို့ — [Postman VS Code extension](https://learning.postman.com/docs/reference/vs-code-extension/overview/)) ကိုလည်း သုံးနိုင်ပါတယ်။
 
 ## CA certificate တစ်ခု ထည့်ခြင်း
 

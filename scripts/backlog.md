@@ -4,8 +4,8 @@ Official docs အကုန်လုံးကို မြန်မာလို �
 Status: `[x]` done / `[ ]` todo
 (စာမျက်နှာရေတွေက official docs အရွယ်အစားအလိုက် ခန့်မှန်းချက်ပါ)
 
-**Total: 1220 pages translated** (wave 40, 2026-09-04: +8 Node.js core API pages — digest batch 4 part 1)
-Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164 → W37=1180 → W38=1197 → W39=1212 → W40=1220
+**Total: 1305 pages translated** (wave 42, 2026-09-05: +75 pages — TanStack Query reference COMPLETE, useSWR examples COMPLETE, Node.js API meta, Next.js gaps + refreshes, TypeScript handbook/declaration/tutorials)
+Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=289 → W8=331 → W9=393 → W10=457 → W11=520 → W12=555 → W13=633 → W14=672 → W15=722 → W16=772 → W17=823 → W18=847 → W19=866 → W20=876 → W21=896 → W22=909 → W23=921 → W24=939 → W25=950 → W26=981 → W27=993 → W28=1005 → W29=1017 → W30=1029 → W31=1041 → W32=1053 → W33=1060 → W34=1080 → W35=1149 → W36=1164 → W37=1180 → W38=1197 → W39=1212 → W40=1220 → W41=1230 → W42=1305
 
 ## React (react.dev/learn + core reference) — est ~120 — 123 done
 - [x] Learn section: getting-started, installation/build-toolchain (creating-a-react-app, build-a-react-app-from-scratch, editor-setup), chapter hubs (describing-the-ui, adding-interactivity, managing-state, escape-hatches), and all learn pages: your-first-component, importing-and-exporting-components, writing-markup-with-jsx, javascript-in-jsx-with-curly-braces, props, conditional-rendering, rendering-lists, keeping-components-pure, understanding-your-ui-as-a-tree, events, state-a-components-memory, render-and-commit, state-snapshot, queueing-a-series-of-state-updates, updating-objects-in-state, updating-arrays-in-state, reacting-to-input-with-state, choosing-the-state-structure, sharing-state-between-components, preserving-and-resetting-state, extracting-state-logic-into-a-reducer, passing-data-deeply-with-context, scaling-up-with-reducer-and-context, referencing-values-with-refs, manipulating-the-dom-with-refs, synchronizing-with-effects, you-might-not-need-an-effect, lifecycle-of-reactive-effects, separating-events-from-effects, removing-effect-dependencies, reusing-logic-with-custom-hooks, strict-mode, thinking-in-react
@@ -21,7 +21,7 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 13 (orders 116–123): Activity, using-typescript, add-react-to-an-existing-project, react-developer-tools, react-compiler (+ installation, incremental-adoption, debugging) — React core Learn + Reference ပြည့်စုံ 🎉 (123/120 est)
 - [ ] React ကျန် (optional, low value): tutorial-tic-tac-toe, learn hubs (installation/setup/index), reference hubs (apis/components/hooks), addTransitionType, experimental_taint*, canary APIs (cacheSignal, captureOwnerStack)
 
-## Next.js (nextjs.org/docs app) — est ~300 — 257 done
+## Next.js (nextjs.org/docs app) — est ~300 — 265 done
 - [x] getting-started (hub), project-structure, pages-layouts, dynamic-routes, linking, css, image, fonts, forms (server functions/mutations)
 - [x] Building: data-fetching, route-handlers, server-client-components, caching (cache components model), revalidating, error-handling, not-found, parallel-routes, intercepting-routes, loading/streaming, lazy-loading
 - [x] Config/deploy: environment-variables, redirecting, static-exports, deploying, internationalization
@@ -45,9 +45,12 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] Wave 18 API ref (orders 240–245, 6 pages): functions/not-found → new slug `not-found-function` (file-convention `not-found.md` က bare slug ယူထားလို့ — function page ကို သီးခြား slug နဲ့ ထည့်သည်), api-reference/edge → `edge-runtime`, api-reference/turbopack, api-reference/config/typescript → `config-typescript`, api-reference/config/eslint → `config-eslint`, getting-started/metadata-and-og-images
 - [x] Wave 22 adapters API reference (orders 246–258, 13 pages — 2026-09-03): api-reference/adapters section COMPLETE 🎉 — hub `adapters` + configuration (adapterPath/NEXT_ADAPTER_PATH), creating-an-adapter, api-reference (modifyConfig/onBuildComplete), testing-adapters, routing-with-next-routing (@next/routing), implementing-ppr-in-an-adapter, runtime-integration, invoking-entrypoints, output-types (largest), routing-information, use-cases, immutable-static-assets. Next.js 244 → 257.
   - Sources: bundled node_modules/next/dist/docs/01-app/03-api-reference/07-adapters (canonical Next 16.3.4); live URLs verified 200 (nextjs.org/docs/app/api-reference/adapters/*)
-- [ ] ကျန် (optional): API-reference index hubs (file-conventions/components/directives/functions/config/cli index pages), functions/not-found slug rename (bare slug ကို file-convention page ကယူထား — clean up လုပ်ချင်ရင် rename + backlink sweep လိုမည်)
+- [x] Wave 42 new pages (orders 259–266, 2026-09-05): glossary (61 terms), mutating-data (gs chapter), proxy-guide (gs Proxy chapter), next-upgrade (gs Upgrading/next upgrade CLI), draft-mode-guide (guides/draft-mode), directives (api-reference overview), next-config-js (main config usage page), metadata-files (metadata file-conventions intro)
+- [x] Wave 42 restructure refreshes (2026-09-05): pages-layouts, linking, data-fetching, route-handlers — 4 getting-started chapters rewritten to CURRENT official (Next 16) content (sources → /app/getting-started/*); instrumentation extended with guide sections (side-effect / runtime-specific imports)
+- [x] Wave 42 link fixes: file-conventions-proxy + file-conventions-instrumentation-client broken relative /docs/app links → internal /docs/nextjs/* (proxy-guide, instrumentation, next-response)
+- [ ] ကျန် (optional): API-reference index chrome stubs (file-conventions/components/functions/config/cli index pages — TOC-only), functions/not-found slug rename + backlink sweep
 
-## Node.js (nodejs.org/en/learn + core API) — est ~180 — 143 done
+## Node.js (nodejs.org/en/learn + core API) — est ~180 — 154 done
 - [x] Getting started: introduction (getting-started), how-much-javascript-do-you-need, differences-between-nodejs-and-the-browser, the-v8-javascript-engine, fetching-data-with-nodejs (fetch), nodejs-the-difference-between-development-and-production, security-best-practices, npm basics, run scripts, REPL, environment variables
 - [x] Asynchronous work: event loop, timers, promises, async-programming, async flow control, blocking vs non-blocking, event emitter, process.nextTick, setImmediate, dont-block-the-event-loop
 - [x] Files: file paths, descriptors, file stats, file-system, reading-files, writing-files, working-with-folders, output/input command line
@@ -78,7 +81,8 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
   - QA (automated): node orders 1–143 contiguous, 0 collisions; ALL code fences byte-identical to staged source (389 fences across 8 pages, programmatic per-fence diff); frontmatter complete; 0 dead internal links added (20 pre-existing dead /docs links in postman/nextjs files from older waves — see cleanup note); EN-leak scan clean (15 flags = verbatim annotation/code lines); artifacts scan clean; npm run build clean
   - Conventions held: wave-37/38/39 rules (API headings verbatim, prose headings Burmese-first + gloss, Stability verbatim, {type} tokens verbatim, table headers EN, bottom ref-defs verbatim); deprecation Type: values kept EN (machine-checkable); anchor <a id> lines verbatim; upstream typos rendered semantically
   - Note: 17 part files staged under /home/user/.workspace/node-src/w40/out (not committed); next tranche: giants batch 4 part 2 — buffer, cli, crypto, fs, http, http2, n-api, process, quic, test (~1.6MB cleaned — expect 4-6 chains per file)
-- [ ] Core API reference digest batch 4 — remaining nodejs.org/api module pages (~30: buffer, cli, crypto, deprecations, errors, fs, http, http2, n-api, process, quic, stream, test, tls, vm, zlib, quic … — giants 100–300KB → slice+chain; est scope of the 180 total)
+- [x] Wave 37–41 core API digest complete — nodejs.org/api 69/69 module pages (v26.8.1) 🎉
+- [x] Wave 42 (order 154, 2026-09-05): api-documentation (About this documentation meta page — nodejs.org/api/documentation.html) — learn tree နဲ့ API docs ရဲ့ substantive pages အကုန် ပြီးစီး (လက်ကျန်: learn landing + node-api/getting-started hubs = nav chrome; bench/dtls = live site မှာ မထုတ်ရသေး)
 
 ## Express (expressjs.com) — est ~30 — 30 done 🎉 COMPLETE (API ref excluded)
 - [x] Starter: getting-started, installing, hello-world, generator, faq, examples
@@ -193,19 +197,22 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [ ] ကျန် — Prisma 8 reference (orm-client, pipeline-builder, raw-queries, sql-query-builder, transactions-and-runtime, error-reference — giant pages; low priority); v6/v7 classic pages archived under /docs/orm/v6/** and /docs/orm/v7/**
   - Note: prisma.io/docs now defaults to Prisma 8; v7 'classic' archived at /docs/orm/v7/**. Clean markdown: append `.md` (https://www.prisma.io/docs/<path>.md); indexes at /docs/llms.txt.
 
-## TypeScript (typescriptlang.org handbook) — est ~100 — 25 done
+## TypeScript (typescriptlang.org handbook) — est ~100 — 39 done
 - [x] Handbook v2 (core): getting-started, everyday-types, narrowing, functions, object-types, generics, classes, keyof-typeof, indexed-access-types, conditional-types, mapped-types, template-literal-types, modules, type-declarations, understanding-errors
 - [x] Tutorials: typescript-tooling-in-5-minutes, dom-manipulation, react, migrating-from-javascript
 - [x] Declaration files section (wave 8, orders 20–25): declaration-reference (by-example), declaration-dos-and-donts, declaration-deep-dive, declaration-publishing, declaration-consumption, declaration-templates
-- [ ] ကျန် — tsconfig reference (single giant auto-generated page — skip), project setup guides, library-structures/dts-from-js — optional
+- [x] Wave 42 handbook-v2 remainder (orders 26–27, 2026-09-05): basic-types (The Basics — largest v2 chapter), typeof-types — Handbook v2 core ပြည့်စုံ 🎉
+- [x] Wave 42 declaration-files remainder (orders 28–36, 2026-09-05): declaration-introduction, declaration-library-structures + templates 7 pages (module/module-class/module-function/module-plugin/global/global-modifying-module/global-plugin -d-ts) — declaration section ပြည့်စုံ 🎉
+- [x] Wave 42 tutorials (orders 37–39, 2026-09-05): gulp (deprecated note kept), asp-net-core, babel-with-typescript (deprecated Angular stub skipped)
+- [ ] ကျန် — tsconfig reference (giant auto page — skip), get-started ×4 (TS for Functional/New/JS Programmers, OOPers), reference/* (15 legacy-live pages), modules-reference, javascript/*, project-config, release-notes — optional/future waves
 
-## useSWR (swr.vercel.app) — ~25 — 24 done 🎉 COMPLETE
+## useSWR (swr.vercel.app) — ~25 — 29 done 🎉 COMPLETE
 - [x] Getting started + core (data-fetching, error-handling, revalidation, arguments, global-config, pagination, infinite-loading, mutation, optimistic-ui, middleware, suspense, typescript, subscription, performance, with-nextjs, react-native)
 - [x] Advanced (cache, understanding, devtools) + API reference (api)
 - [x] Examples: auth, optimistic-ui
-- [ ] Examples ကျန် (basic demos — website sandbox examples; optional)
+- [x] Wave 42 examples complete (orders 25–29, 2026-09-05): basic, ssr, error-handling-example, infinite-loading-example, subscription-example — swr.vercel.app examples section အကုန် ပြီးစီး 🎉
 
-## TanStack Query (tanstack.com/query react) — est ~100 — 69 done
+## TanStack Query (tanstack.com/query react) — est ~100 — 116 done
 - [x] Guides (complete): getting-started, queries, query-keys, query-functions, dependent-queries, parallel-queries, infinite-queries, disabling-queries, paginated-queries, placeholder-query-data, initial-query-data, prefetching, mutations, optimistic-updates, updates-from-mutation-responses, query-invalidation, query-cancellation, network-mode, background-fetching-indicators, filters, query-retries, suspense, polling, ssr, advanced-ssr, window-focus-refetching, scroll-restoration, testing, render-optimizations, request-waterfalls, default-query-function, query-options, important-defaults, typescript, devtools, cache
 - [x] API reference functions (wave 10, orders 37–53): useQuery, useMutation, useInfiniteQuery, useQueries, useQueryClient, useIsFetching, useIsMutating, useMutationState, useSuspenseQuery, useSuspenseInfiniteQuery, useSuspenseQueries, usePrefetchQuery, usePrefetchInfiniteQuery, QueryClientProvider, HydrationBoundary, QueryErrorResetBoundary, useQueryErrorResetBoundary
 - [x] Plugins + misc (wave 11, orders 54–63): useIsRestoring, persistQueryClient, createSyncStoragePersister, createAsyncStoragePersister, createPersister (experimental_createQueryPersister), broadcastQueryClient, quick-start, installation, react-native, graphql

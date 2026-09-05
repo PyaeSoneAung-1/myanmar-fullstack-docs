@@ -21,7 +21,7 @@ Editor တစ်ယောက်အနေနဲ့ — variable values တွေ�
 
 Variable တစ်ခုကို secure အနေနဲ့ သတ်မှတ်ထားရင် — workspace တစ်ခုရဲ့ Postman Shared Vault ထဲမှာ value တူညီတဲ့ vault secret တစ်ခုကို ဖန်တီးနိုင်ပါတယ်။
 
-Variables တွေရဲ့ shared values အားလုံးကို [ကိုယ့်ရဲ့ documentation နဲ့အတူ publish](/docs/publishing-your-api/publishing-your-docs/) လုပ်မှာ ဖြစ်ကြောင်း သတိပြုပါ။ Shared values တွေထဲမှာ passwords ဒါမှမဟုတ် tokens တွေလို sensitive အချက်အလက်တွေ မပါအောင် သေချာစေပါ။ Sensitive အချက်အလက်တွေ သိမ်းဖို့ လိုရင် — [secure variable တစ်ခုကို share လုပ်](#secure-variable-value-တစ်ခုကို-share-လုပ်ခြင်း)ပါ။
+Variables တွေရဲ့ shared values အားလုံးကို [ကိုယ့်ရဲ့ documentation နဲ့အတူ publish](https://learning.postman.com/docs/publishing-your-api/publishing-your-docs/)) လုပ်မှာ ဖြစ်ကြောင်း သတိပြုပါ။ Shared values တွေထဲမှာ passwords ဒါမှမဟုတ် tokens တွေလို sensitive အချက်အလက်တွေ မပါအောင် သေချာစေပါ။ Sensitive အချက်အလက်တွေ သိမ်းဖို့ လိုရင် — [secure variable တစ်ခုကို share လုပ်](#secure-variable-value-တစ်ခုကို-share-လုပ်ခြင်း)ပါ။
 
 ### Variable value တစ်ခုကို share လုပ်ခြင်း
 

@@ -11,4 +11,4 @@ Postman API Builder ကို Postman v12 နဲ့ ၎င်းနောက်�
 
 Postman API Builder က Postman ရဲ့ API ဒီဇိုင်းနဲ့ governance tool တစ်ခု ဖြစ်ခဲ့ပါတယ်။ Postman မှာ API specifications တွေကို စီမံခန့်ခွဲဖို့ အကြံပြုထားတဲ့ tool အနေနဲ့ — Postman ရဲ့ [Spec Hub](/docs/postman/specifications-overview) က API Builder နေရာကို အစားထိုးလိုက်ပါပြီ။ Spec Hub နဲ့ဆိုရင် — format အများအပြားနဲ့ APIs တွေကို ဒီဇိုင်းလုပ်နိုင်သလို, governance ပြဿနာတွေကို ဖော်ထုတ်နိုင်, live documentation အပြောင်းအလဲတွေကို ကြိုကြည့်နိုင် စသဖြင့် အများကြီး လုပ်နိုင်ပါတယ်။ Collections တွေကိုလည်း generate လုပ်ပြီး — ကိုယ့် API specifications တွေနဲ့ sync လုပ်ထားနိုင်ပါတယ်။
 
-[ကိုယ့် API specifications တွေကို API Builder ကနေ Spec Hub ဆီ ရွှေ့ပြောင်းနည်း](/docs/design-apis/migrate-to-spec-hub/) ကို လေ့လာပါ။
+[ကိုယ့် API specifications တွေကို API Builder ကနေ Spec Hub ဆီ ရွှေ့ပြောင်းနည်း](https://learning.postman.com/docs/design-apis/migrate-to-spec-hub/)) ကို လေ့လာပါ။

@@ -13,7 +13,7 @@ updated: 2026-09-02
 
 ## အသုံးပြုပုံ (Usage)
 
-[Server-side instrumentation](/docs/app/api-reference/file-conventions/instrumentation) နဲ့ မတူဘဲ — ဒီမှာက specific function တွေ export လုပ်စရာ မလိုပါဘူး။ သင့် monitoring code တွေကို file ထဲမှာ တိုက်ရိုက် ရေးနိုင်ပါတယ်:
+[Server-side instrumentation](/docs/nextjs/instrumentation) နဲ့ မတူဘဲ — ဒီမှာက specific function တွေ export လုပ်စရာ မလိုပါဘူး။ သင့် monitoring code တွေကို file ထဲမှာ တိုက်ရိုက် ရေးနိုင်ပါတယ်:
 
 ```ts filename="instrumentation-client.ts" switcher
 // Performance monitoring စနစ်ထည့်သွင်းခြင်း

@@ -1,34 +1,40 @@
 ---
-title: "Pages & Layouts"
-description: "page.tsx နဲ့ layout.tsx ရဲ့ အခန်းကဏ္ဍ၊ root layout (html/body) လိုအပ်ချက်၊ nested layout တွေနဲ့ folder structure — App Router ရဲ့ layout စနစ်"
+title: "Layouts & Pages (Layout နဲ့ Page)"
+description: "Next.js ရဲ့ file-system based routing — folder/file တွေနဲ့ page နဲ့ layout ဖန်တီးနည်း, root layout (html/body) လိုအပ်ချက်, nested routes/layouts, dynamic segments, searchParams, page တွေကြား Link navigation, PageProps/LayoutProps helpers"
 order: 2
-source: "https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts"
+source: "https://nextjs.org/docs/app/getting-started/layouts-and-pages"
 status: translated
-updated: 2026-09-01
+updated: 2026-09-05
 ---
 
-## Page ဆိုတာ ဘာလဲ
+Next.js က **file-system based routing** ကို သုံးပါတယ် — ဆိုလိုတာက folder တွေနဲ့ file တွေကို သုံးပြီး route တွေ သတ်မှတ်နိုင်ပါတယ်။ ဒီ page မှာ layout တွေနဲ့ page တွေကို ဘယ်လို ဖန်တီးရမလဲ၊ သူတို့ကြားမှာ ဘယ်လို link ချိတ်ရမလဲဆိုတာ လမ်းညွှန်ပေးပါမယ်။
 
-**Page** ဆိုတာ — သတ်မှတ်ထားတဲ့ route တစ်ခုမှာ render လုပ်ပေးတဲ့ UI ပါ။ Page တစ်ခု ဖန်တီးဖို့ `app` folder ထဲမှာ `page.tsx` file တစ်ခု ထည့်ပြီး React component တစ်ခုကို **default export** လုပ်ရပါတယ်။ ဥပမာ — home page (`/`) အတွက် `app/page.tsx` မှာ:
+## Page တစ်ခု ဖန်တီးခြင်း (Creating a Page)
 
-```tsx
+**Page** ဆိုတာ — သတ်မှတ်ထားတဲ့ route တစ်ခုပေါ်မှာ render လုပ်ပေးတဲ့ UI ပါ။ Page တစ်ခု ဖန်တီးဖို့ — `app` directory ထဲမှာ [`page` file](/docs/nextjs/file-conventions-page) တစ်ခု ထည့်ပြီး React component တစ်ခုကို **default export** လုပ်ရပါတယ်။ ဥပမာ — index page (`/`) တစ်ခု ဖန်တီးဖို့:
+
+```tsx filename="app/page.tsx" switcher
 export default function Page() {
   return <h1>Hello Next.js!</h1>
 }
 ```
 
-Next.js က **file-system based routing** ကို သုံးပါတယ် — folder က URL segment တစ်ခုကို ကိုယ်စားပြုပြီး file (`page`, `layout`) တွေက အဲဒီ segment အတွက် UI ကို သတ်မှတ်ပါတယ်။ `app/about/page.tsx` ဆိုရင် `/about` route ဖြစ်သွားပြီး — route တစ်ခုစီမှာ **page တစ်ခုပဲ ရှိရပါတယ်** (page က leaf route ဖြစ်လို့)။
+```jsx filename="app/page.js" switcher
+export default function Page() {
+  return <h1>Hello Next.js!</h1>
+}
+```
 
-## Layout ဆိုတာ ဘာလဲ
+## Layout တစ်ခု ဖန်တီးခြင်း (Creating a Layout)
 
-**Layout** ဆိုတာ — page အများအပြားကြားမှာ **share လုပ်ထားတဲ့ UI** ပါ။ Navigation လုပ်တဲ့အခါ layout တွေက state ကို ဆက်ထိန်းထားပြီး interactive ဖြစ်နေတုန်းပဲ — **ပြန်လည် render မလုပ်ပါဘူး**။ Layout ကို `layout.tsx` file ကနေ default export လုပ်ပြီး `children` prop ကို လက်ခံရပါတယ် — `children` ထဲမှာ page (သို့) နောက် nested layout တစ်ခု ဝင်ပါတယ်။
+Layout ဆိုတာ — page အများအပြားကြားမှာ **share လုပ်ထားတဲ့ UI** ပါ။ Navigation လုပ်တဲ့အခါ layout တွေက state ကို ထိန်းသိမ်းထားပြီး interactive ဖြစ်နေတုန်းပဲ — **ပြန်လည် render လုပ်ခြင်း မရှိပါဘူး**။
 
-## Root Layout — html နဲ့ body
+[`layout` file](/docs/nextjs/file-conventions-layout) ကနေ React component တစ်ခုကို default export လုပ်ခြင်းဖြင့် layout တစ်ခုကို သတ်မှတ်နိုင်ပါတယ်။ Component က `children` prop တစ်ခုကို လက်ခံရပါမယ် — `children` ထဲမှာ page တစ်ခု (သို့) နောက်ထပ် [layout](#nesting-layouts) တစ်ခု ဝင်နိုင်ပါတယ်။
 
-`app` folder ရဲ့ အမြစ်မှာ ရှိတဲ့ layout ကို **root layout** လို့ ခေါ်ပြီး — **မဖြစ်မနေ လိုအပ်ပါတယ်**။ Root layout မှာ `<html>` နဲ့ `<body>` tag နှစ်ခုလုံး ပါဝင်ရမယ်။ `create-next-app` က ဒါကို ကြိုတင် ဖန်တီးပေးထားပါတယ်:
+ဥပမာ — index page ကို child အဖြစ် လက်ခံတဲ့ layout တစ်ခု ဖန်တီးဖို့ `app` directory ထဲမှာ `layout` file တစ်ခု ထည့်ပါ:
 
-```tsx
-export default function RootLayout({
+```tsx filename="app/layout.tsx" switcher
+export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode
@@ -36,8 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* Layout UI — page တွေအားလုံးမှာ ထပ်တူ ပါမယ့် အပိုင်း */}
-        {/* children ကို page (သို့) nested layout ပြချင်တဲ့ နေရာမှာ ထားပါ */}
+        {/* Layout UI — page တွေအားလုံးမှာ ထပ်တူပါမယ့် အပိုင်း */}
+        {/* children ကို page (သို့) nested layout ပြချင်တဲ့နေရာမှာ ထားပါ */}
         <main>{children}</main>
       </body>
     </html>
@@ -45,30 +51,100 @@ export default function RootLayout({
 }
 ```
 
-## Nested Routes — Folder Structure
-
-Nested route ဆိုတာ URL segment အများအပြား ပေါင်းစပ်ထားတဲ့ route ပါ။ ဥပမာ `/blog/[slug]` ဆိုတာ `/` (root), `blog`, `[slug]` ဆိုပြီး segment သုံးခု ပါဝင်ပါတယ်။ Folder တွေကို အထပ်လိုက် ထည့်ရုံနဲ့ nested route တွေ ဖြစ်သွားပါတယ်:
-
-```
-app/
-├── layout.tsx       # root layout (html/body)
-├── page.tsx         # route: /
-├── blog/
-│   ├── layout.tsx   # /blog အတွက် layout
-│   ├── page.tsx     # route: /blog
-│   └── [slug]/
-│       └── page.tsx # route: /blog/hello (dynamic)
-└── about/
-    └── page.tsx     # route: /about
+```jsx filename="app/layout.js" switcher
+export default function DashboardLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        {/* Layout UI — page တွေအားလုံးမှာ ထပ်တူပါမယ့် အပိုင်း */}
+        {/* children ကို page (သို့) nested layout ပြချင်တဲ့နေရာမှာ ထားပါ */}
+        <main>{children}</main>
+      </body>
+    </html>
+  )
+}
 ```
 
-`[slug]` လို square bracket နဲ့ ရေးထားတဲ့ folder က **dynamic route segment** ဖြစ်ပြီး — data ကနေ page အများအပြား ဖန်တီးဖို့ သုံးပါတယ် (ဥပမာ blog post တစ်ပုဒ်ချင်းစီအတွက် page)။
+အထက်ပါ layout ကို [root layout](/docs/nextjs/file-conventions-layout#root-layout) လို့ ခေါ်ပါတယ် — `app` directory ရဲ့ အမြစ်မှာ သတ်မှတ်ထားလို့ပါ။ Root layout က **မဖြစ်မနေ လိုအပ်ပြီး** `html` နဲ့ `body` tags နှစ်ခုလုံး ပါဝင်ရပါမယ်။
 
-## Nested Layouts — Layout တွေ အလွှာလိုက် ထပ်ခြင်း
+## Nested Route တစ်ခု ဖန်တီးခြင်း (Creating a Nested Route)
 
-Layout တွေက folder အနေအထားအလိုက် **အလွှာလိုက် ထပ်ပြီး** — child layout ကို parent layout ရဲ့ `children` ထဲမှာ ပတ်ထားပါတယ်။ ဥပမာ `/blog` route အတွက် `app/blog/layout.tsx`:
+Nested route ဆိုတာ — URL segment အများအပြား ပေါင်းစပ်ထားတဲ့ route တစ်ခုပါ။ ဥပမာ — `/blog/[slug]` route က segment သုံးခု ပါဝင်ပါတယ်:
 
-```tsx
+- `/` — Root Segment (အမြစ် segment)
+- `blog` — Segment
+- `[slug]` — Leaf Segment (အစွန်ဆုံး segment)
+
+Next.js မှာ:
+
+- **Folders** တွေက URL segments တွေနဲ့ ချိတ်ဆက်တဲ့ route segments တွေကို သတ်မှတ်ပါတယ်။
+- **Files** (ဥပမာ `page` နဲ့ `layout`) တွေက segment တစ်ခုအတွက် ပြသမယ့် UI ကို ဖန်တီးပါတယ်။
+
+Nested routes တွေ ဖန်တီးဖို့ — folder တွေကို တစ်ခုထဲတစ်ခု အထဲမှာ ထည့်နိုင်ပါတယ်။ ဥပမာ `/blog` route တစ်ခု ထည့်ဖို့ — `app` directory ထဲမှာ `blog` folder တစ်ခု ဖန်တီးပြီး `/blog` ကို public ဝင်ရောက်နိုင်အောင် `page.tsx` file တစ်ခု ထည့်ပါ:
+
+```tsx filename="app/blog/page.tsx" switcher
+// Dummy imports (ဥပမာပြရန် သက်သက်)
+import { getPosts } from '@/lib/posts'
+import { Post } from '@/ui/post'
+
+export default async function Page() {
+  const posts = await getPosts()
+
+  return (
+    <ul>
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
+      ))}
+    </ul>
+  )
+}
+```
+
+```jsx filename="app/blog/page.js" switcher
+// Dummy imports (ဥပမာပြရန် သက်သက်)
+import { getPosts } from '@/lib/posts'
+import { Post } from '@/ui/post'
+
+export default async function Page() {
+  const posts = await getPosts()
+
+  return (
+    <ul>
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
+      ))}
+    </ul>
+  )
+}
+```
+
+Nested routes တွေ ဖန်တီးဖို့ folder တွေကို ဆက်ပြီး အထပ်လိုက် ထည့်သွားနိုင်ပါတယ်။ ဥပမာ — blog post တစ်ပုဒ်ချင်းစီအတွက် route တစ်ခု ဖန်တီးဖို့ `blog` folder ထဲမှာ `[slug]` folder အသစ်တစ်ခု ဖန်တီးပြီး `page` file တစ်ခု ထည့်ပါ:
+
+```tsx filename="app/blog/[slug]/page.tsx" switcher
+export function generateStaticParams() {}
+
+export default function Page() {
+  return <h1>Hello, Blog Post Page!</h1>
+}
+```
+
+```jsx filename="app/blog/[slug]/page.js" switcher
+export function generateStaticParams() {}
+
+export default function Page() {
+  return <h1>Hello, Blog Post Page!</h1>
+}
+```
+
+Folder နာမည်တစ်ခုကို square brackets နဲ့ ပတ်ထားခြင်း (ဥပမာ `[slug]`) က [dynamic route segment](/docs/nextjs/file-conventions-dynamic-routes) တစ်ခုကို ဖန်တီးပေးပါတယ် — data ကနေ page အများအပြား ထုတ်လုပ်ဖို့ သုံးပါတယ်။ ဥပမာ — blog posts, product pages စတာတွေပါ။
+
+## Nesting Layouts
+
+Default အနေနဲ့ — folder hierarchy ထဲက layouts တွေလည်း nested ဖြစ်နေပါတယ် — ဆိုလိုတာက သူတို့က child layouts တွေကို ကိုယ့်ရဲ့ `children` prop ကနေတစ်ဆင့် wrap လုပ်ပါတယ်။ Layouts တွေကို — သီးခြား route segments (folders) တွေထဲမှာ `layout` ထည့်ခြင်းဖြင့် — အလွှာလိုက် ထပ်နိုင်ပါတယ်။
+
+ဥပမာ — `/blog` route အတွက် layout တစ်ခု ဖန်တီးဖို့ `blog` folder ထဲမှာ `layout` file အသစ်တစ်ခု ထည့်ပါ:
+
+```tsx filename="app/blog/layout.tsx" switcher
 export default function BlogLayout({
   children,
 }: {
@@ -78,10 +154,162 @@ export default function BlogLayout({
 }
 ```
 
-ဒါဆိုရင် root layout က blog layout ကို ပတ်ပြီး — blog layout က `app/blog/page.tsx` နဲ့ `app/blog/[slug]/page.tsx` တို့ကို ပတ်ပါတယ်။ Page တွေက leaf route ဖြစ်လို့ layout က page ကို ပတ်တာပဲ ရှိပြီး — page က နောက် page တစ်ခုကို မပတ်နိုင်ပါဘူး။ Navigation လုပ်တဲ့အခါ **shared layout တွေက မပြောင်းလဲဘဲ ကျန်နေပြီး** page ရဲ့ အကြောင်းအရာပဲ ပြောင်းပါတယ် — ဒါကြောင့် nav bar, sidebar လို အရာတွေက navigation တိုင်းမှာ ပြန်မဆွဲဘဲ အလုပ်လုပ်နေပါတယ်။
+```jsx filename="app/blog/layout.js" switcher
+export default function BlogLayout({ children }) {
+  return <section>{children}</section>
+}
+```
 
-## နောက်တစ်ဆင့်တွေ
+အထက်ပါ layouts နှစ်ခုကို ပေါင်းလိုက်ရင် — root layout (`app/layout.js`) က blog layout (`app/blog/layout.js`) ကို wrap လုပ်ပြီး — blog layout က blog page (`app/blog/page.js`) နဲ့ blog post page (`app/blog/[slug]/page.js`) တို့ကို wrap လုပ်ပါတယ်။
 
-- [Next.js စတင်ခြင်း](/docs/nextjs/getting-started) — App Router အခြေခံ မရသေးရင် အရင်ဖတ်ပါ
-- [Dynamic Routes](/docs/nextjs/dynamic-routes) — `[slug]` လို dynamic segment တွေ ဆက်လေ့လာပါ
-- [Linking & Navigation](/docs/nextjs/linking) — page တွေကြား ဘယ်လို သွားလာမလဲ
+## Dynamic Segment တစ်ခု ဖန်တီးခြင်း (Creating a Dynamic Segment)
+
+[Dynamic segments](/docs/nextjs/file-conventions-dynamic-routes) တွေက data ကနေ ထုတ်လုပ်ထားတဲ့ routes တွေကို ဖန်တီးခွင့် ပေးပါတယ်။ ဥပမာ — blog post တစ်ပုဒ်ချင်းစီအတွက် route တစ်ခုစီကို ကိုယ်တိုင် ဖန်တီးနေမယ့်အစား — blog post data ပေါ် အခြေခံပြီး routes တွေ ထုတ်လုပ်ဖို့ dynamic segment တစ်ခုကို သုံးနိုင်ပါတယ်။
+
+Dynamic segment တစ်ခု ဖန်တီးဖို့ — segment (folder) ရဲ့ နာမည်ကို square brackets ထဲမှာ ပတ်ပါ: `[segmentName]`။ ဥပမာ — `app/blog/[slug]/page.tsx` route ထဲမှာ `[slug]` က dynamic segment ပါ။
+
+```tsx filename="app/blog/[slug]/page.tsx" switcher
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const post = await getPost(slug)
+
+  return (
+    <div>
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+    </div>
+  )
+}
+```
+
+```jsx filename="app/blog/[slug]/page.js" switcher
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params
+  const post = await getPost(slug)
+
+  return (
+    <div>
+      <h1>{post.title}</h1>
+      <p>{post.content}</p>
+    </div>
+  )
+}
+```
+
+[Dynamic Segments](/docs/nextjs/file-conventions-dynamic-routes) နဲ့ [`params`](/docs/nextjs/file-conventions-page#params-optional) props တွေအကြောင်း ပိုလေ့လာပါ။ [Dynamic Segments အတွင်းက Nested layouts](/docs/nextjs/file-conventions-layout#params-optional) တွေကလည်း `params` props တွေကို ဝင်ရောက် သုံးနိုင်ပါတယ်။
+
+## Search Params တွေနဲ့ Rendering လုပ်ခြင်း (Rendering with Search Params)
+
+Server Component **page** တစ်ခုမှာ — [`searchParams`](/docs/nextjs/file-conventions-page#searchparams-optional) prop ကို သုံးပြီး search parameters တွေကို ဝင်ရောက် ဖတ်နိုင်ပါတယ်:
+
+```tsx filename="app/page.tsx" switcher
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const filters = (await searchParams).filters
+}
+```
+
+```jsx filename="app/page.jsx" switcher
+export default async function Page({ searchParams }) {
+  const filters = (await searchParams).filters
+}
+```
+
+`searchParams` ကို သုံးတာက page ကို [**dynamic rendering**](/docs/nextjs/glossary#dynamic-rendering) ထဲ ရောက်သွားစေပါတယ် — search parameters တွေကို ဖတ်ဖို့ incoming request တစ်ခု လိုအပ်လို့ပါ။
+
+Client Components တွေကတော့ search params တွေကို ဖတ်ဖို့ [`useSearchParams`](/docs/nextjs/use-search-params) hook ကို သုံးနိုင်ပါတယ်။
+
+`useSearchParams` အကြောင်း [prerendered](/docs/nextjs/use-search-params#prerendering) နဲ့ [dynamically rendered](/docs/nextjs/use-search-params#dynamic-rendering) routes တွေမှာ ပိုလေ့လာပါ။
+
+### ဘာကို ဘယ်အချိန်မှာ သုံးမလဲ (What to Use and When)
+
+- Page အတွက် **data တွေ load လုပ်ဖို့** search parameters တွေ လိုအပ်ရင် (ဥပမာ — pagination, database ကနေ filtering) `searchParams` prop ကို သုံးပါ။
+- Search parameters တွေကို **client ပေါ်မှာပဲ** သုံးမယ်ဆိုရင် (ဥပမာ — props ကနေ load လုပ်ပြီးသား list တစ်ခုကို filter လုပ်တာ) `useSearchParams` ကို သုံးပါ။
+- Optimization အသေးစားတစ်ခုအနေနဲ့ — re-renders တွေ မဖြစ်စေဘဲ search params တွေကို ဖတ်ချင်ရင် **callbacks (သို့) event handlers** တွေထဲမှာ `new URLSearchParams(window.location.search)` ကို သုံးနိုင်ပါတယ်။
+
+## Page တွေကြား Linking လုပ်ခြင်း (Linking Between Pages)
+
+Routes တွေကြားမှာ navigate လုပ်ဖို့ [`<Link>` component](/docs/nextjs/component-link) ကို သုံးနိုင်ပါတယ်။ `<Link>` က Next.js ရဲ့ built-in component တစ်ခုဖြစ်ပြီး — HTML `<a>` tag ကို extend လုပ်ကာ [prefetching](/docs/nextjs/linking) နဲ့ [client-side navigation](/docs/nextjs/linking) တွေကို ပံ့ပိုးပေးပါတယ်။
+
+ဥပမာ — blog posts စာရင်းတစ်ခု ထုတ်လုပ်ဖို့ `next/link` ကနေ `<Link>` ကို import လုပ်ပြီး component ဆီ `href` prop တစ်ခု ပေးပါ:
+
+```tsx filename="app/ui/post.tsx" highlight={1,2,11} switcher
+import Link from 'next/link'
+import { getPosts } from '@/lib/posts'
+
+export default async function Posts() {
+  const posts = await getPosts()
+
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+```
+
+```jsx filename="app/ui/post.js" highlight={1,2,11} switcher
+import Link from 'next/link'
+import { getPosts } from '@/lib/posts'
+
+export default async function Posts() {
+  const posts = await getPosts()
+
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+```
+
+> **သိထားသင့်သည်:** `<Link>` က Next.js မှာ routes တွေကြား navigate လုပ်ဖို့ အဓိက နည်းလမ်း ဖြစ်ပါတယ်။ ပိုပြီး အဆင့်မြင့်တဲ့ navigation တွေအတွက် [`useRouter` hook](/docs/nextjs/use-router) ကိုလည်း သုံးနိုင်ပါတယ်။
+
+## Route Props Helpers (Route Props အထောက်အကူများ)
+
+Next.js က route structure ကနေ `params` နဲ့ named slots တွေကို ခန့်မှန်းပေးတဲ့ utility types တွေကို ထုတ်ပေးပါတယ်:
+
+- [**PageProps**](/docs/nextjs/file-conventions-page#page-props-helper): `page` components တွေအတွက် props — `params` နဲ့ `searchParams` အပါအဝင်။
+- [**LayoutProps**](/docs/nextjs/file-conventions-layout#layout-props-helper): `layout` components တွေအတွက် props — `children` နဲ့ named slots တွေ (ဥပမာ `@analytics` လို folders) အပါအဝင်။
+
+ဒါတွေက global အနေနဲ့ ရရှိနိုင်တဲ့ helpers တွေပါ — `next dev`, `next build` (သို့) [`next typegen`](/docs/nextjs/next-cli#next-typegen-options) run လုပ်တဲ့အခါ generate လုပ်ပေးပါတယ်။
+
+```tsx filename="app/blog/[slug]/page.tsx"
+export default async function Page(props: PageProps<'/blog/[slug]'>) {
+  const { slug } = await props.params
+  return <h1>Blog post: {slug}</h1>
+}
+```
+
+```tsx filename="app/dashboard/layout.tsx"
+export default function Layout(props: LayoutProps<'/dashboard'>) {
+  return (
+    <section>
+      {props.children}
+      {/* app/dashboard/@analytics ရှိရင် typed slot အဖြစ် ပေါ်လာပါတယ်: */}
+      {/* {props.analytics} */}
+    </section>
+  )
+}
+```
+
+> **သိထားသင့်သည်:**
+>
+> - Static routes တွေက `params` ကို `{}` အဖြစ် resolve လုပ်ပါတယ်။
+> - `PageProps`, `LayoutProps` တွေက global helpers တွေပါ — imports မလိုပါဘူး။
+> - Types တွေကို `next dev`, `next build` (သို့) `next typegen` လုပ်ချိန်မှာ generate လုပ်ပါတယ်။

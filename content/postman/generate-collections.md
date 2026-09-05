@@ -13,7 +13,7 @@ Collections တွေ generate လုပ်ခြင်းနဲ့ sync လု�
 
 ## Specification တစ်ခုကနေ collections generate လုပ်ခြင်း
 
-WebSocket protocol သုံးတဲ့ ကိုယ့် OpenAPI, AsyncAPI နဲ့ Smithy [specifications](/docs/postman/specifications-overview) တွေကနေ [Postman Collection](/docs/use/use-collections/overview/) တစ်ခု generate လုပ်နိုင်ပါတယ်။ Specification အပေါ် အခြေခံပြီး — folders, requests နဲ့ response examples တွေပါတဲ့ collection တစ်ခုကို Postman က အလိုအလျောက် ဖန်တီးပေးပါတယ်။ Specification တစ်ခုတည်းကနေ collection တစ်ခုထက်ပိုပြီးလည်း generate လုပ်နိုင်ပါတယ်။
+WebSocket protocol သုံးတဲ့ ကိုယ့် OpenAPI, AsyncAPI နဲ့ Smithy [specifications](/docs/postman/specifications-overview) တွေကနေ [Postman Collection](https://learning.postman.com/docs/use/use-collections/overview/)) တစ်ခု generate လုပ်နိုင်ပါတယ်။ Specification အပေါ် အခြေခံပြီး — folders, requests နဲ့ response examples တွေပါတဲ့ collection တစ်ခုကို Postman က အလိုအလျောက် ဖန်တီးပေးပါတယ်။ Specification တစ်ခုတည်းကနေ collection တစ်ခုထက်ပိုပြီးလည်း generate လုပ်နိုင်ပါတယ်။
 
 Specification တစ်ခုကနေ collection တစ်ခု generate လုပ်ဖို့ အောက်ပါအတိုင်း လုပ်ပါ:
 

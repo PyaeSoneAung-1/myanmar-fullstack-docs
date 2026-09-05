@@ -43,7 +43,7 @@ Scripts တွေထဲမှာ `pm.request` နဲ့ `pm.response` objects �
 
 ## Scripts တွေနဲ့ Postman Vault ကို စီမံခြင်း
 
-[vault secrets](/docs/use/postman-vault/postman-vault-secrets/) တွေကို scripts တွေထဲမှာ `pm.vault` methods တွေနဲ့ access လုပ်ပြီး ကိုင်တွယ်ပါ။ ပိုလေ့လာဖို့ — [Postman scripts တွေထဲမှာ vault secrets တွေကို ကိုးကားခြင်း](https://learning.postman.com/docs/tests-and-scripts/write-scripts/postman-sandbox-reference/pm-vault/) ကို ကြည့်ပါ။
+[vault secrets](https://learning.postman.com/docs/use/postman-vault/postman-vault-secrets/)) တွေကို scripts တွေထဲမှာ `pm.vault` methods တွေနဲ့ access လုပ်ပြီး ကိုင်တွယ်ပါ။ ပိုလေ့လာဖို့ — [Postman scripts တွေထဲမှာ vault secrets တွေကို ကိုးကားခြင်း](https://learning.postman.com/docs/tests-and-scripts/write-scripts/postman-sandbox-reference/pm-vault/) ကို ကြည့်ပါ။
 
 ## Scripts တွေနဲ့ test assertions တွေ ရေးသားခြင်း
 

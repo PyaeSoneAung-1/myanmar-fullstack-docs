@@ -15,7 +15,7 @@ Postman က auth type တစ်ခု သတ်မှတ်မပေးထား
 
 ## API key
 
-API key auth နဲ့ဆိုရင် — API ဆီကို key-value pair တစ်ခုကို request headers ဒါမှမဟုတ် query parameters တွေထဲမှာ ပို့ပါတယ်။ Request ရဲ့ **Authorization** tab ထဲမှာ **Auth Type** list ကနေ **API Key** ကို ရွေးပါ။ ကိုယ့်ရဲ့ key name နဲ့ value ကို ရိုက်ထည့်ပြီး — **Add to** dropdown list ကနေ **Header** ဒါမှမဟုတ် **Query Params** ကို ရွေးပါ။ ပိုပြီး လုံခြုံစေချင်ရင် ကိုယ့်ရဲ့ values တွေကို [variables](/docs/use/send-requests/variables/variables-intro/) တွေထဲမှာ သိမ်းထားနိုင်ပါတယ်။
+API key auth နဲ့ဆိုရင် — API ဆီကို key-value pair တစ်ခုကို request headers ဒါမှမဟုတ် query parameters တွေထဲမှာ ပို့ပါတယ်။ Request ရဲ့ **Authorization** tab ထဲမှာ **Auth Type** list ကနေ **API Key** ကို ရွေးပါ။ ကိုယ့်ရဲ့ key name နဲ့ value ကို ရိုက်ထည့်ပြီး — **Add to** dropdown list ကနေ **Header** ဒါမှမဟုတ် **Query Params** ကို ရွေးပါ။ ပိုပြီး လုံခြုံစေချင်ရင် ကိုယ့်ရဲ့ values တွေကို [variables](https://learning.postman.com/docs/use/send-requests/variables/variables-intro/)) တွေထဲမှာ သိမ်းထားနိုင်ပါတယ်။
 
 Postman က သက်ဆိုင်ရာ အချက်အလက်တွေကို request ရဲ့ **Headers** ဒါမှမဟုတ် URL query string ထဲကို ထည့်ပေးပါတယ်။
 
@@ -63,7 +63,7 @@ Postman က requests တွေကို authorize လုပ်ဖို့ JWT b
 
 Basic authentication က request နဲ့အတူ အတည်ပြုပြီးသား (verified) username နဲ့ password တစ်စုံ ပို့တာပါ။ Request ရဲ့ **Authorization** tab ထဲမှာ **Auth Type** dropdown list ကနေ **Basic Auth** ကို ရွေးပါ။
 
-**Username** နဲ့ **Password** fields တွေထဲမှာ ကိုယ့်ရဲ့ API username နဲ့ password ကို ရိုက်ထည့်ပါ။ ပိုပြီး လုံခြုံစေချင်ရင် — ဒါတွေကို [variables](/docs/use/send-requests/variables/variables-intro/) တွေထဲမှာ သိမ်းပါ။
+**Username** နဲ့ **Password** fields တွေထဲမှာ ကိုယ့်ရဲ့ API username နဲ့ password ကို ရိုက်ထည့်ပါ။ ပိုပြီး လုံခြုံစေချင်ရင် — ဒါတွေကို [variables](https://learning.postman.com/docs/use/send-requests/variables/variables-intro/)) တွေထဲမှာ သိမ်းပါ။
 
 Request ရဲ့ **Headers** ထဲမှာ — Authorization header က username နဲ့ password values တွေရဲ့ Base64 encode လုပ်ထားတဲ့ string ကို `Basic` ဆိုတဲ့ text နောက်မှာ ဒီအတိုင်း ပို့ပေးပါတယ်:
 

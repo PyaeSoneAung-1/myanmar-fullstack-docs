@@ -105,7 +105,7 @@ Errors ရှိတဲ့ collection run ထဲက requests တွေက — err
 
 ## Console log
 
-Monitor run အသေးစိတ်တွေကို ကြည့်ရှုပြီး ရှာဖွေဖို့ — ကိုယ့် pre-request နဲ့ post-response scripts တွေရဲ့ အစိတ်အပိုင်းအဖြစ် Postman Console ထဲမှာ run လုပ်တဲ့ [`console.log`](/docs/use/send-requests/response-data/troubleshooting-api-requests/) statements တွေနဲ့အတူ **Console Log** tab ကို နှိပ်ပါ။ Run details တွေက — run ပြင်ဆင်ခြင်း, run လုပ်ခြင်း, ပြန် run လုပ်ခြင်း ([သက်ဆိုင်ရင်](/docs/postman/setting-up-monitor)) နဲ့ run result စတဲ့ monitor run တစ်ခုရဲ့ အဆင့်အမျိုးမျိုးကို — error နဲ့ test failure အချက်အလက်တွေနဲ့အတူ သတ်မှတ်ပေးပါတယ်။ Console log ထဲက request တစ်ခုကို နှိပ်လိုက်ရင် — အဲဒါကို tab တစ်ခုမှာ ဖွင့်ပေးပြီး လိုအပ်သလို request ကို ပြန်သုံးသပ်, တည်းဖြတ်နိုင်ပါတယ်။
+Monitor run အသေးစိတ်တွေကို ကြည့်ရှုပြီး ရှာဖွေဖို့ — ကိုယ့် pre-request နဲ့ post-response scripts တွေရဲ့ အစိတ်အပိုင်းအဖြစ် Postman Console ထဲမှာ run လုပ်တဲ့ [`console.log`](https://learning.postman.com/docs/use/send-requests/response-data/troubleshooting-api-requests/)) statements တွေနဲ့အတူ **Console Log** tab ကို နှိပ်ပါ။ Run details တွေက — run ပြင်ဆင်ခြင်း, run လုပ်ခြင်း, ပြန် run လုပ်ခြင်း ([သက်ဆိုင်ရင်](/docs/postman/setting-up-monitor)) နဲ့ run result စတဲ့ monitor run တစ်ခုရဲ့ အဆင့်အမျိုးမျိုးကို — error နဲ့ test failure အချက်အလက်တွေနဲ့အတူ သတ်မှတ်ပေးပါတယ်။ Console log ထဲက request တစ်ခုကို နှိပ်လိုက်ရင် — အဲဒါကို tab တစ်ခုမှာ ဖွင့်ပေးပြီး လိုအပ်သလို request ကို ပြန်သုံးသပ်, တည်းဖြတ်နိုင်ပါတယ်။
 
 ကိုယ့် monitor က region အများအပြားမှာ run လုပ်ဖို့ configure လုပ်ထားရင် — **Runner** menu ထဲမှာ region တစ်ခုခုကို ရွေးနိုင်ပါတယ်။
 

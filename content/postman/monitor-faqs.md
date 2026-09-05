@@ -59,7 +59,7 @@ Custom data files တွေကို Postman paid plans တွေမှာ ရ�
 
 Monitor ကို run တဲ့အခါ variable inputs တွေအဖြစ် သုံးဖို့ — values set တွေနဲ့ data file တစ်ခုကို upload လုပ်နိုင်ပါတယ် — [collection runner](/docs/postman/working-with-data-files) နဲ့ ဆင်တူပါတယ်။ Data files တွေက အရွယ်အစား 1 MB နဲ့ — data rows ၅၀ (CSV) ဒါမှမဟုတ် objects ၅၀ (JSON) အထိ ကန့်သတ်ထားပါတယ်။ ကိုယ့် data source အဖြစ် Postman dataset တစ်ခုနဲ့ view တစ်ခုကိုလည်း သုံးနိုင်ပါတယ်။ [Monitor တစ်ခုနဲ့ data file သုံးခြင်း](https://learning.postman.com/docs/monitoring-your-api/test-data/monitors-data-files/) နဲ့ [Monitor တစ်ခုနဲ့ dataset သုံးခြင်း](https://learning.postman.com/docs/monitoring-your-api/test-data/monitors-datasets/) မှာ ပိုလေ့လာနိုင်ပါတယ်။
 
-Scheduled collection runs တွေနဲ့ monitors တွေက Postman cloud ထဲမှာ run တာကြောင့် — [request builder](/docs/use/send-requests/create-requests/parameters/#send-body-data-with-requests) ထဲမှာ လုပ်နိုင်သလို requests တွေဆီ form data ဒါမှမဟုတ် binary files တွေကို attach လုပ်လို့ မရပါဘူး။ အဲဒီအစား — request နဲ့အတူ JSON ဒါမှမဟုတ် တခြား text data တွေ ပို့ဖို့ request ရဲ့ **Body** tab ပေါ်မှာ [raw data](/docs/use/send-requests/create-requests/parameters/#raw-data) ထည့်နိုင်ပါတယ်။
+Scheduled collection runs တွေနဲ့ monitors တွေက Postman cloud ထဲမှာ run တာကြောင့် — [request builder](https://learning.postman.com/docs/use/send-requests/create-requests/parameters/)#send-body-data-with-requests) ထဲမှာ လုပ်နိုင်သလို requests တွေဆီ form data ဒါမှမဟုတ် binary files တွေကို attach လုပ်လို့ မရပါဘူး။ အဲဒီအစား — request နဲ့အတူ JSON ဒါမှမဟုတ် တခြား text data တွေ ပို့ဖို့ request ရဲ့ **Body** tab ပေါ်မှာ [raw data](https://learning.postman.com/docs/use/send-requests/create-requests/parameters/)#raw-data) ထည့်နိုင်ပါတယ်။
 
 Monitor တစ်ခုက — Google Docs ဒါမှမဟုတ် Dropbox စတဲ့ cloud services တွေကနေ API တစ်ခုက ပြန်ယူလို့ရတဲ့ files တွေကိုလည်း သုံးနိုင်ပါတယ်။
 
@@ -85,7 +85,7 @@ Monitor တစ်ခုကို — monitor ကို ဖန်တီးထာ�
 
 ### ကိုယ့် monitors တွေကို ဘယ်သူတွေ edit လုပ်နိုင်လဲ
 
-Monitors တွေကို — monitor ပေါ်မှာ [Editor permissions](/docs/administration/roles-and-permissions/) ပေးထားတဲ့ members တွေက သက်ဆိုင်ရာ workspace ထဲမှာ edit လုပ်နိုင်ပါတယ်။ Monitor တစ်ခုအတိအကျပေါ်မှာ Editor ဒါမှမဟုတ် Viewer permissions ရှိတဲ့ team members တွေကို ပြန်လည်သုံးသပ်ဖို့ ဒါမှမဟုတ် စီမံဖို့ — ကိုယ့် workspace ကို ဖွင့်ပြီး ![Services icon](https://assets.postman.com/postman-docs/aether-icons/v12/descriptive-services-stroke.svg#icon) **Services** tab ကို နှိပ်ကာ sidebar ထဲက **Monitors** ကို ချဲ့ပါ။ Monitor တစ်ခုပေါ်မှာ mouse ချပြီး ![Options icon](https://assets.postman.com/postman-docs/aether-icons/action-options-stroke.svg#icon) **More actions** ကို နှိပ်ကာ **Manage Roles** ကို ရွေးပါ။
+Monitors တွေကို — monitor ပေါ်မှာ [Editor permissions](https://learning.postman.com/docs/administration/roles-and-permissions/)) ပေးထားတဲ့ members တွေက သက်ဆိုင်ရာ workspace ထဲမှာ edit လုပ်နိုင်ပါတယ်။ Monitor တစ်ခုအတိအကျပေါ်မှာ Editor ဒါမှမဟုတ် Viewer permissions ရှိတဲ့ team members တွေကို ပြန်လည်သုံးသပ်ဖို့ ဒါမှမဟုတ် စီမံဖို့ — ကိုယ့် workspace ကို ဖွင့်ပြီး ![Services icon](https://assets.postman.com/postman-docs/aether-icons/v12/descriptive-services-stroke.svg#icon) **Services** tab ကို နှိပ်ကာ sidebar ထဲက **Monitors** ကို ချဲ့ပါ။ Monitor တစ်ခုပေါ်မှာ mouse ချပြီး ![Options icon](https://assets.postman.com/postman-docs/aether-icons/action-options-stroke.svg#icon) **More actions** ကို နှိပ်ကာ **Manage Roles** ကို ရွေးပါ။
 
 ### Monitors တွေ ဘယ်မှာ run လဲ
 
@@ -93,7 +93,7 @@ Monitors တွေက Postman ရဲ့ cloud infrastructure ပေါ်မှ�
 
 ### Monitors တွေက restricted networks တွေကို access လုပ်လို့ရလား
 
-Monitors တွေက default အနေနဲ့ restricted networks တွေကို access လုပ်လို့ မရပါဘူး။ Virtual private cloud တစ်ခုလိုမျိုး — ကိုယ့် restricted network ကနေ internal APIs တွေကို monitor လုပ်ဖို့ [Private API Monitoring](/docs/monitoring-your-api/runners/overview/) နဲ့ runners တွေကို သုံးနိုင်ပါတယ်။
+Monitors တွေက default အနေနဲ့ restricted networks တွေကို access လုပ်လို့ မရပါဘူး။ Virtual private cloud တစ်ခုလိုမျိုး — ကိုယ့် restricted network ကနေ internal APIs တွေကို monitor လုပ်ဖို့ [Private API Monitoring](https://learning.postman.com/docs/monitoring-your-api/runners/overview/)) နဲ့ runners တွေကို သုံးနိုင်ပါတယ်။
 
 Postman က public APIs တွေကို monitor လုပ်တာကို default အနေနဲ့ ပံ့ပိုးပေးပါတယ်။ Monitors တွေက Postman cloud ထဲမှာ run တာကြောင့် — endpoints တွေအားလုံး internet ပေါ်မှာ အများသုံးနိုင် (publicly available) ဖြစ်ရပါမယ်။ ဆိုလိုတာက — monitors တွေက ကိုယ့် `localhost` ကို တိုက်ရိုက် access လုပ်လို့ မရသလို firewall တစ်ခုနောက်မှာ ရှိတဲ့ requests တွေကိုလည်း run လို့ မရပါဘူး။ ဒါ့အပြင် — private networks တွေ, VPNs တွေ ဒါမှမဟုတ် corporate intranets တွေပေါ်မှာ run တဲ့ APIs တွေကိုလည်း monitor လုပ်လို့ မရပါဘူး။
 

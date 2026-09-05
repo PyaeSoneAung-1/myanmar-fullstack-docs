@@ -67,7 +67,7 @@ Method ရဲ့ ရှေ့ ဒါမှမဟုတ် နောက်မှ�
 
 ### pm.globals.replaceIn(variableName:string)
 
-`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](/docs/tests-and-scripts/write-scripts/variables-list/) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
+`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](https://learning.postman.com/docs/tests-and-scripts/write-scripts/variables-list/)) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
 
 Dynamic variable ရဲ့ value ကို ပြန်ပေးပါတယ်။
 
@@ -114,7 +114,7 @@ Method ရဲ့ ရှေ့ ဒါမှမဟုတ် နောက်မှ�
 
 ### pm.collectionVariables.replaceIn(variableName:string)
 
-`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](/docs/tests-and-scripts/write-scripts/variables-list/) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
+`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](https://learning.postman.com/docs/tests-and-scripts/write-scripts/variables-list/)) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
 
 Dynamic variable ရဲ့ value ကို ပြန်ပေးပါတယ်။
 
@@ -161,7 +161,7 @@ Active environment ထဲမှာ သတ်မှတ်ထားတဲ့ န�
 
 ### pm.environment.replaceIn(variableName:string)
 
-`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](/docs/tests-and-scripts/write-scripts/variables-list/) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
+`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](https://learning.postman.com/docs/tests-and-scripts/write-scripts/variables-list/)) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
 
 Dynamic variable ရဲ့ value ကို ပြန်ပေးပါတယ်။
 
@@ -249,7 +249,7 @@ Method ရဲ့ ရှေ့ ဒါမှမဟုတ် နောက်မှ�
 
 ### pm.variables.replaceIn(variableName:string)
 
-`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](/docs/tests-and-scripts/write-scripts/variables-list/) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
+`{{$dynamicVariableName}}` syntax ကို သုံးပြီး script တစ်ခုထဲမှာ [dynamic variable](https://learning.postman.com/docs/tests-and-scripts/write-scripts/variables-list/)) တစ်ခုရဲ့ resolved value ကို ရယူပါတယ်။
 
 Dynamic variable ရဲ့ value ကို ပြန်ပေးပါတယ်။
 

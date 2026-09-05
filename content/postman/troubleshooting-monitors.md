@@ -30,8 +30,8 @@ Postman Console နဲ့ debug လုပ်ခြင်းအကြောင်
 ## Variable ပြဿနာတွေကို debug လုပ်ခြင်း
 
 * Local runs တွေရော monitor runs တွေရောမှာ တူညီတဲ့ environment ကို သုံးနေကြောင်း သေချာပါစေ။ ဒါကို အတည်ပြုဖို့ — ကိုယ့် request scripts တွေထဲမှာ `console.log(environment);` ကို ထည့်ပြီး monitoring နဲ့ local runs နှစ်ခုလုံးမှာ ရလဒ်တွေကို နှိုင်းယှဉ်ကြည့်ပါ။
-* ကိုယ့် collection run က မှီခိုနေတဲ့ collection ဒါမှမဟုတ် environment variables တွေကို [share](/docs/use/send-requests/variables/share-variables) လုပ်ထားကြောင်း သေချာပါစေ။ Monitors တွေက Postman cloud ထဲမှာ run တာကြောင့် — values တွေကို share လုပ်ထားတဲ့ variables တွေကိုပဲ သုံးနိုင်ပါတယ်။ (Sharing လုပ်တာက variable values တွေကို Postman cloud ဆီ sync လုပ်ပေးပါတယ်။)
-* ကိုယ့် collection run က save ထားတဲ့ global variable တစ်ခုပေါ် မှီခိုနေရင် — အဲဒါကို environment variable တစ်ခုအဖြစ် ပြောင်းပြီး ၎င်းရဲ့ value ကို [share](/docs/use/send-requests/variables/share-variables) လုပ်ပါ။ Save ထားတဲ့ global variables တွေကို monitors တွေမှာ ပံ့ပိုးမပေးပါဘူး။
+* ကိုယ့် collection run က မှီခိုနေတဲ့ collection ဒါမှမဟုတ် environment variables တွေကို [share](https://learning.postman.com/docs/use/send-requests/variables/share-variables)) လုပ်ထားကြောင်း သေချာပါစေ။ Monitors တွေက Postman cloud ထဲမှာ run တာကြောင့် — values တွေကို share လုပ်ထားတဲ့ variables တွေကိုပဲ သုံးနိုင်ပါတယ်။ (Sharing လုပ်တာက variable values တွေကို Postman cloud ဆီ sync လုပ်ပေးပါတယ်။)
+* ကိုယ့် collection run က save ထားတဲ့ global variable တစ်ခုပေါ် မှီခိုနေရင် — အဲဒါကို environment variable တစ်ခုအဖြစ် ပြောင်းပြီး ၎င်းရဲ့ value ကို [share](https://learning.postman.com/docs/use/send-requests/variables/share-variables)) လုပ်ပါ။ Save ထားတဲ့ global variables တွေကို monitors တွေမှာ ပံ့ပိုးမပေးပါဘူး။
 
 ## သက်ဆိုင်ရာ အချက်အလက်တွေကို log လုပ်ခြင်း
 
