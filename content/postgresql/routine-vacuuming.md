@@ -1,7 +1,7 @@
 ---
 title: "Routine Vacuuming (ပုံမှန် vacuuming ပြုလုပ်ခြင်း)"
 description: "PostgreSQL ရဲ့ ပုံမှန် vacuuming လုပ်ငန်းစဉ်များ — VACUUM/ANALYZE အခြေခံများ၊ disk space ပြန်လည် ရယူခြင်း၊ planner statistics update လုပ်ခြင်း၊ visibility map update လုပ်ခြင်း၊ transaction ID နှင့် multixact ID wraparound (ပြန်ရစ်ခြင်း) failure များ ကာကွယ်ခြင်း နှင့် autovacuum daemon အလုပ်လုပ်ပုံ"
-order: 180
+order: 183
 source: "https://www.postgresql.org/docs/current/routine-vacuuming.html"
 status: translated
 updated: 2026-09-06

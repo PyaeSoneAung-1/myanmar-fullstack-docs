@@ -61,8 +61,8 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1338 pages ဘာသာပြန်ပြီး** (wave 43, 2026-09-05: +33 — TypeScript official docs ပြည့်စုံအောင် ဆက်လက်: Get Started ×4, JavaScript section ×4, Modules Reference ×5, Handbook legacy Reference ×15, Project Configuration ×5 — typescriptlang.org handbook) — TypeScript 72/~100; Node.js 154/180 (core API digest 69/69 doc/api module pages COMPLETE); PostgreSQL 322/500 (SQL Commands 183/183 COMPLETE)
-- 🔄 ကျန် ~380 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
+- ✅ **1430 pages ဘာသာပြန်ပြီး** (wave 47, 2026-09-06: +19 — PostgreSQL Part III: Ch23 Localization + Ch25.3 Continuous Archiving (PITR) + Ch26 High Availability + Ch27 Monitoring + Ch31 Regression Tests — PostgreSQL 367 → 386/500) — React 123/120, TypeScript 100/100, Express 30/30, TanStack Query 116/100, Postman 166/150, useSWR 29/25, Zustand 25/15 ပြည့်စုံ 🎉
+- 🔄 ကျန် ~290 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။
 
 ## License Note

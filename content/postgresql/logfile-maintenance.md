@@ -1,7 +1,7 @@
 ---
 title: "Log File Maintenance (log file ထိန်းသိမ်းခြင်း)"
 description: "PostgreSQL server log များ ထိန်းသိမ်းခြင်း — log output သိမ်းဆည်းခြင်း၏ အရေးပါမှုနှင့် log file rotation နည်းလမ်းများ (logging_collector, logrotate, rotatelogs, syslog)၊ log ဖိုင်ဟောင်းများ ဖျက်ပစ်ခြင်းနှင့် pgBadger, check_postgres ကဲ့သို့သော log analysis tools များအကြောင်း"
-order: 182
+order: 185
 source: "https://www.postgresql.org/docs/current/logfile-maintenance.html"
 status: translated
 updated: 2026-09-06
