@@ -1,7 +1,7 @@
 ---
 title: "CREATE DATABASE (database အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Database အသစ်တစ်ခု ဖန်တီးခြင်း — CREATE DATABASE ၏ syntax နှင့် parameters (OWNER, TEMPLATE, ENCODING, LOCALE, STRATEGY, TABLESPACE, CONNECTION LIMIT, OID စသည်)၊ template database cloning အကြောင်းနှင့် သတိပြုရန် အချက်များ"
-order: 140
+order: 400
 source: "https://www.postgresql.org/docs/current/sql-createdatabase.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "INSERT (table ထဲသို့ rows အသစ်များ ထည့်သွင်းခြင်း)"
 description: "Table တစ်ခုထဲသို့ rows အသစ်များ ထည့်သွင်းပေးတဲ့ command — VALUES, DEFAULT VALUES, query များဖြင့် rows ထည့်သွင်းခြင်း၊ ON CONFLICT (UPSERT) clause နှင့် RETURNING clause အသေးစိတ်"
-order: 152
+order: 412
 source: "https://www.postgresql.org/docs/current/sql-insert.html"
 status: translated
 updated: 2026-09-04

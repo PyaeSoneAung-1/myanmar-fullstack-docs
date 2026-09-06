@@ -1,7 +1,7 @@
 ---
 title: "RELEASE SAVEPOINT (ယခင် သတ်မှတ်ထားသော savepoint တစ်ခုကို release လုပ်ခြင်း)"
 description: "အရင်က သတ်မှတ်ထားသော savepoint တစ်ခုကို release လုပ်ပြီး — savepoint နောက်ပိုင်း ဖန်တီးခဲ့သော savepoint များနှင့် ၎င်းတို့၏ resources များကို လွှတ်ပေးသည့် command — release ပြီးနောက် ပြောင်းလဲမှုများ ပေါင်းစည်းခြင်း၊ aborted state တွင် မဖြစ်နိုင်ခြင်း၊ နာမည်တူ savepoint များ၏ အပြုအမူ၊ SQL standard လိုက်ဖက်ညီမှုအကြောင်း"
-order: 242
+order: 502
 source: "https://www.postgresql.org/docs/current/sql-release-savepoint.html"
 status: translated
 updated: 2026-09-04

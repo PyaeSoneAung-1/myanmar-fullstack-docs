@@ -1,7 +1,7 @@
 ---
 title: "ALTER DATABASE (database တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Database တစ်ခု၏ ဂုဏ်ရည်များကို ပြောင်းလဲခြင်း — per-database settings, နာမည် (RENAME TO), owner (OWNER TO), default tablespace (SET TABLESPACE), collation version (REFRESH COLLATION VERSION) နှင့် session configuration defaults (SET/RESET) ပြောင်းလဲသည့် ပုံစံများ"
-order: 141
+order: 401
 source: "https://www.postgresql.org/docs/current/sql-alterdatabase.html"
 status: translated
 updated: 2026-09-04

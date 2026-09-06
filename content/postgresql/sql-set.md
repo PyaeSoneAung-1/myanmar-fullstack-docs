@@ -1,7 +1,7 @@
 ---
 title: "SET (run-time parameter တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Run-time configuration parameter တစ်ခုကို ပြောင်းလဲပေးသည့် command — SESSION/LOCAL scope များ၊ SCHEMA, NAMES, SEED, TIME ZONE အထူး parameters များ၊ function အတွင်း SET LOCAL အသုံးပြုမှုဆိုင်ရာ စည်းမျဉ်းများနှင့် ဥပမာများ ပါဝင်သည်"
-order: 183
+order: 443
 source: "https://www.postgresql.org/docs/current/sql-set.html"
 status: translated
 updated: 2026-09-04

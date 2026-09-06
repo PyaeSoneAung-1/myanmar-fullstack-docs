@@ -1,7 +1,7 @@
 ---
 title: "DROP TABLESPACE (tablespace တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "System ထဲကနေ tablespace တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS option ၊ ပိုင်ရှင် သို့မဟုတ် superuser လိုအပ်ချက် ၊ tablespace ဗလာ ဖြစ်ရန် သတ်မှတ်ချက်နှင့် temp_tablespaces setting နှင့် ဆက်စပ်မှု အကြောင်း — PostgreSQL extension command"
-order: 282
+order: 542
 source: "https://www.postgresql.org/docs/current/sql-droptablespace.html"
 status: translated
 updated: 2026-09-04

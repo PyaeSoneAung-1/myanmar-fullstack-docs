@@ -1,7 +1,7 @@
 ---
 title: "COMMIT (transaction တစ်ခုကို အောင်မြင်စွာ အဆုံးသတ်ခြင်း)"
 description: "လက်ရှိ transaction ကို commit လုပ်ပြီး အပြောင်းအလဲတွေ အားလုံးကို တခြားသူတွေ မြင်နိုင်ပြီး durable ဖြစ်စေတဲ့ command — WORK/TRANSACTION နဲ့ AND [NO] CHAIN options အကြောင်း"
-order: 159
+order: 419
 source: "https://www.postgresql.org/docs/current/sql-commit.html"
 status: translated
 updated: 2026-09-04

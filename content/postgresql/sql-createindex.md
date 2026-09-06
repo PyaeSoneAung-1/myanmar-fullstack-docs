@@ -1,7 +1,7 @@
 ---
 title: "CREATE INDEX (index အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Table သို့မဟုတ် materialized view တစ်ခုရဲ့ သတ်မှတ်ထားတဲ့ column(s) များပေါ်တွင် index အသစ်တစ်ခု ဖန်တီးပေးသော command — UNIQUE, CONCURRENTLY, IF NOT EXISTS, INCLUDE, WITH (storage parameters), TABLESPACE, WHERE (partial index) စသည့် options များအပြင် index method တစ်ခုချင်းစီအတွက် storage parameters (fillfactor, deduplicate_items, buffering, fastupdate, gin_pending_list_limit, pages_per_range, autosummarize) များနှင့် concurrent index build အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 176
+order: 436
 source: "https://www.postgresql.org/docs/current/sql-createindex.html"
 status: translated
 updated: 2026-09-04

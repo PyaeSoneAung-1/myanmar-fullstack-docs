@@ -1,7 +1,7 @@
 ---
 title: "LOAD (shared library file အား load လုပ်ခြင်း)"
 description: "Shared library file (မျှဝေသုံးစွဲသည့် library file) တစ်ခုကို PostgreSQL server ၏ address space ထဲသို့ load လုပ်ပေးသည့် command — library search path ဖြင့် file ရှာဖွေပုံနှင့် superuser မဟုတ်သူများအတွက် $libdir/plugins/ ကန့်သတ်ချက်များ ပါဝင်သည်"
-order: 187
+order: 447
 source: "https://www.postgresql.org/docs/current/sql-load.html"
 status: translated
 updated: 2026-09-04

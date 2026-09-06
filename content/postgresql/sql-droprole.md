@@ -1,7 +1,7 @@
 ---
 title: "DROP ROLE (role တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Role တစ်ခု သို့မဟုတ် အများအပြားကို ဖယ်ရှားပေးတဲ့ command — DROP ROLE ၏ syntax နှင့် parameters (IF EXISTS)၊ လိုအပ်သော privileges နှင့် role မဖျက်မီ ၎င်းပိုင်ဆိုင်သော objects/privileges များ ကိုင်တွယ်ရန် အချက်များ"
-order: 166
+order: 426
 source: "https://www.postgresql.org/docs/current/sql-droprole.html"
 status: translated
 updated: 2026-09-04

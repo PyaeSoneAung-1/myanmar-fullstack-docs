@@ -1,7 +1,7 @@
 ---
 title: "CREATE TEXT SEARCH TEMPLATE (text search template အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Text search template (စာသား ရှာဖွေမှု template) အသစ်တစ်ခုကို ဖန်တီးခြင်း — text search dictionaries များကို implement လုပ်ပေးသည့် functions များ သတ်မှတ်ခြင်း — optional INIT နှင့် မဖြစ်မနေ LEXIZE functions ပါဝင်ပြီး — superuser သာ အသုံးပြုနိုင်သော command"
-order: 266
+order: 526
 source: "https://www.postgresql.org/docs/current/sql-createtstemplate.html"
 status: translated
 updated: 2026-09-04

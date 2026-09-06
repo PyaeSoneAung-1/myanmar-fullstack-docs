@@ -1,7 +1,7 @@
 ---
 title: "CREATE OPERATOR FAMILY (operator family အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Operator family အသစ်တစ်ခုကို ဖန်တီး (define) ပေးသည့် command — operator family သည် ဆက်စပ်နေသော operator classes များနှင့် cross-data-type operators/support functions များ စုစည်းရာ နေရာ ဖြစ်ခြင်း — USING index_method ဖြင့် ရည်ရွယ်ထားသော index method အတွက် ဖန်တီးရခြင်း၊ လောလောဆယ် superusers များသာ ဖန်တီးနိုင်ခြင်း"
-order: 293
+order: 553
 source: "https://www.postgresql.org/docs/current/sql-createopfamily.html"
 status: translated
 updated: 2026-09-04

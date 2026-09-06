@@ -1,7 +1,7 @@
 ---
 title: "CREATE CONVERSION (encoding conversion အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "Character set encodings (စာလုံးအစု ကုဒ်ပြောင်းစနစ်များ) နှစ်ခုကြားမှာ conversion အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးတဲ့ command — DEFAULT အမှတ်အသားပါသော conversion ကို client-server အလိုအလျောက် encoding conversion အတွက် သုံးနိုင်ခြင်း၊ function ၏ EXECUTE privilege နှင့် destination schema ၏ CREATE privilege လိုအပ်ခြင်း၊ SQL_ASCII encoding အတွက် conversion သတ်မှတ်၍ မရခြင်း အကြောင်း ဖော်ပြထားသည်"
-order: 248
+order: 508
 source: "https://www.postgresql.org/docs/current/sql-createconversion.html"
 status: translated
 updated: 2026-09-04

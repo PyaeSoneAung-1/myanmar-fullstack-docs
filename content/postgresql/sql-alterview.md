@@ -1,7 +1,7 @@
 ---
 title: "ALTER VIEW (view တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "view တစ်ခုရဲ့ အရန် (auxiliary) ဂုဏ်သတ္တိများကို ပြောင်းလဲပေးတဲ့ command — column default သတ်မှတ်/ဖယ်ရှားခြင်း (SET/DROP DEFAULT)၊ owner ပြောင်းခြင်း၊ column/view နာမည်ပြောင်းခြင်း (RENAME)၊ schema ပြောင်းခြင်း (SET SCHEMA) နဲ့ view options (check_option, security_barrier, security_invoker) သတ်မှတ်/ပြန်သတ်ခြင်း (SET/RESET)"
-order: 146
+order: 406
 source: "https://www.postgresql.org/docs/current/sql-alterview.html"
 status: translated
 updated: 2026-09-04

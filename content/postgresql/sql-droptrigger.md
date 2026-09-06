@@ -1,7 +1,7 @@
 ---
 title: "DROP TRIGGER (trigger တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Trigger တစ်ခုရဲ့ definition ကို ဖယ်ရှားပေးသော command — IF EXISTS option နှင့် CASCADE/RESTRICT အပြုအမူများ အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 229
+order: 489
 source: "https://www.postgresql.org/docs/current/sql-droptrigger.html"
 status: translated
 updated: 2026-09-04

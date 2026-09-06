@@ -1,7 +1,7 @@
 ---
 title: "CREATE TYPE (data type အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Data type အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — composite, enum, range, base နှင့် shell type ပုံစံ ငါးမျိုး၊ input/output, receive/send, analyze, subscript စသည့် support functions များ၊ internallength, alignment, storage, ELEMENT, collatable စသည့် parameters များနှင့် user-defined type များအတွက် array types အလိုအလျောက် ဖန်တီးပေးမှုအကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 233
+order: 493
 source: "https://www.postgresql.org/docs/current/sql-createtype.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER TEXT SEARCH DICTIONARY (text search dictionary တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Text search dictionary တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးတဲ့ command — template-သီးသန့် options များ သတ်မှတ်ခြင်း/ပြောင်းလဲခြင်း (option [ = value ] — value ချန်လိုက်ပါက ယခင် သတ်မှတ်ချက် ဖယ်ရှားခံရခြင်း)၊ RENAME TO/OWNER TO/SET SCHEMA တို့ဖြင့် နာမည်/ပိုင်ရှင်/schema ပြောင်းလဲခြင်း — configuration files များ ပြောင်းလဲပြီးနောက် sessions များကို ပြန်လည်ဖတ်စေရန် dummy update ပြုလုပ်နိုင်ပုံ အပါအဝင် — dictionary ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 261
+order: 521
 source: "https://www.postgresql.org/docs/current/sql-altertsdictionary.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "SET SESSION AUTHORIZATION (session ရဲ့ user/role ကို သတ်မှတ်ခြင်း)"
 description: "လက်ရှိ SQL session ရဲ့ session user identifier နဲ့ current user identifier ကို သတ်မှတ်ပေးတဲ့ command — SESSION/LOCAL modifiers များ၊ DEFAULT/RESET ပုံစံများ၊ ပြောင်းလဲနိုင်ရန် superuser privilege လိုအပ်ချက်တို့အကြောင်း"
-order: 171
+order: 431
 source: "https://www.postgresql.org/docs/current/sql-set-session-authorization.html"
 status: translated
 updated: 2026-09-04

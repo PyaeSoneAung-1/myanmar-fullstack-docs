@@ -1,7 +1,7 @@
 ---
 title: "SELECT (table သို့မဟုတ် view တစ်ခုမှ rows များ ပြန်လည် ရယူခြင်း)"
 description: "Table သို့မဟုတ် view တစ်ခုမှ rows များ ပြန်လည် ရယူပေးသော SELECT command (TABLE နှင့် WITH အပါအဝင်) — WITH clause (RECURSIVE, SEARCH, CYCLE)၊ FROM items (joins, TABLESAMPLE, LATERAL, ROWS FROM)၊ WHERE၊ GROUP BY (GROUPING SETS, ROLLUP, CUBE)၊ HAVING၊ WINDOW၊ SELECT list၊ DISTINCT ON၊ UNION/INTERSECT/EXCEPT၊ ORDER BY၊ LIMIT/OFFSET/FETCH၊ FOR UPDATE/SHARE locking clauses တို့၏ အသေးစိတ် ရှင်းလင်းချက်၊ ဥပမာများနှင့် SQL standard နှင့် လိုက်ဖက်ညီမှု အကြောင်း ဖော်ပြချက်များ ပါဝင်သည်"
-order: 215
+order: 475
 source: "https://www.postgresql.org/docs/current/sql-select.html"
 status: translated
 updated: 2026-09-04

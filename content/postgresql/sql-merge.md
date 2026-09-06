@@ -1,7 +1,7 @@
 ---
 title: "MERGE (rows များကို ထည့်သွင်း/ပြောင်းလဲ/ဖျက်ရန် တစ်ပြိုင်နက် လုပ်ဆောင်ခြင်း)"
 description: "Data source တစ်ခုကို အခြေခံပြီး target table ထဲက rows များကို insert/update/delete — တစ်ပြိုင်နက် လုပ်ဆောင်နိုင်သည့် MERGE command အကြောင်း — syntax နှင့် parameters (WHEN MATCHED, WHEN NOT MATCHED [BY SOURCE/TARGET], RETURNING စသည်)၊ trigger အပြုအမူ မှတ်စုများ နှင့် ဥပမာများ"
-order: 156
+order: 416
 source: "https://www.postgresql.org/docs/current/sql-merge.html"
 status: translated
 updated: 2026-09-04

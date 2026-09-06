@@ -1,7 +1,7 @@
 ---
 title: "ALTER GROUP (role နာမည် သို့မဟုတ် membership ပြောင်းလဲခြင်း)"
 description: "User group (role) တစ်ခု၏ အဖွဲ့ဝင်စာရင်းနှင့် နာမည်ကို ပြောင်းလဲခြင်း — ADD USER/DROP USER/RENAME TO ပုံစံများ ပါဝင်ပြီး — groups (နှင့် users) များကို roles အယူအဆဖြင့် အစားထိုးလိုက်သောကြောင့် obsolete ဖြစ်သော်လည်း backwards compatibility အတွက် လက်ခံထားဆဲ command"
-order: 285
+order: 545
 source: "https://www.postgresql.org/docs/current/sql-altergroup.html"
 status: translated
 updated: 2026-09-04

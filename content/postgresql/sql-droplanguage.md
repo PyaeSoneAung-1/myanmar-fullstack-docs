@@ -1,7 +1,7 @@
 ---
 title: "DROP LANGUAGE (procedural language တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "အရင် register လုပ်ထားပြီးသား procedural language တစ်ခုရဲ့ definition ကို ဖယ်ရှားခြင်း — IF EXISTS, CASCADE/RESTRICT option များ ပါဝင်ပြီး — superuser သို့မဟုတ် language ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 255
+order: 515
 source: "https://www.postgresql.org/docs/current/sql-droplanguage.html"
 status: translated
 updated: 2026-09-04

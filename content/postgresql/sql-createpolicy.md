@@ -1,7 +1,7 @@
 ---
 title: "CREATE POLICY (table တစ်ခုပေါ်မှာ row-level security policy အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Table တစ်ခုပေါ်တွင် row-level security policy (row အဆင့် လုံခြုံရေး မူဝါဒ) အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — FOR ဖြင့် သက်ရောက်မည့် command အမျိုးအစား (ALL/SELECT/INSERT/UPDATE/DELETE) ကို၎င်း၊ TO ဖြင့် သက်ရောက်မည့် roles များကို၎င်း ရွေးချယ်နိုင်ပြီး ရှိပြီးသား rows များကို USING expression ဖြင့်၎င်း၊ insert/update ပြုလုပ်မည့် row အသစ်များကို WITH CHECK expression ဖြင့်၎င်း စစ်ဆေးသည်; command အလိုက် policy များ သီးခြား သတ်မှတ်နိုင်ပြီး PERMISSIVE/RESTRICTIVE policies များကို ပေါင်းစပ် အသုံးပြုနိုင်"
-order: 318
+order: 578
 source: "https://www.postgresql.org/docs/current/sql-createpolicy.html"
 status: translated
 updated: 2026-09-04

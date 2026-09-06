@@ -1,7 +1,7 @@
 ---
 title: "ALTER AGGREGATE (aggregate function တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Aggregate function တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — RENAME TO (နာမည်ပြောင်းခြင်း)၊ OWNER TO (ပိုင်ရှင် ပြောင်းခြင်း) နှင့် SET SCHEMA (schema ပြောင်းခြင်း) ပုံစံများ — ordered-set aggregates များကို ရည်ညွှန်းရာတွင် ORDER BY clause အသုံးပြုပုံ အပါအဝင်"
-order: 287
+order: 547
 source: "https://www.postgresql.org/docs/current/sql-alteraggregate.html"
 status: translated
 updated: 2026-09-04

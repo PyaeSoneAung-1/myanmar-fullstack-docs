@@ -1,7 +1,7 @@
 ---
 title: "ALTER ROUTINE (routine တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Routine (aggregate function, သာမန် function သို့မဟုတ် procedure) တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — ALTER AGGREGATE, ALTER FUNCTION နှင့် ALTER PROCEDURE တို့အတွက် အထွေထွေ (generic) ပုံစံတစ်ခု ဖြစ်ပြီး — routine names များကို aggregate functions တွေကို ရည်ညွှန်းခွင့်ပြုခြင်းသည် PostgreSQL extension တစ်ခု ဖြစ်ကြောင်း ဖော်ပြထားသည်"
-order: 225
+order: 485
 source: "https://www.postgresql.org/docs/current/sql-alterroutine.html"
 status: translated
 updated: 2026-09-04

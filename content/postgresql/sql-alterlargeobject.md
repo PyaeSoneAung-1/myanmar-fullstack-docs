@@ -1,7 +1,7 @@
 ---
 title: "ALTER LARGE OBJECT (large object တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Large object (ကြီးမားသော object) တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း — လက်ရှိတွင် ပိုင်ရှင်အသစ် သတ်မှတ်ခြင်း (OWNER TO) ကိုသာ ထောက်ပံ့ပေးသော command"
-order: 256
+order: 516
 source: "https://www.postgresql.org/docs/current/sql-alterlargeobject.html"
 status: translated
 updated: 2026-09-04

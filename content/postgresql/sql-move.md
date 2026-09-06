@@ -1,7 +1,7 @@
 ---
 title: "MOVE (cursor တစ်ခုကို နေရာချခြင်း)"
 description: "Data များကို ပြန်လည်ရယူခြင်း မပြုဘဲ cursor တစ်ခု၏ အနေအထားကို ပြောင်းရွှေ့ခြင်း — FETCH နှင့် တူညီသော parameters များ (direction ပုံစံများ, count, cursor_name)၊ command tag output (MOVE count) နှင့် ဥပမာများ"
-order: 190
+order: 450
 source: "https://www.postgresql.org/docs/current/sql-move.html"
 status: translated
 updated: 2026-09-04

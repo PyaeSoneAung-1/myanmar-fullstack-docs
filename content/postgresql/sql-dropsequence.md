@@ -1,7 +1,7 @@
 ---
 title: "DROP SEQUENCE (sequence တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Sequence number generator (sequence နံပါတ် ထုတ်လုပ်ပေးသည့် ကိရိယာ) များကို ဖျက်ပစ်သည့် command — IF EXISTS, CASCADE, RESTRICT option များ၏ အလုပ်လုပ်ပုံ၊ ဥပမာများနှင့် SQL standard လိုက်ဖက်ညီမှု"
-order: 150
+order: 410
 source: "https://www.postgresql.org/docs/current/sql-dropsequence.html"
 status: translated
 updated: 2026-09-04

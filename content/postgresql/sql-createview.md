@@ -1,7 +1,7 @@
 ---
 title: "CREATE VIEW (view အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "query တစ်ခုကို view အဖြစ် သတ်မှတ် ဖန်တီးပေးတဲ့ command — CREATE OR REPLACE VIEW၊ TEMPORARY/TEMP နဲ့ RECURSIVE view များ၊ column name list၊ view options (check_option, security_barrier, security_invoker)၊ WITH [CASCADED | LOCAL] CHECK OPTION နဲ့ automatically updatable view အကြောင်း အသေးစိတ်"
-order: 145
+order: 405
 source: "https://www.postgresql.org/docs/current/sql-createview.html"
 status: translated
 updated: 2026-09-04

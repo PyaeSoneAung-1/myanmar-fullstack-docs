@@ -1,7 +1,7 @@
 ---
 title: "ALTER TEXT SEARCH CONFIGURATION (text search configuration တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Text search configuration တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးတဲ့ command — token types များအတွက် dictionary mappings (token type အလိုက် dictionary စာရင်း သတ်မှတ်ချက်များ) ထပ်ဖြည့်ခြင်း/ပြောင်းလဲခြင်း/ဖယ်ရှားခြင်း (ADD/ALTER/DROP MAPPING)၊ REPLACE ဖြင့် dictionary အစားထိုးခြင်း၊ RENAME TO/OWNER TO/SET SCHEMA တို့ဖြင့် နာမည်/ပိုင်ရှင်/schema ပြောင်းလဲခြင်း — configuration ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 258
+order: 518
 source: "https://www.postgresql.org/docs/current/sql-altertsconfig.html"
 status: translated
 updated: 2026-09-04

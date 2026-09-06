@@ -1,7 +1,7 @@
 ---
 title: "DROP PROCEDURE (procedure တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား procedure တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော procedures များ၏ definition ကို ဖယ်ရှားပေးသည့် command — IF EXISTS, argument list ဖြင့် procedure ရှာဖွေပုံ (input arguments များသာ ဖော်ပြခြင်း လုံလောက်ခြင်း၊ argmode မပါသော list များတွင် ambiguity ဖြစ်နိုင်ခြေ)၊ CASCADE/RESTRICT များအပြင် SQL standard ၏ extensions များအကြောင်း ဖော်ပြထားသည်"
-order: 224
+order: 484
 source: "https://www.postgresql.org/docs/current/sql-dropprocedure.html"
 status: translated
 updated: 2026-09-04

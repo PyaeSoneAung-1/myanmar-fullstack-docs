@@ -1,7 +1,7 @@
 ---
 title: "CREATE SERVER (foreign server အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Foreign server အသစ်တစ်ခုကို သတ်မှတ်ပေးသော command — foreign-data wrapper တစ်ခုက ပြင်ပ data resource တစ်ခုကို ဝင်ရောက်ရန် သုံးသော connection အချက်အလက်များကို ဖုံးအုပ်ထားပြီး — IF NOT EXISTS, TYPE, VERSION, OPTIONS clause များဖြင့် သတ်မှတ်နိုင်သော command"
-order: 273
+order: 533
 source: "https://www.postgresql.org/docs/current/sql-createserver.html"
 status: translated
 updated: 2026-09-04

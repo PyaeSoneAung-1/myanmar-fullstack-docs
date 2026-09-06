@@ -1,7 +1,7 @@
 ---
 title: "COMMENT (object တစ်ခုရဲ့ comment ကို သတ်မှတ်ခြင်း သို့မဟုတ် ပြောင်းလဲခြင်း)"
 description: "Database object တစ်ခုရဲ့ comment ကို သိမ်းဆည်းခြင်း/အစားထိုးခြင်း/ဖယ်ရှားခြင်း — object အမျိုးအစားအားလုံးအတွက် COMMENT ON syntax နှင့် parameter အသေးစိတ်များ"
-order: 151
+order: 411
 source: "https://www.postgresql.org/docs/current/sql-comment.html"
 status: translated
 updated: 2026-09-04

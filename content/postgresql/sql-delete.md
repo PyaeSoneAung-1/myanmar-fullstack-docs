@@ -1,7 +1,7 @@
 ---
 title: "DELETE (table ထဲမှ rows များကို ဖယ်ရှားခြင်း)"
 description: "WHERE clause နဲ့ ကိုက်ညီတဲ့ rows တွေကို table တစ်ခုကနေ ဖယ်ရှားပေးတဲ့ DELETE command အကြောင်း — syntax နှင့် parameters (USING, RETURNING, WHERE CURRENT OF စသည်)၊ privilege လိုအပ်ချက်များ၊ မှတ်စုများ နှင့် ဥပမာများ"
-order: 154
+order: 414
 source: "https://www.postgresql.org/docs/current/sql-delete.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "SET TRANSACTION (transaction အတွက် သတ်မှတ်ချက်များ ပြောင်းလဲခြင်း)"
 description: "လက်ရှိ transaction ၏ သတ်မှတ်ချက်များ (transaction isolation level, access mode, deferrable mode) ကို ပြောင်းလဲခြင်း — SET TRANSACTION နှင့် SET SESSION CHARACTERISTICS syntax၊ READ COMMITTED / REPEATABLE READ / SERIALIZABLE isolation levels များ၊ read-only transaction အကန့်အသတ်များနှင့် SET TRANSACTION SNAPSHOT အသုံးပြုပုံ"
-order: 162
+order: 422
 source: "https://www.postgresql.org/docs/current/sql-set-transaction.html"
 status: translated
 updated: 2026-09-04

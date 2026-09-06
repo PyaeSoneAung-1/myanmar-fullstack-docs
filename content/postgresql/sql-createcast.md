@@ -1,7 +1,7 @@
 ---
 title: "CREATE CAST (cast အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Data types နှစ်ခုကြားရှိ conversion (ပြောင်းလဲခြင်း) တစ်ခုကို သတ်မှတ်ပေးသည့် cast အသစ်တစ်ခု ဖန်တီးခြင်း — WITH FUNCTION၊ WITHOUT FUNCTION (binary-coercible types များအတွက်) နှင့် WITH INOUT (I/O conversion cast) ပုံစံ သုံးမျိုး၊ AS ASSIGNMENT / AS IMPLICIT ဖြင့် implicit ခေါ်ယူနိုင်မှု၊ cast implementation function များ၏ arguments များနှင့် လိုအပ်သော ခွင့်ပြုချက်များ အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 313
+order: 573
 source: "https://www.postgresql.org/docs/current/sql-createcast.html"
 status: translated
 updated: 2026-09-04

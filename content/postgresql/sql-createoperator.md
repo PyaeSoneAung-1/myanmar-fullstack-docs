@@ -1,7 +1,7 @@
 ---
 title: "CREATE OPERATOR (operator အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Operator အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးသည့် command — operator ကို အကောင်အထည်ဖော်မည့် function (FUNCTION/PROCEDURE clause)၊ operand data types (LEFTARG/RIGHTARG)၊ COMMUTATOR/NEGATOR (commutator/negator operators)၊ restriction/join selectivity estimator functions (RESTRICT/JOIN) နှင့် hash join/merge join အတွက် ထောက်ပံ့မှု (HASHES/MERGES) စသည့် optimization attributes များ သတ်မှတ်နိုင်ခြင်း"
-order: 316
+order: 576
 source: "https://www.postgresql.org/docs/current/sql-createoperator.html"
 status: translated
 updated: 2026-09-04

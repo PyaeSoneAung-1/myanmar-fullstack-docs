@@ -1,7 +1,7 @@
 ---
 title: "CREATE TABLE (table အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Table အသစ်တစ်ခုကို ဖန်တီးပေးသော command — column definitions များ၊ constraints (NOT NULL, CHECK, DEFAULT, UNIQUE, PRIMARY KEY, EXCLUDE, REFERENCES) များ၊ typed tables (OF)၊ INHERITS၊ partitioning (PARTITION BY / PARTITION OF)၊ LIKE clause၊ storage parameters များ၊ temporary/unlogged tables များနှင့် SQL standard လိုက်ဖက်ညီမှုအကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 212
+order: 472
 source: "https://www.postgresql.org/docs/current/sql-createtable.html"
 status: translated
 updated: 2026-09-04

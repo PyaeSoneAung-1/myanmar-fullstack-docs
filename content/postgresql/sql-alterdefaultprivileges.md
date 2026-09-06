@@ -1,7 +1,7 @@
 ---
 title: "ALTER DEFAULT PRIVILEGES (default privileges များကို ပြောင်းလဲခြင်း)"
 description: "အနာဂတ်မှာ ဖန်တီးခံရမယ့် objects တွေအတွက် default access privileges များကို သတ်မှတ် ပြောင်းလဲပေးသည့် command — schemas, tables, sequences, functions, types နှင့် large objects များအတွက် GRANT/REVOKE ပုံစံများ၊ role နှင့် schema အလိုက် scope သတ်မှတ်ပုံများ ပါဝင်သည်"
-order: 210
+order: 470
 source: "https://www.postgresql.org/docs/current/sql-alterdefaultprivileges.html"
 status: translated
 updated: 2026-09-04

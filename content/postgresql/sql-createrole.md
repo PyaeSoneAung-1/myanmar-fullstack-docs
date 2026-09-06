@@ -1,7 +1,7 @@
 ---
 title: "CREATE ROLE (role အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Role အသစ်တစ်ခုကို ဖန်တီးပေးတဲ့ command — attributes (SUPERUSER, CREATEDB, CREATEROLE, LOGIN, REPLICATION, BYPASSRLS, CONNECTION LIMIT, PASSWORD, VALID UNTIL စသည်) နှင့် role membership သတ်မှတ်ခြင်း (IN ROLE, ROLE, ADMIN) အကြောင်း အသေးစိတ်"
-order: 164
+order: 424
 source: "https://www.postgresql.org/docs/current/sql-createrole.html"
 status: translated
 updated: 2026-09-04

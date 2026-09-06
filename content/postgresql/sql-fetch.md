@@ -1,7 +1,7 @@
 ---
 title: "FETCH (cursor ဖြင့် query မှ rows များ ပြန်လည်ရယူခြင်း)"
 description: "Cursor ကို သုံးပြီး query တစ်ခုမှ rows များ ပြန်လည်ရယူခြင်း — FETCH ၏ direction ပုံစံများ အားလုံး (NEXT, PRIOR, FIRST, LAST, ABSOLUTE, RELATIVE, ALL, FORWARD, BACKWARD စသည်)၊ cursor position ၏ အပြုအမူ၊ command tag output (FETCH count) နှင့် cursor သုံးပြီး table တစ်ခုကို ဖြတ်သန်းလည်ပတ်ပုံ ဥပမာ"
-order: 189
+order: 449
 source: "https://www.postgresql.org/docs/current/sql-fetch.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE TRIGGER (trigger အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Trigger အသစ်တစ်ခုကို ဖန်တီးပေးသော သို့မဟုတ် ရှိပြီးသား trigger တစ်ခုကို အစားထိုးပေးသော command — BEFORE, AFTER နှင့် INSTEAD OF trigger အမျိုးအစားများ၊ constraint triggers များ၊ transition relations (OLD TABLE/NEW TABLE) များ၊ WHEN conditions များနှင့် tables/views/foreign tables များပေါ်တွင် trigger အမျိုးအစား သင့်လျော်မှု အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 227
+order: 487
 source: "https://www.postgresql.org/docs/current/sql-createtrigger.html"
 status: translated
 updated: 2026-09-04

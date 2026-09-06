@@ -1,7 +1,7 @@
 ---
 title: "UNLISTEN (notification နားထောင်ခြင်း ရပ်စဲခြင်း)"
 description: "လက်ရှိ PostgreSQL session ၏ NOTIFY events အတွက် listener registration များကို ဖယ်ရှားပေးသည့် command — channel တစ်ခုအတွက် ဖြစ်စေ * wildcard ဖြင့် registration အားလုံးအတွက် ဖြစ်စေ ရပ်စဲနိုင်ပြီး session တိုင်း၏ အဆုံးတွင် UNLISTEN * ကို အလိုအလျောက် လုပ်ဆောင်သည်"
-order: 197
+order: 457
 source: "https://www.postgresql.org/docs/current/sql-unlisten.html"
 status: translated
 updated: 2026-09-04

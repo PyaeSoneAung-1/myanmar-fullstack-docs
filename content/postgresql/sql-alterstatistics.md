@@ -1,7 +1,7 @@
 ---
 title: "ALTER STATISTICS (extended statistics object တစ်ခု၏ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား extended statistics object တစ်ခု၏ parameters များကို ပြောင်းလဲပေးသည့် command — owner ပြောင်းလဲခြင်း, rename လုပ်ခြင်း, schema ပြောင်းလဲခြင်းနှင့် statistics target (0–10000) သတ်မှတ်ခြင်းတို့ ပါဝင်သည် — statistics object ၏ owner ဖြစ်ရန် လိုအပ်ပြီး SQL standard တွင် မပါဝင်ပါ"
-order: 300
+order: 560
 source: "https://www.postgresql.org/docs/current/sql-alterstatistics.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DECLARE (cursor တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Cursor များကို သတ်မှတ်ခြင်း (declare လုပ်ခြင်း) — ကြီးမားသော query တစ်ခုမှ rows အနည်းငယ်စီ အချိန်အလိုက် ပြန်လည်ရယူနိုင်ရန် cursor ဖန်တီးပေးသော DECLARE ၏ syntax နှင့် parameters များ (BINARY, ASENSITIVE/INSENSITIVE, SCROLL/NO SCROLL, WITH HOLD/WITHOUT HOLD)၊ binary cursor များအကြောင်း မှတ်စုများ၊ FOR UPDATE နှင့် WHERE CURRENT OF အသုံးပြုမှုဆိုင်ရာ သတိထားရန် အချက်များနှင့် ဥပမာများ"
-order: 188
+order: 448
 source: "https://www.postgresql.org/docs/current/sql-declare.html"
 status: translated
 updated: 2026-09-04

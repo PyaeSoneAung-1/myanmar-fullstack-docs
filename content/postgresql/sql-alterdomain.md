@@ -1,7 +1,7 @@
 ---
 title: "ALTER DOMAIN (domain တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား domain တစ်ခု၏ သတ်မှတ်ချက် (definition) ကို ပြောင်းလဲပေးသည့် command — default value သတ်မှတ်/ဖယ်ရှားခြင်း၊ NOT NULL သတ်မှတ်/ဖယ်ရှားခြင်း၊ constraint ထပ်ပေါင်းခြင်း (NOT VALID အပါအဝင်) နှင့် ဖျက်ခြင်း၊ constraint နာမည် ပြောင်းခြင်း၊ VALIDATE CONSTRAINT၊ owner/နာမည်/schema ပြောင်းခြင်း စသည့် ပုံစံကွဲများ ပါဝင်သည်"
-order: 237
+order: 497
 source: "https://www.postgresql.org/docs/current/sql-alterdomain.html"
 status: translated
 updated: 2026-09-04

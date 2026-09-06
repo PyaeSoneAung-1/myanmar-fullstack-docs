@@ -1,7 +1,7 @@
 ---
 title: "DROP POLICY (table တစ်ခုမှ row-level security policy တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Table တစ်ခုမှ သတ်မှတ်ထားသော row-level security policy (row အဆင့် လုံခြုံရေး မူဝါဒ) ကို ဖယ်ရှားပေးသည့် command — နောက်ဆုံး policy ကို ဖယ်ရှားပြီးနောက် table တွင် row-level security enable ဖြစ်နေသေးလျှင် default-deny policy ကို အသုံးပြုခြင်းအကြောင်း ပါဝင်သည်; PostgreSQL extension တစ်ခုဖြစ်သည်"
-order: 298
+order: 558
 source: "https://www.postgresql.org/docs/current/sql-droppolicy.html"
 status: translated
 updated: 2026-09-04

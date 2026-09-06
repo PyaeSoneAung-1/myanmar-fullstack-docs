@@ -1,7 +1,7 @@
 ---
 title: "DROP FOREIGN DATA WRAPPER (foreign-data wrapper တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Foreign-data wrapper တစ်ခုကို ဖယ်ရှားပေးသော command — IF EXISTS option ဖြင့် foreign-data wrapper မရှိပါက error မပစ်ဘဲ ရှောင်ကွင်းနိုင်ပြီး — CASCADE ဖြင့် မှီခိုနေသော objects များကိုပါ အလိုအလျောက် ဖယ်ရှားနိုင်သော command"
-order: 271
+order: 531
 source: "https://www.postgresql.org/docs/current/sql-dropforeigndatawrapper.html"
 status: translated
 updated: 2026-09-04

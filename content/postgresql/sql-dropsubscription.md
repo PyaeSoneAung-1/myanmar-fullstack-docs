@@ -1,7 +1,7 @@
 ---
 title: "DROP SUBSCRIPTION (subscription တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database cluster မှ subscription (စာရင်းသွင်းမှု) တစ်ခုကို ဖယ်ရှားပေးသည့် command — subscription ၏ owner ဖြစ်ရန် လိုအပ်ပြီး replication slot နှင့် ဆက်စပ်နေသော subscription ကို transaction block အတွင်းမှ မဖျက်နိုင်ခြင်း၊ remote replication slot drop လုပ်ရာတွင် ပျက်ကွက်မှု အခြေအနေများနှင့် ဖြေရှင်းနည်း — PostgreSQL extension တစ်ခုဖြစ်သည်"
-order: 302
+order: 562
 source: "https://www.postgresql.org/docs/current/sql-dropsubscription.html"
 status: translated
 updated: 2026-09-04

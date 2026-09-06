@@ -1,7 +1,7 @@
 ---
 title: "COMMIT PREPARED (two-phase commit အတွက် ကြိုပြင်ဆင်ထားသော transaction တစ်ခုကို commit လုပ်ခြင်း)"
 description: "Two-phase commit အတွက် အရင်က ပြင်ဆင်ထားသော transaction တစ်ခုကို commit လုပ်ပေးသည့် command — prepared state ရှိ transaction ကို commit လုပ်ခြင်း၊ လိုအပ်သော အခွင့်အရေးများ၊ transaction block အပြင်မှ ထုတ်ပေးရမည့် ကန့်သတ်ချက်၊ pg_prepared_xacts system view အကြောင်း"
-order: 240
+order: 500
 source: "https://www.postgresql.org/docs/current/sql-commit-prepared.html"
 status: translated
 updated: 2026-09-04

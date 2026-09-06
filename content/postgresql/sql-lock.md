@@ -1,7 +1,7 @@
 ---
 title: "LOCK (table တစ်ခုကို lock လုပ်ခြင်း)"
 description: "Table တစ်ခုကို table-level lock ပြုလုပ်ခြင်း — LOCK TABLE ၏ syntax နှင့် parameters (lock modes, NOWAIT)၊ lock mode ရွေးချယ်ပုံ၊ deadlock ရှောင်ရှားနည်း၊ လိုအပ်သော privilege များနှင့် ဥပမာများ"
-order: 163
+order: 423
 source: "https://www.postgresql.org/docs/current/sql-lock.html"
 status: translated
 updated: 2026-09-04

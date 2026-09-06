@@ -1,7 +1,7 @@
 ---
 title: "DROP STATISTICS (extended statistics object များကို ဖယ်ရှားခြင်း)"
 description: "Database မှ statistics object (ကိန်းဂဏန်း အချက်အလက် object) များကို ဖယ်ရှားပေးသည့် command — statistics object ၏ owner, schema ၏ owner သို့မဟုတ် superuser ဖြစ်မှသာ drop လုပ်နိုင်ပြီး IF EXISTS option ပါဝင်သည်; SQL standard တွင် မပါဝင်ပါ"
-order: 301
+order: 561
 source: "https://www.postgresql.org/docs/current/sql-dropstatistics.html"
 status: translated
 updated: 2026-09-04

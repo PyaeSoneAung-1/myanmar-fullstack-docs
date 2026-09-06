@@ -1,7 +1,7 @@
 ---
 title: "CREATE OPERATOR CLASS (operator class အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Index method တစ်ခုအတွက် operator class အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးသည့် command — data type တစ်ခုကို index တစ်ခုနဲ့ ဘယ်လို သုံးနိုင်မလဲဆိုတာ သတ်မှတ်ပေးပြီး OPERATOR (strategy number အလိုက်)၊ FUNCTION (support number အလိုက်) နှင့် STORAGE entries များ ပါဝင်ခြင်း — DEFAULT (data type အတွက် default operator class အဖြစ် သတ်မှတ်ခြင်း)၊ FOR SEARCH/FOR ORDER BY နှင့် FAMILY (operator family အတွင်းသို့ ထည့်သွင်းခြင်း) options များလည်း ပါဝင်ခြင်း"
-order: 317
+order: 577
 source: "https://www.postgresql.org/docs/current/sql-createopclass.html"
 status: translated
 updated: 2026-09-04

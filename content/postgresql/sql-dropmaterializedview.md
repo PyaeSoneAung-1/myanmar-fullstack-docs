@@ -1,7 +1,7 @@
 ---
 title: "DROP MATERIALIZED VIEW (materialized view တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Materialized view တစ်ခုကို ဖယ်ရှား (drop) ပေးတဲ့ command — IF EXISTS option နဲ့ materialized view ပေါ်မှာ မှီခိုနေတဲ့ (dependent) objects များကို ကိုင်တွယ်သည့် CASCADE နှင့် RESTRICT အပြုအမူများ — command ကို execute လုပ်ရန် materialized view ၏ ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သည်"
-order: 205
+order: 465
 source: "https://www.postgresql.org/docs/current/sql-dropmaterializedview.html"
 status: translated
 updated: 2026-09-04

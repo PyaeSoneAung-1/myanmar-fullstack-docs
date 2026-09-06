@@ -1,7 +1,7 @@
 ---
 title: "ALTER TABLESPACE (tablespace တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "Tablespace တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း — RENAME TO ၊ OWNER TO ၊ SET နှင့် RESET ပုံစံများ ၊ name ၊ new_name ၊ new_owner ၊ tablespace_option parameter များအကြောင်း"
-order: 281
+order: 541
 source: "https://www.postgresql.org/docs/current/sql-altertablespace.html"
 status: translated
 updated: 2026-09-04

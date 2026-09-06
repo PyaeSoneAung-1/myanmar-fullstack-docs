@@ -1,7 +1,7 @@
 ---
 title: "DROP EXTENSION (extension တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database ထဲကနေ extension များကို ဖယ်ရှားခြင်း — extension ၏ member objects များနှင့် ၎င်းပေါ် မှီခိုနေသော object များကိုပါ drop လုပ်ပေးခြင်း — CASCADE/RESTRICT option များပါဝင်ပြီး — extension ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 252
+order: 512
 source: "https://www.postgresql.org/docs/current/sql-dropextension.html"
 status: translated
 updated: 2026-09-04

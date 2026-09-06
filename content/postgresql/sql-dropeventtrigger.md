@@ -1,7 +1,7 @@
 ---
 title: "DROP EVENT TRIGGER (event trigger တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား event trigger တစ်ခုကို ဖယ်ရှားပေးသော command — IF EXISTS option ၏ အပြုအမူ နှင့် CASCADE/RESTRICT ဆိုင်ရာ မှီခို objects များ ကိုင်တွယ်ပုံ အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 232
+order: 492
 source: "https://www.postgresql.org/docs/current/sql-dropeventtrigger.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "PREPARE (statement တစ်ခုကို ပြင်ဆင်ခြင်း)"
 description: "Prepared statement (ကြိုတင် ပြင်ဆင်ထားသော statement) တစ်ခုကို ဖန်တီးရန် သုံးသော command — $1, $2 ဖြင့် parameters ရည်ညွှန်းပုံ၊ data type သတ်မှတ်ပုံ၊ session သက်တမ်းအတွင်းသာ တည်ရှိခြင်းနှင့် DEALLOCATE ဖြင့် ရှင်းလင်းခြင်း၊ generic plan နှင့် custom plan ရွေးချယ်မှု ယန္တရားတို့ အပြင် ဥပမာများ ပါဝင်သည်"
-order: 192
+order: 452
 source: "https://www.postgresql.org/docs/current/sql-prepare.html"
 status: translated
 updated: 2026-09-04

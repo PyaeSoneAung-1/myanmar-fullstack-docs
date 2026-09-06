@@ -1,7 +1,7 @@
 ---
 title: "EXPLAIN (query တစ်ခု၏ execution plan ကို ပြသခြင်း)"
 description: "EXPLAIN command က — SELECT, INSERT, UPDATE, DELETE, MERGE စသည့် statement (query) တစ်ခုအတွက် PostgreSQL planner က ထုတ်ပေးသော execution plan ကို ပြသပေးသည် — ANALYZE, VERBOSE, COSTS, SETTINGS, GENERIC_PLAN, BUFFERS, SERIALIZE, WAL, TIMING, SUMMARY, MEMORY, FORMAT စသော options များ၏ အသေးစိတ် ရှင်းလင်းချက်၊ output formats များနှင့် ဥပမာများ ပါဝင်သည်"
-order: 182
+order: 442
 source: "https://www.postgresql.org/docs/current/sql-explain.html"
 status: translated
 updated: 2026-09-04

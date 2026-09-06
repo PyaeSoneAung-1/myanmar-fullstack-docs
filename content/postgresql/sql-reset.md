@@ -1,7 +1,7 @@
 ---
 title: "RESET (run-time parameter များကို default တန်ဖိုးသို့ ပြန်လည်သတ်မှတ်ခြင်း)"
 description: "Run-time parameter တစ်ခုကို ၎င်း၏ default တန်ဖိုးဆီသို့ ပြန်လည်သတ်မှတ်ပေးသည့် command — SET configuration_parameter TO DEFAULT ၏ အခြားရေးသားနည်းတစ်မျိုး ဖြစ်ပြီး default တန်ဖိုး၏ ဖြစ်နိုင်သော အရင်းအမြစ်များနှင့် RESET ၏ transactional အပြုအမူကို ရှင်းပြထားသည်"
-order: 184
+order: 444
 source: "https://www.postgresql.org/docs/current/sql-reset.html"
 status: translated
 updated: 2026-09-04

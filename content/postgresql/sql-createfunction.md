@@ -1,7 +1,7 @@
 ---
 title: "CREATE FUNCTION (function အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Function အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးတဲ့ သို့မဟုတ် ရှိပြီးသား function တစ်ခုရဲ့ definition ကို CREATE OR REPLACE ဖြင့် အစားထိုးပေးတဲ့ command — argmode (IN/OUT/INOUT/VARIADIC), argname, argtype, default_expr, RETURNS/RETURNS TABLE, lang_name, TRANSFORM, WINDOW, IMMUTABLE/STABLE/VOLATILE, LEAKPROOF, CALLED ON NULL INPUT/RETURNS NULL ON NULL INPUT/STRICT, SECURITY INVOKER/DEFINER, PARALLEL, COST, ROWS, SUPPORT, SET clause, AS definition, AS obj_file/link_symbol နှင့် sql_body (RETURN expression / BEGIN ATOMIC block) စသည့် attributes များအပြင် — overloading၊ SECURITY DEFINER functions များကို လုံခြုံစွာ ရေးသားခြင်းနှင့် SQL standard နဲ့ လိုက်ဖက်ညီမှု အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 219
+order: 479
 source: "https://www.postgresql.org/docs/current/sql-createfunction.html"
 status: translated
 updated: 2026-09-04

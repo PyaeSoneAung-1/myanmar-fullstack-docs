@@ -1,7 +1,7 @@
 ---
 title: "END (transaction တစ်ခုကို အောင်မြင်စွာ အဆုံးသတ်ခြင်း)"
 description: "လက်ရှိ transaction ကို commit လုပ်ပြီး — transaction က လုပ်လိုက်တဲ့ ပြောင်းလဲမှုတွေ အားလုံးကို တခြားသူတွေ မြင်နိုင်ပြီး durable ဖြစ်စေတဲ့ command — SQL standard မှာ သတ်မှတ်ထားတဲ့ COMMIT နဲ့ ညီမျှတဲ့ PostgreSQL extension — WORK/TRANSACTION နဲ့ AND [NO] CHAIN options အကြောင်း"
-order: 207
+order: 467
 source: "https://www.postgresql.org/docs/current/sql-end.html"
 status: translated
 updated: 2026-09-04

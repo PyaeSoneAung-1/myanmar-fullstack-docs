@@ -1,7 +1,7 @@
 ---
 title: "DROP OPERATOR FAMILY (operator family တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား operator family တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option၊ family အတွင်းရှိ operator classes များ တစ်ပါတည်း ဖယ်ရှားခံရခြင်း သို့သော် family က ရည်ညွှန်းထားသော operators/functions များ မပါဝင်ခြင်း၊ indexes များ မှီခိုနေပါက CASCADE လိုအပ်ချက်"
-order: 294
+order: 554
 source: "https://www.postgresql.org/docs/current/sql-dropopfamily.html"
 status: translated
 updated: 2026-09-04

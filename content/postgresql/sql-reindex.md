@@ -1,7 +1,7 @@
 ---
 title: "REINDEX (index များကို ပြန်လည်တည်ဆောက်ခြင်း)"
 description: "Index တစ်ခုကို index ၏ table ထဲတွင် သိမ်းဆည်းထားသော data များကို သုံးပြီး ပြန်လည်တည်ဆောက်ပေးသော REINDEX command — INDEX/TABLE/SCHEMA/DATABASE/SYSTEM ပုံစံများ၊ CONCURRENTLY ဖြင့် တစ်ပြိုင်နက် ပြန်လည်တည်ဆောက်ခြင်း လုပ်ငန်းစဉ်နှင့် အဆင့်များ၊ TABLESPACE နှင့် VERBOSE option များအကြောင်း ရှင်းလင်းချက်"
-order: 179
+order: 439
 source: "https://www.postgresql.org/docs/current/sql-reindex.html"
 status: translated
 updated: 2026-09-04

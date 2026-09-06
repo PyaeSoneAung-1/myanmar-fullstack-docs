@@ -1,7 +1,7 @@
 ---
 title: "DISCARD (session state များကို ရှင်းလင်းဖယ်ရှားခြင်း)"
 description: "Database session တစ်ခုနှင့် ဆက်စပ်နေသော internal resources များကို လွှတ်ပေးပြီး session state ကို တစ်စိတ်တစ်ပိုင်း သို့မဟုတ် အပြည့်အဝ ပြန်လည်သတ်မှတ်ပေးသည့် command — DISCARD ALL, PLANS, SEQUENCES, TEMPORARY/TEMP subcommands များ ပါဝင်ပြီး DISCARD ALL ကို transaction block အတွင်း execute လုပ်၍ မရပါ"
-order: 186
+order: 446
 source: "https://www.postgresql.org/docs/current/sql-discard.html"
 status: translated
 updated: 2026-09-04

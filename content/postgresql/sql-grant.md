@@ -1,7 +1,7 @@
 ---
 title: "GRANT (privileges များ ပေးအပ်ခြင်း)"
 description: "Database objects (table, column, view, sequence, database, function, schema, type စသည်) များပေါ်က privileges များကို roles များဆီ ပေးအပ်ခြင်းနှင့် role membership ပေးအပ်ခြင်း — object type အလိုက် GRANT syntax များ၊ WITH GRANT OPTION, GRANTED BY, ADMIN/INHERIT/SET option များအကြောင်း ရှင်းလင်းချက်"
-order: 172
+order: 432
 source: "https://www.postgresql.org/docs/current/sql-grant.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE TEXT SEARCH CONFIGURATION (text search configuration အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "Text search configuration အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးတဲ့ command — text ကို tokens (စာသား အပိုင်းအစများ) အဖြစ် ပိုင်းခြားပေးမယ့် parser တစ်ခုကိုဖြစ်စေ၊ ရှိပြီးသား configuration တစ်ခုကို COPY ဖြင့် ကူးယူ၍ဖြစ်စေ သတ်မှတ်နိုင်ခြင်း — PARSER နှင့် COPY option များ အပြန်အလှန် သီးသန့် ဖြစ်ခြင်း၊ configuration ကို define လုပ်သူ user က owner ဖြစ်လာခြင်း အကြောင်း ဖော်ပြထားသည်"
-order: 257
+order: 517
 source: "https://www.postgresql.org/docs/current/sql-createtsconfig.html"
 status: translated
 updated: 2026-09-04

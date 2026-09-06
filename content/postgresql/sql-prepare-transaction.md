@@ -1,7 +1,7 @@
 ---
 title: "PREPARE TRANSACTION (two-phase commit အတွက် လက်ရှိ transaction ကို ပြင်ဆင်ခြင်း)"
 description: "လက်ရှိ transaction ကို two-phase commit အတွက် ပြင်ဆင်ပေးသည့် command — transaction ၏ state ကို disk ပေါ်တွင် အပြည့်အဝ သိမ်းဆည်းပြီး session နှင့် ခွဲထုတ်ခြင်း၊ COMMIT PREPARED / ROLLBACK PREPARED ဖြင့် နောက်ပိုင်း ပြီးစီးစေခြင်း၊ transaction block လိုအပ်ချက်နှင့် ကန့်သတ်ချက်များ၊ external transaction manager အတွက် ရည်ရွယ်ထားသော PostgreSQL extension အကြောင်း"
-order: 239
+order: 499
 source: "https://www.postgresql.org/docs/current/sql-prepare-transaction.html"
 status: translated
 updated: 2026-09-04

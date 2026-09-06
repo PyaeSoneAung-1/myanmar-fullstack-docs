@@ -1,7 +1,7 @@
 ---
 title: "DROP COLLATION (collation တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "အရင် define လုပ်ထားပြီးသား collation တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS, CASCADE/RESTRICT option များ ပါဝင်ပြီး — collation ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 247
+order: 507
 source: "https://www.postgresql.org/docs/current/sql-dropcollation.html"
 status: translated
 updated: 2026-09-04

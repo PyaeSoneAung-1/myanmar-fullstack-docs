@@ -1,7 +1,7 @@
 ---
 title: "DROP PUBLICATION (publication တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database ထဲက တည်ရှိပြီးသား publication (ထုတ်ပြန်ချက်) တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option ပါဝင်ပြီး publication ၏ owner သို့မဟုတ် superuser ဖြစ်မှသာ drop လုပ်နိုင်သည်; PostgreSQL extension တစ်ခုဖြစ်သည်"
-order: 299
+order: 559
 source: "https://www.postgresql.org/docs/current/sql-droppublication.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "REASSIGN OWNED (role ပိုင်ဆိုင်သည့် objects များကို အခြား role သို့ လွှဲပြောင်းခြင်း)"
 description: "Role တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုတဲ့ roles တွေ ပိုင်ဆိုင်တဲ့ database objects တွေရဲ့ ပိုင်ဆိုင်မှု (ownership) ကို အခြား role တစ်ခုဆီ ပြောင်းလဲပေးတဲ့ command — objects တွေကို ဖျက်စရာ မလိုဘဲ role အသစ်တစ်ခုဆီ လွှဲပြောင်းလိုတဲ့အခါ သုံးပြီး source role(s) နှင့် target role နှစ်ခုလုံးပေါ်တွင် membership လိုအပ်သည်"
-order: 175
+order: 435
 source: "https://www.postgresql.org/docs/current/sql-reassign-owned.html"
 status: translated
 updated: 2026-09-04

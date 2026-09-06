@@ -1,7 +1,7 @@
 ---
 title: "IMPORT FOREIGN SCHEMA (foreign server မှ table definitions များကို တင်သွင်းခြင်း)"
 description: "Foreign server တစ်ခုပေါ်တွင် ရှိသော tables များကို ကိုယ်စားပြုသည့် foreign tables များ ဖန်တီးပေးသော command — LIMIT TO ဖြင့် subset ကိုသာ တင်သွင်းနိုင်ပြီး EXCEPT ဖြင့် သတ်မှတ်ထားသော tables များကို ချန်လှပ်နိုင်ကာ — OPTIONS clause ဖြင့် import options များ သတ်မှတ်နိုင်သော command"
-order: 272
+order: 532
 source: "https://www.postgresql.org/docs/current/sql-importforeignschema.html"
 status: translated
 updated: 2026-09-04

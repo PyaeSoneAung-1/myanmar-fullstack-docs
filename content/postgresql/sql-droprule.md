@@ -1,7 +1,7 @@
 ---
 title: "DROP RULE (rewrite rule တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Rewrite rule (query ပြန်ရေးသားမှု စည်းမျဉ်း) တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS, CASCADE/RESTRICT options များ ပါဝင်ပြီး query rewrite system တစ်ခုလုံးကဲ့သို့ PostgreSQL language extension တစ်ခုဖြစ်သည်"
-order: 296
+order: 556
 source: "https://www.postgresql.org/docs/current/sql-droprule.html"
 status: translated
 updated: 2026-09-04

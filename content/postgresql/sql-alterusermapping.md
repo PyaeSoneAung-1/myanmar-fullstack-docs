@@ -1,7 +1,7 @@
 ---
 title: "ALTER USER MAPPING (user mapping တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "User mapping တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း — OPTIONS clause အတွင်း ADD ၊ SET ၊ DROP လုပ်ဆောင်ချက်များနှင့် user_name ၊ server_name parameter များအကြောင်း — SQL/MED နှင့် ကိုက်ညီမှုနှင့် FOR key word ဆိုင်ရာ syntax ကွာခြားချက် ပါဝင်သည်"
-order: 277
+order: 537
 source: "https://www.postgresql.org/docs/current/sql-alterusermapping.html"
 status: translated
 updated: 2026-09-04

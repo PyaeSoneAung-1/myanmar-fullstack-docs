@@ -1,7 +1,7 @@
 ---
 title: "CREATE STATISTICS (extended statistics အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Extended statistics object အသစ်တစ်ခုကို ဖန်တီးပေးသော command — table, foreign table သို့မဟုတ် materialized view တစ်ခုရှိ column(s)/expression(s) များအတွက် ndistinct, dependencies (functional dependency) နှင့် mcv (most-common values list) ကဲ့သို့သော statistics kinds များကို စုဆောင်းပေးသည်; expression တစ်ခုတည်းအတွက် univariate statistics ပုံစံနှင့် columns/expressions အများအပြားအတွက် multivariate statistics ပုံစံ နှစ်မျိုးလုံးကို ထောက်ပံ့သည်"
-order: 321
+order: 581
 source: "https://www.postgresql.org/docs/current/sql-createstatistics.html"
 status: translated
 updated: 2026-09-04

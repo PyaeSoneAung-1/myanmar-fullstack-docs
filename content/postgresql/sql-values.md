@@ -1,7 +1,7 @@
 ---
 title: "VALUES (rows အစုတစ်ခု တွက်ချက်ခြင်း)"
 description: "Value expressions များဖြင့် row value သို့မဟုတ် row values အစုတစ်ခုကို တွက်ချက်ပေးသော command — ORDER BY, LIMIT, OFFSET, FETCH clauses အသေးစိတ်နှင့် INSERT, FROM clause စသည့် context များတွင် VALUES သုံးစွဲပုံ ဥပမာများ"
-order: 218
+order: 478
 source: "https://www.postgresql.org/docs/current/sql-values.html"
 status: translated
 updated: 2026-09-04

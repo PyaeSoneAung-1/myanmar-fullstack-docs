@@ -1,7 +1,7 @@
 ---
 title: "ALTER OPERATOR FAMILY (operator family တစ်ခုထဲက operator နဲ့ support function တွေကို ထည့်ခြင်း/ဖယ်ခြင်း)"
 description: "Operator family တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — family ထဲသို့ operators နဲ့ support functions များ ထည့်သွင်းခြင်း (ADD OPERATOR/FUNCTION) နှင့် ဖယ်ရှားခြင်း (DROP OPERATOR/FUNCTION) — strategy/support numbers နှင့် operand data types များဖြင့် သတ်မှတ်ရခြင်း၊ RENAME TO/OWNER TO/SET SCHEMA ပုံစံများလည်း ပါဝင်ခြင်း၊ superuser ဖြစ်ရန် လိုအပ်ခြင်း"
-order: 309
+order: 569
 source: "https://www.postgresql.org/docs/current/sql-alteropfamily.html"
 status: translated
 updated: 2026-09-04

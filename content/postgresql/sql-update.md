@@ -1,7 +1,7 @@
 ---
 title: "UPDATE (table ထဲရှိ rows များ၏ တန်ဖိုးများကို ပြောင်းလဲခြင်း)"
 description: "Table ထဲရှိ rows များ၏ တန်ဖိုးများကို ပြောင်းလဲပေးတဲ့ command — SET, FROM, WHERE, WHERE CURRENT OF နှင့် RETURNING clause များအသေးစိတ်၊ partitioned table များတွင် row ရွှေ့ပြောင်းခြင်း"
-order: 153
+order: 413
 source: "https://www.postgresql.org/docs/current/sql-update.html"
 status: translated
 updated: 2026-09-04

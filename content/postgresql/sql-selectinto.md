@@ -1,7 +1,7 @@
 ---
 title: "SELECT INTO (query ၏ ရလဒ်များမှ table အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Query တစ်ခု၏ ရလဒ်များဖြင့် table အသစ်တစ်ခုကို ဖန်တီး ဖြည့်သွင်းပေးသော command — TEMPORARY/TEMP, UNLOGGED option များနှင့် new_table parameter အကြောင်း၊ CREATE TABLE AS နှင့် နှိုင်းယှဉ်ချက်၊ ECPG/PL/pgSQL တွင် SELECT INTO ၏ အသုံးပြုပုံ လိုက်ဖက်ညီမှု ဆွေးနွေးချက်"
-order: 216
+order: 476
 source: "https://www.postgresql.org/docs/current/sql-selectinto.html"
 status: translated
 updated: 2026-09-04

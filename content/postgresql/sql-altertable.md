@@ -1,7 +1,7 @@
 ---
 title: "ALTER TABLE (table တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား table တစ်ခုရဲ့ definition (သတ်မှတ်ချက်) ကို ပြောင်းလဲပေးတဲ့ ALTER TABLE command — column ပေါင်းထည့်ခြင်း/ဖျက်ခြင်း/type ပြောင်းခြင်း၊ default နှင့် NOT NULL သတ်မှတ်ခြင်း၊ generated/identity column စီမံခန့်ခွဲမှု၊ constraints ပေါင်းထည့်ခြင်း/ဖျက်ခြင်း/validate ပြုလုပ်ခြင်း၊ triggers နှင့် rules များ enable/disable လုပ်ခြင်း၊ RENAME, SET SCHEMA, SET TABLESPACE, SET ACCESS METHOD, ATTACH/DETACH PARTITION, INHERIT, OWNER TO, REPLICA IDENTITY အပါအဝင် လုပ်ဆောင်ချက် ပုံစံခွဲများအားလုံး၏ အသေးစိတ် ရှင်းလင်းချက်"
-order: 213
+order: 473
 source: "https://www.postgresql.org/docs/current/sql-altertable.html"
 status: translated
 updated: 2026-09-04

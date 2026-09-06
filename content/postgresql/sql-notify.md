@@ -1,7 +1,7 @@
 ---
 title: "NOTIFY (notification တစ်ခု ပို့ပေးခြင်း)"
 description: "LISTEN channel ကို လုပ်ဆောင်ထားပြီးသား client application များဆီသို့ optional payload string နှင့်အတူ notification event တစ်ခု ပို့ပေးသည့် command — interprocess communication အတွက် အသုံးပြုမှု၊ SQL transactions နှင့် အပြန်အလှန် သက်ရောက်မှု (deferred delivery)၊ duplicate notifications စည်းမျဉ်းများ၊ pg_notify function နှင့် notification queue အကြောင်း ပါဝင်သည်"
-order: 196
+order: 456
 source: "https://www.postgresql.org/docs/current/sql-notify.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE SUBSCRIPTION (subscription အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Publisher server (ထုတ်ဝေသူ server) တစ်ခုပေါ်ရှိ publication တစ်ခုကို စာရင်းသွင်းမည့် subscription (စာရင်းသွင်းမှု) အသစ်တစ်ခုကို ဖန်တီးပေးသည့် command — CONNECTION နှင့် PUBLICATION clause များ၊ WITH ဖြင့် create_slot, slot_name, enabled, two_phase, streaming, copy_data အပါအဝင် subscription parameters များ သတ်မှတ်ခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 322
+order: 582
 source: "https://www.postgresql.org/docs/current/sql-createsubscription.html"
 status: translated
 updated: 2026-09-04

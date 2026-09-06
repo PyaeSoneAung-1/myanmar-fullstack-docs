@@ -1,7 +1,7 @@
 ---
 title: "CREATE AGGREGATE (aggregate function အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Aggregate function အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးသော command ဖြစ်ပြီး — ordinary, ordered-set နှင့် hypothetical-set aggregate ပုံစံ သုံးမျိုးလုံးကို ထောက်ပံ့ပေးသည်။ State transition function (SFUNC/STYPE), final function (FINALFUNC), combine function (COMBINEFUNC) ကဲ့သို့သော parameters များဖြင့် moving-aggregate mode နှင့် partial (parallel) aggregation တို့ကိုလည်း ပံ့ပိုးနိုင်ပြီး — OR REPLACE option နှင့် BASETYPE သုံးသော syntax အဟောင်းလည်း ပါဝင်သည်"
-order: 312
+order: 572
 source: "https://www.postgresql.org/docs/current/sql-createaggregate.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER CONVERSION (conversion တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Conversion တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးတဲ့ command — RENAME TO ဖြင့် နာမည်ပြောင်းလဲခြင်း၊ OWNER TO ဖြင့် ပိုင်ရှင်ပြောင်းလဲခြင်း (owner အသစ်ဆီသို့ SET ROLE လုပ်နိုင်ပြီး ၎င်း၏ schema တွင် CREATE privilege ရှိရန် လိုအပ်ခြင်း၊ superuser အတွက် ခြွင်းချက်) နှင့် SET SCHEMA ဖြင့် schema ပြောင်းလဲခြင်း — conversion ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 249
+order: 509
 source: "https://www.postgresql.org/docs/current/sql-alterconversion.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP TEXT SEARCH CONFIGURATION (text search configuration တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား text search configuration တစ်ခုကို ဖယ်ရှား (drop) ပေးတဲ့ command — IF EXISTS option၊ CASCADE (မှီခို objects များပါ အလိုအလျောက် ဖယ်ရှားခြင်း) နှင့် RESTRICT (default) အပြုအမူများ၊ to_tsvector calls များထဲမှာ configuration ကို ရည်ညွှန်းနေသော index များ ရှိနေပါက drop မအောင်မြင်နိုင်ပုံ အကြောင်း — configuration ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 259
+order: 519
 source: "https://www.postgresql.org/docs/current/sql-droptsconfig.html"
 status: translated
 updated: 2026-09-04

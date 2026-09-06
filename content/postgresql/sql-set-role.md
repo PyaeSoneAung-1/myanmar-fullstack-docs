@@ -1,7 +1,7 @@
 ---
 title: "SET ROLE (session အတွင်း role ပြောင်းလဲခြင်း)"
 description: "လက်ရှိ session ၏ user identifier (current user) ကို ပြောင်းလဲခြင်း — SET [SESSION|LOCAL] ROLE role_name, SET ROLE NONE နှင့် RESET ROLE ပုံစံများ၊ role ရွေးချယ်ရန် SET option လိုအပ်ချက်၊ privileges များ ထပ်တိုး/ကန့်သတ်ရန် အသုံးပြုပုံနှင့် SET SESSION AUTHORIZATION နှင့် ကွာခြားချက်များ"
-order: 170
+order: 430
 source: "https://www.postgresql.org/docs/current/sql-set-role.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER SYSTEM (server configuration parameter တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Database cluster တစ်ခုလုံးအတွက် server configuration parameters များကို ပြောင်းလဲပေးသည့် command — postgresql.auto.conf file ထဲသို့ ရေးသားပြီး configuration reload သို့မဟုတ် server restart ပြီးနောက် အကျိုးသက်ရောက်သည် — superuser သို့မဟုတ် ALTER SYSTEM privilege ရရှိထားသူများသာ သုံးနိုင်ပြီး transaction block သို့မဟုတ် function အတွင်းတွင် ခွင့်မပြုပါ"
-order: 303
+order: 563
 source: "https://www.postgresql.org/docs/current/sql-altersystem.html"
 status: translated
 updated: 2026-09-04

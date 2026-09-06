@@ -1,7 +1,7 @@
 ---
 title: "DROP OPERATOR CLASS (operator class တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား operator class တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option၊ USING index_method ဖြင့် operator class ရည်ညွှန်းပုံ၊ class ကို မှီခိုနေသော indexes များအတွက် CASCADE လိုအပ်ချက်နှင့် operator family အပေါ် သက်ရောက်မှု မရှိခြင်း"
-order: 292
+order: 552
 source: "https://www.postgresql.org/docs/current/sql-dropopclass.html"
 status: translated
 updated: 2026-09-04

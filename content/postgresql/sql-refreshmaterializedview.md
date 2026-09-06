@@ -1,7 +1,7 @@
 ---
 title: "REFRESH MATERIALIZED VIEW (materialized view တစ်ခုကို ပြန်လည် ဖြည့်တင်ခြင်း)"
 description: "Materialized view တစ်ခုရဲ့ အကြောင်းအရာတွေကို လုံးလုံး အစားထိုး ပြန်လည် ဖြည့်တင်ပေးတဲ့ command — CONCURRENTLY option (တစ်ပြိုင်နက် selects များကို lock မပိတ်ဘဲ refresh လုပ်ခြင်း၊ UNIQUE index လိုအပ်ချက်နှင့် ကန့်သတ်ချက်များ) နှင့် WITH [NO] DATA ပုံစံများအကြောင်း အသေးစိတ် — MAINTAIN privilege လိုအပ်ပြီး ORDER BY အစီအစဉ် ထိန်းသိမ်းမပေးနိုင်ခြင်း စသည့် မှတ်စုများလည်း ပါဝင်သည်"
-order: 202
+order: 462
 source: "https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "SECURITY LABEL (လုံခြုံရေး label တစ်ခုကို သတ်မှတ်ခြင်း သို့မဟုတ် ပြောင်းလဲခြင်း)"
 description: "Database object တစ်ခုပေါ်မှာ သက်ရောက်စေမည့် security label တစ်ခုကို သတ်မှတ်ခြင်း/ပြောင်းလဲခြင်း/ဖယ်ရှားခြင်း — label provider (ဥပမာ SELinux ကဲ့သို့ MAC စနစ်များ) များနှင့် object အမျိုးအစားအားလုံးအတွက် SECURITY LABEL syntax နှင့် parameter အသေးစိတ်များ"
-order: 211
+order: 471
 source: "https://www.postgresql.org/docs/current/sql-security-label.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP DOMAIN (domain တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Domain တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option နှင့် dependent objects (ဥပမာ — table columns) များအတွက် CASCADE/RESTRICT အပြုအမူများ၊ ဥပမာများနှင့် SQL standard လိုက်ဖက်ညီမှု ပါဝင်သည်"
-order: 238
+order: 498
 source: "https://www.postgresql.org/docs/current/sql-dropdomain.html"
 status: translated
 updated: 2026-09-04

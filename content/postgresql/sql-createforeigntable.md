@@ -1,7 +1,7 @@
 ---
 title: "CREATE FOREIGN TABLE (foreign table အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Foreign server တစ်ခုကို အသုံးပြုပြီး foreign table အသစ်တစ်ခုကို ဖန်တီးပေးသည့် command — column definitions များနှင့် column/table constraints (NOT NULL, NULL, CHECK, DEFAULT, GENERATED ALWAYS AS) များ၊ INHERITS နှင့် LIKE (INCLUDING/EXCLUDING options) clauses များ၊ SERVER နှင့် OPTIONS သတ်မှတ်ချက်များ ပါဝင်ပြီး — PARTITION OF ဖြင့် partitioned table ၏ partition တစ်ခုအနေနဲ့လည်း ဖန်တီးနိုင်သည်"
-order: 315
+order: 575
 source: "https://www.postgresql.org/docs/current/sql-createforeigntable.html"
 status: translated
 updated: 2026-09-04

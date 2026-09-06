@@ -1,7 +1,7 @@
 ---
 title: "ALTER EVENT TRIGGER (event trigger တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Event trigger တစ်ခုရဲ့ properties များကို ပြောင်းလဲပေးသော command — trigger ကို disable/enable လုပ်ခြင်း (ENABLE REPLICA/ALWAYS ပုံစံများ အပါအဝင်)၊ owner ပြောင်းလဲခြင်း (OWNER TO) နှင့် နာမည်ပြောင်းလဲခြင်း (RENAME TO) — event trigger တစ်ခုကို ပြောင်းလဲရန် superuser ဖြစ်ရန် လိုအပ်ကြောင်း ဖော်ပြထားသည်"
-order: 231
+order: 491
 source: "https://www.postgresql.org/docs/current/sql-altereventtrigger.html"
 status: translated
 updated: 2026-09-04

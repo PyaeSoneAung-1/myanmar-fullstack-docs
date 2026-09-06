@@ -1,7 +1,7 @@
 ---
 title: "ALTER TEXT SEARCH TEMPLATE (text search template တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "Text search template တစ်ခု၏ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း — RENAME TO ဖြင့် template နာမည် ပြောင်းလဲခြင်းနှင့် SET SCHEMA ဖြင့် schema ပြောင်းရွှေ့ခြင်း — superuser သာ အသုံးပြုနိုင်သော command"
-order: 267
+order: 527
 source: "https://www.postgresql.org/docs/current/sql-altertstemplate.html"
 status: translated
 updated: 2026-09-04

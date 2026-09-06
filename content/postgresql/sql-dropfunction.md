@@ -1,7 +1,7 @@
 ---
 title: "DROP FUNCTION (function တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား function တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော functions များ၏ definition ကို ဖယ်ရှားပေးသည့် command — IF EXISTS option၊ argument list ဖြင့် function ရှာဖွေပုံ (input arguments များသာ ဖော်ပြခြင်း လုံလောက်ခြင်း)၊ CASCADE/RESTRICT အပြုအမူများအပြင် SQL standard ၏ extensions များအကြောင်း ဖော်ပြထားသည်"
-order: 221
+order: 481
 source: "https://www.postgresql.org/docs/current/sql-dropfunction.html"
 status: translated
 updated: 2026-09-04

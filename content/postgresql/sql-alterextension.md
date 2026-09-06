@@ -1,7 +1,7 @@
 ---
 title: "ALTER EXTENSION (extension တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Install လုပ်ထားပြီးသား extension တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း — version အသစ်သို့ update (UPDATE)၊ schema ရွှေ့ပြောင်း (SET SCHEMA)၊ member object များ ပေါင်းထည့်ခြင်း/ဖယ်ရှားခြင်း (ADD/DROP member_object) စသည့် subforms များ — extension ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 251
+order: 511
 source: "https://www.postgresql.org/docs/current/sql-alterextension.html"
 status: translated
 updated: 2026-09-04

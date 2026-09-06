@@ -1,7 +1,7 @@
 ---
 title: "CREATE RULE (rewrite rule အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Table သို့မဟုတ် view တစ်ခုပေါ်တွင် သက်ရောက်မည့် rewrite rule (query ပြန်ရေးသားမှု စည်းမျဉ်း) အသစ်တစ်ခုကို သတ်မှတ်ပေးသော command — CREATE OR REPLACE RULE၊ ON event (SELECT/INSERT/UPDATE/DELETE) TO table_name၊ WHERE condition၊ DO ALSO/INSTEAD (NOTHING / command / commands အစုံ)၊ NEW/OLD အသုံးပြုမှုနှင့် view များပေါ်တွင် rule များ အသုံးချခြင်း အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 320
+order: 580
 source: "https://www.postgresql.org/docs/current/sql-createrule.html"
 status: translated
 updated: 2026-09-04

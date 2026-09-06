@@ -1,7 +1,7 @@
 ---
 title: "CHECKPOINT (checkpoint တစ်ခုကို အတင်းအကျပ် ပြုလုပ်ခြင်း)"
 description: "Write-ahead log checkpoint တစ်ခုကို ချက်ချင်း အတင်းအကျပ် ပြုလုပ်ပေးတဲ့ command — system က ပုံမှန် စီစဉ်ထားတဲ့ checkpoint ကို မစောင့်ဘဲ data files တွေ အားလုံးကို disk ပေါ် flush လုပ်ပေးပြီး — recovery ကာလအတွင်းမှာ restartpoint တစ်ခုကို အတင်းအကျပ် ပြုလုပ်ပေးတယ် — pg_checkpoint role ၏ privileges ရှိသူများသာ call လုပ်နိုင်သော command"
-order: 201
+order: 461
 source: "https://www.postgresql.org/docs/current/sql-checkpoint.html"
 status: translated
 updated: 2026-09-04

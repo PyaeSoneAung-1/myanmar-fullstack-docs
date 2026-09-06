@@ -1,7 +1,7 @@
 ---
 title: "ALTER PROCEDURE (procedure တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Procedure တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — RENAME TO, OWNER TO, SET SCHEMA, DEPENDS ON EXTENSION (NO အပါအဝင်), SECURITY INVOKER/DEFINER နှင့် configuration parameters (SET/RESET/RESET ALL/SET FROM CURRENT) ပြောင်းလဲခြင်း ပုံစံများ ပါဝင်ပြီး — procedure ကို ပိုင်ဆိုင်ရန် လိုအပ်ချက်များနှင့် SQL standard နှင့် တစ်စိတ်တစ်ပိုင်း လိုက်ဖက်ညီမှုအကြောင်း ဖော်ပြထားသည်"
-order: 223
+order: 483
 source: "https://www.postgresql.org/docs/current/sql-alterprocedure.html"
 status: translated
 updated: 2026-09-04

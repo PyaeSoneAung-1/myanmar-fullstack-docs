@@ -1,7 +1,7 @@
 ---
 title: "DROP CAST (cast တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ယခင် သတ်မှတ်ထားသော cast တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS option ၊ source_type နှင့် target_type parameter များ ၊ CASCADE/RESTRICT ၏ အကျိုးသက်ရောက်မှု မရှိခြင်း အကြောင်း — SQL standard နှင့် ကိုက်ညီသော command"
-order: 283
+order: 543
 source: "https://www.postgresql.org/docs/current/sql-dropcast.html"
 status: translated
 updated: 2026-09-04

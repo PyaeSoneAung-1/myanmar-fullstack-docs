@@ -1,7 +1,7 @@
 ---
 title: "ALTER TRIGGER (trigger တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Trigger တစ်ခုရဲ့ properties များကို ပြောင်းလဲပေးသော command — RENAME clause ဖြင့် trigger နာမည် ပြောင်းလဲခြင်း နှင့် DEPENDS ON EXTENSION clause ဖြင့် extension တစ်ခုအပေါ် မှီခိုမှု သတ်မှတ်ခြင်း/ဖယ်ရှားခြင်း အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 228
+order: 488
 source: "https://www.postgresql.org/docs/current/sql-altertrigger.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP INDEX (index တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Index တစ်ခုကို database system မှ ဖယ်ရှားပေးသည့် command — CONCURRENTLY, IF EXISTS, CASCADE/RESTRICT options များ ပါဝင်ပြီး index ၏ owner ဖြစ်မှသာ execute လုပ်နိုင်သည်; SQL standard တွင် index အတွက် ပြဋ္ဌာန်းချက်များ မပါဝင်ပါ"
-order: 178
+order: 438
 source: "https://www.postgresql.org/docs/current/sql-dropindex.html"
 status: translated
 updated: 2026-09-04

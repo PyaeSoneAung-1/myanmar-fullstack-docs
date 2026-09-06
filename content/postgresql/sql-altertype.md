@@ -1,7 +1,7 @@
 ---
 title: "ALTER TYPE (type တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား type တစ်ခု၏ သတ်မှတ်ချက် (definition) ကို ပြောင်းလဲပေးသည့် command — owner/နာမည်/schema ပြောင်းခြင်း၊ composite type များ၏ attribute ထပ်ပေါင်း/ဖျက်/ပြောင်းခြင်း၊ enum type ၏ တန်ဖိုးများ ထပ်ပေါင်းခြင်း (ADD VALUE) နှင့် နာမည်ပြောင်းခြင်း (RENAME VALUE)၊ base type ၏ property (RECEIVE, SEND, TYPMOD_IN, TYPMOD_OUT, ANALYZE, SUBSCRIPT, STORAGE) များ ပြောင်းလဲခြင်း စသည့် ပုံစံကွဲများ ပါဝင်သည်"
-order: 234
+order: 494
 source: "https://www.postgresql.org/docs/current/sql-altertype.html"
 status: translated
 updated: 2026-09-04

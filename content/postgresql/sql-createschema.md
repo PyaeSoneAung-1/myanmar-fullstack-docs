@@ -1,7 +1,7 @@
 ---
 title: "CREATE SCHEMA (schema အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Schema အသစ်တစ်ခုကို လက်ရှိ database ထဲ ဖန်တီးခြင်း — AUTHORIZATION နှင့် IF NOT EXISTS option များ၊ schema အတွင်း object များ ဖန်တီးရန် subcommands များ"
-order: 143
+order: 403
 source: "https://www.postgresql.org/docs/current/sql-createschema.html"
 status: translated
 updated: 2026-09-04

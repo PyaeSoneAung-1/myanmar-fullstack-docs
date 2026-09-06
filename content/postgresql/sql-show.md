@@ -1,7 +1,7 @@
 ---
 title: "SHOW (run-time parameter တစ်ခု၏ တန်ဖိုးကို ပြသခြင်း)"
 description: "Run-time parameter တစ်ခု၏ လက်ရှိ setting တန်ဖိုးကို ပြသပေးသည့် command — SHOW name နှင့် SHOW ALL ပုံစံများ ပါဝင်ပြီး SERVER_VERSION, SERVER_ENCODING, IS_SUPERUSER ကဲ့သို့ ပြသနိုင်သော်လည်း သတ်မှတ်၍ မရသည့် parameters များကိုလည်း ဖော်ပြထားသည်"
-order: 185
+order: 445
 source: "https://www.postgresql.org/docs/current/sql-show.html"
 status: translated
 updated: 2026-09-04

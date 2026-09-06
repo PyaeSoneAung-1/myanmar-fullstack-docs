@@ -1,7 +1,7 @@
 ---
 title: "CREATE TRANSFORM (transform အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Data type တစ်ခုကို procedural language တစ်ခုနှင့် လိုက်လျောညီထွေ ဖြစ်အောင် ပြောင်းလဲပေးသော transform အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — OR REPLACE ဖြင့် အစားထိုးခြင်း၊ from SQL / to SQL function နှစ်ခု၏ အခန်းကဏ္ဍ၊ လိုအပ်သော privileges များအကြောင်း"
-order: 306
+order: 566
 source: "https://www.postgresql.org/docs/current/sql-createtransform.html"
 status: translated
 updated: 2026-09-04

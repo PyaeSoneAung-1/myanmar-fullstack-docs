@@ -1,7 +1,7 @@
 ---
 title: "START TRANSACTION (transaction block စတင်ခြင်း)"
 description: "Transaction block အသစ်တစ်ခုကို စတင်ပေးတဲ့ command — BEGIN ရဲ့ SQL-standard ညီမျှပုံစံဖြစ်ပြီး — ISOLATION LEVEL, READ WRITE/READ ONLY, DEFERRABLE စတဲ့ transaction modes တွေကို တစ်ပြိုင်နက် သတ်မှတ်လို့ ရပါတယ် — SQL standard ရဲ့ autocommit အပြုအမူနဲ့ DEFERRABLE extension အကြောင်း"
-order: 206
+order: 466
 source: "https://www.postgresql.org/docs/current/sql-start-transaction.html"
 status: translated
 updated: 2026-09-04

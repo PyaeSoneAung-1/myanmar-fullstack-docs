@@ -1,7 +1,7 @@
 ---
 title: "DROP CONVERSION (conversion တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "အရင် သတ်မှတ်ခဲ့ဖူးတဲ့ conversion တစ်ခုကို ဖယ်ရှားပေးတဲ့ command — IF EXISTS option၊ CASCADE/RESTRICT key words များက conversions များပေါ်တွင် မှီခိုမှု မရှိသောကြောင့် အကျိုးသက်ရောက်မှု မရှိခြင်း — conversion ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 250
+order: 510
 source: "https://www.postgresql.org/docs/current/sql-dropconversion.html"
 status: translated
 updated: 2026-09-04

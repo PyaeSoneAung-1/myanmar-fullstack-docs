@@ -1,7 +1,7 @@
 ---
 title: "DROP GROUP (database role တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Group (database role) တစ်ခုကို ဖယ်ရှားခြင်း — DROP GROUP သည် DROP ROLE ၏ alias ဖြစ်ပြီး IF EXISTS option ဖြင့် role မရှိပါက error မထုတ်ဘဲ role များစွာကို တစ်ပြိုင်နက် ဖယ်ရှားနိုင်သည်"
-order: 286
+order: 546
 source: "https://www.postgresql.org/docs/current/sql-dropgroup.html"
 status: translated
 updated: 2026-09-04

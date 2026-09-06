@@ -1,7 +1,7 @@
 ---
 title: "ALTER USER (user တစ်ခုရဲ့ သတ်မှတ်ချက်များ ပြောင်းလဲခြင်း)"
 description: "User (database role) တစ်ခုရဲ့ သတ်မှတ်ချက်များ ပြောင်းလဲခြင်း — ALTER USER သည် ALTER ROLE ၏ alias ဖြစ်ပြီး PASSWORD, SUPERUSER/CREATEDB စသည့် attribute များ၊ RENAME ဖြင့် နာမည် ပြောင်းလဲခြင်းနှင့် role-level configuration parameters များ SET/RESET ပြုလုပ်ခြင်း တို့ကို ထောက်ပံ့ပေးသည်"
-order: 168
+order: 428
 source: "https://www.postgresql.org/docs/current/sql-alteruser.html"
 status: translated
 updated: 2026-09-04

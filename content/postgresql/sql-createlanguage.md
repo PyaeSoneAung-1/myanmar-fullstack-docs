@@ -1,7 +1,7 @@
 ---
 title: "CREATE LANGUAGE (procedural language အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "PostgreSQL database တစ်ခုနှင့်အတူ procedural language အသစ်တစ်ခုကို register လုပ်ခြင်း — TRUSTED, PROCEDURAL, HANDLER, INLINE, VALIDATOR option များနှင့် CREATE OR REPLACE ပုံစံများ — superuser privilege လိုအပ်သော command"
-order: 253
+order: 513
 source: "https://www.postgresql.org/docs/current/sql-createlanguage.html"
 status: translated
 updated: 2026-09-04

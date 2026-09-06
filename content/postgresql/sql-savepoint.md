@@ -1,7 +1,7 @@
 ---
 title: "SAVEPOINT (transaction အတွင်း ပြန်ဆုတ်နိုင်သော အမှတ် သတ်မှတ်ခြင်း)"
 description: "လက်ရှိ transaction အတွင်းမှာ savepoint အသစ်တစ်ခု သတ်မှတ်ခြင်း — SAVEPOINT ၏ syntax နှင့် parameters၊ ROLLBACK TO / RELEASE SAVEPOINT ဖြင့် savepoint ကို ပြန်ဆုတ်ခြင်းနှင့် ဖျက်သိမ်းခြင်း ဥပမာများ၊ SQL standard လိုက်ဖက်ညီမှုအကြောင်း"
-order: 161
+order: 421
 source: "https://www.postgresql.org/docs/current/sql-savepoint.html"
 status: translated
 updated: 2026-09-04

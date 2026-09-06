@@ -1,7 +1,7 @@
 ---
 title: "ROLLBACK TO SAVEPOINT (savepoint တစ်ခုဆီ ပြန်ဆုတ်ခြင်း)"
 description: "Savepoint တစ်ခုကို ထူထောင်ပြီးနောက်မှာ execute လုပ်ခဲ့သော command များ အားလုံးကို roll back လုပ်ပေးသည့် command — subtransaction အသစ်တစ်ခု စတင်ခြင်း၊ savepoint နောက်ပိုင်း သတ်မှတ်ခဲ့သော savepoints များကို ဖျက်ဆီးခြင်း၊ cursor များပေါ်ရှိ အပြုအမူ၊ SQL standard နှင့် ကွာခြားချက်များအကြောင်း"
-order: 243
+order: 503
 source: "https://www.postgresql.org/docs/current/sql-rollback-to.html"
 status: translated
 updated: 2026-09-04

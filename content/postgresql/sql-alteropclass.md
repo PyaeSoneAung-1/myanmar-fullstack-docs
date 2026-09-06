@@ -1,7 +1,7 @@
 ---
 title: "ALTER OPERATOR CLASS (operator class တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Operator class တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — RENAME TO (နာမည်ပြောင်းခြင်း)၊ OWNER TO (ပိုင်ရှင် ပြောင်းခြင်း) နှင့် SET SCHEMA (schema ပြောင်းခြင်း) ပုံစံများ — operator class ကို သတ်မှတ်ထားသော index method (USING index_method) ဖြင့် ရည်ညွှန်းရခြင်း"
-order: 291
+order: 551
 source: "https://www.postgresql.org/docs/current/sql-alteropclass.html"
 status: translated
 updated: 2026-09-04

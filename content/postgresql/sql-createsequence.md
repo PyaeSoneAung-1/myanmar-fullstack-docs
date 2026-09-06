@@ -1,7 +1,7 @@
 ---
 title: "CREATE SEQUENCE (sequence အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Sequence number generator (auto-increment ဂဏန်းထုတ်ပေးသည့် object) အသစ်တစ်ခုကို ဖန်တီးပေးသည့် command — TEMPORARY/UNLOGGED, AS data_type, INCREMENT, MINVALUE/MAXVALUE, CYCLE, START, CACHE, OWNED BY စသည့် option များနှင့် sequence သုံးစွဲမှုဆိုင်ရာ မှတ်စုများ"
-order: 148
+order: 408
 source: "https://www.postgresql.org/docs/current/sql-createsequence.html"
 status: translated
 updated: 2026-09-04

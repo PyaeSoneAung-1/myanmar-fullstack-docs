@@ -1,7 +1,7 @@
 ---
 title: "LISTEN (notification တစ်ခုအတွက် နားထောင်ခြင်း)"
 description: "လက်ရှိ session ကို notification channel တစ်ခုရဲ့ listener အဖြစ် မှတ်ပုံတင်ပေးတဲ့ command — NOTIFY command ခေါ်လိုက်တိုင်း နားထောင်နေတဲ့ sessions အားလုံးကို အသိပေးခြင်း၊ UNLISTEN ဖြင့် ရပ်စဲနိုင်ခြင်း၊ session ပြီးဆုံးလျှင် registrations များ အလိုအလျောက် ရှင်းလင်းခြင်းနှင့် transaction commit ဆိုင်ရာ စည်းမျဉ်းများ ပါဝင်သည်"
-order: 195
+order: 455
 source: "https://www.postgresql.org/docs/current/sql-listen.html"
 status: translated
 updated: 2026-09-04

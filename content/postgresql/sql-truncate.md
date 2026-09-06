@@ -1,7 +1,7 @@
 ---
 title: "TRUNCATE (table တစ်ခု သို့မဟုတ် အများအပြားကို အမြန် ရှင်းလင်းခြင်း)"
 description: "Table တစ်ခု သို့မဟုတ် အများအပြားထဲက rows အားလုံးကို အမြန် ရှင်းလင်းပေးတဲ့ TRUNCATE command အကြောင်း — syntax နှင့် parameters (RESTART IDENTITY, CONTINUE IDENTITY, CASCADE, RESTRICT စသည်)၊ triggers / MVCC / transaction ဆိုင်ရာ မှတ်စုများ နှင့် ဥပမာများ"
-order: 155
+order: 415
 source: "https://www.postgresql.org/docs/current/sql-truncate.html"
 status: translated
 updated: 2026-09-04

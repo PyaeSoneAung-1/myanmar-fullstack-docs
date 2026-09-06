@@ -1,7 +1,7 @@
 ---
 title: "DO (anonymous code block တစ်ခု လုပ်ဆောင်ခြင်း)"
 description: "Procedural language နဲ့ ရေးသားထားတဲ့ anonymous code block (အမည်မဖော်ပြသော code block) တစ်ခုကို execute လုပ်ပေးတဲ့ command — parameters မရှိတဲ့ function တစ်ခုရဲ့ body လိုမျိုး တစ်ကြိမ်တည်း parse လုပ်ပြီး execute လုပ်ကာ — code block ကို string literal အဖြစ် သတ်မှတ်ပုံ၊ LANGUAGE clause နေရာချမှုနှင့် လိုအပ်သော privileges များအကြောင်း ဖော်ပြထားသည်"
-order: 198
+order: 458
 source: "https://www.postgresql.org/docs/current/sql-do.html"
 status: translated
 updated: 2026-09-04

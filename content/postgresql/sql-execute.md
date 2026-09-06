@@ -1,7 +1,7 @@
 ---
 title: "EXECUTE (prepared statement တစ်ခုကို လုပ်ဆောင်ခြင်း)"
 description: "အရင်က PREPARE ဖြင့် ပြင်ဆင်ထားသော prepared statement တစ်ခုကို execute လုပ်ရန် သုံးသော command — လိုက်ဖက်ညီသော parameters များ ပေးပို့ရန် လိုအပ်ချက်၊ prepared statement နာမည်၏ uniqueness၊ EXECUTE ၏ output မှာ prepared statement ၏ command tag ပြန်ပေးခြင်း စသည်တို့ ပါဝင်သည်"
-order: 193
+order: 453
 source: "https://www.postgresql.org/docs/current/sql-execute.html"
 status: translated
 updated: 2026-09-04

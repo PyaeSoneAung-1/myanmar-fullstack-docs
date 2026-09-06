@@ -1,7 +1,7 @@
 ---
 title: "ALTER OPERATOR (operator တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Operator တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — OWNER TO (ပိုင်ရှင် ပြောင်းခြင်း)၊ SET SCHEMA (schema ပြောင်းခြင်း) နှင့် SET (RESTRICT/JOIN selectivity estimator functions များ၊ COMMUTATOR, NEGATOR, HASHES, MERGES စသည့် optimizer options များ သတ်မှတ်ခြင်း) ပုံစံများ"
-order: 289
+order: 549
 source: "https://www.postgresql.org/docs/current/sql-alteroperator.html"
 status: translated
 updated: 2026-09-04

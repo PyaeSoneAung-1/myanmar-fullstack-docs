@@ -1,7 +1,7 @@
 ---
 title: "CREATE EVENT TRIGGER (event trigger အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Event trigger အသစ်တစ်ခုကို ဖန်တီးပေးသော command — သတ်မှတ်ထားသော database event တစ်ခု ဖြစ်ပေါ်ပြီး WHEN filter condition (လောလောဆယ် TAG ကိုသာ ထောက်ပံ့သည်) ကျေနပ်သည့်အခါ trigger function ကို execute လုပ်ပေးသည် — superusers များသာ ဖန်တီးနိုင်ခြင်း၊ single-user mode နှင့် event_triggers ကို false သတ်မှတ်ထားချိန်တွင် event triggers များ disable ဖြစ်နေခြင်း အကြောင်း ဖော်ပြထားသည်"
-order: 230
+order: 490
 source: "https://www.postgresql.org/docs/current/sql-createeventtrigger.html"
 status: translated
 updated: 2026-09-04

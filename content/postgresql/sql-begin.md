@@ -1,7 +1,7 @@
 ---
 title: "BEGIN (transaction block စတင်ခြင်း)"
 description: "Transaction block တစ်ခုကို စတင်ပေးတဲ့ command — BEGIN နောက်မှာ ပါတဲ့ statement တွေ အားလုံးကို transaction တစ်ခုတည်းထဲမှာ execute လုပ်ပြီး COMMIT/ROLLBACK ပေးတဲ့အထိ ဆက်သွားပါတယ် — transaction_mode (ISOLATION LEVEL, READ WRITE/READ ONLY, DEFERRABLE) နဲ့ START TRANSACTION alias အကြောင်း"
-order: 158
+order: 418
 source: "https://www.postgresql.org/docs/current/sql-begin.html"
 status: translated
 updated: 2026-09-04

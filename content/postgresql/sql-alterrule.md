@@ -1,7 +1,7 @@
 ---
 title: "ALTER RULE (rule တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား rule (query ပြန်ရေးသားမှု စည်းမျဉ်း) တစ်ခု၏ သတ်မှတ်ချက်များကို ပြောင်းလဲပေးသည့် command — လက်ရှိတွင် rule ၏ နာမည်ကို ပြောင်းလဲခြင်းကိုသာ ထောက်ပံ့ပြီး rule သက်ရောက်သည့် table သို့မဟုတ် view ၏ owner ဖြစ်ရန် လိုအပ်သည်; query rewrite system တစ်ခုလုံးကဲ့သို့ PostgreSQL language extension တစ်ခုဖြစ်သည်"
-order: 295
+order: 555
 source: "https://www.postgresql.org/docs/current/sql-alterrule.html"
 status: translated
 updated: 2026-09-04

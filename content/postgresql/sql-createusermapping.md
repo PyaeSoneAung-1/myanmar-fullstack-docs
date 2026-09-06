@@ -1,7 +1,7 @@
 ---
 title: "CREATE USER MAPPING (user mapping အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "Foreign server တစ်ခုနှင့် user တစ်ဦးကို ချိတ်ဆက်ပေးသည့် user mapping အသစ်တစ်ခုကို သတ်မှတ်ခြင်း — IF NOT EXISTS clause ၊ user_name ၊ server_name ၊ OPTIONS clause တို့အကြောင်း — SQL/MED နှင့် ကိုက်ညီသော command"
-order: 276
+order: 536
 source: "https://www.postgresql.org/docs/current/sql-createusermapping.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE COLLATION (collation အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "သတ်မှတ်ထားသော operating system locale settings များကို သုံးပြီး သို့မဟုတ် ရှိပြီးသား collation တစ်ခုကို copy လုပ်ပြီး collation အသစ်တစ်ခုကို define လုပ်ခြင်း — IF NOT EXISTS, LOCALE, PROVIDER, DETERMINISTIC, RULES, VERSION option များ — destination schema ပေါ်တွင် CREATE privilege လိုအပ်သော command"
-order: 245
+order: 505
 source: "https://www.postgresql.org/docs/current/sql-createcollation.html"
 status: translated
 updated: 2026-09-04

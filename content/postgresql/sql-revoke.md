@@ -1,7 +1,7 @@
 ---
 title: "REVOKE (privileges များ ပြန်ရုပ်သိမ်းခြင်း)"
 description: "ပေးအပ်ထားပြီးသား access privileges တွေကို role တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုတဲ့ roles တွေဆီကနေ ပြန်ရုပ်သိမ်းပေးတဲ့ command — GRANT OPTION FOR (grant option ကိုပဲ revoke လုပ်ခြင်း)၊ CASCADE/RESTRICT (dependent privileges များအထိ ဆင့်ပွား revoke လုပ်ခြင်း)၊ PUBLIC နဲ့ role membership revoke ခြင်း စတာတွေ ပါဝင်"
-order: 173
+order: 433
 source: "https://www.postgresql.org/docs/current/sql-revoke.html"
 status: translated
 updated: 2026-09-04

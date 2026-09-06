@@ -1,7 +1,7 @@
 ---
 title: "DROP OPERATOR (operator တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database system မှ ရှိပြီးသား operator တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option၊ left_type/right_type (unary operators များအတွက် NONE အပါအဝင်) ဖြင့် operator ရည်ညွှန်းပုံ၊ CASCADE/RESTRICT အပြုအမူများနှင့် command တစ်ခုတည်းဖြင့် operator အများအပြား ဖယ်ရှားခြင်း"
-order: 290
+order: 550
 source: "https://www.postgresql.org/docs/current/sql-dropoperator.html"
 status: translated
 updated: 2026-09-04

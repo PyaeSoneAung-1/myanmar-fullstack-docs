@@ -1,7 +1,7 @@
 ---
 title: "DROP AGGREGATE (aggregate function တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား aggregate function တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option၊ zero-argument နှင့် ordered-set aggregates များအတွက် aggregate_signature ရေးပုံ (VARIADIC \"any\" အပါအဝင်)၊ CASCADE/RESTRICT အပြုအမူများနှင့် command တစ်ခုတည်းဖြင့် aggregate အများအပြား ဖယ်ရှားခြင်း"
-order: 288
+order: 548
 source: "https://www.postgresql.org/docs/current/sql-dropaggregate.html"
 status: translated
 updated: 2026-09-04

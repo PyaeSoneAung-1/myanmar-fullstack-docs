@@ -1,7 +1,7 @@
 ---
 title: "DROP VIEW (view တစ်ခုကို ဖျက်ခြင်း)"
 description: "view တစ်ခုကို ဖယ်ရှား (drop) ပေးတဲ့ command — IF EXISTS option နဲ့ view ပေါ်မှာ မှီခိုနေတဲ့ (dependent) objects များကို ကိုင်တွယ်သည့် CASCADE နှင့် RESTRICT အပြုအမူများ"
-order: 147
+order: 407
 source: "https://www.postgresql.org/docs/current/sql-dropview.html"
 status: translated
 updated: 2026-09-04

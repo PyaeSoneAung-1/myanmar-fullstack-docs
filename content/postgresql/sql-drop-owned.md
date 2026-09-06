@@ -1,7 +1,7 @@
 ---
 title: "DROP OWNED (role ပိုင်ဆိုင်သည့် database objects များ ဖယ်ရှားခြင်း)"
 description: "Role တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုတဲ့ roles တွေ ပိုင်ဆိုင်တဲ့ current database အတွင်းက database objects တွေ အားလုံးကို ဖယ်ရှားပေးပြီး — အဲဒီ roles တွေဆီ grant လုပ်ထားတဲ့ privileges တွေကိုပါ revoke လုပ်ပေးတဲ့ command — CASCADE/RESTRICT options များ ပါဝင်ပြီး role တစ်ခုကို မဖျက်ခင် ကြိုပြီး သုံးလေ့ ရှိသည်"
-order: 174
+order: 434
 source: "https://www.postgresql.org/docs/current/sql-drop-owned.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DEALLOCATE (prepared statement တစ်ခုကို ဖျက်သိမ်းခြင်း)"
 description: "အရင်က ပြင်ဆင်ထားသော SQL statement (prepared statement) တစ်ခုကို deallocate လုပ်ရန် သုံးသော command — session ပြီးဆုံးချိန်တွင် အလိုအလျောက် deallocate ဖြစ်ခြင်း၊ PREPARE key word ကို လျစ်လျူရှုခြင်း၊ name သို့မဟုတ် ALL ဖြင့် သတ်မှတ်ခြင်း စသည်တို့ ပါဝင်သည်"
-order: 194
+order: 454
 source: "https://www.postgresql.org/docs/current/sql-deallocate.html"
 status: translated
 updated: 2026-09-04

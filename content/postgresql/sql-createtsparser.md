@@ -1,7 +1,7 @@
 ---
 title: "CREATE TEXT SEARCH PARSER (text search parser အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Text search parser (စာသား ရှာဖွေရေး parser) အသစ်တစ်ခုကို ဖန်တီးခြင်း — text string ကို tokens အဖြစ် ပိုင်းခြားပြီး type သတ်မှတ်ပေးမည့် parser အတွက် START, GETTOKEN, END, LEXTYPES (နှင့် optional HEADLINE) functions များ သတ်မှတ်ခြင်း — superuser သာ အသုံးပြုနိုင်သော command"
-order: 263
+order: 523
 source: "https://www.postgresql.org/docs/current/sql-createtsparser.html"
 status: translated
 updated: 2026-09-04

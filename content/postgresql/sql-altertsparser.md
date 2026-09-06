@@ -1,7 +1,7 @@
 ---
 title: "ALTER TEXT SEARCH PARSER (text search parser တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "Text search parser တစ်ခု၏ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း — RENAME TO ဖြင့် parser နာမည် ပြောင်းလဲခြင်းနှင့် SET SCHEMA ဖြင့် schema ပြောင်းရွှေ့ခြင်း — superuser သာ အသုံးပြုနိုင်သော command"
-order: 264
+order: 524
 source: "https://www.postgresql.org/docs/current/sql-altertsparser.html"
 status: translated
 updated: 2026-09-04

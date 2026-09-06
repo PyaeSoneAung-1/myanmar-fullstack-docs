@@ -1,7 +1,7 @@
 ---
 title: "DROP TYPE (data type တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "User-defined data type (အသုံးပြုသူ သတ်မှတ်သည့် data type) တစ်ခုကို ဖယ်ရှားပေးသည့် command — IF EXISTS option နှင့် dependent objects များအတွက် CASCADE/RESTRICT အပြုအမူများ၊ ဥပမာများနှင့် SQL standard လိုက်ဖက်ညီမှု ပါဝင်သည်"
-order: 235
+order: 495
 source: "https://www.postgresql.org/docs/current/sql-droptype.html"
 status: translated
 updated: 2026-09-04

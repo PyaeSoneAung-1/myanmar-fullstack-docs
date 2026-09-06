@@ -1,7 +1,7 @@
 ---
 title: "CREATE MATERIALIZED VIEW (materialized view အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Query တစ်ခုရဲ့ materialized view ကို သတ်မှတ် ဖန်တီးပေးတဲ့ command — IF NOT EXISTS, column name list, USING method, WITH (storage parameters), TABLESPACE, AS query နှင့် WITH [NO] DATA options များအကြောင်း — view ကို ဖန်တီးချိန်မှာ data ဖြည့်တင်းပြီး နောက်ပိုင်းတွင် REFRESH MATERIALIZED VIEW ဖြင့် ပြန်လည် ဖြည့်တင်နိုင်ခြင်း၊ temporary materialized views များကို ထောက်ပံ့မထားခြင်းတို့ ပါဝင်သည်"
-order: 203
+order: 463
 source: "https://www.postgresql.org/docs/current/sql-creatematerializedview.html"
 status: translated
 updated: 2026-09-04

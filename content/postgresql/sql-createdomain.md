@@ -1,7 +1,7 @@
 ---
 title: "CREATE DOMAIN (domain အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Domain အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — underlying data type ပေါ်တွင် optional constraints (NOT NULL, CHECK) များ၊ COLLATE နှင့် DEFAULT expression များ ထည့်သွင်း သတ်မှတ်နိုင်သည်; domain constraints များ၏ စစ်ဆေးပုံနှင့် null တန်ဖိုးများ ကိုင်တွယ်ပုံ အသေးစိတ်"
-order: 236
+order: 496
 source: "https://www.postgresql.org/docs/current/sql-createdomain.html"
 status: translated
 updated: 2026-09-04

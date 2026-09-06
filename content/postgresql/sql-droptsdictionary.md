@@ -1,7 +1,7 @@
 ---
 title: "DROP TEXT SEARCH DICTIONARY (text search dictionary တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား text search dictionary တစ်ခုကို ဖယ်ရှား (drop) ပေးတဲ့ command — IF EXISTS option၊ CASCADE (မှီခို objects များပါ အလိုအလျောက် ဖယ်ရှားခြင်း) နှင့် RESTRICT (default) အပြုအမူများ၊ dictionary ကို အသုံးပြုနေသော text search configurations များ ရှိနေပါက drop မအောင်မြင်နိုင်ပုံ အကြောင်း — dictionary ၏ owner ဖြစ်ရန် လိုအပ်သော command"
-order: 262
+order: 522
 source: "https://www.postgresql.org/docs/current/sql-droptsdictionary.html"
 status: translated
 updated: 2026-09-04

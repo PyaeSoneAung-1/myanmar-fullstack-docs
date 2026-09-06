@@ -1,7 +1,7 @@
 ---
 title: "CLOSE (cursor တစ်ခုကို ပိတ်ခြင်း)"
 description: "Open ဖြစ်နေသော cursor တစ်ခုနှင့် ဆက်စပ်နေသော resources များကို လွှတ်ပေးခြင်း — CLOSE ၏ syntax နှင့် parameters (name, ALL)၊ transaction ကို COMMIT/ROLLBACK ဖြင့် အဆုံးသတ်သည့်အခါ cursor များ အလိုအလျောက် ပိတ်ခြင်း၊ savepoint နှင့် ပတ်သက်သော အပြုအမူနှင့် SQL standard လိုက်ဖက်ညီမှု"
-order: 191
+order: 451
 source: "https://www.postgresql.org/docs/current/sql-close.html"
 status: translated
 updated: 2026-09-04

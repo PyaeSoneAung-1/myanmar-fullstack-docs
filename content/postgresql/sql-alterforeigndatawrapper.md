@@ -1,7 +1,7 @@
 ---
 title: "ALTER FOREIGN DATA WRAPPER (foreign-data wrapper တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Foreign-data wrapper တစ်ခုရဲ့ အဓိပ္ပာယ် သတ်မှတ်ချက် (definition) ကို ပြောင်းလဲပေးသော command — handler function, validator function, generic options များ သို့မဟုတ် owner ကို ပြောင်းလဲနိုင်ပြီး နာမည် ပြန်လည် မှည့်ခေါ်နိုင်သော command — superusers များသာ ပြောင်းလဲနိုင်သော command"
-order: 270
+order: 530
 source: "https://www.postgresql.org/docs/current/sql-alterforeigndatawrapper.html"
 status: translated
 updated: 2026-09-04

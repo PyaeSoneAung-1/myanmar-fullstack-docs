@@ -1,7 +1,7 @@
 ---
 title: "ALTER SEQUENCE (sequence generator တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "တည်ရှိပြီးသား sequence generator တစ်ခုရဲ့ parameters များကို ပြောင်းလဲပေးသည့် command — AS data_type, INCREMENT, MINVALUE/MAXVALUE, CYCLE, START, RESTART, CACHE, OWNED BY, SET LOGGED/UNLOGGED, OWNER TO, RENAME TO, SET SCHEMA ပုံစံများ၊ လိုအပ်ချက်များနှင့် သတိပြုရန် အချက်များ"
-order: 149
+order: 409
 source: "https://www.postgresql.org/docs/current/sql-altersequence.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CALL (procedure တစ်ခုကို ခေါ်ယူခြင်း)"
 description: "Procedure တစ်ခုကို invoke (ခေါ်ယူ) လုပ်ဆောင်ပေးတဲ့ command — procedure မှာ output parameters များ ပါဝင်ပါက သက်ဆိုင်ရာ တန်ဖိုးများ ပါဝင်တဲ့ result row ကို ပြန်ပေးပြီး — argument ပေးပုံ၊ EXECUTE privilege လိုအပ်ချက်၊ transaction control ကန့်သတ်ချက်များနှင့် SQL standard နဲ့ လိုက်ဖက်မှုအကြောင်း ဖော်ပြထားသည်"
-order: 199
+order: 459
 source: "https://www.postgresql.org/docs/current/sql-call.html"
 status: translated
 updated: 2026-09-04

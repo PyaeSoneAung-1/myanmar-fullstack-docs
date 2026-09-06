@@ -1,7 +1,7 @@
 ---
 title: "ABORT (transaction တစ်ခုကို ပယ်ဖျက်ခြင်း)"
 description: "လက်ရှိ transaction ကို roll back လုပ်ပြီး — transaction အတွင်း ပြုလုပ်ခဲ့တဲ့ update တွေ အားလုံးကို ပယ်ဖျက်ပေးတဲ့ command — standard SQL command ဖြစ်တဲ့ ROLLBACK နဲ့ အပြုအမူ အတူတူပဲ ရှိပြီး သမိုင်းကြောင်းဆိုင်ရာ အကြောင်းပြချက်တွေကြောင့် ရှိနေတဲ့ PostgreSQL extension"
-order: 208
+order: 468
 source: "https://www.postgresql.org/docs/current/sql-abort.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER POLICY (row-level security policy တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား row-level security policy (row အဆင့် လုံခြုံရေး မူဝါဒ) တစ်ခု၏ သတ်မှတ်ချက်ကို ပြောင်းလဲပေးသည့် command — policy သက်ရောက်သည့် roles အစုနှင့် USING/WITH CHECK expressions များကိုသာ ပြုပြင်နိုင်ပြီး policy ရှိသည့် table ၏ owner ဖြစ်ရန် လိုအပ်သည်; PostgreSQL extension တစ်ခုဖြစ်သည်"
-order: 297
+order: 557
 source: "https://www.postgresql.org/docs/current/sql-alterpolicy.html"
 status: translated
 updated: 2026-09-04

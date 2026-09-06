@@ -1,7 +1,7 @@
 ---
 title: "CREATE GROUP (database role အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Database role အသစ်တစ်ခု ဖန်တီးခြင်း — CREATE GROUP သည် CREATE ROLE ၏ alias ဖြစ်ပြီး SUPERUSER, CREATEDB, CREATEROLE, LOGIN, REPLICATION, PASSWORD, VALID UNTIL, IN ROLE, ADMIN စသည့် option အပြည့်အစုံကို ထောက်ပံ့ပေးသည်"
-order: 284
+order: 544
 source: "https://www.postgresql.org/docs/current/sql-creategroup.html"
 status: translated
 updated: 2026-09-04

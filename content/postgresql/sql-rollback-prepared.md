@@ -1,7 +1,7 @@
 ---
 title: "ROLLBACK PREPARED (two-phase commit အတွက် ကြိုပြင်ဆင်ထားသော transaction တစ်ခုကို ပယ်ဖျက်ခြင်း)"
 description: "Two-phase commit အတွက် အရင်က ပြင်ဆင်ထားသော transaction တစ်ခုကို roll back လုပ်ပေးသည့် command — prepared state ရှိ transaction ကို ပယ်ဖျက်ခြင်း၊ လိုအပ်သော အခွင့်အရေးများ၊ transaction block အပြင်မှ ထုတ်ပေးရမည့် ကန့်သတ်ချက်၊ pg_prepared_xacts system view အကြောင်း"
-order: 241
+order: 501
 source: "https://www.postgresql.org/docs/current/sql-rollback-prepared.html"
 status: translated
 updated: 2026-09-04

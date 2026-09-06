@@ -1,7 +1,7 @@
 ---
 title: "ALTER FUNCTION (function တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Function တစ်ခုရဲ့ definition ကို ပြောင်းလဲပေးသည့် command — RENAME TO, OWNER TO, SET SCHEMA, DEPENDS ON EXTENSION (NO အပါအဝင်), volatility (IMMUTABLE/STABLE/VOLATILE), LEAKPROOF, PARALLEL, COST, ROWS, SUPPORT, SECURITY INVOKER/DEFINER နှင့် CALLED ON NULL INPUT/STRICT စသည့် function properties များ ပြောင်းလဲခြင်း ပုံစံများအပြင် configuration parameters (SET/RESET/RESET ALL/SET FROM CURRENT) ချိန်ညှိခြင်းအကြောင်း ဖော်ပြထားသည်"
-order: 220
+order: 480
 source: "https://www.postgresql.org/docs/current/sql-alterfunction.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP USER (user တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "User (database role) တစ်ခုကို ဖယ်ရှားခြင်း — DROP USER သည် DROP ROLE ၏ အခြားရေးသားပုံစံ (alternate spelling) ဖြစ်ပြီး IF EXISTS option ဖြင့် role မရှိပါက error မထုတ်ဘဲ role များစွာကို တစ်ပြိုင်နက် ဖယ်ရှားနိုင်သည်"
-order: 169
+order: 429
 source: "https://www.postgresql.org/docs/current/sql-dropuser.html"
 status: translated
 updated: 2026-09-04

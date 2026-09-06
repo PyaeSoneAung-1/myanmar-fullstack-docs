@@ -1,7 +1,7 @@
 ---
 title: "ALTER INDEX (index တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Index တစ်ခုရဲ့ အဓိပ္ပာယ်ဖွင့်ဆိုချက် (definition) ကို ပြောင်းလဲပေးတဲ့ command — RENAME, SET TABLESPACE, ATTACH PARTITION, DEPENDS ON EXTENSION, storage parameters များ သတ်မှတ်/ပြန်လည်သတ်မှတ်ခြင်း နှင့် per-column statistics target သတ်မှတ်ခြင်း အပါအဝင် subforms (ပုံစံကွဲများ) အများအပြား ပါဝင်ပြီး — ALTER TABLE ၏ index များနှင့် သက်ဆိုင်သည့် ပုံစံများအတွက် alias တစ်ခုလည်း ဖြစ်သည်"
-order: 177
+order: 437
 source: "https://www.postgresql.org/docs/current/sql-alterindex.html"
 status: translated
 updated: 2026-09-04

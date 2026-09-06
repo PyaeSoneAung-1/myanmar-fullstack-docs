@@ -1,7 +1,7 @@
 ---
 title: "CREATE TABLE AS (query ၏ ရလဒ်များမှ table အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "SELECT command တစ်ခု၏ ရလဒ်များဖြင့် table အသစ်တစ်ခုကို ဖန်တီး ဖြည့်သွင်းပေးသော command — GLOBAL/LOCAL, TEMPORARY/TEMP, UNLOGGED, IF NOT EXISTS, USING method, WITH storage parameters, ON COMMIT, TABLESPACE, WITH [NO] DATA option များ၏ အသေးစိတ် ရှင်းလင်းချက်နှင့် view နှင့် ကွာခြားချက်"
-order: 217
+order: 477
 source: "https://www.postgresql.org/docs/current/sql-createtableas.html"
 status: translated
 updated: 2026-09-04

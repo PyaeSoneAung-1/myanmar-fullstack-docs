@@ -1,7 +1,7 @@
 ---
 title: "CREATE PROCEDURE (procedure အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Procedure အသစ်တစ်ခုကို သတ်မှတ်ခြင်း သို့မဟုတ် ရှိပြီးသား definition ကို CREATE OR REPLACE ဖြင့် အစားထိုးခြင်း — argument modes (IN/OUT/INOUT/VARIADIC), argument types (%TYPE ရည်ညွှန်းမှု အပါအဝင်), default_expr, lang_name, TRANSFORM, SECURITY INVOKER/DEFINER, SET clause, AS definition နှင့် sql_body (BEGIN ATOMIC block) စသည့် parameters များအကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 222
+order: 482
 source: "https://www.postgresql.org/docs/current/sql-createprocedure.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER SCHEMA (schema တစ်ခုရဲ့ သတ်မှတ်ချက် ပြောင်းလဲခြင်း)"
 description: "Schema တစ်ခု၏ သတ်မှတ်ချက်ကို ပြောင်းလဲပေးသည့် command — schema ကို rename လုပ်ခြင်း သို့မဟုတ် owner ပြောင်းလဲခြင်း — လိုအပ်သော privileges များ၊ new_name တွင် pg_ ရှေ့ဆက် မသုံးနိုင်ခြင်း၊ SQL standard တွင် မပါဝင်ခြင်းအကြောင်း"
-order: 244
+order: 504
 source: "https://www.postgresql.org/docs/current/sql-alterschema.html"
 status: translated
 updated: 2026-09-04

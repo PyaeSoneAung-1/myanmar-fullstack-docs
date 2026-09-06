@@ -1,7 +1,7 @@
 ---
 title: "ALTER FOREIGN TABLE (foreign table တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "ရှိပြီးသား foreign table တစ်ခုရဲ့ သတ်မှတ်ချက် (definition) ကို ပြောင်းလဲပေးသည့် command — column များ ထပ်ထည့်ခြင်း/ဖယ်ရှားခြင်း (ADD/DROP COLUMN)၊ column ၏ type, default, NOT NULL, statistics, attribute options နှင့် storage mode များ ပြောင်းလဲခြင်း၊ CHECK/NOT NULL constraints များ ထပ်ပေါင်းခြင်း/ဖယ်ရှားခြင်း၊ triggers များ စီမံခြင်း၊ OPTIONS, OWNER, RENAME, SET SCHEMA စသည့် ပုံစံကွဲ (subform) အများအပြား ပါဝင်သည် — command ကို သုံးရန် table ၏ ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သည်"
-order: 308
+order: 568
 source: "https://www.postgresql.org/docs/current/sql-alterforeigntable.html"
 status: translated
 updated: 2026-09-04

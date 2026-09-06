@@ -1,7 +1,7 @@
 ---
 title: "DROP ACCESS METHOD (access method တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား access method တစ်ခုကို ဖယ်ရှားပေးသည့် command — superuser များသာ ဖယ်ရှားနိုင်ခြင်း၊ IF EXISTS / CASCADE / RESTRICT option များ၊ PostgreSQL extension အကြောင်း"
-order: 305
+order: 565
 source: "https://www.postgresql.org/docs/current/sql-drop-access-method.html"
 status: translated
 updated: 2026-09-04

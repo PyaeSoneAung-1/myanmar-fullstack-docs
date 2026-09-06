@@ -1,7 +1,7 @@
 ---
 title: "DROP USER MAPPING (user mapping တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Foreign server တစ်ခုအတွက် user mapping တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS option ၊ user_name ၊ server_name parameter များနှင့် SQL/MED လိုက်ဖက်ညီမှု ပါဝင်သည်"
-order: 278
+order: 538
 source: "https://www.postgresql.org/docs/current/sql-dropusermapping.html"
 status: translated
 updated: 2026-09-04

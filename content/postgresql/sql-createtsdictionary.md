@@ -1,7 +1,7 @@
 ---
 title: "CREATE TEXT SEARCH DICTIONARY (text search dictionary အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "Text search dictionary အသစ်တစ်ခုကို သတ်မှတ် (define) ပေးတဲ့ command — တကယ်တမ်း အလုပ်လုပ်ဆောင်ပေးတဲ့ functions များကို သတ်မှတ်ပေးသည့် text search template ပေါ်တွင် မှီခိုခြင်းနှင့် template-သီးသန့် options များ သတ်မှတ်နိုင်ခြင်း (TEMPLATE, option, value) — dictionary ကို define လုပ်သူ user က owner ဖြစ်လာခြင်း အကြောင်း ဖော်ပြထားသည်"
-order: 260
+order: 520
 source: "https://www.postgresql.org/docs/current/sql-createtsdictionary.html"
 status: translated
 updated: 2026-09-04

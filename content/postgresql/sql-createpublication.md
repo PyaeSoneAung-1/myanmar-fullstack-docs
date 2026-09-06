@@ -1,7 +1,7 @@
 ---
 title: "CREATE PUBLICATION (publication အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Logical replication (ယုတ္တိ ပုံတူပွားမှု) အတွက် publication (ထုတ်ဝေမှု) အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — FOR TABLE / FOR ALL TABLES / FOR TABLES IN SCHEMA ဖြင့် publish လုပ်မည့် table များကို ရွေးချယ်နိုင်ပြီး column list နှင့် row filter (WHERE clause) များပါ သတ်မှတ်နိုင်; WITH clause ဖြင့် publish လုပ်မည့် DML operations များ (insert/update/delete/truncate) အပါအဝင် publish_generated_columns, publish_via_partition_root စသော publication parameters များကိုလည်း သတ်မှတ်နိုင်"
-order: 319
+order: 579
 source: "https://www.postgresql.org/docs/current/sql-createpublication.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER SUBSCRIPTION (subscription တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "Subscription (စာရင်းသွင်းမှု) တစ်ခုရဲ့ သတ်မှတ်ချက်များကို ပြောင်းလဲပေးသည့် command — CONNECTION ပြောင်းလဲခြင်း၊ SET/ADD/DROP PUBLICATION နှင့် REFRESH PUBLICATION၊ ENABLE/DISABLE၊ subscription parameters (slot_name, two_phase, failover အပါအဝင်) သတ်မှတ်ခြင်း၊ SKIP နှင့် OWNER/RENAME တို့အကြောင်း — PostgreSQL extension တစ်ခုဖြစ်သည်"
-order: 311
+order: 571
 source: "https://www.postgresql.org/docs/current/sql-altersubscription.html"
 status: translated
 updated: 2026-09-04

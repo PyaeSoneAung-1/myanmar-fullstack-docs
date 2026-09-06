@@ -1,7 +1,7 @@
 ---
 title: "CLUSTER (table ကို index အစီအစဉ်အတိုင်း ပြန်လည်စီစဉ်ခြင်း)"
 description: "Table တစ်ခုကို index တစ်ခုအပေါ် အခြေခံပြီး ရုပ်ပိုင်းဆိုင်ရာအရ ပြန်လည်စီစဉ်ခြင်း (clustering) ပြုလုပ်ပေးတဲ့ command — table ကို နောက်ပိုင်း update လုပ်ပါက အစီအစဉ်ကို ထိန်းသိမ်းမပေးတော့ခြင်း၊ ACCESS EXCLUSIVE lock ရယူခြင်း၊ parameters များ၊ fillfactor / maintenance_work_mem / ANALYZE ဆိုင်ရာ အကြံပြုချက်များနှင့် partitioned tables အကြောင်း အသေးစိတ် ပါဝင်သည်"
-order: 180
+order: 440
 source: "https://www.postgresql.org/docs/current/sql-cluster.html"
 status: translated
 updated: 2026-09-04

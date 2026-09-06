@@ -1,7 +1,7 @@
 ---
 title: "VACUUM (database ကို သန့်ရှင်းရေး ပြုလုပ်ပြီး space ပြန်လည် ရယူခြင်း)"
 description: "VACUUM command က dead tuples (ဖျက်လိုက်သော သို့မဟုတ် update ကြောင့် အသုံးမလိုတော့သော rows) တွေ သိမ်းပိုက်ထားတဲ့ storage ကို ပြန်လည် ရယူပြီး ရွေးချယ်နိုင်တဲ့ analyze ကိုပါ လုပ်ဆောင်ပေးသည် — FULL, FREEZE, VERBOSE, ANALYZE, DISABLE_PAGE_SKIPPING, SKIP_LOCKED, INDEX_CLEANUP, PROCESS_MAIN, PROCESS_TOAST, TRUNCATE, PARALLEL, SKIP_DATABASE_STATS, ONLY_DATABASE_STATS, BUFFER_USAGE_LIMIT option များ၏ အသေးစိတ် ရှင်းလင်းချက်၊ autovacuum၊ transaction ID wraparound နှင့် parallel vacuum အကြောင်း မှတ်စုများ ပါဝင်သည်"
-order: 200
+order: 460
 source: "https://www.postgresql.org/docs/current/sql-vacuum.html"
 status: translated
 updated: 2026-09-04

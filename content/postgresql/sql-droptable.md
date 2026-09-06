@@ -1,7 +1,7 @@
 ---
 title: "DROP TABLE (table တစ်ခုကို ဖျက်ခြင်း)"
 description: "Table များကို database မှ ဖယ်ရှားပေးသော command — IF EXISTS, CASCADE, RESTRICT option များ၏ အသေးစိတ် ရှင်းလင်းချက်၊ table နှင့်အတူ indexes/rules/triggers/constraints များပါ ဖယ်ရှားခံရခြင်းနှင့် view သို့မဟုတ် တခြား table ၏ foreign-key constraint က ရည်ညွှန်းထားသော table များအတွက် CASCADE လိုအပ်ပုံ"
-order: 214
+order: 474
 source: "https://www.postgresql.org/docs/current/sql-droptable.html"
 status: translated
 updated: 2026-09-04

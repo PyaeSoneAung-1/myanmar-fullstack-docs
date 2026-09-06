@@ -1,7 +1,7 @@
 ---
 title: "CREATE TABLESPACE (tablespace အသစ်တစ်ခုကို သတ်မှတ်ခြင်း)"
 description: "Cluster တစ်ခုလုံးအတွက် သက်ရောက်မည့် tablespace အသစ်တစ်ခုကို မှတ်ပုံတင်ခြင်း — tablespace_name ၊ user_name ၊ directory ၊ tablespace_option စသည့် parameter များနှင့် ဥပမာများ — PostgreSQL extension command"
-order: 280
+order: 540
 source: "https://www.postgresql.org/docs/current/sql-createtablespace.html"
 status: translated
 updated: 2026-09-04

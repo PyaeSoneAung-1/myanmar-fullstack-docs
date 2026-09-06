@@ -1,7 +1,7 @@
 ---
 title: "ALTER PUBLICATION (publication တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲခြင်း)"
 description: "Publication (ထုတ်ဝေမှု) တစ်ခုရဲ့ သတ်မှတ်ချက်ကို ပြောင်းလဲပေးသည့် command — ADD/SET/DROP clauses များဖြင့် publication ထဲက table နှင့် schema များကို ထည့်သွင်း/အစားထိုး/ဖယ်ရှားနိုင်ပြီး SET (publication_parameter) ဖြင့် publish options များကို ပြောင်းလဲနိုင်; OWNER TO ဖြင့် ပိုင်ရှင် လဲလှယ်ခြင်းနှင့် RENAME TO ဖြင့် နာမည်ပြောင်းခြင်းတို့ကိုလည်း ပြုလုပ်နိုင်"
-order: 310
+order: 570
 source: "https://www.postgresql.org/docs/current/sql-alterpublication.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP ROUTINE (routine တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "ရှိပြီးသား routine တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော routines များ၏ definition ကို ဖယ်ရှားပေးသည့် command — routine တွင် aggregate functions, functions နှင့် procedures များ ပါဝင်ပြီး — DROP PROCEDURE ၏ lookup rules များကို အခြေခံ၍ argmode markers မပါသော argument list များတွင် SQL standard ၏ OUT arguments ပါဝင်သည့် အဓိပ္ပာယ်ဖွင့်ဆိုချက်ကိုပါ ထည့်သွင်း စဉ်းစားခြင်း၊ IF EXISTS, CASCADE/RESTRICT နှင့် SQL standard extensions များအကြောင်း ဖော်ပြထားသည်"
-order: 226
+order: 486
 source: "https://www.postgresql.org/docs/current/sql-droproutine.html"
 status: translated
 updated: 2026-09-04

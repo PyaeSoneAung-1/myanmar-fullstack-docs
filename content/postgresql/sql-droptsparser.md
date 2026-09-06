@@ -1,7 +1,7 @@
 ---
 title: "DROP TEXT SEARCH PARSER (text search parser တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Text search parser တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS option ဖြင့် parser မရှိပါက error မထုတ်ခြင်း ၊ CASCADE/RESTRICT ဖြင့် မှီခို objects များ ကိုင်တွယ်ခြင်း — superuser သာ အသုံးပြုနိုင်သော command"
-order: 265
+order: 525
 source: "https://www.postgresql.org/docs/current/sql-droptsparser.html"
 status: translated
 updated: 2026-09-04

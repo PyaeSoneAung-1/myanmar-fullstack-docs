@@ -1,7 +1,7 @@
 ---
 title: "ALTER MATERIALIZED VIEW (materialized view တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Materialized view တစ်ခုရဲ့ အရန် (auxiliary) ဂုဏ်သတ္တိများကို ပြောင်းလဲပေးတဲ့ command — column statistics/storage/compression သတ်မှတ်ခြင်းနှင့် ပြန်သတ်ခြင်း (SET/RESET), CLUSTER ဆိုင်ရာ actions များ, SET ACCESS METHOD, SET TABLESPACE, OWNER TO, RENAME, SET SCHEMA, DEPENDS ON EXTENSION စသည့် subforms နှင့် actions များအကြောင်း — ALTER TABLE ၏ အောက်ခံပုံစံများ နှင့် ပိုင်ဆိုင်မှု (ownership) လိုအပ်ချက်များ ပါဝင်သည်"
-order: 204
+order: 464
 source: "https://www.postgresql.org/docs/current/sql-altermaterializedview.html"
 status: translated
 updated: 2026-09-04

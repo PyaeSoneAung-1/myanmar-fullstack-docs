@@ -1,7 +1,7 @@
 ---
 title: "COPY (file နှင့် table အကြား data ကူးပြောင်းခြင်း)"
 description: "File တစ်ခုနဲ့ PostgreSQL table အကြား data တွေ ကူးပြောင်းပေးတဲ့ command — COPY FROM/COPY TO နဲ့ FORMAT (text, csv, binary), FREEZE, DELIMITER, NULL, DEFAULT, HEADER, FORCE_QUOTE, ON_ERROR, REJECT_LIMIT, ENCODING, WHERE စတဲ့ options များ — file formats (text, CSV, binary) အသေးစိတ် ရှင်းလင်းချက်တွေလည်း ပါဝင်"
-order: 157
+order: 417
 source: "https://www.postgresql.org/docs/current/sql-copy.html"
 status: translated
 updated: 2026-09-04

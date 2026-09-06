@@ -1,7 +1,7 @@
 ---
 title: "ROLLBACK (transaction တစ်ခုကို ပယ်ဖျက်ခြင်း)"
 description: "လက်ရှိ transaction ကို roll back လုပ်ပြီး — transaction အတွင်း ပြုလုပ်ခဲ့သော update များ အားလုံးကို ပယ်ဖျက်ပေးသည့် ROLLBACK ၏ syntax နှင့် parameters (WORK/TRANSACTION, AND CHAIN)၊ transaction block အပြင်တွင် အပြုအမူနှင့် SQL standard လိုက်ဖက်ညီမှု"
-order: 160
+order: 420
 source: "https://www.postgresql.org/docs/current/sql-rollback.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE EXTENSION (extension တစ်ခုကို install လုပ်ခြင်း)"
 description: "Extension တစ်ခုကို database တစ်ခုထဲသို့ load (install) လုပ်ပေးသော command — IF NOT EXISTS, SCHEMA, VERSION, CASCADE option များ၊ extension ၏ script file လုပ်ဆောင်ပုံ၊ trusted extension များနှင့် လိုအပ်သော privileges အကြောင်း အသေးစိတ် ရှင်းလင်းချက်"
-order: 314
+order: 574
 source: "https://www.postgresql.org/docs/current/sql-createextension.html"
 status: translated
 updated: 2026-09-04

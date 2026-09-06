@@ -1,7 +1,7 @@
 ---
 title: "SET CONSTRAINTS (constraint check ပြုလုပ်မည့် အချိန်ကို သတ်မှတ်ခြင်း)"
 description: "လက်ရှိ transaction အတွင်း constraint checking (constraint စစ်ဆေးခြင်း) ပြုလုပ်သည့် အချိန်ကို သတ်မှတ်ပေးတဲ့ command — IMMEDIATE နဲ့ DEFERRED modes ၊ DEFERRABLE INITIALLY DEFERRED/INITIALLY IMMEDIATE နဲ့ NOT DEFERRABLE စတဲ့ constraint လက္ခဏာများ နဲ့ UNIQUE/PRIMARY KEY/REFERENCES/EXCLUDE constraints တွေအပေါ် သက်ရောက်ပုံ အကြောင်း"
-order: 209
+order: 469
 source: "https://www.postgresql.org/docs/current/sql-set-constraints.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER SERVER (foreign server တစ်ခုကို ပြောင်းလဲခြင်း)"
 description: "Foreign server တစ်ခုရဲ့ အဓိပ္ပာယ် သတ်မှတ်ချက် (definition) ကို ပြောင်းလဲပေးသော command — server version string, generic options များ သို့မဟုတ် owner ကို ပြောင်းလဲနိုင်ပြီး နာမည် ပြန်လည် မှည့်ခေါ်နိုင်သော command"
-order: 274
+order: 534
 source: "https://www.postgresql.org/docs/current/sql-alterserver.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ANALYZE (table statistics များ စုဆောင်းခြင်း)"
 description: "Table များ၏ အကြောင်းအရာများအကြောင်း statistics (စာရင်းအင်း အချက်အလက်များ) ကို စုဆောင်းပြီး pg_statistic system catalog တွင် သိမ်းဆည်းပေးသော ANALYZE command — VERBOSE, SKIP_LOCKED, BUFFER_USAGE_LIMIT option များအသေးစိတ်၊ query planner က statistics များကို အသုံးပြုပုံနှင့် autovacuum ၏ အလိုအလျောက် analyze ပြုလုပ်မှုအကြောင်း ရှင်းလင်းချက်"
-order: 181
+order: 441
 source: "https://www.postgresql.org/docs/current/sql-analyze.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "DROP FOREIGN TABLE (foreign table တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Foreign table တစ်ခုကို ဖယ်ရှား (drop) ပေးသည့် command — IF EXISTS ၊ CASCADE နှင့် RESTRICT option များအကြောင်း — command ကို execute လုပ်ရန် foreign table ၏ ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သည်"
-order: 279
+order: 539
 source: "https://www.postgresql.org/docs/current/sql-dropforeigntable.html"
 status: translated
 updated: 2026-09-04

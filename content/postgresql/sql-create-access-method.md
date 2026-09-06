@@ -1,7 +1,7 @@
 ---
 title: "CREATE ACCESS METHOD (access method အသစ်တစ်ခု သတ်မှတ်ခြင်း)"
 description: "Access method အသစ်တစ်ခုကို သတ်မှတ်ပေးသည့် command — TABLE နှင့် INDEX အမျိုးအစား နှစ်မျိုး၊ handler function ၏ လိုအပ်ချက်များ၊ superuser များသာ သတ်မှတ်နိုင်ခြင်း၊ PostgreSQL extension အကြောင်း"
-order: 304
+order: 564
 source: "https://www.postgresql.org/docs/current/sql-create-access-method.html"
 status: translated
 updated: 2026-09-04

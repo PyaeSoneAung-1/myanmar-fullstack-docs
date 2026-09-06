@@ -1,7 +1,7 @@
 ---
 title: "DROP DATABASE (database တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database တစ်ခုကို ဖယ်ရှားခြင်း — DROP DATABASE ၏ syntax နှင့် parameters (IF EXISTS, FORCE) များ၊ connection များကို အဆုံးသတ်ခြင်း အပါအဝင် သတိပြုရန် အချက်များ"
-order: 142
+order: 402
 source: "https://www.postgresql.org/docs/current/sql-dropdatabase.html"
 status: translated
 updated: 2026-09-04

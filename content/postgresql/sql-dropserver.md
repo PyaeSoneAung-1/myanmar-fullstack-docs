@@ -1,7 +1,7 @@
 ---
 title: "DROP SERVER (foreign server descriptor တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Foreign server descriptor တစ်ခုကို ဖယ်ရှားပေးသော command — IF EXISTS option ဖြင့် server မရှိပါက error မပစ်ဘဲ ရှောင်ကွင်းနိုင်ပြီး — CASCADE ဖြင့် မှီခိုနေသော objects (ဥပမာ — user mappings) များကိုပါ အလိုအလျောက် ဖယ်ရှားနိုင်သော command"
-order: 275
+order: 535
 source: "https://www.postgresql.org/docs/current/sql-dropserver.html"
 status: translated
 updated: 2026-09-04

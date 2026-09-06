@@ -1,7 +1,7 @@
 ---
 title: "DROP SCHEMA (schema တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Database ထဲမှ schema တစ်ခု သို့မဟုတ် တစ်ခုထက်ပိုသော schema များကို ဖယ်ရှားခြင်း — IF EXISTS, CASCADE, RESTRICT option များအကြောင်း"
-order: 144
+order: 404
 source: "https://www.postgresql.org/docs/current/sql-dropschema.html"
 status: translated
 updated: 2026-09-04

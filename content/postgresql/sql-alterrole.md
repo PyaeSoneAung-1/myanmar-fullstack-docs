@@ -1,7 +1,7 @@
 ---
 title: "ALTER ROLE (role တစ်ခုရဲ့ သတ်မှတ်ချက်များ ပြောင်းလဲခြင်း)"
 description: "Role တစ်ခုရဲ့ attributes (SUPERUSER, CREATEDB, CREATEROLE, LOGIN, REPLICATION, PASSWORD, VALID UNTIL စသည်) များကို ပြောင်းလဲခြင်း၊ role နာမည် ပြောင်းခြင်း (RENAME TO) နှင့် session configuration defaults (SET/RESET) သတ်မှတ်ခြင်း — IN DATABASE ဖြင့် per-database settings များ အပါအဝင်"
-order: 165
+order: 425
 source: "https://www.postgresql.org/docs/current/sql-alterrole.html"
 status: translated
 updated: 2026-09-04

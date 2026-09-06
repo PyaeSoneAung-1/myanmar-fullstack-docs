@@ -1,7 +1,7 @@
 ---
 title: "CREATE USER (database user အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Database user (login ဝင်နိုင်သော database role) အသစ်တစ်ခု ဖန်တီးခြင်း — CREATE USER သည် CREATE ROLE ၏ alias ဖြစ်ပြီး CREATE USER ဖြင့် ရေးသားသည့်အခါ LOGIN ကို default အဖြစ် ယူဆသည်; SUPERUSER, CREATEDB, REPLICATION, PASSWORD, VALID UNTIL, IN ROLE စသည့် option များကို ထောက်ပံ့ပေးသည်"
-order: 167
+order: 427
 source: "https://www.postgresql.org/docs/current/sql-createuser.html"
 status: translated
 updated: 2026-09-04

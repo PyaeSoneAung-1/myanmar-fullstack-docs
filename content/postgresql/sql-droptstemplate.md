@@ -1,7 +1,7 @@
 ---
 title: "DROP TEXT SEARCH TEMPLATE (text search template တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "Text search template တစ်ခုကို ဖယ်ရှားခြင်း — IF EXISTS option ဖြင့် template မရှိပါက error မထုတ်ခြင်း ၊ CASCADE/RESTRICT ဖြင့် မှီခို objects များ ကိုင်တွယ်ခြင်း — superuser သာ အသုံးပြုနိုင်သော command"
-order: 268
+order: 528
 source: "https://www.postgresql.org/docs/current/sql-droptstemplate.html"
 status: translated
 updated: 2026-09-04

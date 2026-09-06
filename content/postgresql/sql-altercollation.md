@@ -1,7 +1,7 @@
 ---
 title: "ALTER COLLATION (collation တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Collation တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း — version ကို refresh လုပ်ခြင်း (REFRESH VERSION)၊ နာမည်ပြောင်းခြင်း (RENAME TO)၊ ပိုင်ရှင် ပြောင်းလဲခြင်း (OWNER TO) နှင့် schema ရွှေ့ပြောင်းခြင်း (SET SCHEMA) — collation ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 246
+order: 506
 source: "https://www.postgresql.org/docs/current/sql-altercollation.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "ALTER LANGUAGE (procedural language တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း)"
 description: "Procedural language တစ်ခုရဲ့ definition ကို ပြောင်းလဲခြင်း — language ကို နာမည်ပြောင်းခြင်း (RENAME TO) သို့မဟုတ် ပိုင်ရှင်အသစ် သတ်မှတ်ခြင်း (OWNER TO) — superuser သို့မဟုတ် language ပိုင်ရှင် ဖြစ်ရန် လိုအပ်သော command"
-order: 254
+order: 514
 source: "https://www.postgresql.org/docs/current/sql-alterlanguage.html"
 status: translated
 updated: 2026-09-04

@@ -1,7 +1,7 @@
 ---
 title: "CREATE FOREIGN DATA WRAPPER (foreign-data wrapper အသစ်တစ်ခု ဖန်တီးခြင်း)"
 description: "Foreign-data wrapper (ပြင်ပ data source တစ်ခုကို ဝင်ရောက်ရန် သုံးသော library) အသစ်တစ်ခုကို သတ်မှတ်ပေးသော command — HANDLER, VALIDATOR, OPTIONS clause များဖြင့် handler function, validator function နှင့် options များကို သတ်မှတ်နိုင်ပြီး — superusers များသာ ဖန်တီးနိုင်သော command"
-order: 269
+order: 529
 source: "https://www.postgresql.org/docs/current/sql-createforeigndatawrapper.html"
 status: translated
 updated: 2026-09-04

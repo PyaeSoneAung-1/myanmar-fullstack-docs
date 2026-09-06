@@ -1,7 +1,7 @@
 ---
 title: "DROP TRANSFORM (transform တစ်ခုကို ဖယ်ရှားခြင်း)"
 description: "အရင်က သတ်မှတ်ထားသော transform တစ်ခုကို ဖယ်ရှားပေးသည့် command — type နှင့် language ပိုင်ဆိုင်ရန် လိုအပ်ခြင်း၊ IF EXISTS / CASCADE / RESTRICT option များအကြောင်း"
-order: 307
+order: 567
 source: "https://www.postgresql.org/docs/current/sql-droptransform.html"
 status: translated
 updated: 2026-09-04
