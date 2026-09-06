@@ -1,7 +1,7 @@
 ---
 title: "The pg_hba.conf File (pg_hba.conf ဖိုင်)"
 description: "pg_hba.conf ဖိုင် — PostgreSQL ရဲ့ client authentication ကို ထိန်းချုပ်တဲ့ configuration ဖိုင် — ရဲ့ record ပုံစံများ၊ field တစ်ခုချင်းစီရဲ့ အဓိပ္ပာယ် (local, host, database, user, address, auth-method စသည်တို့) ၊ include directives များ၊ @ constructs များနှင့် ဥပမာ entries များအကြောင်း ရှင်းလင်းချက်"
-order: 140
+order: 152
 source: "https://www.postgresql.org/docs/current/auth-pg-hba-conf.html"
 status: translated
 updated: 2026-09-06

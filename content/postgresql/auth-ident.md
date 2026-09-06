@@ -1,7 +1,7 @@
 ---
 title: "Ident Authentication (ident server မှ OS user name ရယူ၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "ident server မှ client ၏ operating system user name ကို ရယူပြီး ထို user name ကို database user name အဖြစ် ခွင့်ပြုသည့် `ident` authentication method — TCP/IP connections များတွင်သာ ထောက်ပံ့ခြင်း၊ map option နှင့် လုံခြုံရေး ကန့်သတ်ချက်များ"
-order: 147
+order: 159
 source: "https://www.postgresql.org/docs/current/auth-ident.html"
 status: translated
 updated: 2026-09-06

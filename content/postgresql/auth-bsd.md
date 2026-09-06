@@ -1,7 +1,7 @@
 ---
 title: "BSD Authentication (BSD Authentication ဖြင့် password စစ်ဆေး၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "`password` နှင့် ဆင်တူသော်လည်း password စစ်ဆေးရန် BSD Authentication ကို သုံးသည့် authentication method — OpenBSD တွင်သာ ရရှိနိုင်ခြင်း၊ auth-postgresql login type နှင့် login.conf ရှိ postgresql login class အကြောင်း"
-order: 153
+order: 165
 source: "https://www.postgresql.org/docs/current/auth-bsd.html"
 status: translated
 updated: 2026-09-06

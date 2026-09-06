@@ -1,7 +1,7 @@
 ---
 title: "Destroying a Database (database တစ်ခုကို ဖျက်ဆီးခြင်း)"
 description: "DROP DATABASE command နှင့် dropdb utility သုံးပြီး database များ ဖျက်ဆီးခြင်း — owner သို့မဟုတ် superuser တစ်ဦးသာ ဖျက်နိုင်ခြင်း၊ ဖျက်မှုကို ပြန်ပြင်၍ မရခြင်း၊ ပစ်မှတ် database သို့ connect နေစဉ် မဖျက်နိုင်ခြင်း"
-order: 166
+order: 178
 source: "https://www.postgresql.org/docs/current/manage-ag-dropdb.html"
 status: translated
 updated: 2026-09-06

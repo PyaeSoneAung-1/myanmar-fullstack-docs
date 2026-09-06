@@ -1,7 +1,7 @@
 ---
 title: "GSSAPI Authentication (GSSAPI ဖြင့် စစ်ဆေး အတည်ပြုခြင်း)"
 description: "GSSAPI/Kerberos authentication အလုပ်လုပ်ပုံ — service principal နှင့် keytab ဖိုင်၊ client principal များကို user နာမည်များဆီ map လုပ်ခြင်း၊ နှင့် GSSAPI authentication options (include_realm, map, krb_realm) များ"
-order: 145
+order: 157
 source: "https://www.postgresql.org/docs/current/gssapi-auth.html"
 status: translated
 updated: 2026-09-06

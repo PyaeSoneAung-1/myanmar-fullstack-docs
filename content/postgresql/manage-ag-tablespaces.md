@@ -1,7 +1,7 @@
 ---
 title: "Tablespaces (tablespace များ)"
 description: "Tablespace (database object ဖိုင်များ သိမ်းဆည်းရန် file system အတွင်း နေရာ သတ်မှတ်ချက်များ) များဖြင့် PostgreSQL installation တစ်ခု၏ disk layout ကို ထိန်းချုပ်ခြင်း — CREATE TABLESPACE, CREATE privilege, default_tablespace/temp_tablespaces, database ၏ tablespace, pg_global/pg_default, pg_tablespace catalog နှင့် $PGDATA/pg_tblspc"
-order: 167
+order: 179
 source: "https://www.postgresql.org/docs/current/manage-ag-tablespaces.html"
 status: translated
 updated: 2026-09-06

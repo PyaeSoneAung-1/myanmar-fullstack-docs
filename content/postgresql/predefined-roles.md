@@ -1,7 +1,7 @@
 ---
 title: "Predefined Roles (ကြိုတင် သတ်မှတ်ထားသော roles)"
 description: "PostgreSQL က ကမ်းလှမ်းထားသော ကြိုတင် သတ်မှတ်ထားသည့် roles များနှင့် ၎င်းတို့၏ လုပ်ဆောင်နိုင်စွမ်းများ — pg_checkpoint, pg_database_owner, pg_maintain, pg_monitor အဖွဲ့, pg_read_all_data, pg_execute_server_program, pg_signal_backend စသည်"
-order: 160
+order: 172
 source: "https://www.postgresql.org/docs/current/predefined-roles.html"
 status: translated
 updated: 2026-09-06

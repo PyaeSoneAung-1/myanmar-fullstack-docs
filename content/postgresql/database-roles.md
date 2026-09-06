@@ -1,7 +1,7 @@
 ---
 title: "Database Roles (database roles များ)"
 description: "Database roles များအကြောင်း — operating system users များနှင့် သဘောတရားအရ သီးခြားဖြစ်ပုံ၊ role ဖန်တီး/ဖျက်နည်း (CREATE ROLE / DROP ROLE / createuser / dropuser)၊ pg_roles catalog ဖြင့် စာရင်းကြည့်နည်း၊ ကနဦး superuser role နှင့် connection တစ်ခုစီတွင် role ၏ အခန်းကဏ္ဍ"
-order: 156
+order: 168
 source: "https://www.postgresql.org/docs/current/database-roles.html"
 status: translated
 updated: 2026-09-06

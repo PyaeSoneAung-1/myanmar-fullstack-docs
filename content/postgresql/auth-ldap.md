@@ -1,7 +1,7 @@
 ---
 title: "LDAP Authentication (LDAP ဖြင့် password စစ်ဆေး၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "LDAP ကို password စစ်ဆေး အတည်ပြုရေး နည်းလမ်းအဖြစ် သုံးသည့် `ldap` authentication method — simple bind mode နှင့် search+bind mode နှစ်မျိုး၊ ldapserver/ldapport/ldapscheme/ldaptls/ldapbasedn/ldapurl စသည့် configuration options များ နှင့် ဥပမာ ဖွဲ့စည်းပုံများ"
-order: 149
+order: 161
 source: "https://www.postgresql.org/docs/current/auth-ldap.html"
 status: translated
 updated: 2026-09-06
