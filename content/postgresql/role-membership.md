@@ -1,7 +1,7 @@
 ---
 title: "Role Membership (role အဖွဲ့ဝင် ဖြစ်မှု)"
 description: "Group role (group အဖြစ် သုံးသော role) တစ်ခုအတွင်း user roles များကို membership ပေးခြင်း/ရုပ်သိမ်းခြင်း — GRANT/REVOKE ဖြင့် အဖွဲ့ဝင် စီမံနည်း၊ SET ROLE နှင့် INHERIT option တို့၏ လုပ်ဆောင်ပုံ၊ SQL standard နှင့် ကွာခြားချက်များ"
-order: 174
+order: 192
 source: "https://www.postgresql.org/docs/current/role-membership.html"
 status: translated
 updated: 2026-09-06

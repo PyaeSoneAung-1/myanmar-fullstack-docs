@@ -1,7 +1,7 @@
 ---
 title: "Upgrade (အဆင့်မြှင့်တင်ခြင်း)"
 description: "Logical replication cluster များကို အဆင့်မြှင့်တင်ခြင်း — publisher နှင့် subscriber အဆင့်မြှင့်တင်မှုအတွက် ကြိုတင် ပြင်ဆင်ခြင်း၊ logical slots နှင့် subscription dependencies များ migrate လုပ်ခြင်း၏ လိုအပ်ချက်များ၊ two-node, cascaded နှင့် two-node circular logical replication cluster များကို အဆင့်ဆင့် အဆင့်မြှင့်တင်သည့် အဆင့်များ"
-order: 221
+order: 239
 source: "https://www.postgresql.org/docs/current/logical-replication-upgrade.html"
 status: translated
 updated: 2026-09-11

@@ -1,7 +1,7 @@
 ---
 title: "Asynchronous Commit (မစောင့်ဆိုင်းဘဲ commit လုပ်ခြင်း)"
 description: "Asynchronous commit သည် transaction များကို ပိုမြန်မြန် ပြီးစီးစေပုံ၊ crash ဖြစ်ချိန် နောက်ဆုံး transaction များ ဆုံးရှုံးနိုင်ခြင်း (data corruption မဟုတ်)၊ synchronous_commit parameter ဖြင့် commit mode ရွေးချယ်ခြင်း၊ WAL writer နှင့် risk window၊ fsync = off နှင့် commit_delay တို့နှင့် ကွာခြားချက် အကြောင်း"
-order: 206
+order: 224
 source: "https://www.postgresql.org/docs/current/wal-async-commit.html"
 status: translated
 updated: 2026-09-11

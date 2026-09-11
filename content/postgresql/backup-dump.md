@@ -1,7 +1,7 @@
 ---
 title: "SQL Dump (SQL dump ထုတ်ယူခြင်း)"
 description: "PostgreSQL database များကို SQL dump ဖြင့် backup ပြုလုပ်ခြင်း — pg_dump ၏ အခြေခံ အသုံးပြုမှုနှင့် လုပ်ဆောင်ပုံ (SQL commands ဖိုင် ထုတ်လုပ်ခြင်း, standard output, client application အဖြစ် လုပ်ဆောင်ခြင်း, `-h`/`-p`/`-U` options များ, `PGHOST`/`PGPORT`/`PGUSER` environment variables များ, internally consistent snapshot, version/architecture အသစ်များဆီ ပြန်လည် load လုပ်နိုင်ခြင်း), dump restore ပြုလုပ်ခြင်း (psql, `-X`, `ON_ERROR_STOP`, `-1`/`--single-transaction`, pg_restore, pipe ဖြင့် server တစ်ခုမှ တစ်ခုဆီ တိုက်ရိုက် ကူးပြောင်းခြင်း, template0 ဆိုင်ရာ သတိပြုချက်), pg_dumpall ဖြင့် cluster တစ်ခုလုံး၏ dump နှင့် `--globals-only` option, ကြီးမားသော databases များအတွက် gzip/split/custom dump format/parallel dump နည်းလမ်းများ အကြောင်း ရှင်းလင်းချက်"
-order: 190
+order: 208
 source: "https://www.postgresql.org/docs/current/backup-dump.html"
 status: translated
 updated: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "Function Security (function လုံခြုံရေး)"
 description: "Functions, triggers နှင့် row-level security policies များမှတစ်ဆင့် users များ backend server ထဲ code ထည့်သွင်း၍ အခြားသူများကို Trojan horse ပြုလုပ်နိုင်သည့် အန္တရာယ်နှင့် ကာကွယ်ရန် နည်းလမ်းများ — untrusted languages များဖြင့် function များ ဖန်တီးခြင်းကို superusers များသာ ခွင့်ပြုခြင်း အကြောင်း"
-order: 177
+order: 195
 source: "https://www.postgresql.org/docs/current/perm-functions.html"
 status: translated
 updated: 2026-09-06

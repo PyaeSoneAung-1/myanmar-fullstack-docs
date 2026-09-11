@@ -1,7 +1,7 @@
 ---
 title: "Subscription (စာရင်းသွင်း ချိတ်ဆက်မှု)"
 description: "Logical replication ၏ subscription အကြောင်း — subscriber, publication များနှင့် ချိတ်ဆက်မှု၊ replication slot မှ ပြောင်းလဲမှုများ လက်ခံခြင်း၊ synchronous replication အတွက် standby အဖြစ် အသုံးပြုနိုင်ခြင်း၊ pg_dump နှင့် subscription များ၊ table/column တွဲဖက်မှုစည်းမျဉ်းများ၊ replication slot စီမံခန့်ခွဲမှုနှင့် အဆင့်ဆင့် ဥပမာများ"
-order: 210
+order: 228
 source: "https://www.postgresql.org/docs/current/logical-replication-subscription.html"
 status: translated
 updated: 2026-09-11

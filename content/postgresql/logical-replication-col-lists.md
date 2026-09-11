@@ -1,7 +1,7 @@
 ---
 title: "Column Lists (column စာရင်းများ)"
 description: "Logical replication column list များအကြောင်း — publish လုပ်မည့် column များ ရွေးချယ်ခြင်း၊ replica identity လိုအပ်ချက်၊ generated column များ၊ partitioned table နှင့် publish_via_partition_root၊ ကနဦး data synchronization နှင့် ဥပမာများ"
-order: 213
+order: 231
 source: "https://www.postgresql.org/docs/current/logical-replication-col-lists.html"
 status: translated
 updated: 2026-09-11

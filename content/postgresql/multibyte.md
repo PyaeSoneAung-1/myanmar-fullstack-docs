@@ -1,7 +1,7 @@
 ---
 title: "Character Set Support (Character set ထောက်ပံ့မှု)"
 description: "PostgreSQL ၏ character set (encoding) ထောက်ပံ့မှုအကြောင်း — character set ဆိုသည်မှာ ဘာလဲ, ရရှိနိုင်သော character sets များ (single-byte/multiple-byte encodings များ, server/ICU ထောက်ပံ့မှု, bytes-per-character နှင့် aliases အပါအဝင်), initdb ဖြင့် default character set သတ်မှတ်ခြင်း နှင့် database ဖန်တီးချိန်တွင် encoding သတ်မှတ်ခြင်း (LC_CTYPE/LC_COLLATE လိုက်ဖက်မှု, template0 ကူးယူမှု), server နှင့် client အကြား character set အလိုအလျောက် ပြောင်းလဲခြင်း (psql ၏ \\encoding command, libpq, SET client_encoding/SET NAMES, PGCLIENTENCODING, client_encoding configuration variable), ရရှိနိုင်သော character set conversions များ (built-in client/server character set conversions ဇယား နှင့် built-in character set conversions အားလုံး၏ စာရင်းဇယား) နှင့် encoding စနစ်များအကြောင်း ထပ်ဆင့် လေ့လာရန် အရင်းအမြစ်များ အကြောင်း ရှင်းလင်းချက်"
-order: 186
+order: 204
 source: "https://www.postgresql.org/docs/current/multibyte.html"
 status: translated
 updated: 2026-09-06

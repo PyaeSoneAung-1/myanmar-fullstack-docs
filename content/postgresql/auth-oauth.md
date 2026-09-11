@@ -1,7 +1,7 @@
 ---
 title: "OAuth Authorization/Authentication (OAuth ဖြင့် ခွင့်ပြုချက်/အထောက်အထား စိစစ်ခြင်း)"
 description: "PostgreSQL cluster များဆီ OAuth 2.0 ဖြင့် ချိတ်ဆက်၍ ခွင့်ပြုချက် ရယူခြင်းနှင့် အထောက်အထား စိစစ်ခြင်း — OAuth terminology (Resource Owner, Client, Resource Server, Provider, Authorization Server, Issuer) များနှင့် issuer/scope/validator/map/delegate_ident_mapping configuration options များအကြောင်း"
-order: 170
+order: 188
 source: "https://www.postgresql.org/docs/current/auth-oauth.html"
 status: translated
 updated: 2026-09-06

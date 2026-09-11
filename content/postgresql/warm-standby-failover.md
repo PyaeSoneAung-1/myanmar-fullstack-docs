@@ -1,7 +1,7 @@
 ---
 title: "Failover (primary ပြောင်းလဲ လွှဲပြောင်းမှု)"
 description: "High availability cluster တစ်ခုတွင် failover လုပ်ဆောင်ခြင်း — primary server ကျရှုံးချိန် standby server မှ failover စတင်ခြင်း, standby server ကျရှုံးချိန် restartable recovery ဖြင့် ပြန်လည် စတင်နိုင်ခြင်း, primary အဟောင်း ပြန်စလာချိန် နှစ်ဖက်စလုံး primary ဖြစ်နေမှုကို တားဆီးရန် STONITH ၏ လိုအပ်ချက်, heartbeat ယန္တရားနှင့် witness server (သက်သေ server) သုံး failover system များ, failover ဖြစ်ပြီးနောက် degenerate state နှင့် standby server ပြန်လည် ဖန်တီးခြင်း (pg_rewind အသုံးပြုမှု), ပုံမှန် primary/standby အခန်းကဏ္ဍ လဲလှယ်ခြင်း၏ အကျိုးကျေးဇူး, logical replication slot synchronization စစ်ဆေးခြင်း, log-shipping standby တစ်ခုကို pg_ctl promote / pg_promote() ဖြင့် promote လုပ်ခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 195
+order: 213
 source: "https://www.postgresql.org/docs/current/warm-standby-failover.html"
 status: translated
 updated: 2026-09-06

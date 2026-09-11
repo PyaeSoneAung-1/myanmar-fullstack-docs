@@ -1,7 +1,7 @@
 ---
 title: "WAL Internals (WAL ၏ အတွင်းပိုင်း လုပ်ဆောင်ပုံ)"
 description: "WAL ၏ အတွင်းပိုင်း လုပ်ဆောင်ပုံ — WAL record များနှင့် Log Sequence Number (LSN)၊ pg_wal directory အောက်က segment file များ၊ WAL ကို သီးခြား disk ပေါ်မှာ ထားခြင်း၊ false write report လုပ်တဲ့ disk များ၏ အန္တရာယ်၊ checkpoint နှင့် pg_control၊ recovery စတင်ချိန် REDO လုပ်ဆောင်ပုံ၊ pg_control ပျက်စီးနိုင်ခြေ အကြောင်း"
-order: 208
+order: 226
 source: "https://www.postgresql.org/docs/current/wal-internals.html"
 status: translated
 updated: 2026-09-11

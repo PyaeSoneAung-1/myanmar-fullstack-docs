@@ -1,7 +1,7 @@
 ---
 title: "Write-Ahead Logging (WAL) (ကြိုတင် ရေးသားသည့် log စနစ်)"
 description: "Write-Ahead Logging (WAL) ၏ အခြေခံ သဘောတရား — data file များ မပြောင်းလဲခင် ပြောင်းလဲမှုများကို log မှတ်တမ်း အရင်တင်ခြင်းဖြင့် data integrity အာမခံပုံ၊ disk write များ လျော့ချပေးပုံ၊ crash ဖြစ်ချိန် roll-forward recovery (REDO)၊ on-line backup နဲ့ point-in-time recovery ကို ထောက်ပံ့ပေးပုံ အကြောင်း"
-order: 205
+order: 223
 source: "https://www.postgresql.org/docs/current/wal-intro.html"
 status: translated
 updated: 2026-09-11

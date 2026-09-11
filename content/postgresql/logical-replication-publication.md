@@ -1,7 +1,7 @@
 ---
 title: "Publication (ထုတ်ဝေမှု)"
 description: "Logical replication publication အကြောင်း — publication နှင့် publisher သတ်မှတ်ခြင်း၊ ထည့်သွင်းနိုင်သည့် object များ၊ INSERT/UPDATE/DELETE/TRUNCATE operation ရွေးချယ်ခြင်း၊ subscriber များ၊ CREATE/ALTER PUBLICATION အသုံးပြုမှုနှင့် replica identity သတ်မှတ်ခြင်း"
-order: 209
+order: 227
 source: "https://www.postgresql.org/docs/current/logical-replication-publication.html"
 status: translated
 updated: 2026-09-11

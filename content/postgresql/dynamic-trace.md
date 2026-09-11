@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Tracing (Dynamic tracing — server ၏ လည်ပတ်မှုကို ခြေရာခံခြင်း)"
 description: "PostgreSQL ၏ dynamic tracing (အလုပ်လုပ်နေစဉ် ခြေရာခံခြင်း) ထောက်ပံ့မှုအကြောင်း — code အတွင်းရှိ သတ်မှတ် အချက်များတွင် external utility ကို ခေါ်ယူနိုင်သည့် သဘောတရား, ထောက်ပံ့သည့် utilities များ (DTrace, SystemTap), configure တွင် `--enable-dtrace` ဖြင့် compile ပြုလုပ်ခြင်း, built-in probes များ၏ ဇယား (transaction/query/statement/checkpoint/buffer/WAL/sort/LWLock/heavyweight lock/deadlock စသည့် probes ၅၅ ခု၏ parameters နှင့် ဖော်ပြချက်များ), probe parameters များတွင် သုံးသော type definitions ဇယား, DTrace script ဖြင့် probes များကို အသုံးပြုခြင်း (transaction counts ခွဲခြမ်း စိတ်ဖြာသည့် ဥပမာ နှင့် SystemTap ၏ double-underscore notation အကြောင်း မှတ်ချက်), probe အသစ်များ သတ်မှတ်ခြင်း (src/backend/utils/probes.d တွင် ထည့်သွင်းခြင်း, TRACE_POSTGRESQL macros, dtrace -ln ဖြင့် စစ်ဆေးခြင်း ဥပမာ) နှင့် C code တွင် trace macros ထည့်သည့်အခါ သတိထားရမည့် အချက်များအကြောင်း ရှင်းလင်းချက်"
-order: 201
+order: 219
 source: "https://www.postgresql.org/docs/current/dynamic-trace.html"
 status: translated
 updated: 2026-09-06

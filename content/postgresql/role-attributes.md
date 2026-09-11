@@ -1,7 +1,7 @@
 ---
 title: "Role Attributes (role ၏ attribute များ)"
 description: "LOGIN, SUPERUSER, CREATEDB, CREATEROLE, REPLICATION, PASSWORD, INHERIT, BYPASSRLS, CONNECTION LIMIT စသည့် role attributes များ၏ အဓိပ္ပာယ်နှင့် အသုံးပြုပုံ — ALTER ROLE ဖြင့် attribute များ ပြုပြင်ခြင်း၊ role-specific default settings များနှင့် CREATEROLE user အား အလိုအလျောက် ပြန်လည် grant ပြုလုပ်ခြင်း အကြောင်း"
-order: 173
+order: 191
 source: "https://www.postgresql.org/docs/current/role-attributes.html"
 status: translated
 updated: 2026-09-06

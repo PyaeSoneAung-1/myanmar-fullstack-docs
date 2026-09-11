@@ -1,7 +1,7 @@
 ---
 title: "Configuration (JIT configuration / ပြင်ဆင် ချိန်ညှိခြင်း)"
 description: "PostgreSQL ၏ JIT compilation ကို ထိန်းချုပ်သော configuration variable များ — jit, jit_above_cost, jit_inline_above_cost, jit_optimize_above_cost နှင့် jit_provider အကြောင်း ရှင်းလင်းချက်"
-order: 225
+order: 243
 source: "https://www.postgresql.org/docs/current/jit-configuration.html"
 status: translated
 updated: 2026-09-11

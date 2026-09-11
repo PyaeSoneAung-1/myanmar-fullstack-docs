@@ -1,7 +1,7 @@
 ---
 title: "Trust Authentication (ယုံကြည်စိတ်ချမှုအပေါ် အခြေခံသော authentication)"
 description: "trust authentication ဆိုတာ ချိတ်ဆက်နိုင်သူတိုင်းကို သူတို့ သတ်မှတ်တဲ့ database user အမည်နဲ့ access ခွင့်ပြုတဲ့ နည်းလမ်း ဖြစ်ပြီး — ဘယ်အခြေအနေတွေမှာ သင့်လျော်လဲ၊ Unix socket file permissions နဲ့ TCP/IP connections တွေအတွက် ထည့်သွင်း စဉ်းစားစရာများအကြောင်း"
-order: 159
+order: 177
 source: "https://www.postgresql.org/docs/current/auth-trust.html"
 status: translated
 updated: 2026-09-06

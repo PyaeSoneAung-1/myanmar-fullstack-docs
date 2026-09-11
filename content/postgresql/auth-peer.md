@@ -1,7 +1,7 @@
 ---
 title: "Peer Authentication (kernel မှ OS user name ရယူ၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "kernel မှ client ၏ operating system user name ကို တိုက်ရိုက် ရယူပြီး ထို user name ကို database user name အဖြစ် ခွင့်ပြုသည့် `peer` authentication method — local connections များတွင်သာ ထောက်ပံ့ခြင်းနှင့် map option အကြောင်း"
-order: 164
+order: 182
 source: "https://www.postgresql.org/docs/current/auth-peer.html"
 status: translated
 updated: 2026-09-06

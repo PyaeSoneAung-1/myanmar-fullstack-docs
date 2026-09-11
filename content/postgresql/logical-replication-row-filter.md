@@ -1,7 +1,7 @@
 ---
 title: "Row Filters (အတန်း စစ်ထုတ်မှုများ)"
 description: "Logical replication row filter များအကြောင်း — WHERE clause ဖြင့် အတန်း စစ်ထုတ်ခြင်း၊ row filter စည်းမျဉ်းများနှင့် expression ကန့်သတ်ချက်များ၊ UPDATE အသွင်ပြောင်းခြင်း၊ partitioned table များ၊ ကနဦး data synchronization၊ row filter အများအပြား ပေါင်းစပ်ခြင်း နှင့် ဥပမာများ"
-order: 212
+order: 230
 source: "https://www.postgresql.org/docs/current/logical-replication-row-filter.html"
 status: translated
 updated: 2026-09-11

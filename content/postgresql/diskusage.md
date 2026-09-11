@@ -1,7 +1,7 @@
 ---
 title: "Monitoring Disk Usage (disk သုံးစွဲမှု စောင့်ကြည့်ခြင်း)"
 description: "PostgreSQL database system တစ်ခုရဲ့ disk သုံးစွဲမှုကို စောင့်ကြည့်ခြင်း — disk space စောင့်ကြည့်ရန် နည်းလမ်း သုံးမျိုး (SQL functions, oid2name module, system catalogs များကို ကိုယ်တိုင် စစ်ဆေးခြင်း), `pg_relation_filepath`/`relpages` စသည်တို့ကို သုံးပြီး table, TOAST tables နှင့် indexes တို့၏ disk အသုံးပြုမှု ဆုံးဖြတ်ခြင်း (psql query ဥပမာများ), အကြီးဆုံး tables/indexes များကို ရှာဖွေခြင်း, disk ပြည့်သွားခြင်း ကျရှုံးမှု (WAL files disk ပြည့်ခြင်းကြောင့် server panic/shutdown, tablespaces ဖြင့် ဖိုင်များ အခြား file systems ဆီ ရွှေ့ပြောင်းခြင်း, per-user disk quotas) အကြောင်း ရှင်းလင်းချက်"
-order: 202
+order: 220
 source: "https://www.postgresql.org/docs/current/diskusage.html"
 status: translated
 updated: 2026-09-06

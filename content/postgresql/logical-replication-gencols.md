@@ -1,7 +1,7 @@
 ---
 title: "Generated Column Replication (generated column များ replication လုပ်ခြင်း)"
 description: "Logical replication တွင် generated column များ မည်သို့ ကိုင်တွယ်သည် — subscriber မှ တန်ဖိုးယူခြင်း၊ publish_generated_columns နှင့် column list ရွေးချယ်မှုများ၊ ရလဒ် အနှစ်ချုပ် ဇယားနှင့် သတိပေးချက်များ"
-order: 214
+order: 232
 source: "https://www.postgresql.org/docs/current/logical-replication-gencols.html"
 status: translated
 updated: 2026-09-11

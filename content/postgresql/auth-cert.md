@@ -1,7 +1,7 @@
 ---
 title: "Certificate Authentication (SSL client certificate ဖြင့် အထောက်အထား စိစစ်ခြင်း)"
 description: "SSL client certificate ကို အသုံးပြု၍ authentication လုပ်သည့် `cert` authentication method — SSL connections တွင်သာ ရရှိနိုင်ခြင်း၊ certificate ၏ `cn` (Common Name) ကို database user name နှင့် နှိုင်းယှဉ် စစ်ဆေးခြင်းနှင့် map option အကြောင်း"
-order: 167
+order: 185
 source: "https://www.postgresql.org/docs/current/auth-cert.html"
 status: translated
 updated: 2026-09-06

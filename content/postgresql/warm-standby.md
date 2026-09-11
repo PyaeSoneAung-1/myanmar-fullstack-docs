@@ -1,7 +1,7 @@
 ---
 title: "Log-Shipping Standby Servers (log shipping standby server များ)"
 description: "Log shipping standby server များဖြင့် high availability (HA) cluster တစ်ခု တည်ဆောက်ခြင်း — warm standby/log shipping ၏ သဘောတရားနှင့် data ဆုံးရှုံးမှု ကာလ (asynchronous ဖြစ်ခြင်း, archive_timeout, streaming replication), ကြိုတင် စီစဉ်ခြင်း (Planning — hardware/version လိုက်ဖက်ညီမှု), standby server လည်ပတ်ပုံ (standby.signal, restore_command, pg_wal, pg_ctl promote), primary ပြင်ဆင်ခြင်းနှင့် standby server တပ်ဆင်ခြင်း (base backup, pg_hba.conf, primary_conninfo), streaming replication (authentication, monitoring, pg_stat_replication), replication slots, cascading replication, synchronous replication (FIRST/ANY နည်းလမ်းများ, performance နှင့် high availability အတွက် စီစဉ်ခြင်း), standby ပေါ်တွင် continuous archiving (archive_mode ကို on/always သတ်မှတ်ခြင်း) အကြောင်း ရှင်းလင်းချက်"
-order: 194
+order: 212
 source: "https://www.postgresql.org/docs/current/warm-standby.html"
 status: translated
 updated: 2026-09-06

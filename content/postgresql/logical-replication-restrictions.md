@@ -1,7 +1,7 @@
 ---
 title: "Restrictions (ကန့်သတ်ချက်များ)"
 description: "Logical replication ၏ လက်ရှိ ကန့်သတ်ချက်များနှင့် လိုအပ်နေသေးသည့် လုပ်ဆောင်ချက်များ — schema/DDL နှင့် sequence မ replicate ဖြစ်ခြင်း၊ TRUNCATE၊ large object၊ relation အမျိုးအစားများ၊ partitioned table နှင့် REPLICA IDENTITY FULL ဆိုင်ရာ ကန့်သတ်ချက်များ"
-order: 216
+order: 234
 source: "https://www.postgresql.org/docs/current/logical-replication-restrictions.html"
 status: translated
 updated: 2026-09-11

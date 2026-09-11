@@ -1,7 +1,7 @@
 ---
 title: "Reliability (ယုံကြည်စိတ်ချရမှု)"
 description: "PostgreSQL ၏ ယုံကြည်စိတ်ချရမှုဆိုင်ရာ အာမခံချက်များ — commit လုပ်ပြီးသား data များကို nonvolatile သိုလှောင်ရာတွင် သိမ်းဆည်းခြင်း၊ disk buffer cache / write-through နှင့် write-back cache များ၊ BBU disk controller များ၊ cache ပိတ်နည်းနှင့် flush command များ၊ တစ်စိတ်တစ်ပိုင်း page ရေးသားမှုကို WAL full page image ဖြင့် ကာကွယ်ခြင်း၊ CRC-32C checksum နှင့် ECC memory အကြောင်း ရှင်းလင်းချက်"
-order: 203
+order: 221
 source: "https://www.postgresql.org/docs/current/wal-reliability.html"
 status: translated
 updated: 2026-09-11

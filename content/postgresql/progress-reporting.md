@@ -1,7 +1,7 @@
 ---
 title: "Progress Reporting (လုပ်ဆောင်မှု တိုးတက်မှု အစီရင်ခံခြင်း)"
 description: "PostgreSQL command များ လုပ်ဆောင်နေစဉ်အတွင်း ၎င်းတို့၏ တိုးတက်မှု (progress) ကို အစီရင်ခံပေးသည့် ယန္တရားအကြောင်း — ANALYZE (pg_stat_progress_analyze view ၏ columns များနှင့် ANALYZE phases), CLUSTER နှင့် VACUUM FULL (pg_stat_progress_cluster), COPY (pg_stat_progress_copy), CREATE INDEX/REINDEX (pg_stat_progress_create_index), VACUUM (pg_stat_progress_vacuum) နှင့် Base Backup (pg_stat_progress_basebackup) တို့၏ progress reporting — view တစ်ခုချင်းစီ၏ column များ၊ type များနှင့် အဓိပ္ပာယ် ဖော်ဆောင်ပုံ၊ phase တစ်ခုချင်းစီ၏ ဖော်ပြချက်"
-order: 200
+order: 218
 source: "https://www.postgresql.org/docs/current/progress-reporting.html"
 status: translated
 updated: 2026-09-06

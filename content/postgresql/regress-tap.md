@@ -1,7 +1,7 @@
 ---
 title: "TAP Tests (TAP စမ်းသပ်မှုများ)"
 description: "PostgreSQL ရဲ့ TAP tests များ အကြောင်း — Perl TAP tools များကို သုံးပြီး `prove` testing program ဖြင့် run လုပ်ခြင်း (`PROVE_FLAGS` နှင့် `PROVE_TESTS` ဆိုသည့် make variables များ), လိုအပ်ချက်များ (`IPC::Run` Perl module, `--enable-tap-tests` configure option), `make installcheck` နှင့် `make check` တို့၏ အပြုအမူ ကွာခြားချက် (ယာယီ test servers များ စတင်ခြင်း, traditional non-TAP infrastructure နှင့် ရောနှောခြင်း), environment variables များ (`PG_TEST_NOCLEAN` — data directories များ ထိန်းသိမ်းခြင်း, `PG_TEST_TIMEOUT_DEFAULT` — 180-second timeout ကြာချိန် ပြောင်းလဲခြင်း) အကြောင်း ရှင်းလင်းချက်"
-order: 230
+order: 248
 source: "https://www.postgresql.org/docs/current/regress-tap.html"
 status: translated
 updated: 2026-09-06

@@ -1,0 +1,20 @@
+---
+title: "Error Handling (အမှားများ ကိုင်တွယ်ခြင်း)"
+description: "PostgreSQL ၏ error ကိုင်တွယ်မှု configuration parameter များ — exit_on_error, restart_after_crash, data_sync_retry နှင့် recovery_init_sync_method တို့၏ လုပ်ဆောင်ပုံနှင့် သတ်မှတ်ပုံ အကြောင်း ရှင်းလင်းချက်"
+order: 169
+source: "https://www.postgresql.org/docs/current/runtime-config-error-handling.html"
+status: translated
+updated: 2026-09-11
+---
+
+## 19.14. Error Handling (အမှားများ ကိုင်တွယ်ခြင်း)
+
+- **exit_on_error (boolean)** — on ဖြစ်နေရင် — error တစ်ခုခု ဖြစ်တိုင်း လက်ရှိ session ကို ရပ်တန့် (terminate) စေပါတယ်။ Default အားဖြင့် — ဒါကို off သတ်မှတ်ထားတာကြောင့် — FATAL error တွေသာ session ကို terminate လုပ်ပါတယ်။
+- **restart_after_crash (boolean)** — on လို့ သတ်မှတ်ထားတဲ့အခါ (ဒါက default ဖြစ်ပါတယ်) — backend တစ်ခု crash ဖြစ်ပြီးနောက် PostgreSQL က အလိုအလျောက် ပြန်လည် initialize လုပ်ပါတယ်။ ဒီတန်ဖိုးကို on အတိုင်း ထားခြင်းက — database ရဲ့ ရရှိနိုင်မှု (availability) ကို အမြင့်ဆုံး ဖြစ်စေဖို့ — ပုံမှန်အားဖြင့် အကောင်းဆုံး နည်းလမ်း ဖြစ်ပါတယ်။ ဒါပေမယ့် — PostgreSQL ကို clusterware က invoke လုပ်တဲ့အခါ ကဲ့သို့သော အခြေအနေတချို့မှာ — clusterware က ထိန်းချုပ်မှု ရယူပြီး သင့်လျော်တယ်လို့ ယူဆတဲ့ လုပ်ဆောင်ချက်တွေ လုပ်နိုင်ဖို့ — restart ကို disable လုပ်တာက အသုံးဝင်နိုင်ပါတယ်။
+ဒီ parameter ကို postgresql.conf file ထဲမှာ ဒါမှမဟုတ် server command line ပေါ်မှာသာ သတ်မှတ်နိုင်ပါတယ်။
+- **data_sync_retry (boolean)** — off လို့ သတ်မှတ်ထားတဲ့အခါ (ဒါက default ဖြစ်ပါတယ်) — ပြင်ဆင်ထားတဲ့ data file တွေကို file system ဆီ flush လုပ်တာ မအောင်မြင်ရင် — PostgreSQL က PANIC အဆင့် error ကို ထုတ်ပါတယ်။ ဒါက database server ကို crash ဖြစ်စေပါတယ်။ ဒီ parameter ကို server start လုပ်ချိန်မှာသာ သတ်မှတ်နိုင်ပါတယ်။
+Operating system တချို့မှာ — write-back မအောင်မြင်ပြီးနောက် — kernel ရဲ့ page cache ထဲက data အခြေအနေကို မသိနိုင်ပါဘူး။ အချို့အခြေအနေတွေမှာ — ဒါက လုံးဝ မေ့ပျောက်သွားနိုင်ပြီး — ပြန်ကြိုးစားတာ (retry) ကို မလုံခြုံစေပါဘူး; ဒုတိယ အကြိမ် ကြိုးစားမှုကို အောင်မြင်တယ်လို့ သတင်းပို့နိုင်ပေမယ့် — တကယ်တော့ data ဆုံးရှုံးသွားပြီ ဖြစ်နိုင်ပါတယ်။ ဒီလို အခြေအနေတွေမှာ — data ဆုံးရှုံးမှု မဖြစ်စေဖို့ တစ်ခုတည်းသော နည်းလမ်းက — ပျက်ကွက်မှု တစ်ခု သတင်းပို့ခံရပြီးနောက် WAL ကနေ recovery လုပ်ခြင်း ဖြစ်ပြီး — ဖြစ်နိုင်ရင် — ပျက်ကွက်မှုရဲ့ အမြစ်အကြောင်းရင်း (root cause) ကို စစ်ဆေးပြီး ချို့ယွင်းနေတဲ့ hardware ကို အစားထိုးပြီးမှ လုပ်သင့်ပါတယ်။
+on လို့ သတ်မှတ်ထားရင်တော့ — PostgreSQL က error ကို သတင်းပို့ပေမယ့် — ဆက်လက် လည်ပတ်နေမှာ ဖြစ်ပြီး — data flush လုပ်ဆောင်ချက်ကို နောက် checkpoint တစ်ခုမှာ ပြန်ကြိုးစားနိုင်ပါတယ်။ Write-back မအောင်မြင်တဲ့အခါ buffered data ကို operating system က ဘယ်လို ကိုင်တွယ်လဲ ဆိုတာ စစ်ဆေးပြီးမှသာ ဒါကို on သတ်မှတ်သင့်ပါတယ်။
+- **recovery_init_sync_method (enum)** — fsync လို့ သတ်မှတ်ထားတဲ့အခါ (ဒါက default ဖြစ်ပါတယ်) — PostgreSQL က crash recovery မစတင်မီ — data directory ထဲက file အားလုံးကို အလိုက်သင့် ဖွင့်ပြီး synchronize လုပ်ပါတယ်။ File ရှာဖွေမှုက WAL directory နဲ့ configure လုပ်ထားတဲ့ tablespace တစ်ခုချင်းစီအတွက် symbolic link တွေကို လိုက်နာပါတယ် (ဒါပေမယ့် အခြား symbolic link တွေကို မလိုက်နာပါဘူး)။ ဒါက — ပြောင်းလဲမှုတွေ replay မလုပ်မီ — WAL နဲ့ data file အားလုံး disk ပေါ်မှာ တည်မြဲစွာ (durably) သိမ်းဆည်းထားကြောင်း သေချာစေဖို့ ရည်ရွယ်ထားပါတယ်။ ဒါက — pg_basebackup နဲ့ ဖန်တီးထားတဲ့ copy တွေ အပါအဝင် — သန့်ရှင်းစွာ မပိတ်ခဲ့တဲ့ database cluster တစ်ခုကို start လုပ်တိုင်း သက်ရောက်ပါတယ်။
+Linux မှာ — အစား syncfs ကို သုံးနိုင်ပြီး — ဒါက operating system ကို data directory, WAL file တွေ နဲ့ tablespace တစ်ခုချင်းစီ ပါဝင်တဲ့ file system တွေကို synchronize လုပ်ခိုင်းပါတယ် (ဒါပေမယ့် symbolic link တွေကတစ်ဆင့် ရောက်နိုင်တဲ့ အခြား file system တွေကို မလုပ်ပါဘူး)။ ဒါက — file တစ်ခုချင်း ဖွင့်ရ မလိုတာကြောင့် — fsync setting ထက် အများကြီး ပိုမြန်နိုင်ပါတယ်။ အခြားတစ်ဖက်မှာ — file system တစ်ခုကို file အများအပြား ပြင်ဆင်တဲ့ အခြား application တွေ မျှဝေ သုံးနေရင် — အဲဒီ file တွေကိုပါ disk ဆီ ရေးရမှာမို့ — ပိုနှေးနိုင်ပါတယ်။ ထို့အပြင် — Linux 5.8 မတိုင်မီ ဗားရှင်းတွေမှာ — disk ဆီ data ရေးနေစဉ် ကြုံတွေ့ရတဲ့ I/O error တွေကို PostgreSQL ဆီ သတင်းပို့မိနိုင်ခြေ မရှိဘဲ — ဆက်စပ် error message တွေက kernel log တွေမှာသာ ပေါ်နိုင်ပါတယ်။
+ဒီ parameter ကို postgresql.conf file ထဲမှာ ဒါမှမဟုတ် server command line ပေါ်မှာသာ သတ်မှတ်နိုင်ပါတယ်။

@@ -1,7 +1,7 @@
 ---
 title: "SSPI Authentication (SSPI ဖြင့် စစ်ဆေး အတည်ပြုခြင်း)"
 description: "Windows ၏ single sign-on ပါသော လုံခြုံသည့် authentication နည်းပညာ SSPI အကြောင်း — negotiate mode, GSSAPI နှင့် အပြန်အလှန် လုပ်ဆောင်နိုင်မှု၊ နှင့် SSPI configuration options (include_realm, compat_realm, upn_username, map, krb_realm) များ"
-order: 162
+order: 180
 source: "https://www.postgresql.org/docs/current/sspi-auth.html"
 status: translated
 updated: 2026-09-06

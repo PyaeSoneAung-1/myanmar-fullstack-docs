@@ -1,7 +1,7 @@
 ---
 title: "Continuous Archiving and Point-in-Time Recovery (PITR) (စဉ်ဆက်မပြတ် archiving နှင့် point-in-time recovery (PITR))"
 description: "WAL archiving ကို အခြေခံတဲ့ continuous archiving backup နည်းလမ်း — WAL archiving setup လုပ်ခြင်း (wal_level, archive_mode, archive_command/archive_library, archive module များ, archive_timeout, pg_switch_wal)၊ base backup ပြုလုပ်ခြင်း (pg_basebackup, backup history file)၊ incremental backup (--incremental, WAL summaries, pg_combinebackup)၊ low level API ဖြင့် base backup (pg_backup_start/pg_backup_stop, backup_label/tablespace_map, data directory ကို backup လုပ်ခြင်း)၊ continuous archive backup ဖြင့် recovery ပြုလုပ်ခြင်း (restore_command, recovery.signal, recovery target, step-by-step လုပ်ငန်းစဉ်)၊ timelines (အချိန် မျဉ်းကြောင်းများ)၊ အကြံပြုချက်များနှင့် ဥပမာများ (standalone hot backups, gzip compressed archives, archive_command scripts) နှင့် caveats (သတိထားရမည့် အချက်များ) — အကြောင်း ရှင်းလင်းချက်"
-order: 192
+order: 210
 source: "https://www.postgresql.org/docs/current/continuous-archiving.html"
 status: translated
 updated: 2026-09-06

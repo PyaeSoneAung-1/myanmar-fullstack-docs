@@ -1,7 +1,7 @@
 ---
 title: "What Is JIT compilation? (JIT compilation ဆိုတာ ဘာလဲ)"
 description: "PostgreSQL ရဲ့ Just-in-Time (JIT) compilation အကြောင်း — interpreted program evaluation ကို run time မှာ native program အဖြစ် ပြောင်းလဲခြင်း၊ JIT ဖြင့် အရှိန်မြှင့်နိုင်သော လုပ်ဆောင်ချက်များ (expression evaluation နှင့် tuple deforming)၊ inlining နှင့် LLVM optimization အကြောင်း ရှင်းလင်းချက်"
-order: 223
+order: 241
 source: "https://www.postgresql.org/docs/current/jit-reason.html"
 status: translated
 updated: 2026-09-11

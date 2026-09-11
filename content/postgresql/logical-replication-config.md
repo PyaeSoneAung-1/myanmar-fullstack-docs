@@ -1,7 +1,7 @@
 ---
 title: "Configuration Settings (configuration သတ်မှတ်ချက်များ)"
 description: "Logical replication အတွက် configuration setting များ — publisher ဘက်တွင် wal_level၊ max_replication_slots၊ max_wal_senders စသည့် ချိန်ညှိမှုများ၊ subscriber ဘက်တွင် max_active_replication_origins၊ max_logical_replication_workers၊ max_worker_processes စသည့် ချိန်ညှိမှုများ အကြောင်း"
-order: 220
+order: 238
 source: "https://www.postgresql.org/docs/current/logical-replication-config.html"
 status: translated
 updated: 2026-09-11

@@ -1,7 +1,7 @@
 ---
 title: "Data Checksums (ဒေတာ checksum များ)"
 description: "PostgreSQL cluster တွင် data checksum များ အသုံးပြုခြင်း — data page တစ်ခုချင်းစီ၏ checksum ကို စစ်ဆေးခြင်း၊ initdb ဖြင့် စတင်ချိန် သို့မဟုတ် နောက်ပိုင်း offline လုပ်ဆောင်ချက်အဖြစ် ဖွင့်/ပိတ်ခြင်း၊ data_checksums ကို SHOW ဖြင့် စစ်ဆေးခြင်း၊ page corruption များ ပြန်လည် ကုစားရာတွင် ignore_checksum_failure သုံးခြင်းနှင့် pg_checksums application အသုံးပြုခြင်း အကြောင်း"
-order: 204
+order: 222
 source: "https://www.postgresql.org/docs/current/checksums.html"
 status: translated
 updated: 2026-09-11

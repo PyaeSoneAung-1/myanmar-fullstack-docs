@@ -1,7 +1,7 @@
 ---
 title: "Quick Setup (အမြန် setup ပြုလုပ်ခြင်း)"
 description: "Logical replication ကို အမြန် စတင်ရန် လမ်းညွှန် — postgresql.conf တွင် wal_level သတ်မှတ်ခြင်း၊ pg_hba.conf ချိန်ညှိခြင်း၊ publisher တွင် publication ဖန်တီးခြင်းနှင့် subscriber တွင် subscription ဖန်တီးခြင်း"
-order: 222
+order: 240
 source: "https://www.postgresql.org/docs/current/logical-replication-quick-setup.html"
 status: translated
 updated: 2026-09-11

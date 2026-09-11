@@ -1,7 +1,7 @@
 ---
 title: "The Cumulative Statistics System (စုစည်း စာရင်းအင်း စနစ်)"
 description: "PostgreSQL ၏ cumulative statistics system (server လုပ်ဆောင်ချက် အကြောင်း အချက်အလက်များကို စုဆောင်း/အစီရင်ခံသည့် စနစ်) အကြောင်း ရှင်းလင်းချက် — statistics collection configuration (postgresql.conf ရှိ track_activities, track_counts, track_functions, track_io_timing, track_wal_io_timing, track_cost_delay_timing စသော configuration parameters များ, SET command, shared memory တွင် စုဆောင်းခြင်းနှင့် pg_stat subdirectory, unclean shutdown များတွင် statistics counters အားလုံး reset ဖြစ်ခြင်း), statistics များကို ကြည့်ရှုခြင်း (Table 27.1 Dynamic Statistics Views နှင့် Table 27.2 Collected Statistics Views ၏ view များစာရင်းနှင့် ဖော်ပြချက်များ, statistics data များ ချက်ချင်း update မဖြစ်ဘဲ PGSTAT_MIN_INTERVAL ကြားကာလဖြင့် flush လုပ်ခြင်း, stats_fetch_consistency (cache/snapshot/none) နှင့် pg_stat_clear_snapshot(), pg_stat_xact_* views များ, dynamic statistics views များ၏ security restriction နှင့် pg_read_all_stats built-in role) — ထို့ပြင် 27.2.3 မှ 27.2.26 အထိ pg_stat_activity, pg_stat_replication, pg_stat_wal_receiver, pg_stat_archiver, pg_stat_io, pg_stat_database, pg_stat_all_tables, pg_statio_* views များနှင့် statistics functions များအကြောင်း အသေးစိတ်"
-order: 198
+order: 216
 source: "https://www.postgresql.org/docs/current/monitoring-stats.html"
 status: translated
 updated: 2026-09-06

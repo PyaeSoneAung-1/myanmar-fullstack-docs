@@ -1,7 +1,7 @@
 ---
 title: "WAL Configuration (WAL ပြင်ဆင်သတ်မှတ်ခြင်း)"
 description: "WAL ဆိုင်ရာ configuration parameter များ — checkpoint နှင့် checkpoint_timeout/max_wal_size, full_page_writes, checkpoint_completion_target, checkpoint_flush_after, pg_wal segment များ၏ ဖယ်ရှား/recycle လုပ်ငန်းစဉ်နှင့် min_wal_size/max_wal_size/wal_keep_size, restartpoint များ, XLogInsertRecord/XLogFlush internal function များ, wal_buffers, commit_delay/commit_siblings, wal_sync_method, wal_debug, XLogWrite/issue_xlog_fsync နှင့် recovery_prefetch တို့၏ လုပ်ဆောင်ပုံနှင့် အသုံးပြုပုံ အကြောင်း ရှင်းလင်းချက်"
-order: 207
+order: 225
 source: "https://www.postgresql.org/docs/current/wal-configuration.html"
 status: translated
 updated: 2026-09-11

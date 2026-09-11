@@ -1,7 +1,7 @@
 ---
 title: "Architecture (ဗိသုကာ တည်ဆောက်ပုံ)"
 description: "Logical replication ၏ ဗိသုကာ — walsender နှင့် apply process၊ logical decoding နှင့် pgoutput plugin၊ session_replication_role၊ trigger များ၊ အစပိုင်း snapshot နှင့် table synchronization worker များအကြောင်း"
-order: 217
+order: 235
 source: "https://www.postgresql.org/docs/current/logical-replication-architecture.html"
 status: translated
 updated: 2026-09-11

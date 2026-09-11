@@ -1,7 +1,7 @@
 ---
 title: "User Name Maps (user အမည်များကို ဆက်စပ်သတ်မှတ်ခြင်း)"
 description: "Ident သို့မဟုတ် GSSAPI လို external authentication system တွေကနေ ရရှိတဲ့ operating system user အမည်တွေကို database user အမည်တွေနဲ့ ချိတ်ဆက်သတ်မှတ်ပေးတဲ့ user name maps အကြောင်း — pg_ident.conf ဖိုင် ပုံစံ၊ include directives၊ regular expression သုံးပြီး user အမည်များစွာကို တစ်ကြောင်းတည်းနဲ့ map လုပ်နည်း စသည်တို့"
-order: 157
+order: 175
 source: "https://www.postgresql.org/docs/current/auth-username-maps.html"
 status: translated
 updated: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "Logical Replication Failover (logical replication failover ကူးပြောင်းခြင်း)"
 description: "Logical replication failover အကြောင်း — publisher node ကျဆင်းချိန် subscriber များ ဆက်လက် replicate လုပ်နိုင်ရန် physical standby လိုအပ်မှု၊ failover = true ဖြင့် logical slot များကို standby ဆီ synchronize လုပ်ခြင်း၊ failover အသင့်ဖြစ်မှု စစ်ဆေးရန် အဆင့်များ၊ PostgreSQL မဟုတ်သော subscriber များအတွက် နည်းလမ်းနှင့် synchronized_standby_slots configuration အကြောင်း ရှင်းလင်းချက်"
-order: 211
+order: 229
 source: "https://www.postgresql.org/docs/current/logical-replication-failover.html"
 status: translated
 updated: 2026-09-11

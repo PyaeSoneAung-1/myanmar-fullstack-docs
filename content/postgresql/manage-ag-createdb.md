@@ -1,7 +1,7 @@
 ---
 title: "Creating a Database (database တစ်ခု ဖန်တီးခြင်း)"
 description: "CREATE DATABASE command နဲ့ createdb utility သုံးပြီး database အသစ်များ ဖန်တီးခြင်း — ပထမဆုံး database (postgres) နှင့် template databases များအကြောင်း၊ database အသစ်၏ owner သတ်မှတ်ချက်များ"
-order: 179
+order: 197
 source: "https://www.postgresql.org/docs/current/manage-ag-createdb.html"
 status: translated
 updated: 2026-09-06

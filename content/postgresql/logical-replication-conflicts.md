@@ -1,7 +1,7 @@
 ---
 title: "Conflicts (ပဋိပက္ခများ)"
 description: "Logical replication conflicts များအကြောင်း — conflict အမျိုးအစားများ (insert_exists, update_exists, update_missing, delete_missing, multiple_unique_conflicts စသည်)၊ conflict log format နှင့် ဖော်ပြချက်များ၊ permission ချို့ယွင်းမှုနှင့် row-level security ကြောင့် ဖြစ်သော ကွဲလွဲမှုများ၊ ALTER SUBSCRIPTION ... SKIP နှင့် pg_replication_origin_advance() ဖြင့် conflict ဖြေရှင်းခြင်း"
-order: 215
+order: 233
 source: "https://www.postgresql.org/docs/current/logical-replication-conflicts.html"
 status: translated
 updated: 2026-09-11

@@ -1,7 +1,7 @@
 ---
 title: "Security (လုံခြုံရေး)"
 description: "Logical replication ၏ လုံခြုံရေး စည်းမျဉ်းများ — replication connection role ၏ REPLICATION attribute၊ row security policy နှင့် row_security ချိန်ညှိမှု၊ output plugin library များ၊ publication/subscription ဖန်တီးရန် privilege များ၊ subscription owner နှင့် run_as_owner ဆိုင်ရာ အန္တရာယ်များ၊ privilege ပြန်လည် စစ်ဆေးခြင်း အကြောင်း"
-order: 219
+order: 237
 source: "https://www.postgresql.org/docs/current/logical-replication-security.html"
 status: translated
 updated: 2026-09-11

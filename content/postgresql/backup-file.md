@@ -1,7 +1,7 @@
 ---
 title: "File System Level Backup (file system အဆင့် backup)"
 description: "PostgreSQL data directory ၏ ဖိုင်များကို တိုက်ရိုက် ကူးယူခြင်းဖြင့် backup ပြုလုပ်ခြင်း — server ရပ်တန့်ထားရန် လိုအပ်ခြင်း နှင့် tables/databases တစ်ခုချင်းစီကို သီးသန့် backup/restore မလုပ်နိုင်ခြင်း (pg_xact commit log ဖိုင်များအပေါ် မှီခိုမှု) စသည့် ကန့်သတ်ချက်များ၊ “consistent snapshot” နည်းလမ်း (frozen snapshot, WAL replay, CHECKPOINT)၊ file systems အများအပြားပေါ် ပျံ့နှံ့နေသော databases များအတွက် စဉ်းစားရမည့် အချက်များနှင့် ရွေးချယ်စရာများ (continuous archiving base backup, rsync --checksum)၊ file system backup သည် SQL dump ထက် ပိုကြီးနိုင်ပြီး ပိုမြန်နိုင်ကြောင်း မှတ်ချက် — အကြောင်း ရှင်းလင်းချက်"
-order: 191
+order: 209
 source: "https://www.postgresql.org/docs/current/backup-file.html"
 status: translated
 updated: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "When to JIT? (JIT ကို ဘယ်အချိန် သုံးမလဲ?)"
 description: "JIT compilation ကို ဘယ်အချိန် အကျိုးရှိလဲ — long-running CPU-bound query များ၊ estimated cost ကို jit_above_cost, jit_inline_above_cost နှင့် jit_optimize_above_cost တို့နှင့် နှိုင်းယှဉ် ဆုံးဖြတ်ခြင်း၊ prepared statement နှင့် EXPLAIN ဖြင့် JIT အသုံးပြုမှုကို စစ်ဆေးခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 224
+order: 242
 source: "https://www.postgresql.org/docs/current/jit-decision.html"
 status: translated
 updated: 2026-09-11

@@ -1,7 +1,7 @@
 ---
 title: "Extensibility (JIT extensibility / တိုးချဲ့နိုင်မှု)"
 description: "PostgreSQL JIT ရဲ့ extensibility အကြောင်း — extension များအတွက် inlining support (bitcode ဖိုင် ထည့်သွင်းခြင်း) နှင့် pluggable JIT provider များ၊ _PG_jit_provider_init interface အကြောင်း ရှင်းလင်းချက်"
-order: 226
+order: 244
 source: "https://www.postgresql.org/docs/current/jit-extensibility.html"
 status: translated
 updated: 2026-09-11

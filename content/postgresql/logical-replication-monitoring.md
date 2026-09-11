@@ -1,7 +1,7 @@
 ---
 title: "Monitoring (စောင့်ကြည့် စစ်ဆေးခြင်း)"
 description: "Logical replication ကို စောင့်ကြည့် စစ်ဆေးခြင်း — publication node ပေါ်က monitoring သည် physical replication primary နှင့် ဆင်တူခြင်း၊ pg_stat_subscription view တွင် subscription worker တစ်ခုချင်းစီအတွက် row များ၊ apply worker၊ table synchronization worker နှင့် parallel apply worker များ အကြောင်း"
-order: 218
+order: 236
 source: "https://www.postgresql.org/docs/current/logical-replication-monitoring.html"
 status: translated
 updated: 2026-09-11
