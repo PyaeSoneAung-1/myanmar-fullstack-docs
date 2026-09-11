@@ -1,7 +1,7 @@
 ---
 title: "Upgrading a PostgreSQL Cluster (PostgreSQL cluster တစ်ခုကို အဆင့်မြှင့်တင်ခြင်း)"
 description: "PostgreSQL cluster တစ်ခုကို release အသစ်တစ်ခုဆီသို့ အဆင့်မြှင့်တင်ခြင်း — major/minor version နံပါတ်များ၏ သဘောတရားနှင့် minor releases များ၏ compatibility၊ major upgrade မပြုလုပ်မီ ထည့်သွင်း စဉ်းစားရမည့် ပြောင်းလဲမှု ကဏ္ဍများ၊ pg_dumpall ဖြင့် dump/restore နည်းလမ်း (အဆင့်ဆင့် လုပ်ထုံးလုပ်နည်း)၊ pg_upgrade ဖြင့် in-place အဆင့်မြှင့်တင်ခြင်းနှင့် logical replication ဖြင့် standby မှတစ်ဆင့် အဆင့်မြှင့်တင်ခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 145
+order: 149
 source: "https://www.postgresql.org/docs/current/upgrading.html"
 status: translated
 updated: 2026-09-06

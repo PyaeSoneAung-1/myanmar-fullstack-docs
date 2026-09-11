@@ -1,7 +1,7 @@
 ---
 title: "Collation Support (Collation ထောက်ပံ့မှု)"
 description: "Collation (စာလုံးများကို စီစဉ် နှိုင်းယှဉ်သည့် စည်းမျဉ်း) ထောက်ပံ့မှု အကြောင်း — collatable data types များနှင့် collation derivation (implicit/explicit) သဘောတရားများ၊ collations ပေါင်းစပ်ခြင်း စည်းမျဉ်းများ (COLLATE clause, ORDER BY, operator/function calls)၊ collation providers (libc နှင့် icu)၊ platform အားလုံးတွင် ထောက်ပံ့သည့် standard collations (unicode, ucs_basic, pg_unicode_fast, pg_c_utf8, C/POSIX, default)၊ initdb မှ pg_collation catalog တွင် ကြိုတင် သတ်မှတ်ပေးသည့် libc/ICU collations များနှင့် BCP 47 language tags (-x-icu)၊ CREATE COLLATION ဖြင့် collation အသစ်များ ဖန်တီးခြင်း/ကူးယူခြင်း၊ nondeterministic collations (deterministic = false) နှင့် ၎င်းတို့၏ အားနည်းချက်များ၊ ICU စိတ်ကြိုက် collations များ (comparison levels, ICU collation settings ဇယား, tailoring rules, external references) အကြောင်း ရှင်းလင်းချက်"
-order: 181
+order: 185
 source: "https://www.postgresql.org/docs/current/collation.html"
 status: translated
 updated: 2026-09-06

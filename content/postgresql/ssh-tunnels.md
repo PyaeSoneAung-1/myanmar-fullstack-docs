@@ -1,7 +1,7 @@
 ---
 title: "Secure TCP/IP Connections with SSH Tunnels (SSH tunnels များဖြင့် လုံခြုံသော TCP/IP ချိတ်ဆက်မှုများ)"
 description: "PostgreSQL server ဆီ client ချိတ်ဆက်မှုကို SSH ဖြင့် လုံခြုံအောင် ပြုလုပ်ခြင်း — ssh -L port forwarding ဖြင့် secure tunnel ဖန်တီးခြင်း, psql ဖြင့် local port ကို ဖြတ်၍ connect လုပ်ခြင်း, remote bind address ရွေးချယ်မှုများ (localhost vs foo.com), listen_addresses နှင့် ဆက်စပ်မှု, login host ကို ကြားခံပြု၍ hop လုပ်ခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 150
+order: 154
 source: "https://www.postgresql.org/docs/current/ssh-tunnels.html"
 status: translated
 updated: 2026-09-06

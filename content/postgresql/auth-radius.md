@@ -1,7 +1,7 @@
 ---
 title: "RADIUS Authentication (RADIUS ဖြင့် password စစ်ဆေး၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "RADIUS ကို password စစ်ဆေး အတည်ပြုရေး နည်းလမ်းအဖြစ် သုံးသည့် `radius` authentication method — Access Request/Access Accept/Access Reject ဖလှယ်မှု၊ RADIUS servers အများအပြား သတ်မှတ်ခြင်း၊ radiusservers/radiussecrets/radiusports/radiusidentifiers option များအကြောင်း"
-order: 162
+order: 166
 source: "https://www.postgresql.org/docs/current/auth-radius.html"
 status: translated
 updated: 2026-09-06

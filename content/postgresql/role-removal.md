@@ -1,7 +1,7 @@
 ---
 title: "Dropping Roles (role များကို ဖယ်ရှားခြင်း)"
 description: "Role တစ်ခုကို ဖယ်ရှားရန် ၎င်း ပိုင်ဆိုင်ထားသော objects များကို ဦးစွာ လွှဲပြောင်းခြင်း သို့မဟုတ် ဖျက်ခြင်း (REASSIGN OWNED / DROP OWNED) ပြုလုပ်ပြီးမှသာ DROP ROLE လုပ်ရပုံ — database တစ်ခုစီတွင် command များ run ရန် လိုအပ်ကြောင်း ရှင်းလင်းချက်"
-order: 171
+order: 175
 source: "https://www.postgresql.org/docs/current/role-removal.html"
 status: translated
 updated: 2026-09-06

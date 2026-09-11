@@ -1,7 +1,7 @@
 ---
 title: "Test Evaluation (Test ရလဒ်များကို အကဲဖြတ်ခြင်း)"
 description: "PostgreSQL regression tests (နောက်ပြန် စစ်ဆေးမှု tests) ၏ ရလဒ်များကို အကဲဖြတ်ခြင်း — regression test “failures” များ၏ အဖြစ်များသော အကြောင်းရင်းများနှင့် ၎င်းတို့ကို စစ်ဆေး အတည်ပြုနိုင်ပုံ (error message ကွဲလွဲမှုများ, locale ကွဲလွဲမှုများ, date/time နှင့် floating-point ကွဲလွဲမှုများ, row အစီအစဉ် ကွဲလွဲမှုများ, stack depth မလုံလောက်ခြင်း, “random” test, configuration parameters), `diff` outputs များကို ကြည့်ရှုရန် `src/test/regress/results`, `expected` နှင့် `regression.diffs` ဖိုင်များ, `PG_REGRESS_DIFF_OPTS` environment variable, alternate comparison files, `make check` နှင့် locale-related environment variables များ, `PGTZ` time zone setting, `max_stack_depth` ဆိုင်ရာ ရှင်းလင်းချက်"
-order: 200
+order: 228
 source: "https://www.postgresql.org/docs/current/regress-evaluation.html"
 status: translated
 updated: 2026-09-06

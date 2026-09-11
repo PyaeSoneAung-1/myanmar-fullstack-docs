@@ -1,7 +1,7 @@
 ---
 title: "Database Configuration (database configuration ချိန်ညှိခြင်း)"
 description: "ALTER DATABASE ... SET/RESET သုံးပြီး run-time configuration variable များအတွက် database-specific default values (database အလိုက် ပုံမှန် တန်ဖိုးများ) သတ်မှတ်ခြင်း — GEQO optimizer ကို database တစ်ခုအတွက် disable လုပ်ခြင်း ဥပမာ အပါအဝင်"
-order: 177
+order: 181
 source: "https://www.postgresql.org/docs/current/manage-ag-config.html"
 status: translated
 updated: 2026-09-06

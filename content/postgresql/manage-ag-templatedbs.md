@@ -1,7 +1,7 @@
 ---
 title: "Template Databases (template database များ)"
 description: "CREATE DATABASE သည် ရှိပြီးသား database တစ်ခုကို copy လုပ်ပြီး database အသစ် ဖန်တီးပုံ — template1 နှင့် template0 ၏ အခန်းကဏ္ဍ၊ encoding/locale အသစ် သတ်မှတ်ခြင်း၊ pg_database ၏ datistemplate/datallowconn flags များ"
-order: 176
+order: 180
 source: "https://www.postgresql.org/docs/current/manage-ag-templatedbs.html"
 status: translated
 updated: 2026-09-06

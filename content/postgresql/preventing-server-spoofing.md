@@ -1,7 +1,7 @@
 ---
 title: "Preventing Server Spoofing (server spoofing ကို ကာကွယ်ခြင်း)"
 description: "Server spoofing (server အတု ဖန်တီးပြီး လှည့်ဖြားခြင်း) ကို ကာကွယ်ခြင်း — `local` connections အတွက် Unix domain socket directory permissions နှင့် `requirepeer` သုံးခြင်း၊ TCP connections အတွက် SSL certificates (`hostssl`, `sslmode=verify-ca`/`verify-full`, system CA pool) နှင့် GSSAPI encryption (`hostgssenc`, `gssencmode=require`) နည်းလမ်းများ၊ scram-sha-256 password authentication အတွက် `channel_binding=require` mitigation အကြောင်း ရှင်းလင်းချက်"
-order: 146
+order: 150
 source: "https://www.postgresql.org/docs/current/preventing-server-spoofing.html"
 status: translated
 updated: 2026-09-06

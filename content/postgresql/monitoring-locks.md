@@ -1,7 +1,7 @@
 ---
 title: "Viewing Locks (Locks များကို ကြည့်ရှုခြင်း)"
 description: "`pg_locks` system table ကို သုံးပြီး database လုပ်ဆောင်ချက်များကို စောင့်ကြည့်ခြင်းအကြောင်း — lock manager ထဲက outstanding locks (ထွက်ပေါ်နေဆဲ lock များ) များအကြောင်း ကြည့်ရှုနိုင်မှု, ဥပမာ အသုံးပြုမှုများ (လက်ရှိ outstanding lock အားလုံး/ database တစ်ခုချင်းစီရှိ relations များပေါ်က locks/ relation တစ်ခုချင်းစီပေါ်က locks/ PostgreSQL session တစ်ခုချင်းစီ ကိုင်ထားသော locks အားလုံး ကြည့်ရှုခြင်း, ungranted locks အများဆုံးရှိသော relation ဆုံးဖြတ်ခြင်း, lock contention ၏ database performance နှင့် database traffic အပေါ် သက်ရောက်မှု ဆုံးဖြတ်ခြင်း), ထို့ပြင် pg_locks view ၏ အသေးစိတ် အချက်အလက်များ (Section 53.13) နှင့် locking/concurrency စီမံခန့်ခွဲမှုဆိုင်ရာ ရည်ညွှန်းချက်များ (Chapter 13) အကြောင်း"
-order: 195
+order: 199
 source: "https://www.postgresql.org/docs/current/monitoring-locks.html"
 status: translated
 updated: 2026-09-06

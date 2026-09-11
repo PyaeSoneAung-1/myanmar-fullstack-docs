@@ -1,7 +1,7 @@
 ---
 title: "PAM Authentication (PAM ဖြင့် password စစ်ဆေး၍ အထောက်အထား စိစစ်ခြင်း)"
 description: "PAM (Pluggable Authentication Modules) ကို authentication ယန္တရားအဖြစ် သုံးသည့် `pam` authentication method — user name/password အတွဲများကို စစ်ဆေး အတည်ပြုခြင်း၊ pamservice နှင့် pam_use_hostname configuration options များအကြောင်း"
-order: 164
+order: 168
 source: "https://www.postgresql.org/docs/current/auth-pam.html"
 status: translated
 updated: 2026-09-06

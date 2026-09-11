@@ -1,7 +1,7 @@
 ---
 title: "Secure TCP/IP Connections with GSSAPI Encryption (GSSAPI encryption ဖြင့် လုံခြုံသော TCP/IP ချိတ်ဆက်မှုများ)"
 description: "PostgreSQL ၏ GSSAPI ဖြင့် client/server ဆက်သွယ်ရေးကို encrypt လုပ်ခြင်း — basic setup၊ TCP port တစ်ခုတည်းပေါ်တွင် GSSAPI-encrypted connections အတွက် ညှိနှိုင်းမှု၊ GSSAPI authentication နှင့် တွဲဖက် အသုံးပြုပုံ အကြောင်း"
-order: 149
+order: 153
 source: "https://www.postgresql.org/docs/current/gssapi-enc.html"
 status: translated
 updated: 2026-09-06

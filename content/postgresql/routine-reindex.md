@@ -1,7 +1,7 @@
 ---
 title: "Routine Reindexing (ပုံမှန် reindexing ပြုလုပ်ခြင်း)"
 description: "PostgreSQL ရဲ့ ပုံမှန် reindexing လုပ်ငန်းစဉ် — B-tree index pages များတွင် space အသုံးပြုမှု ထိရောက်မှု မရှိနိုင်ခြင်းနှင့် bloat ဖြစ်နိုင်ခြေ၊ access speed မြှင့်တင်ရန် REINDEX ကို အခါအားလျော်စွာ ပြုလုပ်ခြင်း၊ ACCESS EXCLUSIVE lock နှင့် CONCURRENTLY option အသုံးပြုပုံ"
-order: 184
+order: 188
 source: "https://www.postgresql.org/docs/current/routine-reindex.html"
 status: translated
 updated: 2026-09-06

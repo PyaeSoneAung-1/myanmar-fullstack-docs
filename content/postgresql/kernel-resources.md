@@ -1,7 +1,7 @@
 ---
 title: "Managing Kernel Resources (kernel resources များကို စီမံခန့်ခွဲခြင်း)"
 description: "PostgreSQL server အတွက် kernel resources များ စီမံခန့်ခွဲခြင်း — System V/POSIX shared memory နှင့် semaphores (SHMMAX, SEMMNS စသည့် kernel parameters များ၊ platform အလိုက် sysctl ဆက်တင်များ) ၊ systemd RemoveIPC ၊ resource limits (ulimit, maxproc, openfiles, datasize) ၊ Linux memory overcommit (OOM killer ကို ရှောင်ရှားခြင်း) နှင့် Linux huge pages အကြောင်း ရှင်းလင်းချက်"
-order: 143
+order: 147
 source: "https://www.postgresql.org/docs/current/kernel-resources.html"
 status: translated
 updated: 2026-09-06

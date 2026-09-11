@@ -1,7 +1,7 @@
 ---
 title: "Secure TCP/IP Connections with SSL (SSL ဖြင့် လုံခြုံသော TCP/IP ချိတ်ဆက်မှုများ)"
 description: "PostgreSQL ၏ SSL/TLS ချိတ်ဆက်မှု လုံခြုံရေး — basic setup (ssl parameter၊ server.crt/server.key နှင့် ခွင့်ပြုချက်များ)၊ OpenSSL configuration (openssl.cnf, ssl_ciphers)၊ client certificates လိုအပ်ချက် (ssl_ca_file၊ clientcert=verify-ca/verify-full)၊ SSL server ဖိုင် အသုံးပြုမှု ဇယား နှင့် openssl commands များဖြင့် certificates ဖန်တီးခြင်း အကြောင်း"
-order: 148
+order: 152
 source: "https://www.postgresql.org/docs/current/ssl-tcp.html"
 status: translated
 updated: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "Starting the Database Server (database server ကို စတင်ခြင်း)"
 description: "Database server ကို စတင်ခြင်း — postgres program ကို -D option နဲ့ တိုက်ရိုက် run လုပ်ခြင်း၊ PGDATA environment variable၊ background တွင် စတင်ခြင်း၊ pg_ctl wrapper program၊ boot အချိန် autostart scripts များ (FreeBSD, OpenBSD, Linux/systemd, NetBSD, Solaris)၊ postmaster.pid ဖိုင်၊ server စတင်ချိန် မအောင်မြင်မှုများနှင့် client connection ပြဿနာများအကြောင်း ရှင်းလင်းချက်"
-order: 142
+order: 146
 source: "https://www.postgresql.org/docs/current/server-start.html"
 status: translated
 updated: 2026-09-06

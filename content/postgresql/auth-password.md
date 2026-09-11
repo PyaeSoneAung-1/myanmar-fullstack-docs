@@ -1,7 +1,7 @@
 ---
 title: "Password Authentication (စကားဝှက်ဖြင့် စစ်ဆေး အတည်ပြုခြင်း)"
 description: "Password အခြေပြု authentication methods များ — scram-sha-256, md5 နဲ့ password — တို့၏ လုပ်ဆောင်ပုံ၊ user စကားဝှက်များ server တွင် encrypt/သိမ်းဆည်းပုံပေါ် မူတည်သော ရရှိနိုင်မှု နှင့် md5 မှ scram-sha-256 သို့ ပြောင်းရွှေ့နည်း"
-order: 156
+order: 160
 source: "https://www.postgresql.org/docs/current/auth-password.html"
 status: translated
 updated: 2026-09-06

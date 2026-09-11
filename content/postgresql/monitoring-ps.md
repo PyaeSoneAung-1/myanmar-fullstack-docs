@@ -1,7 +1,7 @@
 ---
 title: "Standard Unix Tools (စံ Unix tools များ)"
 description: "`ps` command ၏ output ဖြင့် PostgreSQL server processes များကို ခွဲခြား သိရှိခြင်း — PostgreSQL က `ps` အတွက် ပြုပြင် ပေးထားတဲ့ command title ဖြင့် process တစ်ခုချင်းစီ (primary server process, background worker processes, client connection တစ်ခုချင်းစီကို ကိုင်တွယ်တဲ့ server processes) ကို ဖော်ပြပုံ၊ activity indicator (idle, idle in transaction, SELECT စသော command types) နှင့် waiting state တို့၏ အဓိပ္ပာယ်၊ cluster_name သတ်မှတ်ထားပါက `ps` output ထဲတွင် cluster name ပါဝင်လာခြင်း၊ update_process_title ပိတ်ထားခြင်း၏ သက်ရောက်မှု နှင့် Solaris တွင် `/usr/ucb/ps` အသုံးပြုရန် အထူး လိုအပ်ချက်များအကြောင်း ရှင်းလင်းချက်"
-order: 193
+order: 197
 source: "https://www.postgresql.org/docs/current/monitoring-ps.html"
 status: translated
 updated: 2026-09-06

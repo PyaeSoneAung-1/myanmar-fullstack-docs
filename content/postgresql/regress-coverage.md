@@ -1,7 +1,7 @@
 ---
 title: "Test Coverage Examination (Test လွှမ်းခြုံမှု စစ်ဆေးခြင်း)"
 description: "PostgreSQL ရဲ့ source code ကို coverage testing instrumentation နဲ့ compile လုပ်ပြီး — regression tests ဒါမှမဟုတ် တခြား test suites တွေက code ရဲ့ ဘယ်အပိုင်းတွေကို လွှမ်းခြုံ ထားလဲ စစ်ဆေးခြင်း — Autoconf/Make နည်းလမ်း (`./configure --enable-coverage`, `make check`, `make coverage-html`, `make coverage`, `.gcov` output ဖိုင်များ, `coverage/index.html`, `make coverage-clean`, subdirectory အတွင်း coverage report, `make distclean`), Meson နည်းလမ်း (`meson setup -Db_coverage=true`, `meson compile`, `meson test`, `ninja coverage-html`, `meson-logs/coveragereport/index.html`), execution counts များ စုပုံလာခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 203
+order: 231
 source: "https://www.postgresql.org/docs/current/regress-coverage.html"
 status: translated
 updated: 2026-09-06

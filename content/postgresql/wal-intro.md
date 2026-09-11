@@ -1,0 +1,18 @@
+---
+title: "Write-Ahead Logging (WAL) (ကြိုတင် ရေးသားသည့် log စနစ်)"
+description: "Write-Ahead Logging (WAL) ၏ အခြေခံ သဘောတရား — data file များ မပြောင်းလဲခင် ပြောင်းလဲမှုများကို log မှတ်တမ်း အရင်တင်ခြင်းဖြင့် data integrity အာမခံပုံ၊ disk write များ လျော့ချပေးပုံ၊ crash ဖြစ်ချိန် roll-forward recovery (REDO)၊ on-line backup နဲ့ point-in-time recovery ကို ထောက်ပံ့ပေးပုံ အကြောင်း"
+order: 205
+source: "https://www.postgresql.org/docs/current/wal-intro.html"
+status: translated
+updated: 2026-09-11
+---
+
+## 28.3. Write-Ahead Logging (WAL) (ကြိုတင် ရေးသားသည့် log စနစ်)
+
+*Write-Ahead Logging* (WAL) ဆိုတာ data ရဲ့ ညီညွတ်မှု (data integrity) ကို အာမခံဖို့ စံနည်းလမ်း တစ်ခု ဖြစ်ပါတယ်။ အသေးစိတ် ရှင်းလင်းချက်ကို transaction processing အကြောင်း စာအုပ် အားလုံးနီးပါးမှာ တွေ့နိုင်ပါတယ်။ အတိုချုပ်ပြောရရင် WAL ရဲ့ အဓိက အခြေခံသဘောတရားက — data file များ (table နဲ့ index များ တည်ရှိတဲ့နေရာ) ဆီက ပြောင်းလဲမှုများကို — အဲဒီပြောင်းလဲမှုများကို log မှတ်တမ်း တင်ပြီးမှသာ — ဆိုလိုတာက ပြောင်းလဲမှုများကို ဖော်ပြသည့် WAL record များကို permanent storage (အမြဲတမ်း သိုလှောင်ရာ) ဆီ flush လုပ်ပြီးမှသာ — ရေးသားရမယ် ဆိုတာပါ။ ဒီလုပ်ထုံးလုပ်နည်းကို လိုက်နာမယ်ဆိုရင် — transaction တစ်ခု commit လုပ်တိုင်း data page များကို disk ဆီ flush လုပ်ဖို့ မလိုအပ်တော့ပါဘူး — အကြောင်းကတော့ crash (ပျက်ကျမှု) ဖြစ်ခဲ့ရင် log ကို သုံးပြီး database ကို ပြန်လည် ကုစားနိုင်မယ်ဆိုတာ ကျွန်တော်တို့ သိထားလို့ပါ — data page များပေါ်မှာ မသက်ရောက်ရသေးတဲ့ ပြောင်းလဲမှု မှန်သမျှကို WAL record များမှ ပြန်လည် လုပ်ဆောင် (redo) နိုင်ပါတယ်။ (ဒါကို roll-forward recovery လို့ ခေါ်ပြီး REDO လို့လည်း သိကြပါတယ်။)
+
+> **အကြံပြုချက်:** WAL က crash ဖြစ်ပြီးနောက် database file များ၏ အကြောင်းအရာများကို ပြန်လည် ရယူပေးတာမို့ — data file များ သို့မဟုတ် WAL file များကို ယုံကြည်စိတ်ချရအောင် သိမ်းဆည်းဖို့ journaled file system များ မလိုအပ်ပါဘူး။ တကယ်တော့ journaling ရဲ့ overhead က performance ကို ကျဆင်းစေနိုင်ပါတယ် — အထူးသဖြင့် journaling က file system data များကို disk ဆီ flush လုပ်စေတဲ့အခါ ပိုဆိုးပါတယ်။ ကံကောင်းတာက — journaling လုပ်နေစဉ်အတွင်း data flush လုပ်ခြင်းကို file system mount option တစ်ခုနဲ့ မကြာခဏ ပိတ်ထားနိုင်ပါတယ် — ဥပမာ Linux ext3 file system ပေါ်မှာ `data=writeback` ဆိုတဲ့ option ပါ။ Journaled file system များက crash ဖြစ်ပြီးနောက် boot လုပ်တဲ့ အမြန်နှုန်းကိုတော့ တိုးတက်စေပါတယ်။
+
+WAL ကို အသုံးပြုခြင်းက disk ရေးသားမှု အရေအတွက်ကို သိသိသာသာ လျော့ချပေးပါတယ် — အကြောင်းကတော့ transaction တစ်ခု commit ဖြစ်တယ်ဆိုတာ အာမခံဖို့ — transaction က ပြောင်းလဲလိုက်တဲ့ data file တိုင်းကို flush လုပ်ဖို့ မလိုဘဲ — WAL file ကိုပဲ disk ဆီ flush လုပ်ဖို့ လိုလို့ပါ။ WAL file ကို အစဉ်လိုက် (sequentially) ရေးသားတာမို့ WAL ကို sync လုပ်တဲ့ ကုန်ကျစရိတ်က data page များကို flush လုပ်တဲ့ ကုန်ကျစရိတ်ထက် အများကြီး နည်းပါတယ်။ ဒါက data store ရဲ့ အစိတ်အပိုင်း အမျိုးမျိုးကို ထိရောက်တဲ့ transaction သေးသေးလေးတွေ အများကြီး ကိုင်တွယ်နေတဲ့ server များအတွက် အထူးသင့်လျော်ပါတယ်။ ထို့အပြင် — server က သေးငယ်တဲ့ concurrent transaction များစွာကို လုပ်ဆောင်နေတဲ့အခါ — WAL file ကို `fsync` တစ်ကြိမ် လုပ်လိုက်ရုံနဲ့ transaction များစွာကို commit လုပ်နိုင်ပါတယ်။
+
+WAL က [အပိုင်း 25.3](/docs/postgresql/continuous-archiving) မှာ ဖော်ပြထားသလို — on-line backup နဲ့ point-in-time recovery ကို ထောက်ပံ့ပေးနိုင်ပါတယ်။ WAL data ကို archive (မော်ကွန်း သိမ်းဆည်း) လုပ်ခြင်းဖြင့် — ရရှိနိုင်တဲ့ WAL data က လွှမ်းခြုံထားတဲ့ အချိန် အမှတ်တစ်ခုခုဆီ ပြန်ရောက်နိုင်အောင် ထောက်ပံ့နိုင်ပါတယ် — database ရဲ့ အရင် physical backup တစ်ခုကို install လုပ်ပြီး — လိုချင်တဲ့ အချိန်အထိပဲ WAL ကို replay (ပြန်လည် လုပ်ဆောင်) လုပ်လိုက်ရုံပါ။ ထို့အပြင် — physical backup က database အခြေအနေရဲ့ ချက်ချင်း snapshot (လျှပ်တစ်ပြက် ပုံရိပ်) ဖြစ်ဖို့ မလိုပါဘူး — အချိန် ကာလတစ်ခုအတွင်း ပြုလုပ်ထားတာဆိုရင် — အဲဒီ ကာလအတွက် WAL ကို replay လုပ်ခြင်းက အတွင်းပိုင်း ကွဲလွဲမှု (internal inconsistency) မှန်သမျှကို ပြင်ပေးပါလိမ့်မယ်။

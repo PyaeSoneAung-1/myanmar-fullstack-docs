@@ -1,7 +1,7 @@
 ---
 title: "Locale Support (Locale ထောက်ပံ့မှု)"
 description: "Locale (ဒေသသုံး ဘာသာစကား/ယဉ်ကျေးမှု ဆက်တင်) ထောက်ပံ့မှုအကြောင်း — locale ၏ အဓိပ္ပာယ်နှင့် `initdb` ၏ `--locale` option သုံးပြီး database cluster တစ်ခုအတွက် locale သတ်မှတ်ခြင်း၊ locale subcategories များ (`LC_COLLATE`, `LC_CTYPE`, `LC_MESSAGES`, `LC_MONETARY`, `LC_NUMERIC`, `LC_TIME`) ဇယား၊ locale ၏ အပြုအမူ (ORDER BY နှင့် text data စီစဉ်မှု, upper/lower/initcap functions, pattern matching operators, to_char family, LIKE clauses နှင့် indexes)၊ locales ရွေးချယ်နိုင်သည့် scope အဆင့်များ (operating system environment, initdb options, database တစ်ခုချင်း, table column/collation, query တစ်ခုချင်း)၊ locale providers (builtin, icu, libc) အသေးစိတ်၊ ICU locale နာမည်များနှင့် language tags (BCP 47, `-u` extensions, canonicalization/validation)၊ နှင့် locale ပြဿနာများ ရှာဖွေ ဖြေရှင်းခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 180
+order: 184
 source: "https://www.postgresql.org/docs/current/locale.html"
 status: translated
 updated: 2026-09-06

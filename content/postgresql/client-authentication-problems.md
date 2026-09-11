@@ -1,7 +1,7 @@
 ---
 title: "Authentication Problems (authentication ပြဿနာများ)"
 description: "Authentication မအောင်မြင်မှုနှင့် ဆက်စပ် ပြဿနာများ ဖော်ပြလေ့ ရှိသည့် error messages များအကြောင်း — no pg_hba.conf entry, password authentication failed, user/database does not exist စသည့် message များ၏ အဓိပ္ပာယ်နှင့် server log စစ်ဆေးရန် အကြံပြုချက်"
-order: 167
+order: 171
 source: "https://www.postgresql.org/docs/current/client-authentication-problems.html"
 status: translated
 updated: 2026-09-06

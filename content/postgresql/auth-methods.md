@@ -1,7 +1,7 @@
 ---
 title: "Authentication Methods (authentication နည်းလမ်းများ)"
 description: "PostgreSQL က user တွေကို authenticate လုပ်ဖို့ ထောက်ပံ့ပေးတဲ့ နည်းလမ်း အမျိုးမျိုး — trust, password, GSSAPI, SSPI, ident, peer, LDAP, RADIUS, certificate, PAM, BSD နဲ့ OAuth — တို့ရဲ့ တစ်ခုချင်းစီ အလုပ်လုပ်ပုံ အကျဉ်းချုပ် မိတ်ဆက်"
-order: 154
+order: 158
 source: "https://www.postgresql.org/docs/current/auth-methods.html"
 status: translated
 updated: 2026-09-06

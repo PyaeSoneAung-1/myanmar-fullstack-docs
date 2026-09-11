@@ -1,7 +1,7 @@
 ---
 title: "Hot Standby (hot standby mode — recovery/standby mode အတွင်း read-only queries များ run လုပ်နိုင်မှု)"
 description: "Hot standby mode — archive recovery/standby mode အတွင်း server ဆီ connect လုပ်ပြီး read-only queries များ run လုပ်နိုင်မှု — အကြောင်း ရှင်းလင်းချက်: user များအတွက် ခြုံငုံ သုံးသပ်ချက် (read-only connections များ, ခွင့်ပြုထားသော/တားမြစ်ထားသော commands စာရင်းများ), query conflicts များ ကိုင်တွယ်ခြင်း (WAL replay နှင့် ထိပ်တိုက်မှုများ, conflict ဖြစ်သော queries များကို cancel လုပ်ခြင်း, max_standby_archive_delay/max_standby_streaming_delay, hot_standby_feedback, pg_stat_database_conflicts view), administrator များအတွက် ခြုံငုံ သုံးသပ်ချက် (hot standby ဖွင့်သတ်မှတ်ပုံ, startup log messages များ, shared memory သက်ဆိုင်သော parameter များ, recovery mode အတွင်း လက်မခံသော administration commands များ), hot standby parameter ရည်ညွှန်း စာရင်း (primary/standby ပေါ်တွင် သုံးနိုင်သော parameters) နှင့် caveats (ကန့်သတ်ချက်များ) အကြောင်း အသေးစိတ်"
-order: 192
+order: 196
 source: "https://www.postgresql.org/docs/current/hot-standby.html"
 status: translated
 updated: 2026-09-06

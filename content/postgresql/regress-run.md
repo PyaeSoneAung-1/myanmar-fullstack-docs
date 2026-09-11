@@ -1,7 +1,7 @@
 ---
 title: "Running the Tests (စမ်းသပ်မှုများ လုပ်ဆောင်ခြင်း)"
 description: "PostgreSQL ရဲ့ regression tests များကို run လုပ်ပုံ အကြောင်း — build tree အတွင်းက ယာယီ installation တစ်ခုနဲ့ စမ်းသပ်ခြင်း (`make check`, parallel/sequential modes, “+”/“-” prefixes, `MAX_CONNECTIONS`), ရှိပြီးသား installation တစ်ခုကို သုံးပြီး စမ်းသပ်ခြင်း (`make installcheck`, `regression` database, `regress_` နှင့် စတင်သော objects များ), ထပ်ဆောင်း test suites များ (`make check-world`, module အလိုက် tests များ, TAP infrastructure, `PG_TEST_EXTRA` တန်ဖိုးများ — kerberos, ldap, libpq_encryption, ssl စသည်), locale နှင့် encoding သတ်မှတ်ခြင်း (LANG, LC_COLLATE, LC_CTYPE, `ENCODING`), စိတ်ကြိုက် server settings များ (`PG_TEST_INITDB_EXTRA_OPTS`, `PGOPTIONS`, pre-written `postgresql.conf`) နှင့် `EXTRA_TESTS` ဖြင့် အပို test files များ run လုပ်ခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 199
+order: 227
 source: "https://www.postgresql.org/docs/current/regress-run.html"
 status: translated
 updated: 2026-09-06

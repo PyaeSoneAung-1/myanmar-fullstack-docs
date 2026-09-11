@@ -1,7 +1,7 @@
 ---
 title: "Shutting Down the Server (server ကို ပိတ်ခြင်း)"
 description: "Database server ကို ပိတ်ခြင်း — shutdown mode သုံးမျိုး (SIGTERM / Smart Shutdown, SIGINT / Fast Shutdown, SIGQUIT / Immediate Shutdown) ၏ အပြုအမူများ၊ pg_ctl နှင့် kill ဖြင့် signal ပို့နည်း၊ postmaster.pid ဖိုင်မှ PID ရှာနည်း၊ SIGKILL မသုံးသင့်ကြောင်း သတိပေးချက် နှင့် pg_terminate_backend() ဖြင့် session တစ်ခုတည်း အဆုံးသတ်ခြင်းအကြောင်း ရှင်းလင်းချက်"
-order: 144
+order: 148
 source: "https://www.postgresql.org/docs/current/server-shutdown.html"
 status: translated
 updated: 2026-09-06

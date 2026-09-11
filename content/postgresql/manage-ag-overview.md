@@ -1,7 +1,7 @@
 ---
 title: "Overview (database စီမံခန့်ခွဲမှု ခြုံငုံ သုံးသပ်ချက်)"
 description: "PostgreSQL cluster တစ်ခုအတွင်း object အဆင့်ဆင့် (cluster → database → schema → table) ဖွဲ့စည်းပုံ၊ database-level security ၏ အစိတ်အပိုင်းများ (access control နှင့် authorization control) နှင့် database များ ဖန်တီး/ဖျက်ခြင်း၏ ခြုံငုံ သုံးသပ်ချက်"
-order: 174
+order: 178
 source: "https://www.postgresql.org/docs/current/manage-ag-overview.html"
 status: translated
 updated: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "Registering Event Log on Windows (Windows ပေါ်တွင် Event Log မှတ်ပုံတင်ခြင်း)"
 description: "Windows event log library (pgevent.dll) ကို regsvr32 ဖြင့် operating system ထဲ မှတ်ပုံတင်ခြင်း/မှတ်ပုံတင် ဖျက်သိမ်းခြင်း — default event source `PostgreSQL`, မတူညီသော event source name အတွက် /n နှင့် /i options, database server တွင် event logging ဖွင့်ရန် `log_destination` ၌ `eventlog` ထည့်သွင်းခြင်း အကြောင်း ရှင်းလင်းချက်"
-order: 151
+order: 155
 source: "https://www.postgresql.org/docs/current/event-log-registration.html"
 status: translated
 updated: 2026-09-06

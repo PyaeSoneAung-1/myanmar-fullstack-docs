@@ -1,7 +1,7 @@
 ---
 title: "The PostgreSQL User Account (PostgreSQL user အကောင့်)"
 description: "PostgreSQL ကို သီးခြား user account တစ်ခုအောက်မှာ run လုပ်သင့်ရခြင်း အကြောင်းရင်းများ — ထို user account သည် server က စီမံခန့်ခွဲသော data များကိုသာ ပိုင်ဆိုင်သင့်ပြီး executable files များကို မပိုင်ဆိုင်သင့်ခြင်း၊ pre-packaged version များတွင် အလိုအလျောက် ဖန်တီးပေးခြင်း၊ `useradd`/`adduser` command ဖြင့် Unix user account ထည့်သွင်းခြင်း"
-order: 140
+order: 144
 source: "https://www.postgresql.org/docs/current/postgres-user.html"
 status: translated
 updated: 2026-09-06

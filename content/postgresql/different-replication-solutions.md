@@ -1,7 +1,7 @@
 ---
 title: "Comparison of Different Solutions (replication နည်းလမ်း အမျိုးမျိုး နှိုင်းယှဉ် ခြုံငုံ သုံးသပ်ချက်)"
 description: "Replication (ပုံတူပွားခြင်း) နှင့် သက်ဆိုင်သည့် ဖြေရှင်းနည်း အမျိုးမျိုး၏ နှိုင်းယှဉ် ခြုံငုံ သုံးသပ်ချက် — shared disk failover (database copy တစ်ခုတည်းကို server အများအပြားက မျှဝေသုံးသည့် failover နည်းလမ်း), file system (block device) replication (DRBD ကဲ့သို့သော), write-ahead log (WAL) shipping (file-based log shipping နှင့် streaming replication), logical replication (table အလိုက် logical data replication), trigger-based replication (Slony-I), SQL-based replication middleware (Pgpool-II ကဲ့သို့သော), asynchronous/synchronous multimaster replication (Bucardo ကဲ့သို့သော) — နည်းလမ်း တစ်ခုချင်းစီ၏ လုပ်ဆောင်ပုံ, အားသာချက်များနှင့် ကန့်သတ်ချက်များ, ဖြေရှင်းနည်းများ၏ စွမ်းရည်များကို နှိုင်းယှဉ်ပြသည့် Table 26.1 feature matrix (အင်္ဂါရပ် နှိုင်းယှဉ်ဇယား), အထက်ပါ အမျိုးအစားများနှင့် မကိုက်ညီသော data partitioning နှင့် multiple-server parallel query execution (PL/Proxy) နည်းလမ်းများ, PostgreSQL အခြေပြု commercial closed-source ဖြေရှင်းနည်းများ အကြောင်း ရှင်းလင်းချက်"
-order: 189
+order: 193
 source: "https://www.postgresql.org/docs/current/different-replication-solutions.html"
 status: translated
 updated: 2026-09-06

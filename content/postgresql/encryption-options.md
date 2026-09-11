@@ -1,7 +1,7 @@
 ---
 title: "Encryption Options (ကုဒ်ဝှက်ခြင်း ရွေးချယ်စရာများ)"
 description: "PostgreSQL ရဲ့ encryption (ကုဒ်ဝှက်ခြင်း) အဆင့်မျိုးစုံ — database user စကားဝှက်များ (password encryption, SCRAM/MD5), pgcrypto module ဖြင့် တိကျသော columns များ ကုဒ်ဝှက်ခြင်း, data partition / file system အဆင့် encryption, network ပေါ်က data ကုဒ်ဝှက်ခြင်း (SSL, GSSAPI, Stunnel, SSH), SSL host authentication နှင့် client-side encryption တို့အကြောင်း ရှင်းလင်းချက်"
-order: 147
+order: 151
 source: "https://www.postgresql.org/docs/current/encryption-options.html"
 status: translated
 updated: 2026-09-06

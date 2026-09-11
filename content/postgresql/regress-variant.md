@@ -1,7 +1,7 @@
 ---
 title: "Variant Comparison Files (ပုံစံကွဲ နှိုင်းယှဉ် ဖိုင်များ)"
 description: "PostgreSQL regression tests များအတွက် variant comparison files (ပုံစံကွဲ နှိုင်းယှဉ် ဖိုင်များ) အကြောင်း — tests အချို့၏ environment-dependent ရလဒ်များကို ကိုင်တွယ်ရန် alternate “expected” result files သတ်မှတ်ခြင်း, platform-specific ရွေးချယ်မှု ယန္တရား (`src/test/regress/resultmap` mapping file, line ပုံစံ `testname:output:platformpattern=comparisonfilename`, Unix `expr` ပုံစံ platform pattern, `config.guess` output နှင့် နှိုင်းယှဉ်ခြင်း, `strtof`/`float4` ဥပမာ, Cygwin ပေါ်မှာ အတုအယောင် “failure” message ကို တိတ်ဆိတ်စေခြင်း), automatic “best match” ရွေးချယ်မှု ယန္တရား (`testname.out` နှင့် `testname_digit.out` variant files, `char`/`char_1.out` locale ဥပမာ) နှင့် ယင်း၏ ကန့်သတ်ချက်များ အကြောင်း ရှင်းလင်းချက်"
-order: 201
+order: 229
 source: "https://www.postgresql.org/docs/current/regress-variant.html"
 status: translated
 updated: 2026-09-06

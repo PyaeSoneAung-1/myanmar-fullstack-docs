@@ -1,7 +1,7 @@
 ---
 title: "Creating a Database Cluster (database cluster တစ်ခု ဖန်တီးခြင်း)"
 description: "Database cluster ဆိုတာ ဘာလဲ — data directory ကို `initdb` ဖြင့် initialize လုပ်ခြင်း (`-D` option, `PGDATA` environment variable, `pg_ctl initdb`), data directory ၏ access permissions နှင့် mode များ (`0700`/`0600`, `0750`/`0640`), superuser အတွက် password သတ်မှတ်ခြင်း, default locale နှင့် character set encoding များ, secondary file systems နှင့် NFS အသုံးပြုမှု အကြောင်း ရှင်းလင်းချက်"
-order: 141
+order: 145
 source: "https://www.postgresql.org/docs/current/creating-cluster.html"
 status: translated
 updated: 2026-09-06
