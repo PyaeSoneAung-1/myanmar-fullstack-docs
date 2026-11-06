@@ -61,7 +61,7 @@ Pipeline က official docs (GitHub) ကနေ ဆွဲပြီး chunk ဖြ
 
 ## Status
 
-- ✅ **1495 pages ဘာသာပြန်ပြီး** (wave 50, 2026-11-06: +19 — Prisma ORM 8 quickstart / extensions / platform pages — Prisma 36 → 55) — React 123/120, TypeScript 100/100, Express 30/30, TanStack Query 116/100, Postman 166/150, useSWR 29/25, Zustand 25/15 ပြည့်စုံ 🎉
+- ✅ **1498 pages ဘာသာပြန်ပြီး** (wave 50, 2026-11-06: +22 — Prisma ORM 8 quickstart / extensions / platform / reference pages — Prisma 36 → 58) — React 123/120, TypeScript 100/100, Express 30/30, TanStack Query 116/100, Postman 166/150, useSWR 29/25, Zustand 25/15 ပြည့်စုံ 🎉
 - 🔎 `/sitemap.xml` နဲ့ `/robots.txt` ကို အလိုအလျောက် generate လုပ်ပေးထားပါတယ်။
 - 🔄 ကျန် ~290 pages (official docs စုစုပေါင်း ခန့်မှန်းချက် 1,720) — `/roadmap` page မှာ
   progress ကြည့်ပါ။ `scripts/backlog.md` ကိုလည်း ဖတ်ပါ။

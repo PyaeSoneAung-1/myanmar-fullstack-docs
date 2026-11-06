@@ -223,8 +223,8 @@ Wave history: W1=20 → W2=52 → W3=70 → W4=101 → W5=167 → W6=241 → W7=
 - [x] More: how-middleware-works, logging, debugging, client-extensions
 - [x] Prisma 8 (v8) wave 8 (orders 23–29): the-data-contract, psl-syntax, the-migration-graph, editing-a-migration, rollbacks-and-recovery, authoring-custom-middleware, built-in-cache
 - [x] Prisma 8 wave 9 (orders 30–36): the-contract-artifact, capabilities, typescript-schema-builder, built-in-budgets, built-in-lints, using-extensions, data-modeling/mongodb
-- [x] Wave 50 (orders 37–55, 2026-11-06): supported-databases, supported-versions, release-status, types, money, advanced-postgresql, editor-support, extensions (index), arktype-json, paradedb, postgis, local-database, create-prisma, from-scratch, quickstart-postgresql, quickstart-mongodb, add-to-existing-project-postgresql, add-to-existing-project-mongodb, coming-from-prisma-orm-7 → Prisma 36 → 55
-- [ ] ကျန် — Prisma 8 reference (orm-client, sql-query-builder, pipeline-builder, raw-queries, transactions-and-runtime, migration-api, error-reference — giant pages); v6/v7 classic pages archived under /docs/orm/v6/** and /docs/orm/v7/**
+- [x] Wave 50 (orders 37–55, 2026-11-06): supported-databases, supported-versions, release-status, types, money, advanced-postgresql, editor-support, extensions (index), arktype-json, paradedb, postgis, local-database, create-prisma, from-scratch, quickstart-postgresql, quickstart-mongodb, add-to-existing-project-postgresql, add-to-existing-project-mongodb, coming-from-prisma-orm-7 → Prisma 36 → 55; plus reference index / raw-queries / migration-api (56–58) → Prisma 58
+- [ ] ကျန် — Prisma 8 reference giants only (orm-client 141KB, sql-query-builder 67KB, pipeline-builder 75KB, transactions-and-runtime 75KB, error-reference 368KB — slice+chain); v6/v7 classic pages archived under /docs/orm/v6/** and /docs/orm/v7/**
   - Note: prisma.io/docs now defaults to Prisma 8; v7 'classic' archived at /docs/orm/v7/**. Clean markdown: append `.md` (https://www.prisma.io/docs/<path>.md); indexes at /docs/llms.txt.
 
 ## TypeScript (typescriptlang.org handbook) — est ~100 — 72 done
